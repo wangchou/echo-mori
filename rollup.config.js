@@ -3,11 +3,12 @@ import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
+import fs from 'fs';
 
 const production = !process.env.ROLLUP_WATCH;
 
 export default {
-    input: 'src/main.js',
+    input: 'src/client.js',
     output: {
         sourcemap: true,
         format: 'iife',
@@ -35,7 +36,13 @@ export default {
 
         // Watch the `public` directory and refresh the
         // browser on changes when not in production
-        !production && livereload('public'),
+        !production && livereload({
+            watch: 'public',
+            https: {
+                key: fs.readFileSync('localhost.key'),
+                cert: fs.readFileSync('localhost.crt')
+            }
+        }),
 
         // If we're building for production (npm run build
         // instead of npm run dev), minify

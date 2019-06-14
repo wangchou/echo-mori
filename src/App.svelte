@@ -1,11 +1,17 @@
 <script>
-    export let name;
+    import { onMount } from 'svelte';
+
+    let greeting;
+
+    onMount(async () => {
+       greeting = await fetch('/greeting').then(res => res.text())
+    })
 </script>
 
 <style>
     h1 {
-        color: purple;
+        color: green;
     }
 </style>
 
-<h1>Hello {name}!</h1>
+<h1>{greeting} World!</h1>
