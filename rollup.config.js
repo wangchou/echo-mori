@@ -8,7 +8,7 @@ import fs from 'fs';
 const production = !process.env.ROLLUP_WATCH;
 
 export default {
-    input: 'src/client.js',
+    input: 'src/client/index.js',
     output: {
         sourcemap: true,
         format: 'iife',
@@ -49,6 +49,7 @@ export default {
         production && terser()
     ],
     watch: {
-        clearScreen: false
+        clearScreen: false,
+        include: 'src/client/**'
     }
 };
