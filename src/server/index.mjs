@@ -20,8 +20,8 @@ app.get('/tts', ttsAPI);
 
 var port = 4000
 https.createServer({
-  key: fs.readFileSync('localhost.key'),
-  cert: fs.readFileSync('localhost.crt')
+    key: fs.readFileSync('localhost.key'),
+    cert: fs.readFileSync('localhost.crt')
 }, app).listen(port, function () {
-  console.log(`Express Server listening on port ${port}!`)
+    console.log(`Express Server listening on port ${port}!`)
 });

@@ -1,11 +1,11 @@
-import svelte from 'rollup-plugin-svelte';
-import resolve from 'rollup-plugin-node-resolve';
-import commonjs from 'rollup-plugin-commonjs';
-import livereload from 'rollup-plugin-livereload';
-import { terser } from 'rollup-plugin-terser';
-import fs from 'fs';
+import svelte from 'rollup-plugin-svelte'
+import resolve from 'rollup-plugin-node-resolve'
+import commonjs from 'rollup-plugin-commonjs'
+import livereload from 'rollup-plugin-livereload'
+import { terser } from 'rollup-plugin-terser'
+import fs from 'fs'
 
-const production = !process.env.ROLLUP_WATCH;
+const production = !process.env.ROLLUP_WATCH
 
 export default {
     input: 'src/client/index.js',
@@ -13,7 +13,7 @@ export default {
         sourcemap: true,
         format: 'iife',
         name: 'app',
-        file: 'public/bundle.js'
+        file: 'public/bundle.js',
     },
     plugins: [
         svelte({
@@ -22,8 +22,8 @@ export default {
             // we'll extract any component CSS out into
             // a separate file — better for performance
             css: css => {
-                css.write('public/bundle.css');
-            }
+                css.write('public/bundle.css')
+            },
         }),
 
         // If you have external dependencies installed from
@@ -40,16 +40,16 @@ export default {
             watch: 'public',
             https: {
                 key: fs.readFileSync('localhost.key'),
-                cert: fs.readFileSync('localhost.crt')
-            }
+                cert: fs.readFileSync('localhost.crt'),
+            },
         }),
 
         // If we're building for production (npm run build
         // instead of npm run dev), minify
-        production && terser()
+        production && terser(),
     ],
     watch: {
         clearScreen: false,
-        include: 'src/client/**'
-    }
-};
+        include: 'src/client/**',
+    },
+}

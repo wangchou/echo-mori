@@ -1,0 +1,9 @@
+{
+    "_comment": "for vscode bug: ts error in js, https://github.com/Microsoft/vscode/issues/54261",
+    "compilerOptions": {
+        "outDir": "./xyz",
+        "noImplicitAny": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "allowJs": true
+    },
+}
