@@ -1,12 +1,6 @@
 import fetch from 'node-fetch'
 import API_KEY from "../../../secret/api_key.js"
 
-const PlaySpeed = {
-    normal: 1.0,
-    slow: 0.85,
-    verySlow: 0.7
-}
-
 const Voices = {
     jaF1: { name: 'ja-JP-Wavenet-B', languageCode: 'ja-JP' },
     jaF2: { name: 'ja-JP-Wavenet-A', languageCode: 'ja-JP' },
@@ -22,7 +16,7 @@ export default async (req, res) => {
         voice: Voices[req.query.voice],
         audioConfig: {
             audioEncoding: 'OGG_OPUS',
-            speakingRate: PlaySpeed[req.query.speed],
+            speakingRate: 1.0,
         },
     })
     const response = await fetch(GOOGLE_TEXT_TO_SPEECH_URL, {

@@ -1,5 +1,6 @@
 <script>
     import Messenger from './Messenger.svelte'
+    import { playGame } from '../gameFlow.js'
 </script>
 
 <style>
@@ -11,6 +12,9 @@
     :global(body) {
         margin: 4% 0;
         background: #999;
+    }
+    div.playButton {
+        text-align: center;
     }
 </style>
 
@@ -25,3 +29,6 @@
     </h1>
 </div>
 <Messenger />
+<div class="playButton">
+    <button on:click={playGame}>Play</button>
+</div>

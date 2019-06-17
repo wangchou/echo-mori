@@ -4,6 +4,6 @@
         "outDir": "./xyz",
         "noImplicitAny": true,
         "suppressImplicitAnyIndexErrors": true,
-        "allowJs": true
+        "allowJs": true,
     },
 }
