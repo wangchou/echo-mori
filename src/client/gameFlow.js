@@ -1,4 +1,4 @@
-import { PlaySpeed, Voices } from './model/constants.js' 
+import { PlaySpeed, Voices } from './model/constants.js'
 import { say, listen } from './speechEngine.js'
 import { comments } from './model/store.js'
 
@@ -7,6 +7,11 @@ const sentences = [
     { text: '今日はいい天気ですね', speed: PlaySpeed.slow, voice: Voices.jaF1 },
     { text: 'そうですね。', speed: PlaySpeed.slow, voice: Voices.jaM1 },
     { text: 'じゃあ、またね。', speed: PlaySpeed.slow, voice: Voices.jaF1 },
+    { text: '今日はいい天気ですね', speed: PlaySpeed.slow, voice: Voices.jaF1 },
+    { text: '今日はいい天気ですね', speed: PlaySpeed.slow, voice: Voices.jaF1 },
+    { text: '今日はいい天気ですね', speed: PlaySpeed.slow, voice: Voices.jaF1 },
+    { text: '今日はいい天気ですね', speed: PlaySpeed.slow, voice: Voices.jaF1 },
+    { text: '今日はいい天気ですね', speed: PlaySpeed.slow, voice: Voices.jaF1 },
 ]
 
 export const playGame = async () => {

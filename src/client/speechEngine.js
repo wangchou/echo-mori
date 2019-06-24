@@ -6,7 +6,6 @@ export let listen = (duration) => {
     recognition.start();
     setTimeout(() => { recognition.stop() }, duration)
 
-
     let promise = new Promise((resolve, reject) => {
         recognition.onresult = (event) => {
             for (var i = event.resultIndex; i < event.results.length; ++i) {
@@ -16,6 +15,10 @@ export let listen = (duration) => {
         recognition.onerror = () => {
             resolve("error")
         }
+        recognition.onend = () => {
+            resolve("聽不清楚")
+        }
+
     })
     return promise
 }

@@ -3,21 +3,6 @@
     import { playGame } from '../gameFlow.js'
 </script>
 
-<style>
-    h1 {
-        color: green;
-        margin: 0px auto;
-        text-align: center;
-    }
-    :global(body) {
-        margin: 4% 0;
-        background: #999;
-    }
-    div.playButton {
-        text-align: center;
-    }
-</style>
-
 <div>
     <h1>
         <ruby>
@@ -28,7 +13,35 @@
         </ruby>
     </h1>
 </div>
+
 <Messenger />
+
 <div class="playButton">
-    <button on:click={playGame}>Play</button>
+    <button on:click={playGame}> Play </button>
 </div>
+
+<style>
+    :global(body) {
+        margin: 4% 0;
+        background: #eee;
+    }
+    h1 {
+        color: #60a030;
+        margin: 0px auto;
+        text-align: center;
+    }
+    div.playButton {
+        padding-top: 10px;
+        text-align: center;
+    }
+    div.playButton button{
+        color: #ddd;
+        background: #a06030;
+        border-color: #000;
+        min-width: 100px;
+    }
+    rt {
+        color: black;
+        font-weight: 400;
+    }
+</style>

@@ -1,5 +1,5 @@
 <script>
-    import { comments } from './model/store.js'
+    import { comments } from '../model/store.js'
     import { beforeUpdate, afterUpdate } from 'svelte'
 
     let div
@@ -13,13 +13,24 @@
         if (autoscroll) div.scrollTo(0, div.scrollHeight)
     })
 </script>
+
+<div class="messenger">
+    <div class="scrollable" bind:this={div}>
+        {#each $comments as comment}
+            <article class={comment.author}>
+                <span>{comment.text}</span>
+            </article>
+        {/each}
+    </div>
+</div>
+
 <style>
-    .chat {
+    .messenger {
         display: flex;
         flex-direction: column;
         height: 400px;
         max-width: 240px;
-        border: 1px solid #eee;
+        border: 1px solid #000;
         margin: 0px auto;
     }
 
@@ -43,7 +54,7 @@
     }
 
     .teacher span {
-        background-color: #eee;
+        background-color: #fff;
         border-radius: 1em 1em 1em 0;
     }
 
@@ -53,13 +64,3 @@
         border-radius: 1em 1em 0 1em;
     }
 </style>
-
-<div class="chat">
-    <div class="scrollable" bind:this={div}>
-        {#each $comments as comment}
-            <article class={comment.author}>
-                <span>{comment.text}</span>
-            </article>
-        {/each}
-    </div>
-</div>
