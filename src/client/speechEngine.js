@@ -44,3 +44,24 @@ export let say = async (text, speed, voice) => {
     audio.playbackRate = speed
     return promise
 }
+
+export let getTokenInfo = async (jpnStr) => {
+    return await fetch(`/mecab?jpnStr=${jpnStr}`)
+        .then(res =>
+            res.json()
+        )
+}
+
+export let getRubyText = (tokenInfo) => {
+    var innerText = tokenInfo.map(info => {
+        return `<rb>${info[0]}</rb><rt>${info[2]}</rt>`
+    }).join('')
+    return `<ruby>${innerText}</ruby>`
+}
+
+
+
+
+
+
+

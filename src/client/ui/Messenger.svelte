@@ -18,7 +18,7 @@
     <div class="scrollable" bind:this={div}>
         {#each $comments as comment}
             <article class={comment.author}>
-                <span>{comment.text}</span>
+                <span>{@html comment.text}</span>
             </article>
         {/each}
     </div>
@@ -54,7 +54,7 @@
     }
 
     .teacher span {
-        background-color: #fff;
+        background-color: #eee;
         border-radius: 1em 1em 1em 0;
     }
 

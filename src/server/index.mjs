@@ -1,11 +1,14 @@
 import express from 'express';
 import fs from 'fs';
-import https from 'https';
-import morgan from 'morgan';
-import bodyParser from 'body-parser';
-import ttsAPI from './tts.mjs'
+import https from 'https'
+import morgan from 'morgan'
+import bodyParser from 'body-parser'
+import helmet from 'helmet'
+import { ttsAPI } from './tts.mjs'
+import { mecabAPI } from './mecab.mjs'
 
-var app = express();
+var app = express()
+app.use(helmet())
 app.use(morgan('tiny'))
 
 //            rollup
@@ -13,10 +16,12 @@ app.use(morgan('tiny'))
 app.use('/', express.static('public'))
 
 // server api
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }))
+app.use(bodyParser.json())
 
-app.get('/tts', ttsAPI);
+// use get only because => chrome don't cache any xhr post response
+app.get('/tts', ttsAPI)
+app.get('/mecab', mecabAPI)
 
 var port = 4000
 https.createServer({
@@ -24,4 +29,4 @@ https.createServer({
     cert: fs.readFileSync('localhost.crt')
 }, app).listen(port, function () {
     console.log(`Express Server listening on port ${port}!`)
-});
+})

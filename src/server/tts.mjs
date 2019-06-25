@@ -10,7 +10,7 @@ const Voices = {
 
 const GOOGLE_TEXT_TO_SPEECH_URL = 'https://texttospeech.googleapis.com/v1beta1/text:synthesize?key=' + API_KEY
 
-export default async (req, res) => {
+export let ttsAPI = async (req, res) => {
     const body = JSON.stringify({
         input: { text: req.query.text },
         voice: Voices[req.query.voice],
