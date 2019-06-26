@@ -3,5 +3,4 @@ export default {
         "**/*.spec.js",
     ],
     require: ['esm'],
-    concurrency: 2,
 };

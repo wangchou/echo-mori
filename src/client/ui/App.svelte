@@ -23,7 +23,7 @@
 <style>
     :global(body) {
         margin: 4% 0;
-        background: #eee;
+        background: #fff;
     }
     h1 {
         color: #60a030;

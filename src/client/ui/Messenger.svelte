@@ -29,8 +29,9 @@
         display: flex;
         flex-direction: column;
         height: 400px;
-        max-width: 240px;
-        border: 1px solid #000;
+        max-width: 400px;
+        background: #f8f9fa;
+        border: 1px solid #bbb;
         margin: 0px auto;
     }
 
@@ -49,16 +50,27 @@
     }
 
     span {
-        padding: 0.5em 1em;
+        padding: 1em 1em 0.5em 1em;
         display: inline-block;
+        border: 1px solid #bbb;
+    }
+
+    :global(span) > ruby > rb {
+        font-size: 20px
+    }
+
+    :global(span) > ruby > rt {
+        font-size: 10px
     }
 
     .teacher span {
-        background-color: #eee;
+        font-size: 20px;
+        background-color: #fff;
         border-radius: 1em 1em 1em 0;
     }
 
     .student span {
+        font-size: 20px;
         background-color: #0074d9;
         color: white;
         border-radius: 1em 1em 0 1em;
