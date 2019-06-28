@@ -56,21 +56,23 @@
     }
 
     :global(span) > ruby > rb {
-        font-size: 20px
+        font-size: 16px
     }
 
     :global(span) > ruby > rt {
-        font-size: 10px
+        font-size: 10px;
+        /* fix chrome font size < 12px issue */
+        transform: scale(.8);
     }
 
     .teacher span {
-        font-size: 20px;
+        font-size: 16px;
         background-color: #fff;
         border-radius: 1em 1em 1em 0;
     }
 
     .student span {
-        font-size: 20px;
+        font-size: 16px;
         background-color: #0074d9;
         color: white;
         border-radius: 1em 1em 0 1em;
