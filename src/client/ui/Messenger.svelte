@@ -1,6 +1,7 @@
 <script>
     import { comments } from '../model/store.js'
     import { beforeUpdate, afterUpdate } from 'svelte'
+    import { fly } from 'svelte/transition';
 
     let div
     let autoscroll
@@ -17,8 +18,8 @@
 <div class="messenger">
     <div class="scrollable" bind:this={div}>
         {#each $comments as comment}
-            <article class={comment.author}>
-                <span>{@html comment.text}</span>
+            <article class={comment.type} in:fly="{{ y: 20, duration: 300 }}" >
+                <span class:hasRubyAnnotation="{comment.text.indexOf('rt') > 0}">{@html comment.text}</span>
             </article>
         {/each}
     </div>
@@ -42,17 +43,38 @@
     }
 
     article {
-        margin: 0.5em 0;
-    }
-
-    .student {
-        text-align: right;
+        margin: 0.3em 0;
     }
 
     span {
-        padding: 1em 1em 0.5em 1em;
+        font-size: 16px;
+        padding: 0.3em 0.7em;
         display: inline-block;
         border: 1px solid #bbb;
+    }
+
+    .teacher span {
+        background-color: #fff;
+        border-radius: 1em 1em 1em 0;
+    }
+
+    .hasRubyAnnotation {
+        padding-top: 0.9em;
+    }
+
+    .user, .listening {
+        text-align: right;
+    }
+
+    .listening span {
+        background-color: #aaa;
+        border-radius: 1em 1em 0 1em;
+    }
+
+    .user span {
+        background-color: #0074d9;
+        color: white;
+        border-radius: 1em 1em 0 1em;
     }
 
     :global(span) > ruby > rb {
@@ -65,16 +87,4 @@
         transform: scale(.8);
     }
 
-    .teacher span {
-        font-size: 16px;
-        background-color: #fff;
-        border-radius: 1em 1em 1em 0;
-    }
-
-    .student span {
-        font-size: 16px;
-        background-color: #0074d9;
-        color: white;
-        border-radius: 1em 1em 0 1em;
-    }
 </style>

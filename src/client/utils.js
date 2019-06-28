@@ -1,3 +1,5 @@
+import nodeFetch from 'node-fetch'
+
 // https://stackoverflow.com/questions/43657034/javascript-regex-alphanumeric-english-and-japanese
 
 var pHiragana = "[\\u3041-\\u3096\\u309D-\\u309F]|\\uD82C\\uDC01|\\uD83C\\uDE00";
@@ -27,9 +29,9 @@ export let getJaType = (str) => {
 export let katakanaToHiragana = (str) => {
     let result = ""
 
-    for(let i = 0; i < str.length; i++) {
+    for (let i = 0; i < str.length; i++) {
         let charCode = str.charCodeAt(i)
-        if(charCode >= 0x30A0 && charCode <= 0x30FB) {
+        if (charCode >= 0x30A0 && charCode <= 0x30FB) {
             result += String.fromCharCode(charCode - 0x60)
         } else {
             result += str.charAt(i)
@@ -46,4 +48,18 @@ export let getHiraganaOnly = str => {
         return ""
     }
     return match[0]
+}
+
+export let getTokenInfos = async (jpnStr) => {
+    var isBrowser = new Function("try {return this===window;}catch(e){ return false;}");
+    if (isBrowser()) {
+        return await fetch(`/mecab?jpnStr=${jpnStr}`)
+            .then(res =>
+                res.json()
+            )
+    }
+    return await nodeFetch(`https://localhost:4000/mecab?jpnStr=${encodeURIComponent(jpnStr)}`)
+        .then(res =>
+            res.json()
+        )
 }

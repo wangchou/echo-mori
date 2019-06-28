@@ -2,6 +2,12 @@ var recognition = new webkitSpeechRecognition()
 recognition.continuous = true
 recognition.interimResults = false
 
+export let ListenResultType = {
+    success: 'success',
+    error: 'error',
+    cannotHear: 'cannotHear'
+}
+
 export let listen = (duration) => {
     recognition.start();
     setTimeout(() => { recognition.stop() }, duration)
@@ -9,16 +15,18 @@ export let listen = (duration) => {
     let promise = new Promise((resolve, reject) => {
         recognition.onresult = (event) => {
             for (var i = event.resultIndex; i < event.results.length; ++i) {
-                resolve(event.results[i][0].transcript)
+                resolve({
+                    text: event.results[i][0].transcript,
+                    type: ListenResultType.success
+                })
             }
         }
         recognition.onerror = () => {
-            resolve("error")
+            resolve({text: '', type: ListenResultType.error})
         }
         recognition.onend = () => {
-            resolve("聽不清楚")
+            resolve({text: '', type: ListenResultType.cannotHear})
         }
-
     })
     return promise
 }

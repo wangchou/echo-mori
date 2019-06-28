@@ -1,5 +1,5 @@
 import test from 'ava';
-import { getParts, getRubyPairs } from './rubyText.js'
+import { getParts, getRubyPairs } from '../client/rubyText.js'
 
 test('getParts', t => {
     t.deepEqual(getParts("今は何時ですか。"), ["今", "は", "何時", "ですか。"])

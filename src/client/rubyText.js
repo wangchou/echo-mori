@@ -1,17 +1,18 @@
-import { getJaType, JaType, katakanaToHiragana, kanjiOrNumberRxGlobal, getHiraganaOnly } from './utils.js'
-
-export let getTokenInfos = async (jpnStr) => {
-    return await fetch(`/mecab?jpnStr=${jpnStr}`)
-        .then(res =>
-            res.json()
-        )
-}
+import {
+    getJaType,
+    JaType,
+    katakanaToHiragana,
+    kanjiOrNumberRxGlobal,
+    getHiraganaOnly,
+    getTokenInfos
+} from './utils.js'
 
 let getRubyPair = (rb, rt = '') => ({ rb: rb, rt: rt })
 
 function isNoKanji(str) {
     return getJaType(str) == JaType.noKanjiAndNumber
 }
+
 // input
 //      parts: [逃 | げるは | 恥 | だが | 役 | に | 立 | つ]
 //      kana: にげるははじだがやくにたつ
@@ -92,9 +93,3 @@ export let getRubyText = (tokenInfos) => {
     }).join('')
     return innerText
 }
-
-
-
-
-
-
