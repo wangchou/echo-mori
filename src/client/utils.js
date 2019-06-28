@@ -1,4 +1,4 @@
-import nodeFetch from 'node-fetch'
+import nodeFetch from './isomorphic-fetch.js'
 
 // https://stackoverflow.com/questions/43657034/javascript-regex-alphanumeric-english-and-japanese
 
@@ -50,8 +50,8 @@ export let getHiraganaOnly = str => {
     return match[0]
 }
 
+var isBrowser = new Function("try {return this===window;}catch(e){ return false;}");
 export let getTokenInfos = async (jpnStr) => {
-    var isBrowser = new Function("try {return this===window;}catch(e){ return false;}");
     if (isBrowser()) {
         return await fetch(`/mecab?jpnStr=${jpnStr}`)
             .then(res =>

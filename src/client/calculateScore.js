@@ -1,7 +1,5 @@
 import { getTokenInfos } from './utils.js'
 import editDistance from 'js-levenshtein'
-import { maxHeaderSize } from 'http';
-
 
 export let LangType = {
     ja: "ja",

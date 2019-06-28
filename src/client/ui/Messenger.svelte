@@ -19,7 +19,13 @@
     <div class="scrollable" bind:this={div}>
         {#each $comments as comment}
             <article class={comment.type} in:fly="{{ y: 20, duration: 300 }}" >
-                <span class:hasRubyAnnotation="{comment.text.indexOf('rt') > 0}">{@html comment.text}</span>
+                <span class:hasRubyAnnotation="{comment.text.indexOf('rt') > 0}"
+                      class:great="{comment.score >= 80}"
+                      class:good="{comment.score < 80 && comment.score >= 60}"
+                      class:wrong="{comment.score < 60}"
+                >
+                    {@html comment.text + (comment.score != undefined ? ` ${comment.score}分` : '')}
+                </span>
             </article>
         {/each}
     </div>
@@ -30,7 +36,7 @@
         display: flex;
         flex-direction: column;
         height: 400px;
-        max-width: 400px;
+        max-width: 320px;
         background: #f8f9fa;
         border: 1px solid #bbb;
         margin: 0px auto;
@@ -50,7 +56,17 @@
         font-size: 16px;
         padding: 0.3em 0.7em;
         display: inline-block;
-        border: 1px solid #bbb;
+        border: 1px solid #333;
+    }
+
+    .user span.great {
+        background-color: #96cf2a;
+    }
+    .user span.good {
+        background-color: #ffc300;
+    }
+    .user span.wrong {
+        background-color: #fe4386;
     }
 
     .teacher span {
@@ -73,7 +89,6 @@
 
     .user span {
         background-color: #0074d9;
-        color: white;
         border-radius: 1em 1em 0 1em;
     }
 

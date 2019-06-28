@@ -1,8 +1,11 @@
 import { speed, voice } from './model/config.js'
+import { LangType, calculateScore } from './calculateScore.js'
 import { say, listen, ListenResultType } from './speechEngine.js'
-import { getTokenInfos, getRubyText } from './rubyText.js'
+import { getRubyText } from './rubyText.js'
+import { getTokenInfos } from './utils.js'
 import { comments } from './model/store.js'
 import { get } from 'svelte/store';
+import { Voices } from './model/constants.js'
 
 const sentences = [
     '逃げるは恥だが役に立つ',
@@ -28,9 +31,11 @@ export const playGame = async () => {
         // plus 400 ms
         let result = await listen(duration + 400)
         var displayText = "default display text"
+        var score = 0
         switch (result.type) {
             case ListenResultType.success:
                 tokenInfos = await getTokenInfos(result.text)
+                score = await calculateScore(sentence, result.text)
                 displayText = getRubyText(tokenInfos)
                 break;
             case ListenResultType.cannotHear:
@@ -43,8 +48,14 @@ export const playGame = async () => {
 
         // remove listening text and show recognized text with score
         comments.update(x => [...x.slice(0, x.length - 1),
-                              { type: 'user', text: displayText}
+                              { type: 'user', text: displayText, score: score}
                              ]
                        )
+        var judgement = ""
+        if (score == 100) { judgement = "正解。" }
+        else if ( score >= 80 ) { judgement = "すごい。" }
+        else if ( score >= 60 ) { judgement = "いいね。"　}
+        else { judgement = "違います。"}
+        await say(judgement, 1.0, Voices.jaF1 )
     }
 }

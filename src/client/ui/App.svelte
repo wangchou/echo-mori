@@ -35,7 +35,7 @@
         text-align: center;
     }
     div.playButton button{
-        color: #ddd;
+        color: #fff;
         background: #a06030;
         border-color: #000;
         min-width: 100px;
