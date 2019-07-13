@@ -35,7 +35,7 @@
     .messenger {
         display: flex;
         flex-direction: column;
-        height: 400px;
+        height: 480px;
         max-width: 320px;
         background: #f8f9fa;
         border: 1px solid #bbb;

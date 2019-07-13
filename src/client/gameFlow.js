@@ -8,11 +8,11 @@ import { get } from 'svelte/store';
 import { Voices } from './model/constants.js'
 
 const sentences = [
-    '逃げるは恥だが役に立つ',
+    'こんにちは',
+    '初めまして',
     '今日はいい天気ですね',
-    //    'こんにちは、ともさん',
-    //    'そうですね。',
-    //    'じゃあ、またね。',
+    'ただの人間には興味ありません',
+    '逃げるは恥だが役に立つ',
 ]
 
 export const playGame = async () => {
