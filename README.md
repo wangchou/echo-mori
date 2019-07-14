@@ -20,4 +20,4 @@ Echoic Memory Forest (聽覺記憶森林、簡稱 echo mori)
 <img src="https://raw.githubusercontent.com/wangchou/echo-mori/master/img/20190713.jpg" height="480">
 
 
-PS: 作者有上架一個廉價的 iOS App「[今話したい](https://github.com/wangchou/Shadowing)」。(上架一年，時薪約 10 NTD) 這個完全免費的新專案是為了 Web / Android 的使用者，希望有熱血的朋友能加入設計/開發。讓這簡單的科技幫助更多人學習。
+PS: 作者也有寫付費的 iOS App「[今話したい](https://github.com/wangchou/Shadowing)」。這個免費的新專案是為了 Web / Android 的使用者。讓這簡單的方法能幫助更多人學習。
