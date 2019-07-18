@@ -17,13 +17,15 @@ Echoic Memory Forest (聽覺記憶森林、簡稱 echo mori)
   - Chrome 語音辨識
 
 ## 目前畫面，只有5句日文。
-<img src="https://raw.githubusercontent.com/wangchou/echo-mori/master/img/20190713.jpg" height="480">
+<img src="https://raw.githubusercontent.com/wangchou/echo-mori/master/img/20190713.jpg" height="320">
 
 ## 如何在 local 跑起來
 
 * 安裝 nodejs
-* clone 這個 repo 後，執行
+* clone 這個 repo
 ```sh
+  cp src/server/googleAPIKey.template.js src/server/googleAPIKey.js
+  # 於 googleAPIKey.js 輸入所需的 key (7/20 黑客松當天請找作者拿)
   npm install
   npm run dev
 ```
