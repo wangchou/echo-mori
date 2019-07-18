@@ -1,5 +1,5 @@
 import fetch from 'node-fetch'
-import API_KEY from "../../../secret/api_key.js"
+import API_KEY from "./googleAPIKey.js"
 
 const Voices = {
     jaF1: { name: 'ja-JP-Wavenet-B', languageCode: 'ja-JP' },

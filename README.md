@@ -19,5 +19,17 @@ Echoic Memory Forest (聽覺記憶森林、簡稱 echo mori)
 ## 目前畫面，只有5句日文。
 <img src="https://raw.githubusercontent.com/wangchou/echo-mori/master/img/20190713.jpg" height="480">
 
+## 如何在 local 跑起來
+
+* 安裝 nodejs
+* clone 這個 repo 後，執行
+```sh
+  npm install
+  npm run dev
+```
+* 打開 chrome 在網址列輸入 chrome://flags/#allow-insecure-localhost，選擇開啟該選項
+* 最後打開 `https://localhost:4000`
+
+
 
 PS: 作者也有寫付費的 iOS App「[今話したい](https://github.com/wangchou/Shadowing)」。這個免費的新專案是為了 Web / Android 的使用者。讓這簡單的方法能幫助更多人學習。

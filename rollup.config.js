@@ -39,8 +39,8 @@ export default {
         !production && livereload({
             watch: 'public',
             https: {
-                key: fs.readFileSync('localhost.key'),
-                cert: fs.readFileSync('localhost.crt'),
+                key: fs.readFileSync('src/server/localhost.key'),
+                cert: fs.readFileSync('src/server/localhost.crt'),
             },
         }),
 
