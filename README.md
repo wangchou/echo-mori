@@ -1,5 +1,7 @@
 # 回音森林 (echo-mori)
-Echoic Memory Forest (聽覺記憶森林、簡稱 echo mori)
+Echoic Memory Forest (聽覺記憶之森、簡稱 echo mori)
+
+[提案投影片 @ g0v 35th](https://docs.google.com/presentation/d/1DMdIVLqwIjcZRoVV7quEEByhs_opCq0Q8VC1tB6H8ew/edit?usp=sharing)
 
 ## 如何在 local 跑起來
 
@@ -32,4 +34,4 @@ Echoic Memory Forest (聽覺記憶森林、簡稱 echo mori)
 ## 目前畫面，只有5句日文。
 <img src="https://raw.githubusercontent.com/wangchou/echo-mori/master/img/20190713.jpg" height="320">
 
-PS: 作者也有寫付費的 iOS App「[今話したい](https://github.com/wangchou/Shadowing)」。這個免費的新專案是為了 Web / Android 的使用者。讓這簡單的方法能幫助更多人學習。
+PS: 作者也有寫付費的 iOS App「[今話したい](https://github.com/wangchou/Shadowing)」。這個免費的新專案是為了 Web / Android 的使用者。以簡單的工具能幫助更多人指導/學習。
