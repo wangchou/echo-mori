@@ -22,12 +22,11 @@
 
 <style>
     :global(body) {
-        margin: 4% 0;
         background: #fff;
     }
     h1 {
         color: #60a030;
-        margin: 0px auto;
+        margin: 80px auto 0px auto;
         text-align: center;
     }
     div.playButton {
