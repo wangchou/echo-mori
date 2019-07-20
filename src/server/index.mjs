@@ -24,9 +24,6 @@ app.get('/tts', ttsAPI)
 app.get('/mecab', mecabAPI)
 
 var port = 4000
-https.createServer({
-    key: fs.readFileSync('src/server/localhost.key'),
-    cert: fs.readFileSync('src/server/localhost.crt')
-}, app).listen(port, function () {
-    console.log(`Express Server listening on port ${port}!`)
-})
+app.listen(port, function () {
+    console.log('Example app listening on port 3000!');
+  });

@@ -1,1 +1,1 @@
-module.exports = 'YOUR GOOGLE TTS API KEY'
+module.exports = 'AIzaSyAIvUSdGkVXYj3vK-dEYC3VjmvmOUFxapE'
