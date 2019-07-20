@@ -8,19 +8,16 @@ import { get } from 'svelte/store';
 import { Voices } from './model/constants.js'
 
 const sentences = [
-    'こんにちは',
-    '初めまして',
-    '今日はいい天気ですね',
-    'ただの人間には興味ありません',
-    '逃げるは恥だが役に立つ',
+    'How are you?',
+    "Fine, thank you. And you?"
 ]
 
 export const playGame = async () => {
     for (let i in sentences) {
         // show left text
         let sentence = sentences[i]
-        var tokenInfos = await getTokenInfos(sentence)
-        comments.update(x => [...x, { type: 'teacher', text: getRubyText(tokenInfos) }])
+        //var tokenInfos = await getTokenInfos(sentence)
+        comments.update(x => [...x, { type: 'teacher', text: sentence }])
 
         let duration = await say(sentence, get(speed), get(voice))
 
@@ -34,9 +31,9 @@ export const playGame = async () => {
         var score = 0
         switch (result.type) {
             case ListenResultType.success:
-                tokenInfos = await getTokenInfos(result.text)
+                //tokenInfos = await getTokenInfos(result.text)
                 score = await calculateScore(sentence, result.text)
-                displayText = getRubyText(tokenInfos)
+                displayText = result.text
                 break;
             case ListenResultType.cannotHear:
                 displayText = "聽不清楚，請大聲一點。" // need i18n later
@@ -52,10 +49,10 @@ export const playGame = async () => {
                              ]
                        )
         var judgement = ""
-        if (score == 100) { judgement = "正解。" }
-        else if ( score >= 80 ) { judgement = "すごい。" }
-        else if ( score >= 60 ) { judgement = "いいね。"　}
-        else { judgement = "違います。"}
-        await say(judgement, 1.0, Voices.jaF1 )
+        if (score == 100) { judgement = "Excellent" }
+        else if ( score >= 80 ) { judgement = "Great" }
+        else if ( score >= 60 ) { judgement = "Good"　}
+        else { judgement = "Not Right"}
+        await say(judgement, 1.0, Voices.enF1 )
     }
 }

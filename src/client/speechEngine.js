@@ -10,6 +10,7 @@ export let ListenResultType = {
 
 export let listen = (duration) => {
     recognition.start();
+    recognition.lang = "en-US"
     setTimeout(() => { recognition.stop() }, duration)
 
     let promise = new Promise((resolve, reject) => {

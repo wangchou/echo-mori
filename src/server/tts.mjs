@@ -6,11 +6,16 @@ const Voices = {
     jaF2: { name: 'ja-JP-Wavenet-A', languageCode: 'ja-JP' },
     jaM1: { name: 'ja-JP-Wavenet-C', languageCode: 'ja-JP' },
     jaM2: { name: 'ja-JP-Wavenet-D', languageCode: 'ja-JP' },
+    enF1: { name: 'en-US-Wavenet-B', languageCode: 'en-US' },
+    enF2: { name: 'en-US-Wavenet-A', languageCode: 'en-US' },
+    enM1: { name: 'en-US-Wavenet-C', languageCode: 'en-US' },
+    enM2: { name: 'en-US-Wavenet-D', languageCode: 'en-US' },
 }
 
 const GOOGLE_TEXT_TO_SPEECH_URL = 'https://texttospeech.googleapis.com/v1beta1/text:synthesize?key=' + API_KEY
 
 export let ttsAPI = async (req, res) => {
+    console.log(req.query.text, req.query.voice)
     const body = JSON.stringify({
         input: { text: req.query.text },
         voice: Voices[req.query.voice],

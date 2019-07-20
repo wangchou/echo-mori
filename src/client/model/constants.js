@@ -9,4 +9,8 @@ export let Voices = {
     jaF2: 'jaF2',
     jaM1: 'jaM1',
     jaM2: 'jaM2',
+    enM1: 'enM1',
+    enM2: 'enM2',
+    enF1: 'enF1',
+    enF2: 'enF2',
 }
