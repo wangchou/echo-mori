@@ -2,3 +2,5 @@
 node_modules
 public/bundle.*
 src/server/googleAPIKey.js
+acc.log
+err.log
