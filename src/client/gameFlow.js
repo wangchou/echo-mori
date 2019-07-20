@@ -8,8 +8,22 @@ import { get } from 'svelte/store';
 import { Voices } from './model/constants.js'
 
 const sentences = [
-    'How are you?',
-    "Fine, thank you. And you?"
+"Why do you need to learn English?",
+"Well, why not?",
+"Don't you want to read your favorite English novel instead of waiting for its Chinese translation?",
+"Wouldn't you like to have a common means of communication with people anywhere in the world?",
+"Besides, using English well makes you feel good and look cool. ",
+"That's why you are among the one billion English learners on this planet.",
+"About seventy-five countries use it as the major language of government, education, and business. ",
+"We can hardly imagine life without English. ",
+"The next morning, I woke up and felt excited, and I ran to the mirror.",
+"I was surprised and upset. ",
+"I tried to hide my ugly pimple, but nothing I did worked.",
+"It has taught me to be more carefree and to wash my face more often!",
+"Every afternoon when John was sitting up, he would tell Robert about the things outside the window.",
+"There were ducks swimming on the water and groups of children sailing their toy boats. ",
+"One morning, the day nurse arrived to bring water for their baths but discovered that John was dead in his sleep.",
+"Sadly, she asked someone to take him away. ",
 ]
 
 export const playGame = async () => {
