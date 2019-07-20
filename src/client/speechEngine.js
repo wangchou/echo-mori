@@ -1,6 +1,7 @@
 var recognition = new webkitSpeechRecognition()
 recognition.continuous = true
 recognition.interimResults = false
+recognition.lang = "en-US"
 
 export let ListenResultType = {
     success: 'success',

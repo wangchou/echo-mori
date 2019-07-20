@@ -11,6 +11,8 @@ export let Voices = {
     jaM2: 'jaM2',
     enM1: 'enM1',
     enM2: 'enM2',
+    enM3: 'enM3',
     enF1: 'enF1',
     enF2: 'enF2',
+    enF3: 'enF3',
 }

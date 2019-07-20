@@ -2,14 +2,16 @@ import fetch from 'node-fetch'
 import API_KEY from "./googleAPIKey.js"
 
 const Voices = {
-    jaF1: { name: 'ja-JP-Wavenet-B', languageCode: 'ja-JP' },
-    jaF2: { name: 'ja-JP-Wavenet-A', languageCode: 'ja-JP' },
+    jaF1: { name: 'ja-JP-Wavenet-A', languageCode: 'ja-JP' },
+    jaF2: { name: 'ja-JP-Wavenet-B', languageCode: 'ja-JP' },
     jaM1: { name: 'ja-JP-Wavenet-C', languageCode: 'ja-JP' },
     jaM2: { name: 'ja-JP-Wavenet-D', languageCode: 'ja-JP' },
-    enF1: { name: 'en-US-Wavenet-B', languageCode: 'en-US' },
-    enF2: { name: 'en-US-Wavenet-A', languageCode: 'en-US' },
-    enM1: { name: 'en-US-Wavenet-C', languageCode: 'en-US' },
-    enM2: { name: 'en-US-Wavenet-D', languageCode: 'en-US' },
+    enM1: { name: 'en-US-Wavenet-A', languageCode: 'en-US' },
+    enM2: { name: 'en-US-Wavenet-B', languageCode: 'en-US' },
+    enM3: { name: 'en-US-Wavenet-D', languageCode: 'en-US' },
+    enF1: { name: 'en-US-Wavenet-C', languageCode: 'en-US' },
+    enF2: { name: 'en-US-Wavenet-E', languageCode: 'en-US' },
+    enM3: { name: 'en-US-Wavenet-F', languageCode: 'en-US' },
 }
 
 const GOOGLE_TEXT_TO_SPEECH_URL = 'https://texttospeech.googleapis.com/v1beta1/text:synthesize?key=' + API_KEY

@@ -1,4 +1,4 @@
-import { speed, voice } from './model/config.js'
+import { speed, voice, voiceM2 } from './model/config.js'
 import { LangType, calculateScore } from './calculateScore.js'
 import { say, listen, ListenResultType } from './speechEngine.js'
 import { getRubyText } from './rubyText.js'
@@ -21,7 +21,8 @@ export const playGame = async () => {
         //var tokenInfos = await getTokenInfos(sentence)
         comments.update(x => [...x, { type: 'teacher', text: sentence }])
 
-        let duration = await say(sentence, get(speed), get(voice))
+        let localVoice = i % 2 ==0 ? voice : voiceM2
+        let duration = await say(sentence, get(speed), get(localVoice))
 
         // show listening text
         comments.update(x => [...x, { type: 'listening', text: '正在聽你說...' }])

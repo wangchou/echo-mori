@@ -8,15 +8,6 @@
 	}
 </script>
 
-{#if tab.isEditing}
-	<button on:click={toggle}>
-        挑戰中
-	</button>
-{:else}
-	<button on:click={toggle}>
-        編輯句子
-	</button>
-{/if}
 
 <div>
     <h1>
@@ -33,10 +24,16 @@
     <SentenceEditor />
 {:else}
     <Messenger />
-    <div class="playButton">
-        <button on:click={playGame}> Play </button>
-    </div>
 {/if}
+
+<div class="actionButton">
+    {#if tab.isEditing}
+	    <button on:click={toggle}>結束編輯</button>
+    {:else}
+        <button on:click={playGame} disabled={tab.isEditing}>遊戲開始</button>
+	    <button on:click={toggle}>編輯句子</button>
+    {/if}
+</div>
 
 
 <style>
@@ -48,15 +45,9 @@
         margin: 80px auto 0px auto;
         text-align: center;
     }
-    div.playButton {
+    div.actionButton {
         padding-top: 10px;
         text-align: center;
-    }
-    div.playButton button{
-        color: #fff;
-        background: #a06030;
-        border-color: #000;
-        min-width: 100px;
     }
     rt {
         color: black;
