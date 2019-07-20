@@ -24,7 +24,7 @@ export let getPhoneticCharacters = async (text, lang) => {
         case LangType.ja:
             return getYomiKana(text)
         default:
-            return text
+            return text.replace(" ", "").replace(",", "").replace(".", "").replace("?", "")
     }
 }
 
