@@ -4,20 +4,17 @@ import { say, listen, ListenResultType } from './speechEngine.js'
 import { getRubyText } from './rubyText.js'
 import { getTokenInfos } from './utils.js'
 import { comments } from './model/store.js'
+import { textareaValue } from './model/store.js'
 import { get } from 'svelte/store';
 import { Voices } from './model/constants.js'
 
-const sentences = [
-    "Why do you need to learn English?",
-    "Well, why not?",
-    "We can hardly imagine life without English. ",
-    "I was surprised and upset. ",
-    "I tried to hide my ugly pimple, but nothing I did worked.",
-    "One morning, the day nurse arrived to bring water for their baths but discovered that John was dead in his sleep.",
-    "Sadly, she asked someone to take him away. ",
-]
-
 export const playGame = async () => {
+    var sentences = ""
+    textareaValue.update(texts => {
+        sentences = texts.split("\n").filter(t => t!="")
+        return texts
+    })
+
     for (let i in sentences) {
         // show left text
         let sentence = sentences[i]
