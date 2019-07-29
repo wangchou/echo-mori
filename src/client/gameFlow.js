@@ -9,6 +9,7 @@ import { get } from 'svelte/store';
 import { Voices } from './model/constants.js'
 
 export const playGame = async () => {
+    comments.set([])
     var sentences = ""
     textareaValue.update(texts => {
         sentences = texts.split("\n").filter(t => t!="")

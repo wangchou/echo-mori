@@ -18,7 +18,7 @@
 <div class="messenger">
     <div class="scrollable" bind:this={div}>
         {#each $comments as comment}
-            <article class={comment.type} in:fly="{{ y: 20, duration: 300 }}" >
+            <article class={comment.type} >
                 <span class:hasRubyAnnotation="{comment.text.indexOf('rt') > 0}"
                       class:great="{comment.score >= 80}"
                       class:good="{comment.score < 80 && comment.score >= 60}"
@@ -45,7 +45,7 @@
     .scrollable {
         flex: 1 1 auto;
         margin: 0 0.5em;
-        overflow-y: auto;
+        overflow-y: hidden;
     }
 
     article {
