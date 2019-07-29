@@ -30,6 +30,6 @@ export let ttsAPI = async (req, res) => {
         method: 'POST',
         body
     }).then(res => res.json())
-    res.set('Cache-Control', 'public, max-age=30000000');
+    // res.set('Cache-Control', 'public, max-age=30000000');
     res.send(response.audioContent)
 }

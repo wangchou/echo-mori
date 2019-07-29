@@ -21,7 +21,7 @@ export const playGame = async () => {
         //var tokenInfos = await getTokenInfos(sentence)
         comments.update(x => [...x, { type: 'teacher', text: sentence }])
 
-        let localVoice = i % 2 ==0 ? voice : voiceM2
+        let localVoice = i % 2 ==0 ? voiceM2 : voice
         let duration = await say(sentence, get(speed), get(localVoice))
 
         // show listening text
