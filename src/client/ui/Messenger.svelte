@@ -3,22 +3,27 @@
     import { beforeUpdate, afterUpdate } from 'svelte'
     import { fly } from 'svelte/transition';
 
-    let div
+    let outDiv
+    let inDiv
     let autoscroll
+    var lastComment = {}
 
-    beforeUpdate(() => {
-        autoscroll = div && div.offsetHeight + div.scrollTop > div.scrollHeight - 20
-    })
+	const unsubscribe = comments.subscribe(array => {
+		lastComment = array.length > 0 ? array[array.length - 1] : {}
+	});
 
     afterUpdate(() => {
-        if (autoscroll) div.scrollTo(0, div.scrollHeight)
+        autoscroll = inDiv &&
+                     lastComment.score != undefined &&
+                     (inDiv.offsetHeight - outDiv.scrollTop > outDiv.offsetHeight + 100)
+        if (autoscroll) outDiv.scrollTo(0, outDiv.scrollTop + 100)
     })
 </script>
 
-<div class="messenger">
-    <div class="scrollable" bind:this={div}>
+<div class="messenger" bind:this={outDiv}>
+    <div class="scrollable" bind:this={inDiv}>
         {#each $comments as comment}
-            <article class={comment.type} >
+            <article class={comment.type} transition:fly="{{ y: 20, duration: 300 }}">
                 <span class:hasRubyAnnotation="{comment.text.indexOf('rt') > 0}"
                       class:great="{comment.score >= 80}"
                       class:good="{comment.score < 80 && comment.score >= 60}"
@@ -33,19 +38,18 @@
 
 <style>
     .messenger {
-        display: flex;
-        flex-direction: column;
         height: 480px;
         max-width: 320px;
         background: #f8f9fa;
         border: 1px solid #bbb;
         margin: 0px auto;
+        overflow-y: auto;
+        scroll-behavior: smooth;
     }
 
     .scrollable {
-        flex: 1 1 auto;
         margin: 0 0.5em;
-        overflow-y: hidden;
+        padding-bottom: 200px;
     }
 
     article {
