@@ -10,9 +10,15 @@ import { Voices } from './model/constants.js'
 
 export const playGame = async () => {
     comments.set([])
-    var sentences = ""
+    var sentences = []
+    var translations = {}
     textareaValue.update(texts => {
-        sentences = texts.split("\n").filter(t => t!="")
+        let sentenceAndTranslations = texts.split("\n").filter(t => t!="")
+        sentenceAndTranslations.forEach(sentenceAndTranslation => {
+            let strings = sentenceAndTranslation.split("|")
+            sentences.push(strings[0])
+            translations[strings[0]] = strings.length > 1 ? strings[1] : ""
+        })
         return texts
     })
 
@@ -20,7 +26,7 @@ export const playGame = async () => {
         // show left text
         let sentence = sentences[i]
         //var tokenInfos = await getTokenInfos(sentence)
-        comments.update(x => [...x, { type: 'teacher', text: sentence }])
+        comments.update(x => [...x, { type: 'teacher', text: `${sentence}<br><span style="font-size:0.8em">${translations[sentence]}</span>` }])
 
         let localVoice = i % 2 ==0 ? voiceM2 : voice
         let duration = await say(sentence, get(speed), get(localVoice))
