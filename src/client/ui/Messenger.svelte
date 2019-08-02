@@ -12,9 +12,9 @@
 		lastComment = array.length > 0 ? array[array.length - 1] : {}
 	});
 
-    afterUpdate(() => {
+    beforeUpdate(() => {
         autoscroll = inDiv &&
-                     lastComment.score != undefined &&
+                     lastComment.type == "teacher" &&
                      (inDiv.offsetHeight - outDiv.scrollTop > outDiv.offsetHeight + 100)
         if (autoscroll) outDiv.scrollTo(0, outDiv.scrollTop + 100)
     })
@@ -53,7 +53,7 @@
     }
 
     article {
-        margin: 0.3em 0;
+        margin: 0.6em 0;
     }
 
     span {
