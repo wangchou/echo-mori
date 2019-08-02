@@ -56,6 +56,10 @@
         margin: 0.6em 0;
     }
 
+    article span {
+        max-width: 250px
+    }
+
     span {
         font-size: 16px;
         padding: 0.3em 0.7em;
@@ -94,6 +98,7 @@
     .user span {
         background-color: #0074d9;
         border-radius: 1em 1em 0 1em;
+        text-align: left;
     }
 
     :global(span) > ruby > rb {

@@ -3,10 +3,13 @@
     import SentenceEditor from './SentenceEditor.svelte'
     import { playGame } from '../gameFlow.js'
     import { speed } from '../model/config.js'
+    import { demoSets } from '../model/demoSets.js'
+    import { textareaValue } from '../model/store.js'
     let tab = { isEditing: false };
     function toggle() {
 		tab.isEditing = !tab.isEditing;
-	}
+    }
+    let currentKey = Object.keys(demoSets)[0]
 </script>
 
 
@@ -28,20 +31,26 @@
 {/if}
 
 <div class="actionButton">
-    {#if tab.isEditing}
-	    <button on:click={toggle}>結束編輯</button>
-    {:else}
-        <button on:click={playGame} disabled={tab.isEditing}>遊戲開始</button>
-	    <button on:click={toggle}>編輯句子</button>
-<div style="width:130px; position: relative;top:-100px;left:400px">
-    <span style="border-width:0px;margin: 0 auto">
-        <span style="border-width: 0px; padding: 0px;float:left">速度</span>
-        <span style="border-width: 0px; padding: 0px;float:right">{$speed + "X"}</span>
-        <br>
-        <input style="padding: 0px 0px" type="range" min="0.3" max="1.3" step="0.1" bind:value={$speed}>
-    </span>
-</div>
-    {/if}
+        <button class="fightButton" on:click={playGame} disabled={tab.isEditing}> 挑 戰 </button>
+
+        <div style="width:130px; position: relative;top:-100px;left:330px">
+            <span style="border-width:0px;margin: 0 auto">
+                <span style="border-width: 0px; padding: 0px;float:left">速度</span>
+                <span style="border-width: 0px; padding: 0px;float:right">{$speed + "X"}</span>
+                <br>
+                <input style="padding: 0px 0px;" type="range" min="0.3" max="1.3" step="0.1" bind:value={$speed}>
+            </span>
+        </div>
+
+        <div class="tags" >
+            {#each Object.keys(demoSets) as key}
+                <button
+                    class:currentSet="{currentKey === key}"
+                    on:click={() => { console.log(key); currentKey=key; textareaValue.set(demoSets[key]); }}>
+                    {key}
+                </button>
+            {/each}
+        </div>
 </div>
 <br><br>
 
@@ -61,13 +70,31 @@
         padding-top: 10px;
         text-align: center;
     }
-    div.actionButton button {
-        height: 40px;
-        width: 80px;
-        margin-right: 10px;
+    div.tags {
+        width:130px;
+        height: 200px;
+        position: relative;
+        top:-586px;
+        left:330px;
+    }
+    div.tags button {
+        width: 130px;
+        color: #666;
+    }
+    div.tags button.currentSet {
+        background: #e49648;
+        color: black;
+        border: 1px solid #8a5117;
     }
     rt {
         color: black;
         font-weight: 400;
+    }
+    .fightButton {
+        font-size: 20px;
+        width: 130px;
+        font-weight: 400;
+        background: orange;
+        border: 1px solid #ce8500;
     }
 </style>

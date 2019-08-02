@@ -63,3 +63,5 @@ export let getTokenInfos = async (jpnStr) => {
             res.json()
         )
 }
+
+export let captialFirstChar = str => (str.charAt(0).toUpperCase() + str.slice(1))

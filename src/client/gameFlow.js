@@ -2,7 +2,7 @@ import { speed, voice, voiceM2 } from './model/config.js'
 import { LangType, calculateScore } from './calculateScore.js'
 import { say, listen, ListenResultType } from './speechEngine.js'
 import { getRubyText } from './rubyText.js'
-import { getTokenInfos } from './utils.js'
+import { getTokenInfos, captialFirstChar } from './utils.js'
 import { comments } from './model/store.js'
 import { textareaValue } from './model/store.js'
 import { get } from 'svelte/store';
@@ -43,7 +43,7 @@ export const playGame = async () => {
             case ListenResultType.success:
                 //tokenInfos = await getTokenInfos(result.text)
                 score = await calculateScore(sentence, result.text)
-                displayText = result.text
+                displayText = captialFirstChar(result.text)
                 break;
             case ListenResultType.cannotHear:
                 displayText = "聽不清楚，請大聲一點。" // need i18n later
