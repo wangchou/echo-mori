@@ -8,7 +8,7 @@ import { textareaValue } from './model/store.js'
 import { get } from 'svelte/store';
 import { Voices } from './model/constants.js'
 
-export const playGame = async () => {
+export const playGame = async (isDemo) => {
     comments.set([])
     var sentences = []
     var translations = {}
@@ -36,7 +36,12 @@ export const playGame = async () => {
 
 
         // plus 400 ms
+        if (isDemo) {
+            setTimeout(() => say(sentence, get(speed), Voices.enF3), 100)
+        }
         let result = await listen(duration + 400)
+
+
         var displayText = "default display text"
         var score = 0
         switch (result.type) {

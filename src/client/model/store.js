@@ -1,4 +1,4 @@
 import { writable } from 'svelte/store';
 
 export const comments = writable([])
-export const textareaValue = writable("Hi, my name is Andy.|嗨，我叫做安迪。\nHi, I'm Melody.|嗨我叫美樂蒂。\nNice to meet you.|很高興認識你。\nNice to meet you, too.|我也很高興認識你。\nHow are you today?|你今天過得還好嗎？\nGreat.|很好。")
+export const textareaValue = writable("What's up, Andy.|Andy，最近好嗎？\nHi. How are you doing today?|嗨，今天過得如何？\nPretty good!|非常棒。\nThanks for coming.|謝謝你過來。\nAre you ready for watching the video?|你準備好要來看影片了嗎？\nI was born today.|我生來就準備好了！")

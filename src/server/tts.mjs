@@ -11,7 +11,7 @@ const Voices = {
     enM3: { name: 'en-US-Wavenet-D', languageCode: 'en-US' },
     enF1: { name: 'en-US-Wavenet-C', languageCode: 'en-US' },
     enF2: { name: 'en-US-Wavenet-E', languageCode: 'en-US' },
-    enM3: { name: 'en-US-Wavenet-F', languageCode: 'en-US' },
+    enF3: { name: 'en-US-Wavenet-F', languageCode: 'en-US' },
 }
 
 const GOOGLE_TEXT_TO_SPEECH_URL = 'https://texttospeech.googleapis.com/v1beta1/text:synthesize?key=' + API_KEY

@@ -31,7 +31,8 @@
 {/if}
 
 <div class="actionButton">
-        <button class="fightButton" on:click={playGame} disabled={tab.isEditing}> 挑 戰 </button>
+        <button class="fightButton" on:click={() => { playGame(false)}} disabled={tab.isEditing}> 挑 戰 </button>
+        <button class="fightButton" on:click={() => { playGame(true)}} disabled={tab.isEditing}> 展示模式 </button>
 
         <div style="width:130px; position: relative;top:-100px;left:330px">
             <span style="border-width:0px;margin: 0 auto">
@@ -92,7 +93,7 @@
     }
     .fightButton {
         font-size: 20px;
-        width: 130px;
+        width: 110px;
         font-weight: 400;
         background: orange;
         border: 1px solid #ce8500;
