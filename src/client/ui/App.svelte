@@ -5,9 +5,16 @@
     import { speed } from '../model/config.js'
     import { demoSets } from '../model/demoSets.js'
     import { textareaValue } from '../model/store.js'
+    import { comments } from '../model/store.js'
     let tab = { isEditing: false };
     function toggle() {
 		tab.isEditing = !tab.isEditing;
+    }
+    function changeSentenceSet(key) {
+        console.log(key);
+        currentKey=key;
+        textareaValue.set(demoSets[key]);
+        comments.set([])
     }
     let currentKey = Object.keys(demoSets)[0]
 </script>
@@ -47,7 +54,7 @@
             {#each Object.keys(demoSets) as key}
                 <button
                     class:currentSet="{currentKey === key}"
-                    on:click={() => { console.log(key); currentKey=key; textareaValue.set(demoSets[key]); }}>
+                    on:click={() => { changeSentenceSet(key) }}>
                     {key}
                 </button>
             {/each}
