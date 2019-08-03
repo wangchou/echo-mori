@@ -3,12 +3,13 @@ import { LangType, calculateScore } from './calculateScore.js'
 import { say, listen, ListenResultType } from './speechEngine.js'
 import { getRubyText } from './rubyText.js'
 import { getTokenInfos, captialFirstChar } from './utils.js'
-import { comments } from './model/store.js'
+import { comments, isPlaying } from './model/store.js'
 import { textareaValue } from './model/store.js'
 import { get } from 'svelte/store';
 import { Voices } from './model/constants.js'
 
 export const playGame = async (isDemo) => {
+    isPlaying.set(true)
     comments.set([])
     var sentences = []
     var translations = {}
@@ -39,7 +40,7 @@ export const playGame = async (isDemo) => {
         if (isDemo) {
             setTimeout(() => say(sentence, get(speed), Voices.enF3), 100)
         }
-        let result = await listen(duration + 400)
+        let result = await listen(duration * 1.1 + 400)
 
 
         var displayText = "default display text"
@@ -70,4 +71,5 @@ export const playGame = async (isDemo) => {
         else { judgement = "Not Right"}
         await say(judgement, 1.0, Voices.enF1 )
     }
+    isPlaying.set(false)
 }

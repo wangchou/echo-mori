@@ -5,7 +5,7 @@
     import { speed } from '../model/config.js'
     import { demoSets } from '../model/demoSets.js'
     import { textareaValue } from '../model/store.js'
-    import { comments } from '../model/store.js'
+    import { comments, isPlaying } from '../model/store.js'
     let tab = { isEditing: false };
     function toggle() {
 		tab.isEditing = !tab.isEditing;
@@ -38,9 +38,9 @@
 {/if}
 
 <div class="actionButton">
+    {#if !$isPlaying}
         <button class="fightButton" on:click={() => { playGame(false)}} disabled={tab.isEditing}> 挑 戰 </button>
         <button class="fightButton" on:click={() => { playGame(true)}} disabled={tab.isEditing}> 展示模式 </button>
-
         <div style="width:130px; position: relative;top:-100px;left:330px">
             <span style="border-width:0px;margin: 0 auto">
                 <span style="border-width: 0px; padding: 0px;float:left">速度</span>
@@ -59,6 +59,7 @@
                 </button>
             {/each}
         </div>
+    {/if}
 </div>
 <br><br>
 
