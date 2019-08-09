@@ -28,6 +28,7 @@
     "mecab-async": "^0.1.2",
     "memory-cache": "^0.2.0",
     "morgan": "^1.9.1",
+    "mysql": "^2.17.1",
     "node-fetch": "^2.6.0"
   }
 }
