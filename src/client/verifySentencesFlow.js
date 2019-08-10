@@ -1,5 +1,6 @@
 import { say, listen, getAudioDuration, ListenResultType } from './speechEngine.js'
 import { sentences20190810 } from './sentences20190810.js'
+import { LangType, calculateScore, getPhoneticCharacters } from './calculateScore.js'
 
 // only for preprocessing, let googlte tts talk to chrome stt. verify sentences
 let selfRecognized = async (text, voice, recognized) => {
@@ -17,9 +18,23 @@ console.log("total number of sentence are:", sentences.length)
 export const verifySentences = async () => {
     console.log(sentences, voices)
     for (var sentenceIdx in sentences) {
-        console.log(`${sentenceIdx}/${sentences.length}`)
+        let sentence = sentences[sentenceIdx]
+        // var recognizedText1 = await getSelfRecognized(sentence, voices[0]).then(res => res.text())
+        // var recognizedText2 = await getSelfRecognized(sentence, voices[1]).then(res => res.text())
+        // var score1 = await calculateScore(sentence, recognizedText1)
+        // var score2 = await calculateScore(sentence, recognizedText2)
+        // if (score1 != 100 || score2 != 100) {
+        //     console.log(false)
+        //     console.log(`\n---`)
+        //     console.log(`${sentenceIdx}/${sentences.length}`)
+        //     console.log(await getPhoneticCharacters(sentence))
+        //     console.log(await getPhoneticCharacters(recognizedText1), score1)
+        //     console.log(await getPhoneticCharacters(recognizedText2), score2)
+        // } else {
+        //     console.log(true)
+        // }
+
         for (var voiceIdx in voices) {
-            let sentence = sentences[sentenceIdx]
             let voice = voices[voiceIdx]
 
             var recognizedText = await getSelfRecognized(sentence, voice).then(res => res.text())

@@ -24,17 +24,7 @@ export let getPhoneticCharacters = async (text, lang) => {
         case LangType.ja:
             return getYomiKana(text)
         default:
-            return text.replace(" ", "")
-                       .replace(",", "")
-                       .replace(".", "")
-                       .replace("?", "")
-                       .replace("-", "")
-                       .replace(", ", "")
-                       .replace("!", "")
-                       .replace(". ","")
-                       .replace("’","")
-                       .replace("'","")
-                       .replace(".","")
+            return text.replace(/[ ,.?\-!’'"]/g, "")
                        .toLowerCase()
     }
 }
@@ -42,9 +32,9 @@ export let getPhoneticCharacters = async (text, lang) => {
 export let calculateScore = async (str1, str2, lang) => {
     let phStr1 = await getPhoneticCharacters(str1, lang)
     let phStr2 = await getPhoneticCharacters(str2, lang)
-    console.log("\n")
-    console.log(phStr1)
-    console.log(phStr2)
+    //console.log("\n")
+    //console.log(phStr1)
+    //console.log(phStr2)
     let len = Math.max(phStr1.length, phStr2.length)
     return Math.ceil(100 * (len - editDistance(phStr1, phStr2)) / len)
 }
