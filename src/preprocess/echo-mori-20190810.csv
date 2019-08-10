@@ -1,0 +1,1645 @@
+id,en,ch,manualTag,tranlatedTag,tatoebaEnId,tatoebaChId,wordDifficulty,syllablesCount,combinedDifficulty,isOneHundredPoints
+1,How interesting!,多麼有趣啊！,日常,驚訝/感嘆,1898371,7772100,1,5,5.7,TRUE
+2,How rude of you!,你真粗魯！,日常,驚訝/感嘆,16444,819340,2,4,5.4,TRUE
+3,What a surprise!,太驚喜了!,日常,驚訝/感嘆,18893,794228,1,4,4.7,TRUE
+4,What a beautiful flower!,多麼漂亮的花啊！,日常,驚訝/感嘆,36037,407228,0,7,7,TRUE
+5,How lovely!,多可愛啊！,,驚訝/感嘆,1913086,5092632,0,4,4,TRUE
+6,How horrible!,真糟糕！,,驚訝/感嘆,1864457,5550163,3,3,5.1,TRUE
+7,How beautiful!,多美啊！,,驚訝/感嘆,1913083,5092623,0,4,4,TRUE
+9,What a lot of pens!,那麼多鋼筆！,,驚訝/感嘆,1913100,5552572,0,5,5,TRUE
+10,How dare you say that!,你怎麼敢那樣說。,,驚訝/感嘆,29999,796838,3,5,7.1,TRUE
+11,What a good idea!,多好的主意啊！,,驚訝/感嘆,24961,490135,1,5,5.7,TRUE
+12,What a wonderful night!,多美妙的夜晚啊!,,驚訝/感嘆,36120,816483,0,6,6,TRUE
+13,What an idiot I am!,我真是個白痴！,,驚訝/感嘆,410599,845974,6,6,10.2,TRUE
+14,What a pity you can't dance!,可惜你不會跳舞!,,驚訝/感嘆,40319,943692,4,8,10.8,TRUE
+16,How dare you speak to me like that!,你怎麼敢這樣跟我說話！,,驚訝/感嘆,66279,335422,3,8,10.1,TRUE
+17,How strange!,真奇怪。,,驚訝/感嘆,1913092,1705791,1,2,2.7,TRUE
+18,How annoying!,真煩人。,,驚訝/感嘆,1557994,5102293,4,5,7.8,TRUE
+19,What a strong wind!,多麼強的風啊！,,驚訝/感嘆,435181,825920,1,4,4.7,TRUE
+20,How I've missed you!,我多麼想念你！,,驚訝/感嘆,17486,826046,1,5,5.7,TRUE
+23,"Pass me the salt, please. ""Here you are.""",“請把鹽遞給我。”“給你。”,,"餐桌會話,要求,對話",1673,501560,3,8,10.1,TRUE
+24,Please pass me the salt.,請把鹽遞給我。,,"餐桌會話,要求",25741,838594,2,5,6.4,TRUE
+25,Please pass me the butter.,請把奶油遞給我。,,"餐桌會話,要求",35194,335332,2,6,7.4,TRUE
+26,Will you pass me the salt?,請你把鹽遞給我好嗎？,,"餐桌會話,要求",25730,866063,2,6,7.4,TRUE
+27,"Pass me the salt, would you?",把鹽遞給我好嗎？,,"餐桌會話,要求",25742,850599,1,6,6.7,TRUE
+28,"Would you pass the salt, please?",請你把鹽遞過來好嗎？,,"餐桌會話,要求",25744,874472,2,6,7.4,TRUE
+29,"I'd like some more bread, please.",我想再要些麵包，謝謝。,,"餐桌會話,要求",31300,855674,3,6,8.1,TRUE
+30,"Can you pass me the salt, please?",請你把鹽遞給我好嗎？,,"餐桌會話,要求",25735,866063,3,7,9.1,TRUE
+31,"Pass me the salt, please.",請把鹽遞給我。,,"餐桌會話,要求",25729,407281,2,5,6.4,TRUE
+33,"Pass me the butter, please.",請把奶油遞給我。,,"餐桌會話,要求",35197,793262,2,6,7.4,TRUE
+34,How about some more roast beef?,再來些烤牛肉怎麼樣?,,"餐桌會話,提供,食物",30479,848664,6,7,11.2,TRUE
+35,"No, thank you. I'm full.",不，謝謝你。我吃飽了。,,"餐桌會話,兩個句子",65670,835728,2,5,6.4,TRUE
+36,"No more, thank you. I'm full.",不，謝謝，我飽了。,,"餐桌會話,兩個句子",65830,430995,3,6,8.1,TRUE
+37,Can I have a bite?,我可以吃一口嗎？,,"餐桌會話,允許請求",27796,833794,2,5,6.4,TRUE
+38,I'm on a diet.,我在節食。,,餐桌會話,241675,793307,4,4,6.8,TRUE
+39,"Thank you, I've had enough.",謝謝你，我吃飽了。,,餐桌會話,67370,844480,1,6,6.7,TRUE
+40,Pass me the salt.,請給我鹽。,,餐桌會話,64750,7767733,1,4,4.7,TRUE
+41,Do you have any light beer?,你有任何淡啤酒嗎？,,"餐廳,酒吧,酒精飲料",29824,838553,2,7,8.4,TRUE
+42,"A glass of wine, please.",一杯葡萄酒，謝謝。,,"餐廳,酒吧",7795887,4394673,2,5,6.4,TRUE
+43,May I see the wine list?,我可以看一下酒單嗎？,,"餐廳,要求,酒吧,酒精飲料",29224,859724,2,6,7.4,TRUE
+44,"Another Scotch and water, please.",麻煩再來一杯威士忌和水。,,"餐廳,要求,酒吧,酒精飲料",270891,832964,9,8,14.3,TRUE
+45,We'd like another bottle of wine.,我們想再來一瓶葡萄酒。,,"餐廳,要求,酒吧,想要/希望,酒精飲料",29222,871209,4,8,10.8,TRUE
+46,"Champagne, please.",請給我香檳，謝謝。,,"餐廳,要求,酒吧",987485,5092411,7,3,7.9,TRUE
+47,"Put it on one bill, please.",請記在一張帳單上。,,"餐廳,要求,酒吧",27696,858741,4,6,8.8,TRUE
+48,"I'd like some tea, please.",請給我一杯茶。,,"餐廳,要求,茶會",64184,834729,2,5,6.4,TRUE
+49,I'd like to have another cup of coffee.,我想再要一杯咖啡。,,"餐廳,要求,想要/希望",62216,6206033,1,10,10.7,TRUE
+50,I'd like to have cake for dessert.,我想要蛋糕當點心。,,"餐廳,要求,想要/希望",39476,894368,4,8,10.8,TRUE
+51,Could we have a table outside?,我們可以坐外面嗎？,,"餐廳,要求,地點",22015,839565,2,7,8.4,TRUE
+52,I would like to have a cup of coffee.,我想要一杯咖啡。,,"餐廳,要求",454413,746063,0,9,9,TRUE
+53,"Check, please.",請結帳。,,"餐廳,要求",21098,819284,2,2,3.4,TRUE
+54,"May I have the check, please?",請把帳單給我好嗎？,,"餐廳,要求",21104,836255,2,6,7.4,TRUE
+55,"Can I see the menu, please?",麻煩請給我菜單。,,"餐廳,要求",2192189,2256417,4,7,9.8,TRUE
+56,"May I have a napkin, please?",請給我一張餐巾紙好嗎？,,"餐廳,要求",36286,850354,3,7,9.1,TRUE
+57,I'd like the sauce on the side.,我想要將醬料放在旁邊。,,"餐廳,要求",51049,801406,3,7,9.1,TRUE
+58,"Two for the lunch buffet, please.",兩人份自助午餐，謝謝。,,"餐廳,要求",29720,874356,5,7,10.5,TRUE
+59,Please bring us two cups of coffee.,請給我們來兩杯咖啡。,,"餐廳,要求",62222,894349,2,7,8.4,TRUE
+60,"Waiter, please bring me some water.",服務生，請給我一些水。,,"餐廳,要求",19541,868402,3,8,10.1,TRUE
+61,I'd like a table by the window.,我要一張靠窗的桌子。,,"餐廳,要求",274247,894071,0,8,8,TRUE
+62,"Can I have the menu again, please?",麻煩讓我再看看菜單好嗎？,,"餐廳,要求",31489,870062,4,9,11.8,TRUE
+63,"Give us two knives and four forks, please.",請給我們兩把刀和四把叉子。,,"餐廳,要求",262535,407225,3,9,11.1,TRUE
+64,"Orange juice, please.",柳橙汁，麻煩你。,,"餐廳,要求",536954,5548488,1,4,4.7,TRUE
+65,Would you like to drink anything?,你想喝點什麼嗎？,,"餐廳,提供",25196,840434,1,7,7.7,TRUE
+66,What would you like?,你要點什麼？,,餐廳,1839617,6103137,0,4,4,TRUE
+68,Could I have the check?,可以給我帳單嗎？,,餐廳,22462,833150,2,5,6.4,TRUE
+70,"Waiter, I'd like to order.",服務生，我要點菜。,,餐廳,65663,333237,0,7,7,TRUE
+71,I would like to order drinks now.,我想現在點飲料。,,餐廳,27106,890970,1,8,8.7,TRUE
+72,How many people in your party?,你的派對上有多少人？,,餐廳,24505,848967,1,8,8.7,TRUE
+73,I'd like my coffee after the meal.,我想吃完飯再喝咖啡。,,餐廳,62188,892488,2,8,9.4,TRUE
+74,This isn't what I ordered.,這不是我點的食物。,,餐廳,55508,836381,2,8,9.4,TRUE
+76,I'd like to have this meat dish with your best white wine.,我想要點這道肉，搭配你最好的白酒。,,餐廳,57557,5670807,3,12,14.1,TRUE
+77,I'll pay the bill.,我來付賬。,,餐廳,321308,825922,4,4,6.8,TRUE
+78,Isn't it black?,它不是黑色的嗎？,,顏色,442968,826098,2,4,5.4,TRUE
+80,I bought a red sports car.,我買了一輛紅色的跑車。,,顏色,259014,849273,1,6,6.7,TRUE
+81,"So you give up, right?",所以你放棄了，是嗎？,日常,附加問句,53214,5865516,2,5,6.4,TRUE
+82,"Large, isn't it?","很大, 不是嗎?",,附加問句,435613,771584,2,4,5.4,TRUE
+83,You gave me the wrong change.,你找錯了零錢給我。,,"金錢,購物,餐廳,計程車",64979,805186,4,6,8.8,TRUE
+84,Here is your change.,這是你零錢。,,"金錢,購物",2421,772037,3,4,6.1,TRUE
+85,This shirt costs ten dollars.,這襯衫要十美元。,,"金錢,價格",61038,1261427,1,6,6.7,TRUE
+86,You can buy it for a thousand yen or so.,你能以大約1000日元買下它。,,"金錢,價格",73498,846533,3,11,13.1,TRUE
+87,I owe ten dollars to her.,我欠她10美元。,,金錢,308642,332806,3,7,9.1,TRUE
+88,I bought it for ten dollars.,我花10美元買了它。,,金錢,254785,1446766,1,7,7.7,TRUE
+89,I got it for next to nothing.,我簡直不用花錢就買到了。,,金錢,496144,883301,3,8,10.1,TRUE
+90,You gave me only fifty cents.,你只給了我五十美分。,,金錢,72549,805200,3,8,10.1,TRUE
+91,I have only five thousand yen.,我只有5000日元。,,金錢,252597,528021,2,8,9.4,TRUE
+93,I got the roller skates for nothing.,我免費得到溜冰鞋。,,金錢,254217,802312,5,10,13.5,TRUE
+94,I paid $200 in taxes.,我含稅付了兩百元。,,金錢,259005,835787,4,8,10.8,TRUE
+95,She earns 30 dollars per day.,她每天賺30美元。,,金錢,310114,512201,4,8,10.8,TRUE
+96,He relies on his wife financially.,他經濟上依靠他的太太。,,金錢,295715,336076,8,10,15.6,TRUE
+97,I got this vacuum cleaner for nothing.,我免費得到了這個吸塵器。,,金錢,253706,802144,7,10,14.9,TRUE
+98,Hi! How are you?,嗨！你好嗎？,日常,重要短句,30316,873404,1,4,4.7,TRUE
+99,Hello!,你好。,招呼,重要短句,373330,4857568,1,2,2.7,TRUE
+100,What are you doing?,你在做什麼？,,重要短句,16492,6057717,1,4,4.7,TRUE
+101,How much does it cost?,它要多少錢?,,重要短句,436193,761442,1,5,5.7,TRUE
+102,How much does this cost?,這個要多少錢？,,重要短句,432824,6158471,1,5,5.7,TRUE
+103,I like red wine better than white.,我喜歡紅酒勝過白酒。,,"酒精飲料,喜歡",259918,795851,3,8,10.1,TRUE
+104,I didn't like beer at that time.,那時候我不喜歡啤酒。,,"酒精飲料,不喜歡",252167,336274,2,8,9.4,TRUE
+105,She didn't like her husband drunk.,她不喜歡她的先生喝醉酒。,,"酒精飲料,不喜歡",316745,5611465,5,8,11.5,TRUE
+106,He drinks too much beer.,他喝太多啤酒。,,酒精飲料,288803,834507,1,5,5.7,TRUE
+107,I've quit drinking beer.,我已經不喝啤酒了。,,酒精飲料,435193,819401,3,5,7.1,TRUE
+108,Wine is made from grapes.,葡萄酒是用葡萄做成的。,,酒精飲料,29226,838555,4,6,8.8,TRUE
+109,She prefers beer to wine.,她喜歡啤酒勝過葡萄酒。,,酒精飲料,312450,863954,4,6,8.8,TRUE
+110,This whisky is too strong.,這種威士忌太烈了。,,酒精飲料,61318,718397,7,6,10.9,TRUE
+113,He is too drunk to drive home.,他喝太醉以至於無法開車回家。,,酒精飲料,300211,879190,5,7,10.5,TRUE
+114,What kind of wine do you have?,您有什麼樣的葡萄酒？,,酒精飲料,36679,895449,1,7,7.7,TRUE
+116,He was too drunk to drive home.,他喝太醉了無法開車回家。,,酒精飲料,292544,879190,5,7,10.5,TRUE
+117,She looks as if she were drunk.,她看起來好像喝醉了。,,酒精飲料,32319,891042,5,7,10.5,TRUE
+118,He advised her to stop drinking.,他建議她停止喝酒。,,酒精飲料,302677,839510,3,9,11.1,TRUE
+119,Do you have any Japanese beer?,你們有日本啤酒嗎？,,酒精飲料,281327,349655,2,9,10.4,TRUE
+120,Pale ale is a low-alcohol beer.,淡艾爾是低酒精啤酒。,,酒精飲料,327270,797057,14,9,18.8,TRUE
+121,He gave me a lecture on drinking.,他因我喝酒而訓斥我。,,酒精飲料,293853,805229,5,9,12.5,TRUE
+122,Could I have another glass of beer?,我可以再喝一杯啤酒嗎？,,酒精飲料,34840,868431,3,9,11.1,TRUE
+123,She poured brandy into the glasses.,她把白蘭地倒進玻璃杯裡。,,酒精飲料,312131,851473,10,10,17,TRUE
+124,He was arrested for drunken driving.,他因酒駕而被捕。,,酒精飲料,270973,846306,6,10,14.2,TRUE
+125,The policeman arrested him for drunken driving.,警察因酒駕而逮捕了他。,,酒精飲料,48464,895592,6,14,18.2,TRUE
+126,"After a couple of drinks, the guy was feeling no pain.",喝了幾杯酒後，這個傢伙就感覺不到痛了。,,酒精飲料,24457,830462,6,13,17.2,TRUE
+127,He is drunk.,他醉了。,,酒精飲料,470162,471223,4,3,5.8,TRUE
+128,You are drunk!,你喝醉了！,,酒精飲料,64332,7768302,4,3,5.8,TRUE
+129,My father stopped drinking.,父親戒酒了。,,酒精飲料,559355,334237,0,7,7,TRUE
+130,I am a bit drunk.,我有點醉了。,,"酒吧,酒精飲料",258666,918080,5,5,8.5,TRUE
+131,Would you like some more beer?,你想再喝些啤酒嗎？,,"酒吧,提供,酒精飲料",34839,868437,3,6,8.1,TRUE
+132,It's on the house.,這是免費的。,,"酒吧,慣用語",1112522,2513880,0,4,4,TRUE
+133,How about another round?,再來一輪如何？,,酒吧,31564,871218,2,7,8.4,TRUE
+134,Cheers!,乾杯!,,酒吧,487006,765577,3,1,3.1,TRUE
+136,Sorry to be late.,對不起我來晚了。,,道歉,277384,789995,3,5,7.1,TRUE
+137,Sorry to have kept you waiting.,對不起讓您久等了。,,道歉,275291,862886,2,8,9.4,TRUE
+138,I'm sorry to have disturbed you.,對不起打擾您了。,,道歉,53056,850363,6,9,13.2,TRUE
+140,I'm awfully sorry that I was late.,非常抱歉，我遲到了。,,道歉,277392,894121,5,10,13.5,TRUE
+141,"Sorry, that was none of my business.",對不起，那不關我的事。,,道歉,328930,778545,4,10,12.8,TRUE
+142,I'm sorry I didn't make myself clear.,對不起，我沒講清楚。,,道歉,246432,801383,3,9,11.1,TRUE
+143,"I'm sorry, I dialed the wrong number.",對不起，我撥錯了號碼。,,道歉,51481,798410,4,10,12.8,TRUE
+144,I'm sorry for the delay in responding.,我很抱歉這麼遲才回復。,,道歉,320367,801381,6,11,15.2,TRUE
+145,"I'm sorry, but it's just not possible.","我很抱歉,，但這是不可能的。",,道歉,28666,778506,3,9,11.1,TRUE
+147,"I'm sorry, but I can't answer right away.",我很抱歉，但我無法立即回答。,,道歉,52229,798409,3,12,14.1,TRUE
+148,I'm sorry I wasn't able to see you when you came by today.,我很抱歉今天您到訪的時候沒能見到您。,,道歉,242437,784375,3,16,18.1,TRUE
+150,Good luck.,祝你好運。,,道別,239431,812490,0,2,2,TRUE
+151,See you again.,再見！,,道別,32635,336477,1,4,4.7,TRUE
+152,See you around.,再見！,,道別,32690,336477,1,4,4.7,TRUE
+153,Goodbye and good luck.,再見，祝好運。,,道別,434818,5574725,0,4,4,TRUE
+154,I must be leaving now.,我現在必須離開。,,道別,486444,834615,3,6,8.1,TRUE
+156,I hope I'll see you again soon.,我希望我能很快再見到你。,,道別,32627,876722,3,8,10.1,TRUE
+157,I trust that I can see you again.,我相信我能再見到你。,,道別,32687,6216630,4,9,11.8,TRUE
+158,I'll see you again this afternoon.,今天下午見。,,道別,242555,859221,2,9,10.4,TRUE
+160,Drive safely.,安全駕駛。,,道別,484648,819285,2,4,5.4,TRUE
+161,Have a nice day.,祝你一天過得愉快。,,道別,30085,336675,0,4,4,TRUE
+162,It was very nice seeing you again.,非常高興再次見到你。,,道別,71080,894356,2,9,10.4,TRUE
+163,I look forward to seeing you again.,我期待著再次見到你。,,道別,32704,889365,3,9,11.1,TRUE
+164,Have a good weekend.,週末愉快。,,道別,1877605,1878357,0,5,5,TRUE
+165,I'll see you later.,等會兒見。,,道別,32706,771643,2,5,6.4,TRUE
+166,My father goes jogging every morning.,我父親每天早上去慢跑。,,"運動,頻率,親戚/家人",319357,804845,2,11,12.4,TRUE
+167,He skis in Hokkaido every winter.,他每年冬天在北海道滑雪。,,"運動,頻率,地點",303928,848668,6,11,15.2,TRUE
+168,She plays tennis every day.,她每天都打網球。,,"運動,頻率",317090,334212,0,8,8,TRUE
+169,He plays baseball every day.,他每天都打棒球。,,"運動,頻率",303925,352063,0,9,9,TRUE
+170,I play tennis once in a while.,我偶爾打網球。,,"運動,頻率",258146,881038,2,8,9.4,TRUE
+171,He plays golf two or three times a month.,他一個月打兩到三次高爾夫。,,"運動,頻率",295902,4844982,0,10,10,TRUE
+172,We play football every Saturday.,我們每週六踢足球。,,"運動,頻率",249379,839089,2,10,11.4,TRUE
+173,I swim once a week.,我每週遊一次泳。,,"運動,頻率",28958,429111,1,5,5.7,TRUE
+174,My father began jogging last month.,我父親上個月開始慢跑。,,"運動,親戚/家人",251705,858240,2,9,10.4,TRUE
+176,I can play soccer.,我會踢足球。,,"運動,能力",253859,919950,1,5,5.7,TRUE
+177,I'm good at soccer.,我擅長踢足球。,,"運動,能力",253857,918060,1,5,5.7,TRUE
+178,I'm good at tennis.,我擅長打網球。,,"運動,能力",255082,833218,1,5,5.7,TRUE
+179,He is a good tennis player.,他是個網球高手。,,"運動,能力",291853,335077,1,9,9.7,TRUE
+180,He doesn't know how to play golf.,他不知道如何打高爾夫球。,,"運動,無知/不知情,能力",289976,882513,1,8,8.7,TRUE
+181,He played tennis all day long.,他打了整天的網球。,,"運動,期間",293801,846274,0,9,9,TRUE
+182,He was playing tennis all day.,他整天打網球。,,"運動,期間",73070,846274,1,9,9.7,TRUE
+183,I play tennis an hour a day.,我每天打一小時網球。,,"運動,期間",39394,1446822,0,8,8,TRUE
+184,He wants to be a tennis player.,他想成為一名網球選手。,,"運動,想要/希望",291867,883278,1,10,10.7,TRUE
+185,I want to be a baseball player.,我想成為一名棒球選手。,,"運動,想要/希望",262013,889381,1,11,11.7,TRUE
+186,He likes both music and sports.,他喜歡音樂和運動。,,"運動,喜歡",294201,788726,1,8,8.7,TRUE
+187,She liked tennis and became a tennis coach.,她喜歡網球並成為了一個網球教練。,,"運動,喜歡",311643,334188,3,12,14.1,TRUE
+188,He likes hunting.,他喜歡打獵。,,"運動,喜歡",386730,333859,9,5,11.3,TRUE
+190,I like sports.,我喜歡各種運動。,,"運動,喜歡",435162,771412,0,3,3,TRUE
+191,I got warm from jogging for an hour.,我慢跑了一個小時，身上變暖和了。,,"運動,原因",73168,6089741,3,9,11.1,TRUE
+194,Watch your step.,走路小心。,,警告,274491,826192,1,3,3.7,TRUE
+195,Watch your step.,小心腳下。,,警告,274491,826193,1,3,3.7,TRUE
+196,Don't step on the broken glass.,不要踩在碎玻璃上。,,警告,21238,844442,5,8,11.5,TRUE
+198,"An eye for an eye, a tooth for a tooth.",以眼還眼，以牙還牙。,,諺語,6136,806252,5,10,13.5,TRUE
+202,Can you speak English?,你們會說英文嗎？,日常,"語言,重要短句",26170,6284534,1,5,5.7,TRUE
+203,When did you begin studying English?,你是從什麼時候開始學英文的？,"日常, 學校",語言,16759,512839,0,9,9,TRUE
+204,When did you begin studying English?,你們是從什麼時候開始學英文的？,"日常, 學校",語言,16759,512840,0,9,9,TRUE
+205,Do you speak French?,你會講法語嗎？,日常,語言,415441,811844,2,4,5.4,TRUE
+206,Can you speak French?,你會講法語嗎？,日常,語言,16428,811844,3,4,6.1,TRUE
+207,Do you speak Chinese?,你會說中文嗎？,日常,語言,434626,811843,3,5,7.1,TRUE
+208,I don't like English.,我不喜歡英文。,日常,語言,256182,768263,1,6,6.7,TRUE
+209,I don't speak German.,我不會說德文。,日常,語言,482351,472964,4,6,8.8,TRUE
+210,He taught himself French.,他自學法文。,日常,語言,302082,771638,2,5,6.4,TRUE
+212,When did you begin studying English?,你什麼時候開始學英語的？,,語言,16759,512845,0,9,9,TRUE
+215,You may be late for school.,您上學可能會遲到。,,訓斥/譴責,16233,868446,3,6,8.1,TRUE
+216,I'm tired of your complaints.,我已經厭倦了你的抱怨。,,訓斥/譴責,16921,835543,4,7,9.8,TRUE
+217,He's always worrying about his daughter.,他一直很擔心他的女兒。,,親戚/家人,289220,332983,2,10,11.4,TRUE
+218,Please help me.,請幫幫我,,要求,262424,804501,1,3,3.7,TRUE
+219,Go away.,走開！,,要求,433491,819289,1,3,3.7,TRUE
+220,My opinion is similar to yours.,我的觀點和你的類似。,,"表達意見,比較",250450,864274,5,10,13.5,TRUE
+221,I believe in exercising regularly.,我相信規律的運動。,,"表達意見,健康",20215,834418,3,12,14.1,TRUE
+222,I don't agree with him.,我不同意他。,,表達意見,2453,1778258,2,6,7.4,TRUE
+223,I don't agree with you.,我不同意你的看法。,,表達意見,17423,333122,2,6,7.4,TRUE
+224,I don't quite agree with you.,我不太同意你的看法。,,表達意見,321761,846072,3,7,9.1,TRUE
+226,I agree with your opinion about taxes.,我同意你關於稅的意見。,,表達意見,259004,887890,6,11,15.2,TRUE
+228,My mother likes tea very much.,我媽媽很喜歡茶。,,"茶會,喜歡,親戚/家人",251830,858763,0,9,9,TRUE
+230,She was making tea.,她正在泡茶。,,茶會,310632,408498,1,5,5.7,TRUE
+231,We generally drink tea after a meal.,我們通常飯後喝茶。,,茶會,248433,805014,3,11,13.1,TRUE
+233,He ordered a cup of tea.,他點了一杯茶。,,茶會,296335,848753,0,8,8,TRUE
+234,Do you usually have tea for breakfast?,你經常在吃早餐的時候喝茶嗎？,,茶會,69781,884178,1,10,10.7,TRUE
+235,Can you describe to me the difference between black tea and green tea?,你能告訴我紅茶和綠茶的區別嗎？,,茶會,240968,813575,5,17,20.5,TRUE
+236,Your English has improved a lot.,你的英語進步了很多。,,"稱讚,能力,語言",17311,872221,1,9,9.7,TRUE
+237,You have done very well.,你做得很好。,,稱讚,16749,844599,0,6,6,TRUE
+238,Your dress is very nice.,你穿得非常好。,,稱讚,17363,845956,1,6,6.7,TRUE
+240,You're really a hard worker.,你真是個努力的工人。,,稱讚,16343,6028029,3,7,9.1,TRUE
+242,That's a nice tie you're wearing.,你打了一條不錯的領帶。,,稱讚,273946,869898,3,7,9.1,TRUE
+243,You look very charming today.,今天你看起來很迷人啊。,,稱讚,16136,1992644,3,8,10.1,TRUE
+246,I'd like to rent a car.,我想租一台車。,,租車,29477,861007,3,6,8.1,TRUE
+247,My father bought me a bicycle.,我父親給我買了一輛自行車。,,禮物,570335,2690862,0,7,7,TRUE
+248,I am six feet tall.,我六英尺高。,,測量,72456,926762,1,5,5.7,TRUE
+249,The wall is thirty yards long.,這堵牆長三十碼。,,測量,44087,868414,4,7,9.8,TRUE
+251,The board is about two meters long.,這塊木板大約兩公尺長。,,測量,44421,908333,3,9,11.1,TRUE
+254,I'm as tall as my father.,我跟我父親一樣高。,,"比較,親戚/家人,as as 句型",261535,919735,1,7,7.7,TRUE
+255,My son is now as tall as I am.,我兒子現在和我一樣高了。,,"比較,親戚/家人,as as 句型",274430,397550,3,9,11.1,TRUE
+256,My son is taller than I am.,我兒子比我高。,,"比較,親戚/家人",467341,894342,3,8,10.1,TRUE
+257,Tom likes tea better than coffee.,比起咖啡，湯姆更喜歡茶。,,"比較,茶會,喜歡",37295,865564,3,8,10.1,TRUE
+258,My sister can play the piano better than I can.,我妹妹鋼琴彈得比我好。,,"比較,能力,樂器",322314,874160,3,13,15.1,TRUE
+260,I love you more than you love me.,我愛你多於你愛我。,,"比較,戀愛",17829,803848,2,8,9.4,TRUE
+261,She can sing better than anybody else in her class.,她唱歌唱得比班上任何一個人都好。,,"比較,年齡",310755,1225643,4,13,15.8,TRUE
+263,He is two years older than you.,他比你大兩歲。,,"比較,年齡",287958,881701,2,8,9.4,TRUE
+265,Kyoto is not as large as Osaka.,京都不像大阪這麼大。,,"比較,城市,as as 句型",19291,893529,4,10,12.8,TRUE
+266,"Compared to Tokyo, London is small.",和東京比，倫敦很小。,,"比較,城市",684729,784409,3,10,12.1,TRUE
+267,"In comparison with Tokyo, London is small.",和東京比，倫敦很小。,,"比較,城市",279731,784409,4,12,14.8,TRUE
+268,China is twenty times as large as Japan.,中國是日本的二十倍大。,,"比較,國家,兩個國家",277494,843457,2,12,13.4,TRUE
+270,The population of Japan is larger than that of New Zealand.,日本的人口比紐西蘭多。,,"比較,國家,兩個國家",281423,812221,9,17,23.3,TRUE
+271,"Which is larger, Japan or England?",日本和英格蘭哪個比較大？,,"比較,國家",1396380,1862606,2,9,10.4,TRUE
+273,Gold is far heavier than water.,金子比水重得多。,,"比較,事實",18583,332591,3,8,10.1,TRUE
+275,He runs as fast as you.,他跑得跟你一樣快。,,"比較,as as 句型",295621,848697,0,6,6,TRUE
+277,She's as busy as Tom.,她和湯姆一樣忙。,,"比較,as as 句型",311824,904792,2,6,7.4,TRUE
+278,You are as tall as I am.,你和我一樣高。,,"比較,as as 句型",4909,1778304,2,7,8.4,TRUE
+279,She's not as old as Mary.,她沒有瑪麗年紀大。,,"比較,as as 句型",309934,891765,2,7,8.4,TRUE
+280,Tom is not as old as you.,湯姆的年紀沒有你大。,,"比較,as as 句型",37320,900257,3,7,9.1,TRUE
+281,He is as tall as his father.,他和他爸爸一樣高。,,"比較,as as 句型",47447,343694,1,8,8.7,TRUE
+282,Tom is as tall as his father.,湯姆跟他爸爸一樣高。,,"比較,as as 句型",37308,903471,2,8,9.4,TRUE
+283,My pen isn't as good as yours.,我的鋼筆不像你那支那麼好。,,"比較,as as 句型",33558,441472,2,8,9.4,TRUE
+284,She's not as beautiful as her sister.,她不像她姊姊那麼漂亮。,,"比較,as as 句型",313927,900264,1,10,10.7,TRUE
+285,I'm taller than you.,我比你高。,,比較,257131,833198,2,5,6.4,TRUE
+286,He's shorter than Tom.,他比湯姆矮。,,比較,292196,834371,2,5,6.4,TRUE
+287,He's stronger than you.,他比你強壯。,,比較,295648,832794,2,5,6.4,TRUE
+288,She's older than Tom.,她年紀比湯姆大。,,比較,311827,845955,2,5,6.4,TRUE
+292,This is smaller than that.,這個比那個更小。,,比較,55961,1372487,2,6,7.4,TRUE
+293,We're not as young as Tom.,我們不再像湯姆那樣年輕。,,比較,2940710,3783362,3,6,8.1,TRUE
+294,Tom is older than I am.,湯姆年紀比我大。,,比較,406588,872127,3,7,9.1,TRUE
+295,Tom is taller than I am.,湯姆比我高。,,比較,406587,874387,3,7,9.1,TRUE
+296,Your pen is better than mine.,你的筆比我的好。,,比較,17355,333143,3,7,9.1,TRUE
+297,He looks just like his mother.,他長得很像他的母親。,,比較,292915,846503,1,7,7.7,TRUE
+299,I'm three years younger than you.,我比你小三歲。,,比較,252889,864345,2,7,8.4,TRUE
+300,Your plan seems better than mine.,你的計劃似乎比我的好。,,比較,17258,872124,3,7,9.1,TRUE
+301,Your work is below average.,你的工作表現低於平。,,比較,17122,839519,5,8,11.5,TRUE
+302,He is taller than his brother.,他比他的弟弟高。,,比較,285416,848990,2,8,9.4,TRUE
+303,It's about the size of an egg.,它和雞蛋差不多大。,,比較,42038,797089,2,8,9.4,TRUE
+305,He is much older than he looks.,他的實際年齡比他看起來老得多。,,比較,296008,881178,2,8,9.4,TRUE
+306,He looks older than my brother.,他看起來比我​​的兄弟年長。,,比較,250732,848538,1,8,8.7,TRUE
+307,This is the cheaper of the two.,這是兩件裡便宜的那個。,,比較,280823,6101330,3,8,10.1,TRUE
+309,The sun is larger than the moon.,太陽比月亮大。,,比較,275124,905775,2,8,9.4,TRUE
+310,Tom is the tallest in his class.,湯姆是班上最高的。,,比較,37039,895827,2,8,9.4,TRUE
+311,Your team is stronger than ours.,你們的隊伍比我們強。,,比較,17665,870063,3,7,9.1,TRUE
+313,You're in better shape than I am.,你的體格比我好。,,比較,1295,900252,3,8,10.1,TRUE
+316,This lake is deepest at this point.,這裡是湖裡最深的地方。,,比較,59354,813578,3,8,10.1,TRUE
+317,My sister is shorter than you.,我妹妹比你矮。,,比較,250962,856387,2,8,9.4,TRUE
+318,Your chair is identical to mine.,你的椅子和我的很像。,,比較,17420,1225645,5,9,12.5,TRUE
+319,Your problem is similar to mine.,你的問題和我很像。,,比較,16930,784489,4,9,11.8,TRUE
+323,He's three inches taller than I am.,他比我高三英寸。,,比較,287533,875323,3,9,11.1,TRUE
+324,Your bicycle is similar to mine.,你的腳踏車和我的很像。,,比較,17101,871075,3,8,10.1,TRUE
+325,Your opinion is similar to mine.,你的意見和我類似。,,比較,17319,868488,5,10,13.5,TRUE
+326,Tom is the tallest in his family.,湯姆是他家裡長得最高的。,,比較,37176,907482,2,10,11.4,TRUE
+327,Taking off is easier than landing.,起飛比降落容易。,,比較,325392,798304,3,9,11.1,TRUE
+328,Asia is much larger than Australia.,亞洲比澳洲大很多。,,比較,71856,844580,6,10,14.2,TRUE
+329,My opinion is different from yours.,我的看法和你不同。,,比較,250435,852191,4,10,12.8,TRUE
+330,He compared his car to the new model.,他拿他的車和新款車作比較。,,比較,298765,779534,4,11,13.8,TRUE
+331,I'm much better today than yesterday.,我今天覺得比昨天好多了。,,比較,257751,919721,3,10,12.1,TRUE
+332,The meeting ended earlier than usual.,會議比往常早結束。,,比較,22503,865555,4,10,12.8,TRUE
+333,She gets up the earliest in my family.,她是我家最早起床的人。,,比較,314300,5405457,0,11,11,TRUE
+334,The picture looks better at a distance.,這幅畫遠看更好看。,,比較,22072,336677,3,10,12.1,TRUE
+335,These products are of the same quality.,這些產品品質相當。,,比較,55147,796862,6,10,14.2,TRUE
+336,You work as hard as he did at your age.,你跟他在你這個年紀時一樣努力工作。,,比較,15848,775636,2,10,11.4,TRUE
+338,Europe has a smaller population than Asia.,歐洲的人口比亞洲少。,,比較,30014,390530,7,13,17.9,TRUE
+339,Our problems are nothing compared to hers.,我們的問題和她比起來不算什麼。,,比較,247687,799275,4,11,13.8,TRUE
+340,Taiwanese food is milder than Indian food.,台灣菜比印度菜口味淡。,,比較,275467,797034,17,11,22.9,TRUE
+341,He has three times as many books as I have.,他擁有的書是我的三倍。,,比較,297860,5933790,0,12,12,TRUE
+342,These flowers bloom earlier than others do.,這些花比別的花早開花。,,比較,60055,796935,6,10,14.2,TRUE
+343,He is as smart as any other boy in the class.,他和班上其他男生一樣聰明。,,比較,289737,333119,3,13,15.1,TRUE
+344,My brother is not as tall as I was two years ago.,我弟弟沒我兩年前高。,,比較,278570,332982,3,14,16.1,TRUE
+345,People are more educated now than they used to be.,現在的人教育程度比以前高得多。,,比較,239588,332680,5,14,17.5,TRUE
+346,You are no better at remembering things than I am.,你記事情的能力沒有不比我好多少。,,比較,4908,1778305,3,14,16.1,TRUE
+348,The population of London is much greater than that of any other British city.,倫敦的人口遠遠多於其他英國城市的人口。,,比較,29283,5363942,6,23,27.2,TRUE
+349,My camera is different from yours.,我的相機跟你的不同。,,比較,250290,861126,2,10,11.4,TRUE
+350,Hi.,嗨。,招呼,歡迎,538123,891077,0,1,1,TRUE
+352,Good morning.,早安,招呼,歡迎,2258234,335381,0,3,3,TRUE
+353,Welcome.,歡迎。,,歡迎,138919,343770,0,2,2,TRUE
+354,Einstein loved playing the violin.,愛因斯坦喜歡拉小提琴。,,"樂器,英文姓氏",71912,833788,8,10,15.6,TRUE
+356,Can you play the guitar?,你會彈吉他嗎？,,樂器,63394,389409,3,6,8.1,TRUE
+358,Mary plays the piano.,瑪麗彈鋼琴。,,樂器,31969,824592,1,6,6.7,TRUE
+359,He's very good at guitar.,他非常擅長吉他。,,樂器,467853,833224,2,7,8.4,TRUE
+360,He often plays the guitar.,他常常彈吉他。,,樂器,293244,834368,3,7,9.1,TRUE
+361,I want to play the guitar.,我想彈吉他。,,樂器,253369,781682,2,7,8.4,TRUE
+362,I do not play the piano.,我不彈鋼琴。,,樂器,255458,910384,1,7,7.7,TRUE
+363,I like playing the piano.,我喜歡彈鋼琴。,,樂器,255455,347427,0,8,8,TRUE
+365,I asked Tom to play the guitar.,我叫湯姆彈吉他。,,樂器,255283,791478,4,9,11.8,TRUE
+366,I play the guitar after school.,我放學後彈吉他。,,樂器,261708,852619,2,8,9.4,TRUE
+367,I will play the guitar for you.,我會為你彈吉他。,,樂器,252734,887904,4,8,10.8,TRUE
+368,She played the guitar and he sang.,她彈了吉他，他唱了歌。,,樂器,308009,894090,2,10,11.4,TRUE
+369,I am playing the piano now.,我現在正在彈鋼琴。,,樂器,257470,918555,2,9,10.4,TRUE
+370,My sister has a nice piano.,我妹妹有台好的鋼琴。,,樂器,245572,795773,0,8,8,TRUE
+371,I play the guitar after dinner.,我晚飯後彈吉他。,,樂器,262092,850384,2,9,10.4,TRUE
+372,She played a tune on the piano.,她在鋼琴上彈了一首曲子。,,樂器,312023,893036,3,10,12.1,TRUE
+373,When do you practice the piano?,你什麼時候練習彈鋼琴？,,樂器,70199,869882,1,8,8.7,TRUE
+374,I heard him play the piano once.,我聽過一次他彈鋼琴。,,樂器,259992,883033,2,8,9.4,TRUE
+375,She takes private piano lessons.,她上私人鋼琴課。,,樂器,312032,844463,2,9,10.4,TRUE
+376,He played the piano and she sang.,他彈了鋼琴，她唱了歌。,,樂器,283270,881214,0,10,10,TRUE
+377,He's very good at playing guitar.,他很擅長彈吉他。,,樂器,467855,846086,2,10,11.4,TRUE
+379,She accompanied me on the piano.,她彈了鋼琴為我伴奏。,,樂器,314176,850123,4,10,12.8,TRUE
+380,Who's the man playing the piano?,那個正在彈鋼琴的男人是誰?,,樂器,7785052,895871,0,9,9,TRUE
+381,Who's the man playing the violin?,那個正在拉小提琴的男人是誰?,,樂器,7785049,895882,2,9,10.4,TRUE
+382,It is difficult to play the piano.,彈鋼琴很困難。,,樂器,34898,894387,2,10,11.4,TRUE
+384,My brother bought an electric guitar.,我的兄弟買了電吉他。,,樂器,237852,1639567,5,10,13.5,TRUE
+385,The girl playing the piano is my sister.,正在彈鋼琴的女孩是我妹妹。,,樂器,34903,811291,1,12,12.7,TRUE
+386,Could you teach me how to play the piano?,您能教我彈鋼琴嗎？,,樂器,435660,785827,1,10,10.7,TRUE
+387,She spends a lot of time practicing the piano.,她花很多時間練鋼琴。,,樂器,312035,336428,2,12,13.4,TRUE
+390,Somebody is playing the piano.,有人正在彈鋼琴。,,樂器,40474,845475,3,11,13.1,TRUE
+392,He was playing the piano.,他那時正在彈鋼琴。,,樂器,292479,833152,1,8,8.7,TRUE
+393,This book is yours.,這本書是你的。,日常,是誰的,236799,771387,1,4,4.7,TRUE
+394,World War II ended in 1945.,第二次世界大戰結束於1945年。,,"戰爭,年份",276061,798293,3,15,17.1,TRUE
+395,The soldiers occupied the building.,士兵們佔領了這個建築。,,戰爭,681606,1360030,7,9,13.9,TRUE
+399,I love her.,我愛她。,,"戀愛,喜歡",261221,759035,0,3,3,TRUE
+401,She loves Tom.,她愛湯姆。,,"戀愛,喜歡",311828,826241,1,4,4.7,TRUE
+402,"He loves her. She loves him, too.",他愛她。她也愛他。,,"戀愛,兩個句子",302877,803866,0,9,9,TRUE
+403,I don't love you anymore.,我不再愛你了。,,"戀愛,不喜歡",556796,335060,3,7,9.1,TRUE
+404,They are sure to fall in love.,他們一定會相戀的。,,"戀愛,一定/肯定/確定",305594,334616,2,7,8.4,TRUE
+405,Married people sometimes wish they were single.,已婚的人有時候希望他們是單身。,,戀愛,238687,894369,4,11,13.8,TRUE
+407,He must love you.,他一定很愛你。,,戀愛,63365,819403,1,4,4.7,TRUE
+409,I'm in love with her.,我愛上她了。,,戀愛,394631,834647,1,5,5.7,TRUE
+410,They love each other.,他們彼此相愛。,,戀愛,307721,803781,2,5,6.4,TRUE
+411,I'll miss you so much.,我會非常想念你。,,戀愛,63377,803788,3,5,7.1,TRUE
+412,"She loves Tom, not me.",她愛湯姆，而不是我。,,戀愛,308174,2052189,2,6,7.4,TRUE
+413,He saw her and blushed.,他看到她就臉紅了。,,戀愛,317593,803810,4,6,8.8,TRUE
+414,They talked about love.,他們聊了愛情。,,戀愛,306144,803783,0,6,6,TRUE
+415,You make me happy.,你讓我感到了幸福。,,戀愛,63215,834382,0,5,5,TRUE
+417,I no longer love him.,我已經不再愛他了。,,戀愛,454097,7772514,0,6,6,TRUE
+418,I asked her for a date.,我約她出去約會。,,戀愛,261338,846425,2,7,8.4,TRUE
+419,Are those two going out?,那兩個要出去嗎？,,戀愛,67886,803787,2,5,6.4,TRUE
+421,I fell in love with her.,我愛上了她。,,戀愛,308938,816446,1,6,6.7,TRUE
+422,He picked flowers for her.,他為她摘了些花。,,戀愛,302680,796816,3,7,9.1,TRUE
+423,She married her classmate.,她跟她的同學結婚了。,,戀愛,310760,6131461,2,6,7.4,TRUE
+424,It was love at first sight.,那是一見鍾情。,,戀愛,456157,334213,3,6,8.1,TRUE
+425,You make life worth living.,你讓人生活得有價值。,,戀愛,70984,803805,2,6,7.4,TRUE
+426,I will love you forever.,我會永遠愛你。,,戀愛,66141,803712,4,7,9.8,TRUE
+427,I wonder if he loves me.,我不知道他是否愛我。,,戀愛,298092,803793,3,8,10.1,TRUE
+428,He married a pretty girl.,他娶了一個漂亮的女孩。,,戀愛,289596,833131,1,7,7.7,TRUE
+429,I was lonely without her.,沒有她，我很孤獨。,,戀愛,310510,375290,5,8,11.5,TRUE
+430,You are everything to me.,你是我的一切。,,戀愛,249887,333179,1,7,7.7,TRUE
+431,Have you ever loved a man?,你曾經愛上一個男人嗎？,,戀愛,55357,834332,0,8,8,TRUE
+432,He married an air hostess.,他娶了一個空姐。,,戀愛,289381,334878,4,7,9.8,TRUE
+433,I remember the first time.,我記得第一次。,,戀愛,244014,794229,2,7,8.4,TRUE
+434,She gave him a tender kiss.,她給了他一個溫柔的吻。,,戀愛,316334,805593,2,7,8.4,TRUE
+435,I love her and she loves me.,我愛她，她也愛我。,,戀愛,321946,803868,0,8,8,TRUE
+436,Does he know that you love him?,他知道你愛他嗎?,,戀愛,17748,803884,0,7,7,TRUE
+437,Does it sound like I'm in love?,聽起來像是我戀愛了嗎？,,戀愛,394638,887853,2,7,8.4,TRUE
+438,"If you bite me, I'll bite back.",如果你咬我，我就咬回來。,,戀愛,430174,796814,3,7,9.1,TRUE
+440,"You have lovely eyes, don't you?",你有一雙可愛的眼睛，不是嗎?,,戀愛,16879,803885,1,10,10.7,TRUE
+441,Her look says that she loves you.,她的樣子在說她愛你。,,戀愛,308274,881860,0,8,8,TRUE
+442,Has she ever fallen in love?,她曾經墜入過愛河嗎 ?,,戀愛,317500,1450473,1,8,8.7,TRUE
+443,They decided to get married.,他們決定結婚了。,,戀愛,568569,803780,2,8,9.4,TRUE
+445,The boy I love doesn't love me.,我愛的那個男孩不愛我。,,戀愛,246595,334596,1,8,8.7,TRUE
+448,I do not love him any longer.,我已經不愛他了。,,戀愛,255796,7772514,2,9,10.4,TRUE
+449,He married a very pretty girl.,他娶了一個很漂亮的女孩。,,戀愛,301337,848970,1,9,9.7,TRUE
+450,I can't imagine life without you.,我無法想像沒有你的生活。,,戀愛,252796,941151,5,10,13.5,TRUE
+451,You are the man I've been looking for.,你就是我一直要找的人。,,戀愛,17692,796779,3,9,11.1,TRUE
+452,He fell in love with her at first sight.,他對她一見鍾情。,,戀愛,293837,793209,3,9,11.1,TRUE
+453,Kiss me.,吻我。,,戀愛,565931,5092385,1,2,2.7,TRUE
+454,I love my wife.,我愛我老婆。,,戀愛,436791,4759974,1,4,4.7,TRUE
+455,I will never force you to marry him.,我永遠不會逼你跟他結婚的。,,戀愛,71325,790751,3,10,12.1,TRUE
+456,She was obliged to marry the old man.,她不得不和這個老男人結婚。,,戀愛,311440,2456075,8,11,16.6,TRUE
+457,I guess I'm never going to get married.,我想我永遠不會結婚。,,戀愛,56111,1718780,3,10,12.1,TRUE
+458,Are you aware of how much she loves you?,你知道她有多麼愛你嗎?,,戀愛,15784,803871,4,11,13.8,TRUE
+459,She seems to be in love with my brother.,她似乎喜歡上了我哥哥。,,戀愛,314311,5405489,2,10,11.4,TRUE
+460,"He used to love me, she answered sadly.",他以前愛我，她傷心地回答。,,戀愛,28332,803904,0,12,12,TRUE
+462,"I don't love her, not even if she loves me.",即使她愛我，我也不愛她。,,戀愛,261348,803860,3,13,15.1,TRUE
+463,I refuse to be treated like a slave by you.,我拒絕被你像奴隸一樣對待。,,戀愛,17451,796773,7,12,16.9,TRUE
+464,My sister married her high school classmate.,我的姐姐嫁給了她的高中同學。,,戀愛,250964,794027,2,10,11.4,TRUE
+465,"I'll always love you, no matter what happens.",不論發生了什麼事，我會永遠愛你。,,戀愛,20106,803887,3,11,13.1,TRUE
+467,"As long as we love each other, we'll be all right.",只要我們彼此相愛，我們會沒事的。,,戀愛,28736,803910,3,12,14.1,TRUE
+468,"When I hear this song, I think of you, and miss you.",當我聽到這首歌，我想起了你，並想念著你。,,戀愛,409771,803771,3,12,14.1,TRUE
+469,Do you want to get married first or have a child first?,你想先結婚還是先生孩子？,,戀愛,395839,352040,3,13,15.1,TRUE
+470,"I thought he loved you, but as it is, he loved another girl.",我以為他愛你，但事實上，他愛另一個女孩。,,戀愛,295652,803864,2,17,18.4,TRUE
+471,The poet expressed his burning passion for the woman he loved.,詩人對他愛的女人表達了他火熱的激情。,,戀愛,263403,803776,7,17,21.9,TRUE
+472,You'll get into trouble if your girlfriend finds out the truth.,如果你女朋友發現真相的話，你會有麻煩的。,,戀愛,17402,796764,5,13,16.5,TRUE
+473,He's a very romantic boyfriend who brings me flowers each night.,他是個非常浪漫的男友，每晚都送花給我。,,戀愛,292072,5655387,6,16,20.2,TRUE
+474,Is it love?,那是愛嗎？,,戀愛,663921,3957684,1,3,3.7,TRUE
+476,I need you.,我需要你。,,戀愛,17735,512853,1,3,3.7,TRUE
+477,We love each other.,我們彼此相愛。,,戀愛,247916,803785,2,5,6.4,TRUE
+478,I wonder if this is love.,我不知道這是不是愛。,,戀愛,435651,861147,4,7,9.8,TRUE
+479,I'm sorry.,我很抱歉。,,"慣用句,重要短句",38387,824688,2,3,4.4,TRUE
+480,We would like you to come to our party.,我們希望你來我們的派對。,,"想要/希望,邀請",262693,5591016,0,10,10,TRUE
+481,I'd like to invite you to the party.,我想邀請你參加派對。,,"想要/希望,邀請",68815,347060,2,10,11.4,TRUE
+482,I wish I could speak English.,但願我會講英語。,,"想要/希望,語言",26382,855648,2,7,8.4,TRUE
+483,I want to brush up my English.,我要溫習一下我的英文。,,"想要/希望,語言",256230,877608,2,8,9.4,TRUE
+484,I would like to brush up my English.,我想複習英語。,,"想要/希望,語言",256208,1416056,2,9,10.4,TRUE
+485,I would like to speak English fluently.,我想把英語說得很流利。,,"想要/希望,語言",325468,894417,4,9,11.8,TRUE
+486,I would like to improve my English pronunciation.,我想改善我的英語發音。,,"想要/希望,語言",256219,446163,5,13,16.5,TRUE
+487,My daughter wants a piano.,我女兒想要一台鋼琴。,,"想要/希望,親戚/家人,樂器",251958,7773135,0,7,7,TRUE
+488,I wish to see my father.,我希望看看我的父親。,,"想要/希望,親戚/家人",33478,851532,1,7,7.7,TRUE
+489,His son wants to be a lawyer.,他兒子想當律師。,,"想要/希望,親戚/家人",287062,4270101,2,8,9.4,TRUE
+490,I want a guitar.,我想要一把吉他。,,"想要/希望,樂器",63403,390449,2,5,6.4,TRUE
+491,I want him to play the guitar.,我要他彈吉他。,,"想要/希望,樂器",260278,881849,2,8,9.4,TRUE
+492,I wish I could buy that guitar.,但願我可以買那把吉他。,,"想要/希望,樂器",68709,894343,4,8,10.8,TRUE
+494,Would you like a cup of coffee?,你要來杯咖啡嗎?,,"想要/希望,提供",62204,895192,0,7,7,TRUE
+495,I want to marry a girl like her.,我想和一個像她那樣的女孩結婚。,,"想要/希望,戀愛",309055,334198,1,9,9.7,TRUE
+496,"If you don't want to go, you don't need to.","如果你不想去, 就不必去了。",,"想要/希望,必要性",71450,793517,3,12,14.1,TRUE
+497,"He'd like to have a coffee after work. ""I would too.""","他想在下班後喝杯咖啡。 ""我也想。""",,"想要/希望,對話",73565,790624,0,12,12,TRUE
+498,I wish I were in Paris now.,但願我現在在巴黎。,,"想要/希望,城市",241537,894057,3,8,10.1,TRUE
+499,I'd like to live in the suburbs of Kobe.,我想要住在科比的郊區。,,"想要/希望,地點,城市",258851,781130,7,10,14.9,TRUE
+500,I wish he were here now.,我希望他現在在這裡。,,"想要/希望,地點",283642,857867,3,6,8.1,TRUE
+501,He wants you to stay here.,他要你留在這裡。,,"想要/希望,地點",295622,848210,0,6,6,TRUE
+503,I'd like to live in New York.,我想住在紐約。,,"想要/希望,地點",255340,801389,2,7,8.4,TRUE
+504,I want you to stay here longer.,我希望你留在這兒久一點。,,"想要/希望,地點",257064,889558,0,8,8,TRUE
+505,I'd like to swim in this river.,我想在這條河裡游泳。,,"想要/希望,地點",253681,894183,0,8,8,TRUE
+506,He wants to work in a hospital.,他想在醫院工作。,,"想要/希望,地點",303089,875272,0,9,9,TRUE
+507,I want to study abroad next year.,我明年想出國留學。,,"想要/希望,地點",325107,336179,3,9,11.1,TRUE
+508,My brother wants to study abroad.,我哥哥想要出國唸書。,,"想要/希望,地點",250705,859050,2,9,10.4,TRUE
+509,I want you to stay here until I get back.,我想你待在這裡直到我回來。,,"想要/希望,地點",247108,784114,2,11,12.4,TRUE
+510,I hope I will have a chance to see you next time I'm in New York.,希望下次我在紐約還可以有機會見到你。,,"想要/希望,地點",246399,1867021,4,16,18.8,TRUE
+511,Tom wants to go to Japan.,湯姆想去日本。,,"想要/希望,國家",37049,868084,1,7,7.7,TRUE
+512,He wants to go to America.,他想去美國。,,"想要/希望,國家",252995,846568,0,9,9,TRUE
+513,I want to visit South Korea.,我想參訪南韓。,,"想要/希望,國家",557329,1446885,1,8,8.7,TRUE
+514,I want to go to America someday.,有一天我要去美國。,,"想要/希望,國家",253087,881199,3,12,14.1,TRUE
+515,I want to visit Korea.,我想參訪韓國。,,"想要/希望,國家",556616,1446885,0,7,7,TRUE
+517,I want something to write on.,我想要可以在上面寫字的東西。,,"想要/希望,介詞懸空",25088,858033,1,8,8.7,TRUE
+520,I wish I could go to the party with you.,我希望我能和你一起參加派對。,,想要/希望,17612,1433798,2,11,12.4,TRUE
+521,I'd like to go.,我想要去。,,想要/希望,241063,832461,0,4,4,TRUE
+522,What do you want?,你想要什麼？,,想要/希望,1622,333098,0,4,4,TRUE
+525,I wish I could swim.,我希望我會游泳。,,想要/希望,26397,834878,2,5,6.4,TRUE
+526,I want Tom to win.,我想讓湯姆贏。,,想要/希望,2011371,5581735,1,5,5.7,TRUE
+528,I want to go there.,我想去那裡。,,想要/希望,2011409,834662,0,5,5,TRUE
+529,I wish I had a car.,但願我有一輛車。,,想要/希望,265406,851488,1,6,6.7,TRUE
+530,I wish I were taller.,我希望我比較高。,,想要/希望,30375,834625,2,6,7.4,TRUE
+531,I want to go with you.,我想和你一起去。,,想要/希望,28972,397152,0,6,6,TRUE
+532,I want to sing a song.,我想唱個歌。,,想要/希望,27829,860559,1,6,6.7,TRUE
+533,I wish I had seen her.,但願我見過她。,,想要/希望,308847,855681,1,6,6.7,TRUE
+535,I would like to see it.,我想看看它。,,想要/希望,41846,861111,0,6,6,TRUE
+536,He wants a book to read.,他想找本書來讀。,,想要/希望,302100,846270,0,6,6,TRUE
+537,I want him to read this.,我想讓他讀這個。,,想要/希望,284568,3630309,0,6,6,TRUE
+538,I wish I could help you.,但願我可以幫助你。,,想要/希望,63889,850300,2,6,7.4,TRUE
+539,What does he want to do?,他到底想幹嘛？,,想要/希望,294309,1238191,0,6,6,TRUE
+541,We want to know the facts.,我們想知道真相。,,想要/希望,263095,678180,1,6,6.7,TRUE
+543,I want a piece of candy.,我想要一顆糖。,,想要/希望,2067,503091,2,7,8.4,TRUE
+545,I want to get rid of it.,我想擺脫它。,,想要/希望,38715,887871,3,7,9.1,TRUE
+546,I want to see you again.,我希望再次見到你。,,想要/希望,17494,856385,1,7,7.7,TRUE
+548,I want to see your mother.,我想看看你的母親。,,想要/希望,252802,864275,0,7,7,TRUE
+549,I want to travel with you.,我想和你去旅行。,,想要/希望,29042,851482,2,7,8.4,TRUE
+550,What do you want me to do?,你要我做什麼?,,想要/希望,25106,903465,0,7,7,TRUE
+551,I want to have my own room.,我想要有我自己的房間。,,想要/希望,258198,346070,1,7,7.7,TRUE
+552,I wish I earned more money.,我希望我賺更多的錢。,,想要/希望,30512,864264,4,8,10.8,TRUE
+553,I wish I knew where he was!,但願我知道他在哪裡。,,想要/希望,285890,894021,2,7,8.4,TRUE
+554,This is just what I wanted.,我想要的就是這個。,,想要/希望,55891,1314313,2,7,8.4,TRUE
+556,I would like to go with you.,我想和你一起走。,,想要/希望,27692,7774771,0,7,7,TRUE
+557,She wants a new dress badly.,她很想要一條新的洋裝。,,想要/希望,315132,332966,0,7,7,TRUE
+558,Would you like to go abroad?,你想出國嗎?,,想要/希望,16238,874404,2,7,8.4,TRUE
+559,I want to go there once more.,我想再去那裡一次。,,想要/希望,31502,875295,2,7,8.4,TRUE
+560,I don't want to eat lunch now.,我現在不想吃午飯。,,想要/希望,257469,472881,2,8,9.4,TRUE
+561,I want something sweet to eat.,我想要吃甜的東西。,,想要/希望,25179,859138,1,8,8.7,TRUE
+562,I want something to drink now.,我現在想要喝點東西。,,想要/希望,321813,858207,2,8,9.4,TRUE
+563,I want to eat some cake first.,我想先吃點蛋糕。,,想要/希望,32812,887796,3,7,9.1,TRUE
+564,I wish you could come with us.,但願你可以跟我們一起來。,,想要/希望,17838,893515,2,7,8.4,TRUE
+565,I would like to know her name.,我想知道她的名字。,,想要/希望,309801,894304,0,7,7,TRUE
+567,I want to drink something cold.,我想喝點冷飲。,,想要/希望,25015,851481,1,8,8.7,TRUE
+568,What do you want for breakfast?,你早餐想要吃什麼？,,想要/希望,277779,868451,1,7,7.7,TRUE
+569,What would you like for supper?,你晚餐想吃什麼?,,想要/希望,324627,864416,2,7,8.4,TRUE
+570,I wish they would stop fighting.,我希望他們會停止打架。,,想要/希望,304930,862680,2,7,8.4,TRUE
+571,What would you like for dessert?,你想要什麼甜點？,,想要/希望,39470,865582,3,7,9.1,TRUE
+572,Where would you like to go next?,你下一步想去哪裡?,,想要/希望,264346,896496,1,7,7.7,TRUE
+573,He wants something cold to drink.,他想喝些冷飲。,,想要/希望,294238,849016,1,8,8.7,TRUE
+574,I want to breathe some fresh air.,我想呼吸一下新鮮空氣。,,想要/希望,419075,889138,5,7,10.5,TRUE
+575,Where would you like to go first?,你想先去哪裡?,,想要/希望,32801,903615,1,7,7.7,TRUE
+576,I want an MP3 player!,我想要一個MP3播放器！,,想要/希望,2161,503279,7,7,11.9,TRUE
+577,I wish to go to Hawaii.,我希望去夏威夷。,,想要/希望,255439,862703,1,7,7.7,TRUE
+578,I want to go to Seattle.,我想去西雅圖。,,想要/希望,53908,333258,7,6,10.9,TRUE
+580,I want a few empty glasses.,我要一些空的玻璃杯。,,想要/希望,18302,1878284,4,8,10.8,TRUE
+581,I wanted to show it to you.,我想把它給你看。,,想要/希望,17475,883036,1,8,8.7,TRUE
+582,I'd like to be a guitarist.,我想要成為吉他手。,,想要/希望,253371,335723,8,8,13.6,TRUE
+583,I am dying for a cold drink.,我迫切需要冷飲。,,想要/希望,326048,1450467,3,7,9.1,TRUE
+585,I feel like going out today.,我今天想出門。,,想要/希望,242880,848941,2,7,8.4,TRUE
+586,I want to see him very much.,我非常想見到他。,,想要/希望,255232,843420,0,8,8,TRUE
+587,I don't want to get a suntan.,我不想曬黑。,,想要/希望,259794,429146,8,9,14.6,TRUE
+588,I wish I didn't have to work.,我希望我不必工作。,,想要/希望,245417,891610,2,8,9.4,TRUE
+589,I want to go abroad next year.,我明年想去國外。,,想要/希望,262161,889194,3,8,10.1,TRUE
+592,Do you want any of these books?,你要這些書中的任何幾本嗎？,,想要/希望,55093,881171,1,8,8.7,TRUE
+593,Do you want to eat out tonight?,你今晚想出去吃嗎？,,想要/希望,243017,881202,1,8,8.7,TRUE
+594,I want to buy something to eat.,我想買點東西吃。,,想要/希望,256365,887788,1,9,9.7,TRUE
+595,I want to talk with your uncle.,我想跟你叔叔談談。,,想要/希望,70572,875263,0,7,7,TRUE
+596,I want you to read this letter.,我想你讀一下這封信。,,想要/希望,257066,487728,0,8,8,TRUE
+598,Do you feel like going swimming?,你想去游泳嗎?,,想要/希望,26412,845500,1,7,7.7,TRUE
+599,How awful!,太可怕了。,,"快速應對,驚訝/感嘆",72077,5102161,3,3,5.1,TRUE
+600,Perfect!,完美！,,快速應對,374568,5092133,2,2,3.4,TRUE
+602,You're joking!,你在開玩笑吧！,,快速應對,433882,825144,2,3,4.4,TRUE
+605,No way!,不可能！,,快速應對,2175,503298,0,2,2,TRUE
+606,That's true.,那是真的。,,快速應對,618799,771357,1,2,2.7,TRUE
+607,You should practice playing the violin every day.,你應該每天練習拉小提琴。,,"忠告,頻率,樂器",16435,775787,3,14,16.1,TRUE
+608,Children should drink milk every day.,小朋友應該每天喝牛奶。,,"忠告,頻率",245992,332690,0,9,9,TRUE
+611,You had better stay here a little longer.,你最好在這裡待久一點。,,"忠告,期間,地點",16398,775783,1,10,10.7,TRUE
+614,We'd better talk.,我們最好談談。,,"忠告,建議",2241531,5780618,1,4,4.7,TRUE
+615,You shouldn't go out.,你不應該出去的。,,"忠告,建議",516307,833086,2,5,6.4,TRUE
+616,Let them take care of themselves.,讓他們照顧他們自己。,,"忠告,建議",305123,798265,2,8,9.4,TRUE
+617,You should rewrite this sentence.,你應該重寫這句話。,,"忠告,建議",57218,844450,6,7,11.2,TRUE
+618,Why don't you give it another try?,你為什麼不再試一次?,,"忠告,建議",31501,896506,3,10,12.1,TRUE
+619,You should do your homework now.,你現在該做功課了。,,"忠告,學校",242127,870376,1,8,8.7,TRUE
+621,You shouldn't wait here.,你不應該在這裡等。,,"忠告,地點",405520,833193,1,5,5.7,TRUE
+622,You'd better not wait here.,你最好不要在這裡等。,,"忠告,地點",16717,840526,2,6,7.4,TRUE
+623,You should stay at home today.,你今天應該待在家。,,"忠告,地點",242793,875089,0,7,7,TRUE
+624,Keep the money in a safe place.,把錢保存在安全的地方。,,"忠告,地點",18593,894378,2,8,9.4,TRUE
+625,You should keep your valuables in a safe place.,你該把你的值錢東西放在一個安全的地方。,,"忠告,地點",20153,476629,5,11,14.5,TRUE
+626,You shouldn't talk back to your parents like that.,你不應該對你父母那樣頂嘴。,,忠告,16796,775849,3,11,13.1,TRUE
+628,You should try to form the habit of using your dictionaries.,你該養成用字典的習慣。,,忠告,16028,792843,4,16,18.8,TRUE
+629,Never give up.,決不放棄。,,忠告,2249592,3783106,2,4,5.4,TRUE
+631,You'd better not go.,你最好不要去。,,忠告,16161,833062,2,5,6.4,TRUE
+632,You'd better hurry.,你最好快一點。,,忠告,1048337,466238,3,5,7.1,TRUE
+633,We should do our best.,我們應該盡可能做到最好。,,忠告,28796,334642,0,5,5,TRUE
+635,You'd better start now.,你最好現在就開始。,,忠告,16148,833061,2,5,6.4,TRUE
+636,You should quit smoking.,你該戒菸了。,,忠告,495668,832959,3,5,7.1,TRUE
+638,You should apologize.,你應該道歉。,,忠告,16023,825188,4,6,8.8,TRUE
+640,You should go in person.,你應該親自去。,,忠告,411308,844511,1,6,6.7,TRUE
+641,You should not go alone.,你不應該一個人去的。,,忠告,69783,845989,2,6,7.4,TRUE
+642,You should see a doctor.,你應該去看醫生。,,忠告,405716,836382,4,6,8.8,TRUE
+644,We should cancel the hike.,我們應該取消這次遠足。,,忠告,632558,795227,5,6,9.5,TRUE
+645,You should be more careful.,你應該要更小心。,,忠告,16359,844525,3,7,9.1,TRUE
+647,You should get your hair cut.,你該剪頭髮了。,,忠告,15857,343229,0,6,6,TRUE
+649,You should tell him the truth.,你該告訴他真相。,,忠告,15830,501212,2,6,7.4,TRUE
+650,Drivers should wear seat belts.,司機應該繫安全帶。,,忠告,26592,833251,4,6,8.8,TRUE
+653,We ought to obey the law.,我們應該守法。,,忠告,263276,792784,6,7,11.2,TRUE
+655,You'd better go in person.,你最好親自去。,,忠告,237716,845489,2,7,8.4,TRUE
+656,You'd better not go today.,你今天最好不要去。,,忠告,242839,844472,2,7,8.4,TRUE
+657,You ought to see a dentist.,你應該去看牙醫。,,忠告,16070,872128,5,7,10.5,TRUE
+658,You should obey your parents.,你該聽你父母的話。,,忠告,237640,811286,3,7,9.1,TRUE
+659,You shouldn't break promises.,你不該違背你的諾言。,,忠告,68882,426337,4,7,9.8,TRUE
+660,You'd better go home at once.,你最好立刻回家。,,忠告,52201,874471,2,7,8.4,TRUE
+661,You should always do your best.,你應該永遠盡全力做好。,,忠告,268479,872141,1,7,7.7,TRUE
+663,You should eat more vegetables.,你應該吃更多蔬菜。,,忠告,30364,836323,2,8,9.4,TRUE
+664,You should emphasize that fact.,你應該重視那個事實。,,忠告,16584,836353,4,7,9.8,TRUE
+665,You should drive at a safe speed.,你應該以安全速度駕駛。,,忠告,28484,895732,4,7,9.8,TRUE
+666,You should think before you speak.,你說話前應該先想一想。,,忠告,241002,530712,0,7,7,TRUE
+667,You should be more reasonable.,你應該更理性一點。,,忠告,69717,335311,5,7,10.5,TRUE
+668,You'd better go to bed at once.,你最好馬上去睡覺。,,忠告,52148,829310,2,8,9.4,TRUE
+669,I think you should see a doctor.,我覺得你應該去看醫生。,,忠告,28054,881208,4,8,10.8,TRUE
+670,You had better not stay up late.,你最好不要熬夜。,,忠告,277356,908030,3,8,10.1,TRUE
+671,You'd better consult the doctor.,您最好請教一下醫生。,,忠告,16317,469289,9,8,14.3,TRUE
+672,You'd better consult the doctor.,你最好請教一下醫生。,,忠告,16317,469291,9,8,14.3,TRUE
+673,You should drink a lot of liquid.,你應該喝大量的液體。,,忠告,270935,896374,2,8,9.4,TRUE
+674,You should try to be more polite.,你應該試著更有禮貌。,,忠告,17646,902943,4,8,10.8,TRUE
+675,You shouldn't eat too much candy.,你不應該吃太多糖果。,,忠告,67735,872392,2,8,9.4,TRUE
+676,You'd better consult your doctor.,你最好問你的醫生。,,忠告,28044,842332,9,8,14.3,TRUE
+679,You should be good to your neighbors.,你應該對鄰居好點。,,忠告,325952,5574138,3,8,10.1,TRUE
+680,You'd better not go out today.,你今天最好不要出門。,,忠告,16131,907252,3,8,10.1,TRUE
+681,"If I were you, I wouldn't do it.",如果我是你，我不會那麼做。,,忠告,30621,6635897,3,9,11.1,TRUE
+682,I advise you to give up drinking.,我建議你戒酒。,,忠告,266119,888111,4,9,11.8,TRUE
+683,I wouldn't do that if I were you.,如果我是你，我不會那樣做。,,忠告,30835,6635897,3,9,11.1,TRUE
+684,You had better go to the dentist's.,你最好去看牙醫。,,忠告,263616,905347,3,9,11.1,TRUE
+685,You should follow the doctor's advice.,你應該遵照醫生的忠告。,,忠告,16315,874735,8,9,14.6,TRUE
+686,You should follow your teacher's advice.,您應該聽從你老師的建議。,,忠告,15947,872156,4,9,11.8,TRUE
+687,You'd better have your hair cut at once.,你最好立刻剪頭髮。,,忠告,16638,775818,2,9,10.4,TRUE
+688,You should take care of your sick mother.,你應該照顧你生病的母親。,,忠告,9587,775593,2,9,10.4,TRUE
+689,I think that you ought to apologize to her.,我認為你應該跟她道歉。,,忠告,11374,775598,7,12,16.9,TRUE
+690,Don't go out after dark.,天黑以後不要出門。,,忠告,28454,834395,3,7,9.1,TRUE
+692,Eat a lot of vegetables.,多吃點蔬菜。,,忠告,324120,345971,1,8,8.7,TRUE
+693,Don't worry about the past.,不要擔心過去。,,忠告,23628,796829,3,8,10.1,TRUE
+694,Don't walk alone after dark.,不要一個人在黑暗中走。,,忠告,28457,833045,3,8,10.1,TRUE
+695,Don't stay in the sun too long.,不要在陽光下逗留太久。,,忠告,281127,883298,1,8,8.7,TRUE
+696,Don't judge a man by his clothes.,不要以穿著來判斷一個人。,,忠告,270184,889125,3,9,11.1,TRUE
+697,Stick with it and you'll succeed.,堅持下來，你就能成功。,,忠告,271305,6535844,5,7,10.5,TRUE
+699,Don't worry about such a thing.,不要擔心這樣的事情。,,忠告,41581,842324,3,9,11.1,TRUE
+700,Don't be afraid of barking dogs.,別要怕會叫的狗。,,忠告,321249,6089930,4,9,11.8,TRUE
+701,Make sure you get plenty of rest.,你務必要好好地休息。,,忠告,266519,890622,4,8,10.8,TRUE
+703,Write it down before you forget it.,在你忘記之前把它寫下來。,,忠告,321160,896509,2,9,10.4,TRUE
+704,Look out for cars when you cross the road.,當你過馬路時，要小心汽車。,,忠告,280497,874487,4,9,11.8,TRUE
+705,Never be afraid of making mistakes.,永遠不要害怕犯錯。,,忠告,32279,859342,3,11,13.1,TRUE
+707,Don't pry into the affairs of others.,不要探聽別人的事。,,忠告,274704,332959,11,11,18.7,TRUE
+708,You'd better relax a bit.,你最好休息一下。,,忠告,267707,1394881,5,7,10.5,TRUE
+710,Don't let appearances deceive you.,不要被外表欺騙了。,,忠告,4728143,4517819,8,10,15.6,TRUE
+711,It's okay to take it easy sometimes.,有時可以放輕鬆一下。,,忠告,40524,798262,3,12,14.1,TRUE
+713,You should apologize for your rudeness.,你該為你的無理道歉。,,忠告,63225,784519,7,11,15.9,TRUE
+714,You'd better take an umbrella with you.,你最好隨身帶把傘。,,忠告,4434905,775732,1,10,10.7,TRUE
+715,You should have told me a long time ago.,你很久以前就應該告訴我的。,,忠告,16636,775817,1,10,10.7,TRUE
+716,You'd better wait until the police come.,你最好等到警察前來。,,忠告,7805440,1101758,3,10,12.1,TRUE
+717,You had better be careful not to overeat.,你最好小心不要吃過量。,,忠告,15985,775720,7,13,17.9,TRUE
+718,You should pay attention to what he says.,你該注意他說了什麼。,,忠告,286031,2442277,3,10,12.1,TRUE
+719,You had better get away from here at once.,你最好立刻離開這裡。,,忠告,16722,775834,3,11,13.1,TRUE
+720,You should make an effort to stop smoking.,你應該努力去戒煙。,,忠告,16202,775752,3,10,12.1,TRUE
+721,You should return home before it gets dark.,你應該在天黑之前回家。,,忠告,16325,775779,2,10,11.4,TRUE
+722,You should make better use of your free time.,你要更好地利用閒暇時間。,,忠告,69544,333838,2,10,11.4,TRUE
+723,You should put safety before everything else.,你應該以安全優先。,,忠告,24783,6109283,4,12,14.8,TRUE
+724,You should pay more attention to his warnings.,你應該更加注意他的警告。,,忠告,15818,775628,4,11,13.8,TRUE
+725,You'd better wear a sweater under your jacket.,您最好在外套裡穿一件毛衣。,,忠告,268350,795456,4,12,14.8,TRUE
+728,You look tired. You ought to rest for an hour or two.,你看起累了。你應該休息一、兩個小時。,,忠告,9721,775596,5,13,16.5,TRUE
+729,You'll never achieve anything if you don't study harder.,"如果你不更加努力地學習, 你將永遠不會有所成就。",,忠告,30467,780376,5,15,18.5,TRUE
+730,You should apologize to Dad for not coming home in time for supper.,你應該為你沒有及時回家吃晚餐向你父親道歉。,,忠告,16740,775840,6,18,22.2,TRUE
+731,"All things considered, I think you should go back home and take care of your parents.",全盤考慮後，我覺得你應該回家，照顧你的父母。,,忠告,404076,865394,4,20,22.8,TRUE
+732,I have to go to sleep.,我該去睡覺了。,,必要性,1277,2,0,6,6,TRUE
+733,We need to leave.,我們必須走了。,,必要性,1893746,7767666,2,4,5.4,TRUE
+734,You must hurry up.,你得快點。,,必要性,69497,7768202,3,5,7.1,TRUE
+735,I need to try.,我得試一試。,,必要性,2387771,5983608,1,4,4.7,TRUE
+736,I need to get a stamp.,我需要一張郵票。,,必要性,259028,793499,3,6,8.1,TRUE
+737,You have to be patient.,你必須要有耐心。,,必要性,20305,793498,3,6,8.1,TRUE
+738,You don't need to hurry.,你不必著急。,,必要性,411309,793501,4,7,9.8,TRUE
+739,I have to get some sleep.,我需要一些睡眠。,,必要性,617467,793505,1,6,6.7,TRUE
+740,I need to get some stamps.,我需要一些郵票。,,必要性,407135,793500,4,6,8.8,TRUE
+741,Do you need an ambulance?,你需要救護車嗎?,,必要性,19591,793497,7,7,11.9,TRUE
+742,All you can do is to wait.,所有你能做的就是等待。,,必要性,17544,408259,2,7,8.4,TRUE
+743,Children need a lot of sleep.,孩子們需要大量的睡眠。,,必要性,579224,793508,1,7,7.7,TRUE
+744,She cannot do without her car.,她離不開她的車。,,必要性,314812,793512,3,8,10.1,TRUE
+745,She cannot do without her car.,沒有車她做不了事。,,必要性,314812,793514,3,8,10.1,TRUE
+746,The school needed a new teacher.,學校需要一個新的老師。,,必要性,48955,793509,1,8,8.7,TRUE
+747,You didn't need to buy the book.,你不需要買這本書。,,必要性,606324,793510,2,8,9.4,TRUE
+748,You don't need to carry lunch with you.,你不需要帶著午餐。,,必要性,320463,793516,2,10,11.4,TRUE
+749,I will go with you if necessary.,如果必要的話，我會和你一起去。,,必要性,318266,793504,4,10,12.8,TRUE
+750,We must learn to live in harmony with nature.,我們必須學會與自然和諧共處。,,必要性,248821,5613678,6,12,16.2,TRUE
+751,You need to have friends who can help you out.,你需要可以幫助你的朋友。,,必要性,16188,775744,3,10,12.1,TRUE
+754,We have to turn in our reports by the end of this month.,這個月底前，我們必須交報告。,,必要性,248395,332952,2,14,15.4,TRUE
+755,We need to go.,我們必須走了。,,必要性,1893749,7767666,1,4,4.7,TRUE
+756,We need money.,我們需要錢。,,必要性,493908,752112,1,4,4.7,TRUE
+757,I need a lawyer.,我需要一名律師。,,必要性,1887574,6292460,2,5,6.4,TRUE
+758,Yesterday was my seventeenth birthday.,昨天是我17歲生日。,,年齡,244516,333242,4,10,12.8,TRUE
+759,He wrote this book at the age of twenty.,他在20歲的時候寫了這本書。,,年齡,288476,816430,2,10,11.4,TRUE
+760,She turned eighty-one.,她八十一歲了。,,年齡,388583,824527,1,6,6.7,TRUE
+761,My father helped me with my homework.,我爸爸幫我做作業。,,"學校,親戚/家人",64097,724312,0,11,11,TRUE
+762,He must finish his homework today.,他今天必須完成他的功課。,,"學校,義務",299380,848426,2,10,11.4,TRUE
+763,We must finish our homework first.,我們必須先完成我們的功課。,,"學校,義務",32774,869919,3,9,11.1,TRUE
+764,You have to study hard to catch up with your class.,你必須用功讀書趕上同學。,,"學校,義務",16727,775836,2,12,13.4,TRUE
+765,You must get this homework finished by the day after tomorrow.,你必須在後天以前完成回家作業。,,"學校,義務",16684,775829,2,18,19.4,TRUE
+766,The history class starts at nine.,歷史課九點開始。,,"學校,時間",326120,5905025,0,8,8,TRUE
+767,I will finish my homework by nine.,我會在九點前完成我的作業。,,"學校,時間",252633,881091,2,10,11.4,TRUE
+768,The class begins at 8:30.,課程八點半開始。,,"學校,時間",413315,840648,0,8,8,TRUE
+769,Class doesn't begin until eight-thirty.,八點半開始上課。,,"學校,時間",1525,910833,3,10,12.1,TRUE
+770,School begins on April the tenth.,學校在四月十日開學。,,"學校,日期",21519,798198,2,8,9.4,TRUE
+771,He left high school at seventeen.,他十七歲的時候離開了高中。,,"學校,年齡",299329,846212,2,8,9.4,TRUE
+772,We graduate from high school at eighteen.,我們在十八歲的時候從高中畢業了。,,"學校,年齡",247797,802106,4,9,11.8,TRUE
+773,I was alone in the classroom.,我獨自待在教室裡。,,"學校,地點",256937,463921,2,8,9.4,TRUE
+774,School starts in September in Europe.,歐洲的學校在九月開學。,,"學校,地點",30030,798291,3,9,11.1,TRUE
+775,Don't talk in the classroom.,別在教室裡說話。,,"學校,地點",495877,833220,1,7,7.7,TRUE
+776,There are many more students in the classroom today than yesterday.,今天教室裡的學生比昨天還要多許多。,,"學校,地點",242852,801563,3,17,19.1,TRUE
+777,I like mathematics.,我喜歡數學。,,"學校,喜歡",435453,780286,3,6,8.1,TRUE
+778,What subject do you like best?,你最喜歡哪一個科目?,,"學校,喜好/偏好,喜歡",69827,869917,3,7,9.1,TRUE
+779,You ought to ask for your teacher's permission.,你應該請求你的老師允許。,,學校,15948,775674,7,11,15.9,TRUE
+780,Have you finished doing your homework yet?,你做完回家作業了嗎?,,學校,16399,775784,2,11,12.4,TRUE
+781,I erased the blackboard for the teacher.,我為老師擦黑板。,,學校,2325182,3338935,4,11,13.8,TRUE
+782,We're classmates.,我們是同學。,,學校,247946,333784,2,4,5.4,TRUE
+783,Who is your teacher?,誰是你老師？,,學校,17660,787631,1,5,5.7,TRUE
+784,I don't like homework.,我不喜歡作業。,,學校,258539,4673804,1,7,7.7,TRUE
+785,Where is Tom's classroom?,湯姆的教室在哪裡？,,學校,37357,824608,2,5,6.4,TRUE
+786,I'm doing my homework.,我正在做我的作業。,,學校,258045,4540618,1,6,6.7,TRUE
+787,All my homework is done.,我做完了所有的回家作業。,,學校,266674,780371,1,7,7.7,TRUE
+788,Tom fell asleep in class.,湯姆在課堂上睡著了。,,學校,1025813,2500072,4,6,8.8,TRUE
+789,I am tired of homework.,我厭倦了功課。,,學校,258543,926788,1,8,8.7,TRUE
+790,I have a lot of homework.,我有很多功課。,,學校,418848,846379,0,8,8,TRUE
+791,I have no homework today.,我今天沒有功課。,,學校,242878,834969,0,8,8,TRUE
+792,I like to do my homework.,我喜歡做我的作業。,,學校,1762587,6568346,0,8,8,TRUE
+793,I don't have classes today.,我今天沒課。,,學校,242874,834810,1,8,8.7,TRUE
+794,He helped me do my homework.,他幫我做我的功課。,,學校,303732,848704,0,9,9,TRUE
+796,Who is your English teacher?,你的英語老師是誰？,,學校,237726,842432,1,7,7.7,TRUE
+798,What grade is your sister in?,你的妹妹唸幾年級？,,學校,16905,864391,3,7,9.1,TRUE
+799,I took an art class last year.,我去年上了一堂藝術課。,,學校,19414,881087,1,7,7.7,TRUE
+800,We are both in the same class.,我們兩個同班。,,學校,247818,895575,3,7,9.1,TRUE
+801,I helped him with his homework.,我幫他做他的家庭作業。,,學校,260666,846570,0,9,9,TRUE
+803,Have you finished your homework?,你做完作業了嗎？,,學校,31331,833090,1,9,9.7,TRUE
+804,Tom slipped out of the classroom.,湯姆溜出了教室。,,學校,37163,871164,4,8,10.8,TRUE
+805,Can I register for that class?,我可以登記上這堂課嗎？,,學校,2738934,5422702,6,8,12.2,TRUE
+806,He was busy with his homework.,他忙於做功課。,,學校,299377,848731,2,9,10.4,TRUE
+807,I do my homework after school.,我在放學後做作業。,,學校,398543,6147568,0,9,9,TRUE
+808,Tom forgot to do his homework.,湯姆忘了做作業。,,學校,1025740,5574592,2,9,10.4,TRUE
+809,Tom doesn't like doing homework.,湯姆不喜歡做作業。,,學校,1026044,1397330,2,8,9.4,TRUE
+810,Have you handed in your homework?,你交功課了嗎？,,學校,31327,838635,0,9,9,TRUE
+811,I have just finished my homework.,我剛剛完成我的作業。,,學校,40141,848430,2,10,11.4,TRUE
+812,Some boys came into the classroom.,有些男孩走進了教室。,,學校,24522,860842,1,8,8.7,TRUE
+813,We have four French classes a week.,我們一週有四堂法語課。,,學校,266410,900267,2,8,9.4,TRUE
+815,She is doing her homework now.,她現在正在做她的功課。,,學校,313708,851533,2,8,9.4,TRUE
+816,He's busy with his homework now.,他現在正忙著做他的家庭作業。,,學校,296554,889383,2,9,10.4,TRUE
+817,I have a lot of homework to do.,我有很多作業要做。,,學校,30181,401219,0,10,10,TRUE
+818,"After dinner, I did my homework.",吃完晚飯後，我做作業。,,學校,262094,6159158,0,10,10,TRUE
+819,I have already done my homework.,我已經做了我的家庭作業。,,學校,20527,846565,1,10,10.7,TRUE
+820,She was busy doing her homework.,她忙著做她的功課。,,學校,314946,856382,2,9,10.4,TRUE
+821,I'm always busy with my homework.,我總是忙於功課。,,學校,253141,850313,3,10,12.1,TRUE
+822,I'm too sleepy to do my homework.,我太想睡了，做不了功課。,,學校,252980,795451,3,10,12.1,TRUE
+823,I've already finished my homework.,我已經完成了我的作業。,,學校,255732,835446,2,11,12.4,TRUE
+826,Tom and Mary are in the same class.,湯姆和瑪麗在同一個班級。,,學校,1029904,2110980,3,9,11.1,TRUE
+827,Mary said she would do her homework.,瑪麗說她會做她的功課。,,學校,31918,891614,1,10,10.7,TRUE
+828,Did you do your homework by yourself?,你靠自己做回家作業的嗎?,,學校,15999,775724,0,10,10,TRUE
+829,How many boys are there in this class?,這個班有多少男生？,,學校,61193,332709,1,9,9.7,TRUE
+830,Take off your hat when you enter a classroom.,進教室時請脫下帽子。,,學校,19033,2032307,2,11,12.4,TRUE
+831,Algebra is my favorite subject.,代數是我最喜歡的科目。,,學校,275391,833122,9,10,16.3,TRUE
+832,History is not his major subject.,歷史不是他的主修科目。,,學校,245514,5863262,6,10,14.2,TRUE
+833,I am unable to finish my homework.,我無法完成我的作業。,,學校,1819532,884202,3,11,13.1,TRUE
+834,I haven't yet finished my homework.,我還沒做完作業。,,學校,3378503,7768219,3,11,13.1,TRUE
+835,I was unable to finish my homework.,我無法完成我的作業。,,學校,258555,884202,3,11,13.1,TRUE
+836,Mathematics is my favorite subject.,數學是我最喜歡的科目。,,學校,271018,834682,7,11,15.9,TRUE
+837,Mathematics is an easy subject for me.,數學對我來說是一個容易的科目。,,學校,271012,797136,6,12,16.2,TRUE
+838,It took me three hours to do my homework.,我花了3小時做作業。,,學校,258549,335680,0,11,11,TRUE
+839,Tom refused to help Mary do her homework.,湯姆拒絶幫瑪麗做她的作業。,,學校,1849049,6119491,4,13,15.8,TRUE
+840,Tom didn't understand what the teacher said.,湯姆不懂老師說了什麼。,,學校,1026276,5091156,2,11,12.4,TRUE
+841,I read the book after I had finished my homework.,我做完我的功課後，就讀這本書。,,學校,258554,332598,1,15,15.7,TRUE
+844,Tom needs to study more if he hopes to pass this class.,湯姆如果想通過這門課，就需要加勁學習。,,學校,1024399,5613696,3,14,16.1,TRUE
+846,I let Tom watch a little TV after he finished his homework.,我讓Tom在做完作業後看一點電視。,,學校,2377427,4845048,3,17,19.1,TRUE
+847,As soon as the bell rang the teacher came into the classroom.,鐘聲一響起，老師就走進了教室。,,學校,388846,871180,3,15,17.1,TRUE
+848,I think you need to spend a little more time on your homework.,我覺得你應該多花點時間在作業上。,,學校,909532,2028489,3,15,17.1,TRUE
+849,She's my classmate.,她是我的同學。,,學校,321453,825761,1,4,4.7,TRUE
+850,Physics is my favorite subject.,物理是我最喜歡的科目。,,學校,319980,839463,7,8,12.9,TRUE
+851,He went to Nagoya on business.,他到名古屋洽談業務。,,"城市,目的",297030,849259,6,11,15.2,TRUE
+852,Have you ever visited Rome?,你去過羅馬嗎？,"日常, 旅遊",城市,29403,832977,0,8,8,TRUE
+853,They went to Tottori.,他們去了鳥取。,,城市,305377,779013,7,6,10.9,TRUE
+854,They're still in Boston.,他們還在波士頓。,,城市,3148347,6073863,8,5,10.6,TRUE
+855,She has been to Paris.,她去過巴黎。,,城市,311992,333004,1,6,6.7,TRUE
+856,I want to leave Paris.,我想離開巴黎。,,城市,895072,437300,1,6,6.7,TRUE
+857,Kyoto is worth visiting.,京都值得遊覽。,,城市,19289,782363,3,7,9.1,TRUE
+858,Tom found a job in Boston.,湯姆在波士頓找了份工作。,,城市,3148335,4704311,9,7,13.3,TRUE
+859,Kobe is famous for its port.,神戶是著名的港口。,,城市,269686,797111,8,7,12.6,TRUE
+861,Have you ever been to Kyoto?,你去過京都嗎？,,城市,431680,334659,1,8,8.7,TRUE
+862,Tom got to Boston yesterday.,湯姆昨天到波士頓。,,城市,1025638,5581712,7,8,12.9,TRUE
+863,I'm on my way back to Boston.,我在回波士頓的路上。,,城市,2542932,5624926,8,8,13.6,TRUE
+864,What did you go to Kyoto for?,你為什麼去京都?,,城市,36404,781182,1,8,8.7,TRUE
+865,She went from London to Paris.,她從倫敦去了巴黎。,,城市,312446,863930,0,8,8,TRUE
+866,Is this the right bus for Boston?,這輛是去波士頓的巴士嗎?,,城市,33452,894213,8,8,13.6,TRUE
+867,"You live in Boston now, don't you?",你住在波士頓，不是嗎？,,城市,3148243,6084401,8,9,14.6,TRUE
+868,They went to Chicago by car.,他們開車去芝加哥。,,城市,306813,760841,7,8,12.9,TRUE
+869,He went to London via Paris.,他經由巴黎去了倫敦。,,城市,292442,1450416,5,8,11.5,TRUE
+870,Tomorrow I'm going to Paris.,明天我要去巴黎。,,城市,697430,1334026,1,8,8.7,TRUE
+872,He's gone to Nagoya on business.,他因公出差到名古屋。,,城市,40892,4953629,6,11,15.2,TRUE
+873,He's gone to Nagoya on business.,他去名古屋出差。,,城市,40892,4953630,6,11,15.2,TRUE
+874,My grandfather comes from Osaka.,我的祖父來自大阪。,,城市,273881,834733,2,10,11.4,TRUE
+875,He came all the way from Chicago.,他從芝加哥遠道而來了。,,城市,292445,883280,7,9,13.9,TRUE
+876,The police followed him to Paris.,這個警察跟踪他到了巴黎。,,城市,453414,4797647,2,10,11.4,TRUE
+878,She is going to Sendai this spring.,她今年春天要去仙台。,,城市,310831,894155,8,8,13.6,TRUE
+879,Tom went to Boston three years ago.,湯姆三年前去過波士頓。,,城市,1023908,2163106,8,9,14.6,TRUE
+880,I am in Tokyo today.,我今天在東京。,,城市,257596,917907,1,7,7.7,TRUE
+881,Tokyo is a big city.,東京是一個很大的城市。,,城市,279791,333362,1,7,7.7,TRUE
+882,Nara is a very old city.,奈良是個非常古老的城市。,,城市,280748,332929,4,9,11.8,TRUE
+883,The jet landed at Tokyo.,這架客機降落在東京了。,,城市,53697,793953,4,7,9.8,TRUE
+884,I was in Tokyo yesterday.,我昨天在東京。,,城市,257792,834796,1,8,8.7,TRUE
+885,I am a citizen of Sapporo.,我是札幌的市民。,,城市,257857,819268,10,10,17,TRUE
+886,Kyoto has many universities.,京都有很多所大學。,,城市,19318,333508,4,10,12.8,TRUE
+887,He arrived in Tokyo yesterday.,他昨天抵達東京。,,城市,244644,834377,2,10,11.4,TRUE
+888,He is flying to Paris tomorrow.,他明天將飛往巴黎。,,城市,304122,848714,2,9,10.4,TRUE
+889,He is leaving Chicago tomorrow.,他明天將離開芝加哥。,,城市,288703,833804,9,10,16.3,TRUE
+890,I am leaving for Tokyo tomorrow.,我明天將出發去東京。,,城市,323451,848860,3,10,12.1,TRUE
+891,He will arrive in Paris tomorrow.,他明天將抵達巴黎。,,城市,304090,848528,3,10,12.1,TRUE
+892,He's always been living in Tokyo.,他一直住在東京。,,城市,290295,779473,2,9,10.4,TRUE
+893,All sorts of people live in Tokyo.,各式各樣的人住在東京。,,城市,279740,868252,3,8,10.1,TRUE
+894,Is this the right train for Tokyo?,這是開往東京的火車嗎?,,城市,279806,891146,2,8,9.4,TRUE
+895,Kyoto and Boston are sister cities.,京都和波士頓是姐妹城市。,,城市,2698592,5842613,7,10,14.9,TRUE
+896,He has a brother who lives in Tokyo.,他有個住在東京的兄弟。,,城市,284881,7771888,0,11,11,TRUE
+897,Kyoto is famous for its old temples.,京都以古寺有名。,,城市,19296,797142,5,10,13.5,TRUE
+898,My brother goes to college in Tokyo.,我兄弟在東京上大學。,,城市,250727,804832,0,10,10,TRUE
+900,He is now either in Rome or in Paris.,他不是在羅馬，就是在巴黎。,,城市,296530,887660,3,11,13.1,TRUE
+901,Tom is leaving Kobe tomorrow morning.,湯姆明天早上離開神戶。,,城市,37005,781112,6,10,14.2,TRUE
+902,What is the fare from Osaka to Akita?,從大阪到秋田要多少錢？,,城市,275677,336186,12,12,20.4,TRUE
+903,Kyoto depends on the tourist industry.,京都依賴旅遊業。,,城市,19300,798173,7,11,15.9,TRUE
+904,She went either to London or to Paris.,她不是去了倫敦就是巴黎。,,城市,312445,863913,1,11,11.7,TRUE
+905,Karuizawa is famous as a summer resort.,輕井澤是著名的避暑勝地。,,城市,238417,797041,14,13,22.8,TRUE
+906,I want you to not go to Boston with Tom.,我要你別和湯姆去波士頓。,,城市,2026592,3383343,8,11,16.6,TRUE
+907,Spring is the best season to visit Kyoto.,春天是訪問京都最好的季節。,,城市,266956,782267,2,11,12.4,TRUE
+908,What time will the train get to Yokohama?,火車什麼時候到橫濱？,,城市,1481671,335130,7,11,15.9,TRUE
+909,The streets in Tokyo are full on Saturdays.,週六，東京街上人滿為患。,,城市,681040,900003,3,11,13.1,TRUE
+910,"Having lived in Tokyo, I know the city well.",因為住過東京，我對這個城市非常了解。,,城市,279744,336436,0,13,13,TRUE
+911,London's climate differs from that of Tokyo.,倫敦的氣候和東京不同。,,城市,29287,336471,6,11,15.2,TRUE
+912,This plane flies between Osaka and Hakodate.,這架飛機往返於大阪和函館之間。,,城市,57454,903487,10,12,19,TRUE
+913,Our music teacher advised me to visit Vienna.,我們的音樂老師建議我去維也納看看。,,城市,25423,6148370,10,14,21,TRUE
+914,I don't believe the child came to Tokyo alone.,我不相信孩子能獨自到東京。,,城市,59094,336938,3,13,15.1,TRUE
+915,She told me that she would go to Paris in August.,她跟我說八月份她會去巴黎。,,城市,314132,461999,0,13,13,TRUE
+917,She came to Tokyo when she was eighteen years old.,她18歲的時候來到東京。,,城市,464656,1397135,2,12,13.4,TRUE
+918,"The longer I stayed in Paris, the more I liked it.",在巴黎待得越久，我就越喜歡巴黎。,,城市,255430,1423332,1,16,16.7,TRUE
+919,Tom has made up his mind to go to Boston to study.,湯姆已經下定決心要去波士頓唸書。,,城市,1025356,4805778,8,14,19.6,TRUE
+920,This company is listed on the Paris stock exchange.,這家公司在巴黎證券交易所上市了。,,城市,1159921,805223,10,14,21,TRUE
+921,"When I first came back to Boston, I was really lonely.",當我第一次回波士頓時，我非常孤獨。,,城市,3148256,5595228,9,15,21.3,TRUE
+923,Tom was able to make himself understood in French when he visited Paris.,在巴黎，沒有人能夠理解湯姆的法文。,,城市,1024015,1228959,4,19,21.8,TRUE
+924,He and his sisters are currently living in Tokyo.,他和他的姐妹們目前都住在東京。,,城市,1477144,332641,4,14,16.8,TRUE
+925,People from Madrid are weird.,從馬德里來的人都很怪。,,城市,1558,334432,13,6,15.1,TRUE
+927,I miss Boston.,我想念波士頓。,,城市,2387234,5548480,7,4,8.9,TRUE
+928,Tom misses Boston.,湯姆想念波士頓了。,,城市,2862240,7772594,8,5,10.6,TRUE
+929,What do you have in your bag?,你的袋子裡有什麼？,,地點,69790,895591,0,7,7,TRUE
+931,He lives just across the road.,他就住在馬路對面。,,地點,302062,848677,3,8,10.1,TRUE
+932,I had hoped to meet you there.,我曾希望在那裡遇見你。,,地點,71154,889642,1,8,8.7,TRUE
+933,I'll pick you up at your home.,我會去你家接你。,,地點,70798,472851,3,7,9.1,TRUE
+934,Let's take a walk in the park.,讓我們在公園裡散步吧。,,地點,240456,894051,1,7,7.7,TRUE
+935,No one lives in this building.,沒有人住在這棟樓裡。,,地點,451748,444814,1,8,8.7,TRUE
+936,She stayed at home by herself.,她獨自留在家裡。,,地點,310101,857987,0,9,9,TRUE
+937,She will be here this evening.,她今天晚上將在這裡。,,地點,243198,850691,2,8,9.4,TRUE
+938,Someone locked me in the room.,有人把我鎖在這房間裡。,,地點,2174940,2174223,3,8,10.1,TRUE
+939,The watch on the desk is mine.,桌上的手錶是我的。,,地點,20535,6059533,1,7,7.7,TRUE
+940,There is a park near my house.,我家附近有一個公園。,,地點,250499,907216,1,7,7.7,TRUE
+941,There's a hole in this bucket.,這個桶子上有個洞。,,地點,60712,865485,4,7,9.8,TRUE
+942,They moved here two years ago.,他們兩年前搬到了這裡。,,地點,305426,868397,2,8,9.4,TRUE
+943,Put the book there.,把書放在那裡。,,地點,2149075,759616,1,4,4.7,TRUE
+944,Get down on the floor!,趴在地上！,,地點,433524,833806,2,5,6.4,TRUE
+945,Wait here for a while.,在這裡等一會下。,,地點,53434,784412,2,5,6.4,TRUE
+946,Don't leave me here alone.,別把我一個人留在這裡。,,地點,2481334,6111967,3,7,9.1,TRUE
+947,Don't put books on the table.,不要把書放在那張桌子上。,,地點,525756,836372,2,7,8.4,TRUE
+948,Don't talk in the reading room.,閱覽室裡禁止說話。,,地點,270707,727946,1,8,8.7,TRUE
+949,Change trains at the next station.,在下一站換乘火車。,,地點,264246,836356,3,7,9.1,TRUE
+950,Don't put anything in the bag.,不要把所有東西都放進包包裡。,,地點,689892,1878375,3,8,10.1,TRUE
+951,Put the chair in front of the desk.,把椅子放在桌子前面。,,地點,681033,899982,2,8,9.4,TRUE
+952,Tell me what you have in your hand.,告訴我你手裡有什麼。,,地點,265903,426881,0,8,8,TRUE
+953,Go away before they see you here.,在他們看見你之前離開這裡。,,地點,1452803,2499983,1,9,9.7,TRUE
+954,Don't show your face around here again.,你不要再出現在這裡了。,,地點,541986,889626,3,10,12.1,TRUE
+955,Don't stand near me.,不要站在我旁邊。,,地點,410592,819452,1,5,5.7,TRUE
+956,Don't throw trash here.,別在這裡亂丟垃圾。,,地點,61822,1397009,5,5,8.5,TRUE
+957,Don't put anything on top of the box.,不要放任何東西在箱子上面。,,地點,44472,4816290,3,10,12.1,TRUE
+958,Don't put anything on top of the box.,不要在箱子上面放任何東西。,,地點,44472,4816291,3,10,12.1,TRUE
+961,Be careful not to drive the wrong way on a one-way street.,小心不要在單行道逆向行駛。,,地點,682503,787558,3,15,17.1,TRUE
+962,He is at home.,他在家裡。,,地點,816868,816870,1,4,4.7,TRUE
+963,Can I sit here?,我可以坐這裡嗎？,,地點,1537275,4757682,1,4,4.7,TRUE
+964,I lived in Rome.,我住在羅馬。,,地點,767497,5570721,0,5,5,TRUE
+965,Tom was at home.,湯姆在家。,,地點,2648914,6321889,2,4,5.4,TRUE
+966,Can I sleep here?,我能在這裡睡覺嗎？,,地點,1911934,6860866,1,4,4.7,TRUE
+968,I live near here.,我住在這附近。,,地點,413831,826271,0,4,4,TRUE
+970,Why are you here?,你為什麼在這？,,地點,1481997,3742607,1,4,4.7,TRUE
+971,He's not here yet.,他還沒到這裡。,,地點,2768628,6673090,2,4,5.4,TRUE
+972,Tom sent me there.,湯姆送我去了那裡。,,地點,2262278,6075694,2,4,5.4,TRUE
+973,Tom works at home.,湯姆在家工作。,,地點,1765311,6075699,1,4,4.7,TRUE
+974,Let's get off here.,我們在這裡下車吧。,,地點,61894,332792,2,4,5.4,TRUE
+975,We can't talk here.,我們不能在這裡談。,,地點,1954967,5900366,1,5,5.7,TRUE
+976,What's in this bag?,這個袋子裡是什麼？,,地點,450136,825906,0,4,4,TRUE
+977,Why were you there?,你為什麼在那裡？,,地點,411315,771615,1,4,4.7,TRUE
+978,Could you sign here?,你能在這裡簽名嗎？,,地點,61821,415645,3,4,6.1,TRUE
+979,There's a book here.,這裡有一本書。,,地點,515536,825137,0,4,4,TRUE
+980,Your shoes are here.,你的鞋在這裡。,,地點,17265,373457,2,4,5.4,TRUE
+981,But you're not there.,但你不在那裡。,,地點,53546,824529,2,4,5.4,TRUE
+982,He eats lunch at a cafeteria.,他在自助餐廳吃午餐。,,地點,289576,864379,0,9,9,TRUE
+983,She lived at 56 Russell Square.,她住在羅素廣場56號。,,地點,327964,332600,9,10,16.3,TRUE
+984,Has anybody here been to Hawaii?,這裡有人去過夏威夷嗎？,,地點,361589,787368,3,9,11.1,TRUE
+986,Do you have a table on the patio?,你院子裡有桌子嗎?,,地點,502617,874491,7,9,13.9,TRUE
+987,He worked in a big city hospital.,他在一間大型的市立醫院工作。,,地點,1477086,882987,0,11,11,TRUE
+988,I often go swimming in the river.,我常常在河裡游泳。,,地點,255880,875338,1,10,10.7,TRUE
+989,I usually stay indoors on Sunday.,星期天我通常待在家裡。,,地點,281863,858070,3,10,12.1,TRUE
+990,Mary set the basket on the table.,瑪麗把籃子放在桌子上了。,,地點,32000,894032,3,9,11.1,TRUE
+991,My plan is to study in Australia.,我的計劃是去澳洲唸書。,,地點,250747,892519,4,10,12.8,TRUE
+992,The tablecloth is in the cabinet.,桌巾在櫥櫃裡。,,地點,39640,868452,12,10,18.4,TRUE
+993,We grow vegetables in our garden.,我們在我們的花園裡種菜。,,地點,249095,869909,2,10,11.4,TRUE
+994,Did you enjoy staying in Hokkaido?,你喜歡住在北海道嗎？,,地點,321281,842463,3,11,13.1,TRUE
+999,I saw a beautiful waterfall there.,我看見那裡有做很美的瀑布。,,地點,1499021,335279,2,10,11.4,TRUE
+1001,My camera was stolen on the train.,我的相機在火車上被偷了。,,地點,2846107,476640,3,10,12.1,TRUE
+1002,Our library is on the third floor.,我們的圖書館在三樓。,,地點,262600,894042,3,9,11.1,TRUE
+1003,She is a clerk in the supermarket.,她是超市的店員。,,地點,310949,333668,3,10,12.1,TRUE
+1004,She is eager to live in Australia.,她非常希望能住在澳洲。,,地點,310890,1397315,7,10,14.9,TRUE
+1005,She put the magazine on the table.,她把雜誌放在桌上。,,地點,39637,891755,3,9,11.1,TRUE
+1006,She visited her husband in prison.,她探望了她在監獄裡的丈夫。,,地點,313374,862875,3,10,12.1,TRUE
+1007,She was visibly afraid to be here.,很明顯她害怕待在這裡。,,地點,718049,718385,5,10,13.5,TRUE
+1008,The pharmacy is near the hospital.,藥局在醫院附近。,,地點,462858,1225668,7,10,14.9,TRUE
+1009,There is a basket under the table.,桌子底下有一個籃子。,,地點,63769,907537,2,9,10.4,TRUE
+1010,There is a television in the room.,房裡有台電視。,,地點,44247,804887,3,10,12.1,TRUE
+1011,There wasn't anybody in the house.,沒有人在家。,,地點,24161,869920,4,9,11.8,TRUE
+1012,He carried a rifle on his shoulder.,他把來福槍背在他的肩上。,,地點,295994,881233,5,9,12.5,TRUE
+1013,He has plenty of money in the bank.,他在銀行裡有大量存款。,,地點,295550,1416288,3,10,12.1,TRUE
+1014,Hokkaido is to the north of Honshu.,北海道在日本本州的北部。,,地點,321287,887907,11,10,17.7,TRUE
+1016,I intend to study abroad next year.,我打算明年出國留學。,,地點,262169,881261,6,10,14.2,TRUE
+1017,Studying abroad is very common now.,現在出國留學是很常見的。,,地點,241937,801304,4,10,12.8,TRUE
+1018,The baby fell asleep in the cradle.,寶寶在搖籃裡入睡了。,,地點,45825,336584,6,9,13.2,TRUE
+1019,The boy has an apple in his pocket.,這男孩的口袋裡有個蘋果。,,地點,46385,335404,1,9,9.7,TRUE
+1020,The library is on the second floor.,圖書館在二樓。,,地點,270698,895594,3,10,12.1,TRUE
+1021,The oranges in this bag are rotten.,這個袋子裡的柳橙都爛了。,,地點,57999,904919,4,10,12.8,TRUE
+1022,There are many stores in this area.,這個區域裡有很多商店。,,地點,57921,900227,2,10,11.4,TRUE
+1024,There is a television in this room.,這個房間裡有台電視。,,地點,57350,333126,3,10,12.1,TRUE
+1025,We have a door between our offices.,我們的辦公室之間有扇門。,,地點,2712823,6293103,1,10,10.7,TRUE
+1026,Yesterday I met Mary on the street.,昨天我在街上遇見了瑪麗。,,地點,244638,902927,2,10,11.4,TRUE
+1028,He was sitting between Mary and Tom.,他坐在瑪麗和湯姆之間。,,地點,293011,880244,3,10,12.1,TRUE
+1029,I looked for him in the supermarket.,我在超級市場裡找他。,,地點,253948,848695,1,11,11.7,TRUE
+1030,It became quiet again in the forest.,森林裡又再度安靜下來了。,,地點,269486,801338,3,10,12.1,TRUE
+1031,The calculator on the table is mine.,桌上的計算機是我的。,,地點,39596,464855,5,10,13.5,TRUE
+1032,There was hardly anyone in the room.,房間裡幾乎沒有人。,,地點,319489,801451,3,9,11.1,TRUE
+1033,"Father is out, but Mother is at home.",爸爸出去了，但媽媽在家。,,地點,319272,334240,3,10,12.1,TRUE
+1034,He felt in his pocket for his wallet.,他摸摸口袋找錢包。,,地點,292731,336951,4,10,12.8,TRUE
+1036,I am getting off at the next station.,我下一站下車。,,地點,258187,375320,3,10,12.1,TRUE
+1037,I arrived at the village before dark.,我天黑之前到達了村莊。,,地點,336059,336106,3,11,13.1,TRUE
+1038,I enjoyed driving on the new highway.,我很喜歡在新的高速公路上開車。,,地點,258804,885524,3,12,14.1,TRUE
+1039,I kept the $20 I found in the street.,我留下了在街上發現的20美元。,,地點,681287,795458,4,10,12.8,TRUE
+1041,My aunt grows tomatoes in her garden.,我阿姨在她的花園裡種蕃茄。,,地點,250270,802014,3,10,12.1,TRUE
+1042,She put the dirty dishes in the sink.,她把髒盤子放進水槽裡。,,地點,312724,866752,4,10,12.8,TRUE
+1043,There is a village over the mountain.,在山頂上有一座村莊。,,地點,245058,918372,1,10,10.7,TRUE
+1044,There was no money left in my wallet.,我錢包裡沒錢了。,,地點,244276,335396,4,10,12.8,TRUE
+1045,Tom is used to cooking on a campfire.,湯姆習慣用營火做菜。,,地點,1024784,1261406,9,12,18.3,TRUE
+1046,We had lunch at a little coffee shop.,我們在一家小咖啡廳吃午飯。,,地點,715731,6145387,0,8,8,TRUE
+1047,I have numerous books on my bookshelf.,我有大量的書在我的書架上。,,地點,1697745,1695387,11,10,17.7,TRUE
+1048,I haven't seen you around here before.,我以前在這裡沒見過你。,,地點,2360289,5863293,2,10,11.4,TRUE
+1049,She put her CDs in a row on the shelf.,她把她的CD在書架上排成一排。,,地點,310226,897290,7,10,14.9,TRUE
+1050,Talking in the library is not allowed.,不准在圖書館裡講話。,,地點,270676,798325,3,12,14.1,TRUE
+1051,There weren't any roses in the garden.,花園裡沒有任何玫瑰。,,地點,44966,798301,3,11,13.1,TRUE
+1052,We had an unpleasant experience there.,我們在那裡有一個不太愉快的經歷。,,地點,262527,796043,4,10,12.8,TRUE
+1053,You are not authorized to enter there.,你無權進入那裡。,,地點,2162140,2161712,8,11,16.6,TRUE
+1054,You can see a lot of stars in the sky.,你可以看到天空中的繁星。,,地點,18331,1878288,1,10,10.7,TRUE
+1055,A man suddenly appeared in the doorway.,一個男的突然出現在門口。,,地點,280708,3780486,8,12,17.6,TRUE
+1056,All the flowers in the garden withered.,所有花園裡的花朵都枯萎了。,,地點,278491,798292,0,11,11,TRUE
+1057,He is a waiter in a seaside restaurant.,他是一家海濱餐廳的服務員。,,地點,294691,5958725,8,12,17.6,TRUE
+1058,He's a professor of biology at Harvard.,他是哈佛大學的生物學教授。,,地點,292356,332645,13,13,22.1,TRUE
+1059,Her house is at the foot of a mountain.,她家在一座山的山腳下。,,地點,309102,799197,1,10,10.7,TRUE
+1060,I can't imagine life on another planet.,我無法想像另一個星球上的生物。,,地點,259264,332481,5,13,16.5,TRUE
+1061,I found a beautiful shell on the shore.,我在海灘上發現了一個漂亮的貝殼。,,地點,256744,1358441,5,10,13.5,TRUE
+1062,I went swimming in the river yesterday.,我昨天去河裡游泳了。,,地點,257787,335679,0,11,11,TRUE
+1063,The accident took place at that corner.,事故發生在轉角。,,地點,47119,4732054,3,10,12.1,TRUE
+1065,There is a beautiful park near my home.,我家附近有座漂亮的公園。,,地點,250500,333150,1,10,10.7,TRUE
+1066,There was a castle here many years ago.,許多年前這裡有一座城堡。,,地點,272129,808265,4,10,12.8,TRUE
+1067,Tom hung his jacket in the hall closet.,湯姆把他的夾克掛在大廳衣櫃裡。,,地點,1093523,5624956,5,10,13.5,TRUE
+1068,We arrived at a small town in Hokkaido.,我們到達了北海道的一個小鎮。,,地點,249375,1395005,5,12,15.5,TRUE
+1070,You're not supposed to be in this area.,你不應該待在這裡。,,地點,2835585,3770515,5,11,14.5,TRUE
+1071,He objected to his wife working outside.,他反對妻子外出工作。,,地點,296771,2080585,4,11,13.8,TRUE
+1073,I was at home most of the day yesterday.,我昨天大部分時間在家。,,地點,2611896,5624924,2,11,12.4,TRUE
+1074,I'm studying at the University of Hyogo.,我在兵庫縣立大學學習。,,地點,452961,1706454,12,13,21.4,TRUE
+1075,No one lived on the island at that time.,那個時候，沒有人在這個島上生活。,,地點,279912,2007051,2,11,12.4,TRUE
+1076,Our school is in the center of the town.,我們學校在市中心。,,地點,247488,333499,2,10,11.4,TRUE
+1078,Somebody had drowned her in the bathtub.,有人把她淹死在浴缸裡。,,地點,24545,805059,12,12,20.4,TRUE
+1079,Sydney is the largest city in Australia.,雪梨是澳洲最大的城市。,,地點,53449,798317,8,11,16.6,TRUE
+1081,There are a lot of books in the library.,圖書館裡有很多書。,,地點,270688,1260555,1,11,11.7,TRUE
+1082,There are seven continents on the earth.,地球上有七大洲。,,地點,271117,2109213,5,10,13.5,TRUE
+1083,There is a bank in front of the station.,車站前有個銀行。,,地點,25970,336972,2,10,11.4,TRUE
+1084,There wasn't any furniture in that room.,那個房間裡沒有任何傢俱。,,地點,503778,907501,5,11,14.5,TRUE
+1085,They live on the other side of the road.,他們住在路對面。,,地點,307254,6103122,3,10,12.1,TRUE
+1086,Tom had a lot of problems at the school.,湯姆在學校遇到了很多問題。,,地點,1093872,5091311,2,10,11.4,TRUE
+1087,Tom is in the other room drinking vodka.,湯姆在別的房間喝伏特加。,,地點,1868199,5418706,6,11,15.2,TRUE
+1088,We are not short of oil in this country.,我們國家不缺石油。,,地點,23470,332861,3,11,13.1,TRUE
+1089,We met in a coffee shop near the campus.,我們在校園附近的咖啡廳碰面。,,地點,1893779,5418959,3,10,12.1,TRUE
+1091,His office is past the bank on your left.,經過銀行，左邊就是他的辦公室了。,,地點,286530,487705,2,10,11.4,TRUE
+1093,I had my teeth examined at the dentist's.,我在牙醫那兒檢查了牙齒。,,地點,258089,390840,5,12,15.5,TRUE
+1096,It was in Beijing that I studied Chinese.,我是在北京學的中文。,,地點,844672,859024,11,11,18.7,TRUE
+1097,The library is in the middle of the city.,圖書館位於市中心。,,地點,270703,1506818,2,12,13.4,TRUE
+1102,Tom criticized Mary in front of everyone.,湯姆在所有人面前批評了瑪麗。,,地點,1095016,2027917,6,13,17.2,TRUE
+1103,We can't go outside because it's raining.,因為下雨，我們不能出去。,,地點,1360700,481162,3,11,13.1,TRUE
+1104,You must go outside if you want to smoke.,如果您想抽煙的話，您必須出去。,,地點,681536,784569,3,10,12.1,TRUE
+1105,Aren't you supposed to be at school today?,你今天不是應該在學校嗎？,,地點,242802,2092361,5,12,15.5,TRUE
+1106,Children really like playing on the beach.,孩子們非常喜歡在海灘上玩耍。,,地點,1164967,844153,1,11,11.7,TRUE
+1107,Countless stars were twinkling in the sky.,無數星星在天上閃爍。,,地點,18312,5767608,6,10,14.2,TRUE
+1108,He has spent ten years in jail for murder.,他因為謀殺案在牢裡待了十年。,,地點,1334559,5505597,7,10,14.9,TRUE
+1109,I can't adjust myself to the climate here.,我不能適應這裡的氣候。,,地點,2264264,6091818,7,11,15.9,TRUE
+1110,I found something interesting in the town.,我發現了鎮上一些有趣的事。,,地點,327851,805044,4,12,14.8,TRUE
+1111,I picked up a pretty shell at the seaside.,我在海邊撿了個漂亮的貝殼。,,地點,500169,5911660,11,12,19.7,TRUE
+1112,I want to show you something in my office.,我想給你看看我辦公室裡的一些東西。,,地點,2590916,7774814,2,12,13.4,TRUE
+1113,I wrote the wrong address on the envelope.,我在信封上寫錯了地址。,,地點,682501,816527,3,11,13.1,TRUE
+1114,Is there central heating in this building?,這棟大樓有中央暖氣系統嗎？,,地點,1088103,4764531,4,10,12.8,TRUE
+1115,Many children die of starvation in Africa.,在非洲有許多孩子死於飢餓。,,地點,67760,334868,10,13,20,TRUE
+1117,People in the United States speak English.,在美國的人說英語。,,地點,882579,811889,3,11,13.1,TRUE
+1118,She stayed in that area for a short while.,她在那地方待了一陣子。,,地點,634344,5983686,3,12,14.1,TRUE
+1119,The girl wore a yellow ribbon in her hair.,那女孩的頭髮上綁了一條黃絲帶。,,地點,46633,334126,4,11,13.8,TRUE
+1120,The river's on the other side of the hill.,河在山丘的另一端。,,地點,2268495,6109322,3,11,13.1,TRUE
+1121,There are a lot of new buildings here now.,這裡現在有了許多新建築。,,地點,241838,5624986,3,10,12.1,TRUE
+1122,There are many different people in Europe.,在歐洲有許多不同的人。,,地點,703082,5763027,5,11,14.5,TRUE
+1123,There are some strange animals in the zoo.,動物園裡有很多奇怪的動物。,,地點,44694,2482672,3,10,12.1,TRUE
+1124,They give good service at that restaurant.,那家餐廳的服務很好。,,地點,68592,804980,2,10,11.4,TRUE
+1126,Tom and Mary switched places on the bench.,湯姆和瑪麗在長凳上交換了位置。,,地點,2538348,5842612,5,11,14.5,TRUE
+1127,Tom planted three apple trees in his yard.,湯姆在他的院子裡種了三棵蘋果樹。,,地點,1024346,4970104,4,9,11.8,TRUE
+1128,We don't want any freeloaders around here.,我們不希望有人在這裡吃霸王餐。,,地點,529638,1227134,9,12,18.3,TRUE
+1129,He is richer than anyone else in this town.,他比鎮上的其他人都有錢。,,地點,289937,5931767,3,11,13.1,TRUE
+1131,I had no choice but to stay in bed all day.,我不得不一整天都躺在床上。,,地點,437965,408257,2,11,12.4,TRUE
+1132,I have no idea of what's going on in there.,我不清楚這裡發生了什麼事。,,地點,1877163,5350410,1,11,11.7,TRUE
+1133,I want to stay in a hotel near the airport.,我想住在機場附近的旅館裡。,,地點,1242858,1241329,0,12,12,TRUE
+1134,It's very hard getting a taxi in this city.,在這個城市，很難招到計程車。,,地點,1209574,1416167,2,13,14.4,TRUE
+1135,My ex-husband no longer lives in this city.,我前夫不再住在這個城市了。,,地點,251802,778484,8,13,18.6,TRUE
+1136,My grandfather's photograph is on the wall.,我祖父的照片在牆上掛著。,,地點,2841161,5983610,3,11,13.1,TRUE
+1137,The bike parked over there is my brother's.,那邊停著的那輛自行車是我哥哥的。,,地點,1401800,785045,1,11,11.7,TRUE
+1138,This summer I went on vacation in Scotland.,這個夏天，我去蘇格蘭度假了。,,地點,708390,710307,9,12,18.3,TRUE
+1139,"Tom isn't here yet, but we expect him soon.",湯姆還不在這裡，但我們期待他很快就來。,,地點,1024696,6624716,4,11,13.8,TRUE
+1140,Are there any famous musicians on the stage?,舞台上有著名的音樂家嗎？,,地點,319458,333013,6,12,16.2,TRUE
+1141,He's a professor at the National University.,他是國立大學的教授。,,地點,2258573,4473128,10,15,22,TRUE
+1142,I need to find out when we need to be there.,我需要知道我們什麼時候需要到那裡。,,地點,2387601,5869912,3,11,13.1,TRUE
+1143,My parents have just arrived at the station.,我的父母剛剛到達車站。,,地點,325699,809766,4,12,14.8,TRUE
+1144,My uncle has a flower shop near the station.,我叔叔在車站附近有一家花店。,,地點,65070,789982,0,11,11,TRUE
+1145,She was holding a small parasol in her hand.,她手裡握著一把小陽傘。,,地點,1180732,835553,9,12,18.3,TRUE
+1146,There are no hats in that store that fit me.,那個店裡沒有合我尺寸的帽子。,,地點,2681957,2661328,3,10,12.1,TRUE
+1147,There was a cottage on the side of the hill.,山坡上有一個茅屋。,,地點,48731,847789,6,11,15.2,TRUE
+1148,There was a cottage on the side of the hill.,山坡上有一間小屋。,,地點,48731,847791,6,11,15.2,TRUE
+1149,Tom and Mary have been here for three hours.,湯姆和瑪麗已經在這裡待了三個小時。,,地點,2640458,6131476,3,10,12.1,TRUE
+1150,"As long as you keep quiet, you can stay here.",只要你保持安靜，你就可以留在這裡。,,地點,788263,779494,3,10,12.1,TRUE
+1151,Do you know of any good restaurant near here?,你知道這兒附近有什麼好餐廳嗎?,,地點,61364,390531,1,12,12.7,TRUE
+1152,"If it rains tomorrow, I'll just stay at home.",如果明天下雨，我就待在家。,,地點,386758,333425,3,11,13.1,TRUE
+1153,She rested her head on her mother's shoulder.,她把頭靠在她母親的肩上。,,地點,316932,5883328,1,11,11.7,TRUE
+1155,There's no space in the room for another bed.,這間房間沒有空間再放一張床了。,,地點,682053,900052,3,11,13.1,TRUE
+1156,Time is the most precious thing in the world.,時間是世界上最寶貴的東西。,,地點,2676772,464922,5,10,13.5,TRUE
+1157,Tom happened to meet Mary at the supermarket.,湯姆在超市偶遇瑪麗。,,地點,1028776,1372497,3,14,16.1,TRUE
+1158,What do you say to taking a walk in the park?,去公園散步你覺得怎麼樣？,,地點,240457,405266,0,12,12,TRUE
+1159,Car exhaust causes serious pollution in towns.,汽車廢棄在城鎮裡造成了嚴重的污染。,,地點,265533,5715189,10,13,20,TRUE
+1160,"Excuse me, I have to get off at the next stop.",對不起，我要在下一站下。,,地點,51487,462014,4,12,14.8,TRUE
+1161,He regrets not having worked harder at school.,他後悔在學校時沒用功讀書。,,地點,294797,332453,5,12,15.5,TRUE
+1162,I know that you are learning French at school.,我知道你在學校學法語。,,地點,2451195,6103233,4,10,12.8,TRUE
+1163,I met him by chance on the train this morning.,今天早上我和他在火車上巧遇。,,地點,242253,1420611,1,11,11.7,TRUE
+1164,"In the United States, school buses are yellow.",在美國，校車是黃色的。,,地點,682511,816555,3,13,15.1,TRUE
+1165,My mother looked at me with tears in her eyes.,我媽媽眼含著淚看我。,,地點,852892,5739305,2,13,14.4,TRUE
+1166,The air is thin at the top of a high mountain.,山頂上空氣稀薄。,,地點,241217,6120787,4,12,14.8,TRUE
+1167,There is a big supermarket in my neighborhood.,在我家附近有一間大型超市。,,地點,65569,2615139,4,13,15.8,TRUE
+1168,Tom wondered why there was a dog in his house.,湯姆覺得奇怪，為什麼他的房子裡有隻狗。,,地點,2537839,5670776,4,12,14.8,TRUE
+1169,A fire broke out in my neighborhood last night.,昨晚我鄰居家著火了。,,地點,244732,332903,5,11,14.5,TRUE
+1170,A truck was standing in the middle of the road.,路中間有一輛卡車。,,地點,36949,487597,4,11,13.8,TRUE
+1171,Friends are like flowers in the garden of life.,朋友就像生命之園裡的花朵。,,地點,795786,796654,1,11,11.7,TRUE
+1172,He spent his sixtieth birthday in the hospital.,他在醫院裡度國了他的十六歲生日。,,地點,803282,6098440,8,12,17.6,TRUE
+1173,I had no idea there'd be this many people here.,我沒想到這裡有這麼多人。,,地點,2640236,5581771,3,12,14.1,TRUE
+1174,It cost him 50 dollars to rent a car in Hawaii.,他花了50美元在夏威夷租了一輛汽車。,,地點,292450,1426449,4,14,16.8,TRUE
+1175,It was a bag that I lost in the room yesterday.,那是我昨天在房裡掉了的包包。,,地點,246783,6065385,3,13,15.1,TRUE
+1176,The house I bought is pretty far from downtown.,我買的房子離市中心比較遠。,,地點,2165609,785028,4,11,13.8,TRUE
+1177,The man reading a paper over there is my uncle.,在那裡看報紙的男人是我叔叔。,,地點,32070,336724,2,13,14.4,TRUE
+1178,The teacher assembled the students in the hall.,老師在禮堂把學生們集合起來。,,地點,48683,897263,5,12,15.5,TRUE
+1179,They buried him in the graveyard by the church.,他們把他埋葬在教堂旁的墓園。,,地點,307408,918020,11,13,20.7,TRUE
+1180,An old man was resting in the shade of the tree.,一個老人在樹蔭下休息。,,地點,413018,869943,5,12,15.5,TRUE
+1181,"As long as you are here, we might as well begin.","既然你在這裡, 那我們就開始吧。",,地點,17705,772370,4,12,14.8,TRUE
+1182,Do you know if my father is still in the office?,你知道我的父親還在辦公室嗎？,,地點,816223,816692,3,13,15.1,TRUE
+1183,He is very influential in the world of medicine.,他在醫學界有很大的影響力。,,地點,1229515,408847,7,14,18.9,TRUE
+1184,How long do you plan on staying in this country?,你打算在這個國家待多久？,,地點,1211535,333990,0,14,14,TRUE
+1185,It is said that treasure is buried in this area.,據說這個區域埋著財寶。,,地點,59605,336188,6,13,17.2,TRUE
+1187,The minimum wage in Okinawa is 642 yen per hour.,沖繩的最低時薪是每小時642日元。,,地點,828804,829686,13,20,29.1,TRUE
+1189,There were a lot of excited fans in the stadium.,體育場裡有很多興奮的球迷。,,地點,324095,2317166,6,13,17.2,TRUE
+1190,We want to be on the first bus tomorrow morning.,我想搭明天早上第一班公車。,,地點,2032040,5989211,2,13,14.4,TRUE
+1191,"When I was a child, I used to swim in that pond.",當我還是個孩子的時候，我在這個泳池裡游過泳。,,地點,404101,4845038,1,13,13.7,TRUE
+1192,My train left at 7 and arrived in New York at 10.,我乘的火車七點出發，十點抵達紐約。,,地點,453005,444668,5,15,18.5,TRUE
+1193,"There are more than 4,000 languages in the world.",全世界有超過4000多種的語言。,,地點,1490655,1883017,4,13,15.8,TRUE
+1194,"Tom is in the living room, sleeping on the couch.",湯姆在客廳，躺在長沙發上睡覺。,,地點,2494735,5942091,5,12,15.5,TRUE
+1196,You can ask the child that is playing over there.,你可以問問在那裡玩的孩子。,,地點,815808,816767,3,13,15.1,TRUE
+1197,A bird in the hand is better than two in the bush.,一鳥在手勝過二鳥在林。,,地點,464908,771150,5,13,16.5,TRUE
+1198,"Every time he comes here, he orders the same dish.",每次他來這裡都點一樣的菜。,,地點,894789,4757626,1,14,14.7,TRUE
+1199,Is it all right to take pictures in this building?,我們可以在大樓裡拍照嗎？,,地點,59447,343315,2,13,14.4,TRUE
+1200,Jupiter is the largest planet in the Solar System.,木星是太陽系中最大的行星。,,地點,499549,4265892,14,14,23.8,TRUE
+1201,She helped her father with the work in the garden.,她幫她爸爸做了園藝。,,地點,316803,333539,0,13,13,TRUE
+1202,There was no one in the room besides Tom and Mary.,除了湯姆和瑪麗，房間裡沒有人。,,地點,1030029,5624957,4,14,16.8,TRUE
+1203,Life in prison is worse than the life of an animal.,監獄生活比畜牲還不如。,,地點,2149,345894,4,14,16.8,TRUE
+1204,There's a bottle of white wine in the refrigerator.,冰箱裡有一瓶白葡萄酒。,,地點,2712539,6098446,5,13,16.5,TRUE
+1205,A beautiful woman was seated one row in front of me.,一個美麗的女人坐在我前面一排。,,地點,318149,830393,3,15,17.1,TRUE
+1206,"All of a sudden, three dogs appeared in front of us.",突然之間，三隻狗出現在我們面前。,,地點,19634,830482,4,14,16.8,TRUE
+1207,Did you know that some foxes lived on this mountain?,你知道有狐狸住在這座山上嗎?,,地點,59183,907302,3,13,15.1,TRUE
+1208,Let's meet at the station at eight tomorrow morning.,明早八點車站見。,,地點,323184,4972514,1,13,13.7,TRUE
+1209,"Quite by chance, I met my old friend at the airport.",很幸運地，我在機場遇到了我的老朋友。,,地點,32529,334850,2,12,13.4,TRUE
+1210,She went over the list to see if her name was there.,她走過去看看她的名字是否在名單上。,,地點,314741,830382,3,13,15.1,TRUE
+1211,The ice on the lake is too thin to bear your weight.,湖上的冰太薄了，承受不了你的重量。,,地點,48127,333758,4,12,14.8,TRUE
+1212,The wind blew too hard for them to play in the park.,風刮得太大，他們沒法在公園裡玩了。,,地點,319665,333203,3,12,14.1,TRUE
+1213,There's a lot of trash on the far bank of the river.,河對岸有很多垃圾。,,地點,273194,830372,4,13,15.8,TRUE
+1214,How much of what I've written here do you understand?,我在這裡寫的東西，你了解了多少？,,地點,776915,776935,0,13,13,TRUE
+1216,It is said that his father died in a foreign country.,據說他爸爸在國外去世了。,,地點,285290,332895,3,15,17.1,TRUE
+1217,The bus stopped suddenly in the middle of the street.,公車突然在路中央停了下來。,,地點,35294,774510,4,13,15.8,TRUE
+1218,The girl was sobbing in the corner of the schoolroom.,女孩在教室的角落啜泣。,,地點,267859,5363945,12,13,21.4,TRUE
+1219,Tom bought a camera at a store not too far from here.,湯姆在離這裡不遠的一家店裡買了一台相機。,,地點,1026999,4845057,3,14,16.1,TRUE
+1220,We just have to make sure Tom is planning to be here.,我們只是需要確認湯姆會來這裡。,,地點,1893788,5418980,3,13,15.1,TRUE
+1222,I didn't know who was going to meet me at the airport.,我不知道誰會來機場見我。,,地點,1887191,5617195,2,14,15.4,TRUE
+1223,I took him to the most expensive restaurant on campus.,我帶他去了校園裡最貴的餐廳。,,地點,425898,426408,6,15,19.2,TRUE
+1224,That was the first time that a man walked on the moon.,那是人類第一次在月球上行走。,,地點,43103,333857,2,13,14.4,TRUE
+1226,You look pale. You had better lie down in bed at once.,你看上去很蒼白。你最好立刻去床上躺會兒。,,地點,16225,611541,5,13,16.5,TRUE
+1227,"Iron the inside of collars first, and then the outside.",先熨領子的裡面，然後是外面。,,地點,65250,1394904,5,14,17.5,TRUE
+1228,"The moment I held the baby in my arms, it began to cry.",我一把孩子抱在手裡，他就開始哭了。,,地點,247083,802849,3,16,18.1,TRUE
+1229,I told you not to talk about the matter in her presence.,我跟你說過她在的時候不要說這件事。,,地點,309524,465025,4,15,17.8,TRUE
+1230,Some people do not like to deposit their money in banks.,有些人不喜歡把錢存在銀行。,,地點,18439,487652,5,14,17.5,TRUE
+1231,Almost everyone in our village is related to one another.,我們村里所有的村民幾乎彼此都是親戚。,,地點,2174963,2174210,5,18,21.5,TRUE
+1232,No other mountain in the world is as tall as Mt. Everest.,世界上任何山峰都沒有像珠穆朗瑪峰那麼高。,,地點,388012,343363,3,16,18.1,TRUE
+1233,She would often go to the theater when she was in London.,她在倫敦的時候，曾經常去劇院。,,地點,312447,863947,2,15,16.4,TRUE
+1234,What have you done with my pen? It was here a minute ago.,你對我的鋼筆做了什麼事? 一分鐘前它還在這裡。,,地點,33560,793606,2,15,16.4,TRUE
+1235,He was discovered unconscious on the floor of the kitchen.,他被人發現倒在廚房的地板上，不省人事。,,地點,383528,343972,9,16,22.3,TRUE
+1236,The Eiffel Tower is in the same city as the Louvre Museum.,埃菲爾鐵塔和盧浮宮在同一座城市。,,地點,479194,526553,15,16,26.5,TRUE
+1237,The train will probably arrive at the station before noon.,火車大概會在中午前到站。,,地點,326247,336637,5,15,18.5,TRUE
+1238,We enjoyed watching the fireworks on a bridge last summer.,去年夏天，我們在橋上看煙火看得很過癮。,,地點,244689,335171,4,17,19.8,TRUE
+1239,"Yesterday, an explosion occurred at the fireworks factory.",昨晚，煙火廠發生了爆炸。,,地點,1697764,1694988,9,18,24.3,TRUE
+1241,They wanted a wedding picture in front of the Eiffel Tower.,他們想在艾菲爾鐵塔前面拍張結婚照。,,地點,681034,899986,9,16,22.3,TRUE
+1242,Tom has no idea what to do with all the junk in his garage.,湯姆不知道拿他車庫的那些垃圾怎麼辦。,,地點,1884500,7774809,6,16,20.2,TRUE
+1243,Everyone in the room checked their watches at the same time.,房間裡的所有人都同時看了看自己的手錶。,,地點,1841719,5091179,3,15,17.1,TRUE
+1245,"I noticed a note on my desk, but I do not know who wrote it.","我發現了我辦公桌上有張字條, 但是我不知道是誰寫的。",,地點,788260,780256,3,17,19.1,TRUE
+1246,"If you stay at a big hotel, you can use their swimming pool.",若你住到在大旅館，就能使用他們的游泳池。,,地點,275492,483964,2,15,16.4,TRUE
+1247,Tom took Mary to the hospital on the back of his motorcycle.,湯姆把瑪麗放到他的摩托車上送到醫院。,,地點,1877562,5574619,4,16,18.8,TRUE
+1248,"When I was a child, I spent most of my time indoors reading.",當我是個孩子的時候，我把大部分時間都花在了在室內讀書上。,,地點,1540876,1506823,5,15,18.5,TRUE
+1249,The old church on the hill dates back to the twelfth century.,山上的老教堂的歷史可以追溯到12世紀。,,地點,19865,830347,10,15,22,TRUE
+1250,"Ever since she fell in the kitchen, she hasn't been all there.",自從她在廚房裡摔倒後，她不曾再到那裡。,,地點,275400,830327,3,15,17.1,TRUE
+1251,I heard someone in the crowd outside the station call my name.,我聽到車站外的人群中有人在叫我的名字。,,地點,25969,875037,4,15,17.8,TRUE
+1252,Some of the bluest water in the world is found in Crater Lake.,世界上最藍的水在魁特湖。,,地點,672243,760819,8,15,20.6,TRUE
+1253,"For the time being, my sister is an assistant in a supermarket.",目前，我妹妹在一家超市當收銀員。,,地點,280037,333180,4,18,20.8,TRUE
+1254,Is it true that your family will travel in Hokkaido? I envy you.,你們家去北海道旅遊是真的麼？我好羨慕。,,地點,240198,666398,8,19,24.6,TRUE
+1255,The conflict between blacks and whites in the city became worse.,在這個城市，白人和黑人間的衝突愈演愈烈。,,地點,246109,333584,4,16,18.8,TRUE
+1256,Maybe my grandchild will be the first person to set foot on Mars.,我的孫子可能會是登陸火星的第一人。,,地點,593655,819696,8,15,20.6,TRUE
+1257,The leaves of the trees in the garden have turned completely red.,花園裡樹上的葉子已經完全變紅了。,,地點,278499,1394790,4,18,20.8,TRUE
+1258,Tom probably knows where we can get something to eat around here.,湯姆應該知道這附近哪裡有東西吃。,,地點,2745789,2771060,4,17,19.8,TRUE
+1259,A bookstore in that location wouldn't make enough money to survive.,那個地點的書店無法賺到足夠生存下去的錢。,,地點,41330,830411,7,18,22.9,TRUE
+1260,He was always annoyed in the city by noises of one sort or another.,他在城市裡一直受到噪音或者其他的干擾。,,地點,279450,333001,7,22,26.9,TRUE
+1261,His wife is in the hospital because she was injured in a car crash.,他的妻子在醫院裡，因為她在一場車禍中受傷了。,,地點,286367,780238,7,19,23.9,TRUE
+1262,Tom reached for a dictionary that was on the very top of the shelf.,湯姆把手伸向了書架上最高的一本詞典。,,地點,2162245,2143980,4,19,21.8,TRUE
+1263,"According to the guidebook, this is the best restaurant around here.",根據旅遊書，這是這附近最好的餐館。,,地點,326921,830424,14,18,27.8,TRUE
+1264,"In some countries, the punishment for treason can be life in prison.",在一些國家，叛國罪的懲罰可以是終身監禁。,,地點,682228,873443,10,18,25,TRUE
+1265,The death penalty had been done away with in many states in the USA.,死刑在美國的很多州都被廢除了。,,地點,67568,333229,6,20,24.2,TRUE
+1266,I think you will find it convenient to put a short-cut on the desktop.,我想你遲早會知道在桌面建立一個捷徑有多麼方便。,,地點,393814,1767755,10,18,25,TRUE
+1267,"While I was reading in bed last night, I fell asleep with the light on.",我昨晚在床上看書的時候，開著燈就睡了。,,地點,244847,1446793,4,17,19.8,TRUE
+1268,"In the U.S., most people can vote when they reach eighteen years of age.",在美國，大多數人在滿十八歲以後可以投票。,,地點,67628,5670805,4,15,17.8,TRUE
+1269,"After asking for my key at the front desk, I took the elevator to my floor.",我在櫃檯拿了鑰匙，然後就搭電梯去了我房間的樓層。,,地點,34053,431516,4,21,23.8,TRUE
+1270,English has now become the common language of several nations in the world.,英文現已成為世界上許多國家的通用語言了。,,地點,26274,791672,4,20,22.8,TRUE
+1271,"Outside the school, she saw people with no homes living in cardboard boxes.",在校外，她看到沒有家的人們住在紙板箱裡。,,地點,21486,5576844,7,18,22.9,TRUE
+1272,"The statue of Hachiko, the faithful dog, stands in front of Shibuya Station.",忠犬八公的雕像佇立在澀谷站前。,,地點,277560,1394995,18,20,32.6,TRUE
+1273,"To the man who only has a hammer in the toolkit, every problem looks like a nail.",對工具箱裡只有一把榔頭的人來說，所有的問題都像釘子。,,地點,2292,811119,10,23,30,TRUE
+1274,"Tom went swimming in the river, but when he got out, his clothes had been stolen.",湯姆去河裡游泳，但當他出來時，他的衣服被偷了。,,地點,1635552,7771950,4,20,22.8,TRUE
+1275,"In London, the police are always worried about finding a bomb on the train or subway.",在倫敦，警察總是會擔心在列車上發現炸彈。,,地點,29285,5363943,5,23,26.5,TRUE
+1276,Tom's mother is a nurse at the hospital that's across the street from where Mary lives.,湯姆的媽媽是一名護士，她所在的醫院就在瑪麗住的那條街的對面。,,地點,1092144,5091200,3,22,24.1,TRUE
+1277,"When we started out, our band could only find small clubs in small cities that would hire us.",當我們剛起步時，只有小城市裡的小俱樂部雇傭願意我們樂隊。,,地點,954630,5624958,5,21,24.5,TRUE
+1278,"Last year in the Philippines, earthquakes and tidal waves resulted in the deaths of more than 6,000 people.",去年在菲律賓，地震和海嘯造成了超過6000人的死亡。,,地點,1493945,5552136,16,29,40.2,TRUE
+1279,I was searched by the customs officers at the airport.,我在機場被海關人員搜查。,,地點,257406,727982,5,15,18.5,TRUE
+1280,A plane is flying above the city.,一架飛機在這個城市上空飛行。,,地點,277864,797017,3,9,11.1,TRUE
+1281,He is studying in the library now.,他現在在圖書館讀書。,,地點,296560,888403,2,10,11.4,TRUE
+1282,The baby is sleeping in the cradle.,嬰兒正在搖籃裡睡覺。,,地點,272415,900701,4,9,11.8,TRUE
+1283,A friend of mine is studying abroad.,我有一位朋友正在國外留學。,,地點,252011,793222,3,9,11.1,TRUE
+1284,My sister is cooking in the kitchen.,我妹妹正在廚房做飯。,,地點,245594,401032,1,11,11.7,TRUE
+1285,The petals are floating on the water.,花瓣浮在水面上。,,地點,23743,760833,8,10,15.6,TRUE
+1286,The roses in the garden are blooming.,花園裡的玫瑰正盛開著。,,地點,460376,895630,6,10,14.2,TRUE
+1287,We are all longing for peace in the world.,誰都希望世界和平。,,地點,276550,2029473,4,10,12.8,TRUE
+1288,They are arriving here soon from Hong Kong.,他們就快從香港抵達了。,,地點,306542,333313,10,10,17,TRUE
+1289,Smoking is prohibited on the train.,在火車上禁止吸煙。,,地點,794651,798326,8,10,15.6,TRUE
+1290,Tom lived there.,湯姆住在這裡。,,地點,2237180,5613703,1,4,4.7,TRUE
+1291,Tom hid under the table.,湯姆躲在桌子底下。,,地點,37241,332772,3,6,8.1,TRUE
+1292,I arrived here yesterday.,我昨天到這裡的。,,地點,493788,819435,2,8,9.4,TRUE
+1293,He is studying at his desk.,他正在他的書桌上讀書。,,地點,513531,848716,1,7,7.7,TRUE
+1294,You're here.,你在這裡。,,地點,2202941,7768155,1,2,2.7,TRUE
+1295,I am a stranger here.,我在這裡是個外人。,,地點,253493,941138,3,6,8.1,TRUE
+1296,He's a student at this college.,他是這所大學的學生。,,地點,289933,882572,1,8,8.7,TRUE
+1297,I'll eat it here.,我會在這裡吃。,,地點,449107,824569,1,4,4.7,TRUE
+1298,You have a point there.,喔！你提到一個重點了。,,地點,36518,1426355,1,5,5.7,TRUE
+1299,He often eats breakfast there.,他常常在那裡吃早餐。,,地點,290089,834364,1,7,7.7,TRUE
+1300,I'd like seats on the first floor.,我想要一樓的座位。,,地點,73193,894004,3,7,9.1,TRUE
+1302,I spent twelve hours on the train.,我在火車上待了12小時。,,地點,2085,503110,1,7,7.7,TRUE
+1303,The embassy is located next to the Supreme Court.,大使館就在最高法院旁邊。,,地點,275707,2680428,11,14,21.7,TRUE
+1305,America is a country of immigrants.,美國是一個移民國家。,"日常, 學校",國家,67541,844610,5,13,16.5,TRUE
+1306,What is the population of India?,印度的人口有多少？,,國家,65727,866059,6,10,14.2,TRUE
+1307,I am from China.,我來自中國。,,國家,1578570,3845373,1,5,5.7,TRUE
+1308,I come from China.,我是從中國來的。,,國家,717392,717391,0,5,5,TRUE
+1309,I'm from Singapore.,我是從新加坡來的。,,國家,52481,746065,8,5,10.6,TRUE
+1310,I come from England.,我來自英國。,,國家,66622,917951,0,5,5,TRUE
+1311,He comes from England.,他來自英格蘭。,,國家,288977,3289577,0,6,6,TRUE
+1312,She may have missed the 7:00 train.,她可能錯過了七點的火車。,,"可能性,時間",310210,894388,1,11,11.7,TRUE
+1313,He may have left for Kyoto.,他可能已經離開京都了。,,"可能性,城市",295279,848451,2,7,8.4,TRUE
+1314,She may come.,她也許來。,,可能性,388731,826112,0,3,3,TRUE
+1315,She might come.,她也許會來。,,可能性,388733,826122,3,3,5.1,TRUE
+1316,I might say yes.,我可能會說是。,,可能性,2387228,5945148,3,4,6.1,TRUE
+1317,He may have lost his way.,他可能已經迷路了。,,可能性,302061,332783,2,6,7.4,TRUE
+1318,We may be late for school.,我們上學可能會遲到。,,可能性,262943,793899,3,6,8.1,TRUE
+1319,He may have missed the train.,他可能錯過了火車。,,可能性,301802,390544,1,7,7.7,TRUE
+1320,He is likely to win the game.,他有可能贏得比賽。,,可能性,298286,332558,1,9,9.7,TRUE
+1321,He may come and see us tonight.,他今天晚上可能來看我們。,,可能性,296645,880285,0,8,8,TRUE
+1322,This may not be a real diamond.,這可能不是一顆真的鑽石。,,可能性,55393,905870,4,8,10.8,TRUE
+1323,Can you come for dinner tonight?,你今天晚上能來吃飯嗎？,,可能性,243195,842468,2,8,9.4,TRUE
+1324,He may have taken the wrong train.,他可能搭錯火車了。,,可能性,301807,885522,1,8,8.7,TRUE
+1325,Something may have happened to him.,他可能發生了什麼事情。,,可能性,25175,858752,2,10,11.4,TRUE
+1326,Something might have happened to her.,她可能出了什麼事。,,可能性,34622,332431,5,10,13.5,TRUE
+1327,He is likely to be late again.,他可能又會遲到。,,可能性,288063,881245,3,10,12.1,TRUE
+1328,Maybe he will be a good teacher.,也許他會是一個好老師。,,可能性,40569,891028,3,8,10.1,TRUE
+1329,That patient may die at any time.,那個病人隨時會死。,,可能性,48884,332829,4,9,11.8,TRUE
+1330,That child may have been kidnapped on his way home.,那個孩子可能在回家的路上被綁架了。,,可能性,47494,335102,7,12,16.9,TRUE
+1331,He wore a mask so that no one could recognize him.,他戴著面具以至於沒有人認出他。,,原因,300389,785112,6,13,17.2,TRUE
+1332,Europeans like to drink wine.,歐洲人喜歡喝酒。,,"刻板印象,酒精飲料",497135,782716,7,7,11.9,TRUE
+1333,Lincoln set the slaves free.,林肯釋放了奴隸。,,"刻板印象,英文姓氏",29645,835366,11,7,14.7,TRUE
+1334,The best hairdressers are gay.,最好的理髮師是同性戀。,,刻板印象,602024,818869,9,7,13.3,TRUE
+1335,Animals are afraid of fire.,動物怕火。,,刻板印象,280244,512178,2,8,9.4,TRUE
+1336,I am four months pregnant.,我懷孕四個月了。,,出生,2235,389818,5,6,9.5,TRUE
+1337,She gave birth to twin girls.,她生了對雙胞胎女兒。,,出生,315512,805622,5,6,9.5,TRUE
+1338,You're going to be a mommy.,你要當媽了。,,出生,1121820,6064595,3,7,9.1,TRUE
+1339,She gave birth to a baby boy.,她生下了一個男嬰。,,出生,308883,818946,2,8,9.4,TRUE
+1340,She gave birth to a healthy baby.,她生下了一個健康的嬰兒。,,出生,313450,893986,4,9,11.8,TRUE
+1341,I'm pregnant.,我懷孕了。,,出生,348596,333464,5,3,6.5,TRUE
+1342,One out of 455 women doesn't realize she's pregnant until the twentieth week of pregnancy.,455名婦女中會有一名直到懷孕第二十週前沒有意識到自己懷孕。,,出生,825631,827641,10,28,35,TRUE
+1343,I don't feel very well. I should go home.,我覺得不太舒服。我該回家了。,"日常, 職場, 學校",兩個句子,2362084,6119245,2,11,12.4,TRUE
+1344,You said you were in trouble. How can I help?,你說你有困難。我能幫忙嗎？,"日常, 職場, 學校",兩個句子,1994413,6089785,3,10,12.1,TRUE
+1346,I have to go shopping. I'll be back in an hour.,我該去買東西了，我一小時後回來。,"日常, 職場",兩個句子,1650,501524,3,12,14.1,TRUE
+1347,I miss you. I need to see you. Could I come over?,我想你。我需要見你。我能來嗎？,"日常, 戀愛",兩個句子,953531,1311593,3,13,15.1,TRUE
+1348,"Even now, I occasionally think I'd like to see you. Not the you that you are today, but the you I remember from the past.",即使是現在，我偶爾還是想見到你。不是今天的你，而是我記憶中曾經的你。,"日常, 戀愛",兩個句子,1230933,2567478,6,33,37.2,TRUE
+1349,Mary isn't really sick. She's only pretending to be sick.,瑪麗不是真病。她只是裝病。,"日常, 學校, 職場",兩個句子,1356721,5663596,5,16,19.5,TRUE
+1350,I hear you passed the entrance exam. Congratulations!,我聽說你通過了入學考試。恭喜你了！,"日常, 學校",兩個句子,281927,346830,5,15,18.5,TRUE
+1351,He isn't my brother. He's my cousin.,他不是我的兄弟。他是我的表弟。,日常,兩個句子,297821,875274,4,10,12.8,TRUE
+1352,I'm looking for my keys. Have you seen them?,我正在找我的鑰匙，你有看見嗎？,日常,兩個句子,2103987,2317102,3,10,12.1,TRUE
+1354,I don't believe you. You're always telling lies.,我不相信你。你老是說謊。,日常,兩個句子,33502,1416089,3,12,14.1,TRUE
+1356,It is close to eleven. It's about time we went to bed.,快要十一點了。我們該上床睡覺了。,日常,兩個句子,73348,1426506,1,15,15.7,TRUE
+1357,I don't want to go there. He doesn't want to go either.,我不想去那裡，他也不想去。,日常,兩個句子,254092,1438599,3,15,17.1,TRUE
+1358,The show was very interesting. You should have seen it.,那場演出非常有趣。你真該去看看。,日常,兩個句子,68685,334892,3,14,16.1,TRUE
+1359,I've had a scratchy throat since this morning. I wonder if I've caught a cold.,早上起來，嗓子變得很沙啞，我想是不是感冒了。,日常,兩個句子,2036561,3779045,11,18,25.7,TRUE
+1360,Yes. That's right.,是的。沒錯。,日常,兩個句子,433817,819343,0,3,3,TRUE
+1361,Everyone wants to meet you. You're famous!,大家都想見到你，你太有名了！,,兩個句子,1468,334921,4,10,12.8,TRUE
+1362,I'm sorry. I have another appointment.,很抱歉，我還有另一個約會。,,兩個句子,51484,333682,6,11,15.2,TRUE
+1363,I need a pencil. Can I use one of yours?,我需要一支鉛筆，我能用你的其中一支嗎？,,兩個句子,25775,810975,2,11,12.4,TRUE
+1364,I couldn't have done it without you. Thank you.,沒有你我無法做到，謝謝。,,兩個句子,1606,334160,4,11,13.8,TRUE
+1365,I have to write a letter. Do you have some paper?,我需要寫一封信。你有紙嗎？,,兩個句子,6117,399902,2,13,14.4,TRUE
+1366,I have to write a letter. Do you have some paper?,我要寫一封信。你有紙嗎？,,兩個句子,6117,408267,2,13,14.4,TRUE
+1367,"Mary is not poor. On the contrary, she is quite rich.",瑪麗不窮，相反，她相當富裕。,,兩個句子,31883,334254,6,14,18.2,TRUE
+1368,You should have done it earlier. It cannot be helped now.,你應該早點做的。現在已經沒辦法了。,,兩個句子,16552,775809,3,14,16.1,TRUE
+1369,You should have done it earlier. It cannot be helped now.,你本應該早點做的。現在已經沒有任何辦法了。,,兩個句子,16552,2392979,3,14,16.1,TRUE
+1370,Tom doesn't quite get it. Could you explain it to him again?,湯姆不大明白。你能再跟他解釋一遍嗎？,,兩個句子,1094363,5617178,4,15,17.8,TRUE
+1371,"I'm a foreigner and I don't know Czech very well. Please, speak slowly.",我是外國人，我捷克語不好，請說慢一點。,,兩個句子,871532,2076261,9,18,24.3,TRUE
+1372,OK. I agree.,好。我同意。,,兩個句子,433874,824718,2,3,4.4,TRUE
+1373,I like L.A. better.,我更喜歡洛杉磯。,,兩個句子,72205,1416257,8,5,10.6,TRUE
+1374,"No, thank you. I've had enough.",不，謝謝你。我已經吃飽了。,,兩個句子,66818,851430,1,7,7.7,TRUE
+1375,I forgot to bring my I.D. card.,我忘了帶我的身份證。,,兩個句子,269800,876735,9,8,14.3,TRUE
+1377,She may be a nurse. I am not sure.,她可能是護士。我不太確定。,,兩個句子,313055,408467,3,9,11.1,TRUE
+1378,I lost my ticket. What should I do?,我弄丟了票。我該怎麼做？,,兩個句子,272491,6068360,2,9,10.4,TRUE
+1379,I want a new shirt. What do you want?,我想要一件新襯衫。你想要什麼？,,兩個句子,2361766,4621013,0,9,9,TRUE
+1380,Come on. I want to show you something.,走吧。我有東西想給你看。,,兩個句子,2025814,5091346,2,10,11.4,TRUE
+1381,Don't worry. You'll make it.,不要擔心。你辦得到的。,,兩個句子,269024,833110,3,7,9.1,TRUE
+1382,Hurry. Please lend me a hand.,快點。請幫幫我。,,兩個句子,433888,849285,5,7,10.5,TRUE
+1386,You're working too hard. Take it easy for a while.,你工作太努力了。休息一下吧。,,兩個句子,1396422,1862598,3,12,14.1,TRUE
+1387,Don't throw away this magazine. I haven't read it yet.,這本雜誌不要丟。我還沒看呢。,,兩個句子,59198,405228,4,15,17.8,TRUE
+1388,"Like father, like son.",有其父必有其子。,,像諺語,2345,728638,0,5,5,TRUE
+1389,Nobody is too old to learn.,活到老學到老。,,像諺語,541067,855696,4,8,10.8,TRUE
+1390,Time is money.,時間就是金錢。,,像諺語,566026,4970148,1,4,4.7,TRUE
+1391,Fresh fruits and vegetables are good for your health.,新鮮水果和蔬菜有益健康。,,"健康,食物",681019,899970,3,12,14.1,TRUE
+1392,He is allergic to house dust.,他對房屋的灰塵過敏。,,"健康,疾病",35502,846199,9,8,14.3,TRUE
+1393,I have to take medicine.,我必須吃藥。,,"健康,必要性",5999,1778314,2,7,8.4,TRUE
+1394,I wonder if you have something to write with.,我懷疑你是否有東西可寫。,,介詞懸空,16273,775776,4,12,14.8,TRUE
+1395,Who did you talk with?,你和誰說話了？,,介詞懸空,1042637,7771910,0,5,5,TRUE
+1396,Who did you speak with?,你和誰說話了？,,介詞懸空,1042639,7771910,0,5,5,TRUE
+1397,Who are you going with?,你和誰一起去？,,介詞懸空,1839631,6075195,1,5,5.7,TRUE
+1400,Who were you talking to?,你那時在跟誰說話？,,介詞懸空,276501,6047480,1,6,6.7,TRUE
+1401,Who were you talking to?,你那時在和誰說話？,,介詞懸空,276501,7771910,1,6,6.7,TRUE
+1402,Who were you talking with?,你那時在和誰說話？,,介詞懸空,40389,7771910,1,6,6.7,TRUE
+1403,What did you open it with?,你用了什麼打開它？,,介詞懸空,16553,471198,0,7,7,TRUE
+1404,Who do you want to talk to?,你想跟誰說話？,,介詞懸空,69107,895448,0,7,7,TRUE
+1406,I have no knife to cut with.,我沒有刀子可用來切。,,介詞懸空,259026,883132,0,7,7,TRUE
+1407,I need someone to talk with.,我得找人商量一下。,,介詞懸空,326546,1446809,2,7,8.4,TRUE
+1408,Who do you want to speak to?,你想跟誰聊聊？,,介詞懸空,37744,895448,0,7,7,TRUE
+1410,I need something to write with.,我需要一些用來寫字的東西。,,介詞懸空,25087,848224,2,8,9.4,TRUE
+1411,Tom has no friends to play with.,湯姆沒有朋友可以一起玩耍。,,介詞懸空,37192,903529,1,7,7.7,TRUE
+1412,He is hard to get along with.,他這個人很難相處。,,介詞懸空,303256,882520,3,8,10.1,TRUE
+1414,I have nothing to fall back on.,我沒什麼可依靠的了。,,介詞懸空,256403,332597,3,8,10.1,TRUE
+1415,Who does this suitcase belong to?,這個手提箱是誰的?,,介詞懸空,55525,866150,6,8,12.2,TRUE
+1416,Who do you live with?,你和誰住在一起？,,介詞懸空,700113,6120176,0,5,5,TRUE
+1418,He doesn't have any friends to play with.,他沒有任何朋友陪他玩。,,介詞懸空,467688,1450508,2,10,11.4,TRUE
+1419,He went to Boston by car.,他坐車到波士頓。,,"交通,城市",299020,848690,6,7,11.2,TRUE
+1420,I got on the train for London.,我上了去倫敦的火車。,,交通,29257,333111,1,8,8.7,TRUE
+1421,Does this bus go to the museum?,這輛公車會到博物館嗎？,,交通,60674,883471,0,8,8,TRUE
+1422,I'm crazy about football.,我愛足球愛瘋了。,,"不確定,運動",512224,819450,5,7,10.5,TRUE
+1423,Are you a Japanese student?,你是日本學生嗎？,,"不確定,語言,國籍",15870,1839183,2,8,9.4,TRUE
+1424,You could count to ten when you were two.,你兩歲的時候，你可以數到十。,,"不確定,能力,年齡",15874,775646,3,9,11.1,TRUE
+1425,I love you more than anyone else.,我愛你勝過任何人。,,"不確定,戀愛",40332,846511,3,8,10.1,TRUE
+1428,It is likely to be fine tomorrow.,明天天氣可能很好。,,"不確定,可能性",323306,891733,2,11,12.4,TRUE
+1429,Why do you need change?,你為什麼需要零錢?,,不確定,36630,874187,3,5,7.1,TRUE
+1430,I don't mind if it's hot.,辣一點沒關係。,,不確定,1076309,1438343,3,7,9.1,TRUE
+1431,How did you find my house?,你怎麼找到我家的？,,不確定,38354,4270133,0,6,6,TRUE
+1432,I read an exciting story.,我讀了一篇精彩的故事。,,不確定,35074,835348,3,8,10.1,TRUE
+1433,Nobody would listen to me.,沒有人會聽我說。,,不確定,276688,842248,2,8,9.4,TRUE
+1434,Why do you think Tom doesn't like it?,你為什麼覺得湯姆不喜歡它？,,不確定,3123523,6923184,2,9,10.4,TRUE
+1435,She ordered the book from London.,她從倫敦訂了這本書。,,不確定,309919,791684,0,9,9,TRUE
+1436,Let me see.,讓我想一下。,,不確定,65316,707208,1,3,3.7,TRUE
+1437,Straighten up.,改邪歸正。,,不確定,282453,5092263,5,3,6.5,TRUE
+1438,Let us go home.,我們回家吧。,,不確定,24136,1506916,1,4,4.7,TRUE
+1439,My eyes hurt.,我的眼睛痛。,,不確定,417801,826045,1,4,4.7,TRUE
+1440,My mother doesn't like watching TV.,我媽不喜歡看電視。,,"不喜歡,親戚/家人",251829,859338,1,9,9.7,TRUE
+1441,My mother hates writing letters.,我媽媽討厭寫信。,,"不喜歡,親戚/家人",320796,836108,1,9,9.7,TRUE
+1442,I don't like the way he talks.,我不喜歡他講話的樣子。,,不喜歡,260780,887810,1,8,8.7,TRUE
+1443,I don't like the way he speaks.,我不喜歡他說的話。,,不喜歡,260522,883469,1,8,8.7,TRUE
+1444,I don't like the way she speaks.,我不喜歡她說話的態度。,,不喜歡,261318,1777929,1,8,8.7,TRUE
+1445,I don't like to sing in public.,我不喜歡在公共場合唱歌。,,不喜歡,270616,881562,2,9,10.4,TRUE
+1446,I don't like the taste of onions.,我不喜歡洋蔥的味道。,,不喜歡,256950,890473,4,9,11.8,TRUE
+1447,She doesn't like the way I speak.,她不喜歡我說話的方式。,,不喜歡,314395,332617,1,8,8.7,TRUE
+1448,She didn't like the horse at first.,她剛開始的時候不喜歡馬。,,不喜歡,313787,894364,3,8,10.1,TRUE
+1449,He doesn't like traveling by air.,他不喜歡搭飛機旅行。,,不喜歡,303020,836326,4,9,11.8,TRUE
+1450,I don't like any of these records.,我不喜歡這些唱片中的任何一張唱片。,,不喜歡,253797,876920,4,10,12.8,TRUE
+1451,I don't like either tea or coffee.,我不喜歡茶也不喜歡咖啡。,,不喜歡,257399,890461,2,9,10.4,TRUE
+1452,I don't like studying in this heat.,我不喜歡在這麼熱的天氣裡唸書。,,不喜歡,58540,842469,2,9,10.4,TRUE
+1453,I don't like the taste of tomatoes.,我不喜歡蕃茄的味道。,,不喜歡,255274,881745,4,10,12.8,TRUE
+1454,I don't go in for that sort of thing.,我討厭那種事。,,不喜歡,41648,782355,4,10,12.8,TRUE
+1455,I don't like being treated like this.,我不喜歡以這種方式被對待。,,不喜歡,253832,397114,4,9,11.8,TRUE
+1457,Children don't like to go out in the dark.,孩子們不喜歡摸黑外出。,,不喜歡,245936,6131479,3,11,13.1,TRUE
+1458,I don't like to leave things up in the air.,我不喜歡事情懸而未決。,,不喜歡,277538,891600,3,11,13.1,TRUE
+1459,I don't like to mix business with pleasure.,我不喜歡把做生意和享樂混為一談。,,不喜歡,257902,1785906,5,12,15.5,TRUE
+1460,She doesn't like people who aren't punctual.,她不喜歡不守時的人。,,不喜歡,314531,1807070,8,10,15.6,TRUE
+1461,She hated him.,她討厭他。,,不喜歡,388371,832950,1,4,4.7,TRUE
+1463,She despised him.,她看不起他。,,不喜歡,316497,771373,5,5,8.5,TRUE
+1464,She disliked him.,她不喜歡他。,,不喜歡,388372,771483,3,5,7.1,TRUE
+1465,I hate studying.,我討厭唸書。,,不喜歡,537021,471099,1,4,4.7,TRUE
+1466,I hate chemistry.,我討厭化學。,,不喜歡,1445,335051,5,5,8.5,TRUE
+1467,It's as cold as ice.,它冷得像冰一樣。,,as as 句型,442090,836112,0,5,5,TRUE
+1468,I'm as tall as you.,我跟你一樣高。,,as as 句型,252720,918542,1,5,5.7,TRUE
+1469,I'm as old as he is.,我跟他一樣大。,,as as 句型,401673,855654,2,6,7.4,TRUE
+1470,He is as tall as her.,他和她一樣高。,,as as 句型,302633,335147,1,6,6.7,TRUE
+1471,He's not as tall as you are.,他沒有你高。,,as as 句型,411314,877661,2,7,8.4,TRUE
+1472,I ran as fast as possible.,我跑得盡可能的快。,,as as 句型,252189,473018,1,7,7.7,TRUE
+1473,I ran as fast as possible.,我盡可能地跑快一點。,,as as 句型,252189,795805,1,7,7.7,TRUE
+1474,She ran as fast as possible.,她盡可能地快跑。,,as as 句型,311631,779039,1,7,7.7,TRUE
+1475,I walked as slowly as I could.,我盡可能的走慢一點。,,as as 句型,255062,876939,1,9,9.7,TRUE
+1476,I walked as far as the station.,我最遠走到車站那邊。,,as as 句型,256277,883131,1,9,9.7,TRUE
+1477,This is about as large as that.,這個大約跟那個一樣大。,,as as 句型,516682,905895,1,8,8.7,TRUE
+1478,Let's leave as soon as he arrives.,他一到，我們就出發吧。,,as as 句型,284010,718410,4,9,11.8,TRUE
+1479,I'll go with you as far as the bridge.,我會跟著你走到橋那裡。,,as as 句型,18971,5883319,3,9,11.1,TRUE
+1480,She is as beautiful as Snow White.,她像白雪公主一樣漂亮。,,as as 句型,316170,884232,2,9,10.4,TRUE
+1481,She can swim as fast as her brother.,她能游得和她哥哥一樣快。,,as as 句型,310620,7745187,1,9,9.7,TRUE
+1482,She came here as soon as she heard it.,她聽到後就馬上來這裡了。,,as as 句型,388052,834949,2,9,10.4,TRUE
+1483,She is as beautiful as her mother.,她跟她媽媽一樣漂亮。,,as as 句型,316942,890680,1,10,10.7,TRUE
+1485,He earned as much money as possible.,他能賺多少就賺多少。,,as as 句型,291825,335084,3,10,12.1,TRUE
+1487,He is not as smart as his older brother.,他不像他哥那樣聰明。,,as as 句型,468045,469239,3,11,13.1,TRUE
+1488,I will give you a call as soon as I get home.,我一回到家就會打電話給你。,,as as 句型,24211,401127,3,12,14.1,TRUE
+1489,"After winning the Nobel prize, she remained as modest as ever.",獲得諾貝爾獎後，她仍謙虛如昔。,,as as 句型,309924,830473,11,18,25.7,TRUE
+1491,All of them agreed to the proposal.,他們所有人都同意這項建議,"討論, 職場",,306054,874351,4,10,12.8,TRUE
+1492,How did you arrive at this conclusion?,你們怎麼得出這個結論的？,"討論, 職場",,37563,1314146,5,10,13.5,TRUE
+1493,I understand how to solve the problem.,我知道怎麼解決這個問題。,"討論, 職場",,476211,5668916,3,10,12.1,TRUE
+1495,I think your basic theory is wrong.,我認為你的基本理論是錯的。,討論,,17278,772369,5,9,12.5,TRUE
+1496,I wish he had attended the meeting.,要是他有參加這場會議就好了。,職場,,283463,894307,3,10,12.1,TRUE
+1497,Can you come to the meeting tomorrow?,你明天可以來參加會議嗎？,職場,,323396,872108,1,10,10.7,TRUE
+1498,Here is your bill.,這是賬單。,"日常, 餐廳",,64716,7774826,3,4,6.1,TRUE
+1499,What should they do in this situation?,在這種情況下，他們該做什麼？,"日常, 討論, 職場",,60417,336869,3,9,11.1,TRUE
+1500,No comment.,不予置評。,"日常, 討論",,873323,7774602,4,3,5.8,TRUE
+1501,Maybe you're right.,也許你是對的。,"日常, 討論",,70705,7768335,2,3,4.4,TRUE
+1503,Is there anything else you want me to do?,你還有什麼事需要我去做的嗎？,"日常, 職場, 學校",,25218,478853,3,10,12.1,TRUE
+1504,Can you be ready to leave tomorrow?,你可以準備好明天離開嗎？,"日常, 職場",,323125,865577,3,10,12.1,TRUE
+1505,He did not accept their invitation.,他沒有接受他們的邀請。,"日常, 職場",,302562,844631,5,10,13.5,TRUE
+1506,What do the initials NTT stand for?,NTT這個縮寫是什麼意思？,"日常, 職場",,280184,903597,12,9,17.4,TRUE
+1507,That company is managed by a foreigner.,這家公司由一個外國人經營。,"日常, 職場",,523073,908321,5,13,16.5,TRUE
+1508,He is always a little irritable in the morning.,他早上總是有點脾氣暴躁。,"日常, 職場",,1790821,843504,8,13,18.6,TRUE
+1509,I'll send a message to Tom.,我會發訊息給湯姆。,"日常, 職場",,2544246,5945150,4,7,9.8,TRUE
+1511,They refused.,他們拒絕了。,"日常, 職場",,2111364,6073881,2,4,5.4,TRUE
+1512,You work hard.,你很努力工作。,"日常, 職場",,15993,1992630,1,3,3.7,TRUE
+1513,Why did you quit?,你為什麼辭職？,"日常, 職場",,36413,825991,2,4,5.4,TRUE
+1514,He worked very hard.,他很努力工作。,"日常, 職場",,291584,336920,1,6,6.7,TRUE
+1515,How much is it?,多少錢?,"日常, 旅遊, 購物",,2418,761442,1,4,4.7,TRUE
+1516,Where am I?,我在哪裡？,"日常, 旅遊",,255212,884699,1,3,3.7,TRUE
+1517,Where am I?,這是什麼地方?,"日常, 旅遊",,255212,884701,1,3,3.7,TRUE
+1518,Here we are!,我們到了！,"日常, 旅遊",,54174,819471,1,3,3.7,TRUE
+1519,Here comes the train.,火車來了。,"日常, 旅遊",,33133,919712,0,5,5,TRUE
+1520,Where's the bathroom?,廁所在哪裡？,"日常, 旅遊",,634087,6158451,0,4,4,TRUE
+1521,Many thanks.,非常感謝！,"日常, 招呼",,322178,334426,0,3,3,TRUE
+1522,You're welcome.,不客氣。,"日常, 招呼",,403068,7767730,1,3,3.7,TRUE
+1524,She's my type.,她是我的菜。,"日常, 戀愛",,314284,3742628,2,3,4.4,TRUE
+1525,Does love exist?,愛存在嗎？,"日常, 戀愛",,1743386,3957689,2,4,5.4,TRUE
+1526,You should know it.,你應該知道的。,"日常, 學校, 職場",,327658,793227,0,4,4,TRUE
+1527,Are we done?,我們結束了嗎？,"日常, 學校, 職場",,1553536,1783788,1,3,3.7,TRUE
+1528,I'll attend.,我會參加。,"日常, 學校, 職場",,435424,819296,3,3,5.1,TRUE
+1529,We can begin.,我們可以開始了。,"日常, 學校, 職場",,2241034,6145407,1,4,4.7,TRUE
+1530,Where is my seat?,我的位子在哪裡？,"日常, 學校, 職場",,251304,799298,2,4,5.4,TRUE
+1531,Few students could understand what he said.,很少有學生能了解他說的話。,"日常, 學校",,283596,875344,3,10,12.1,TRUE
+1532,Few students could understand what he said.,幾乎沒有學生能懂他所說的話。,"日常, 學校",,283596,875345,3,10,12.1,TRUE
+1533,I want you guys to do me a favor.,我想要大家幫我個忙。,"日常, 學校",,2145013,5091648,4,10,12.8,TRUE
+1534,You have to study Japanese harder.,你必須更努力學習日語。,"日常, 學校",,69722,872126,1,10,10.7,TRUE
+1535,Lightning is usually followed by thunder.,閃電常常伴隨著雷鳴。,"日常, 學校",,27162,798210,4,12,14.8,TRUE
+1536,Mistakes like these are easily overlooked.,這種錯誤很容易被人忽視。,"日常, 學校",,60429,845118,6,13,17.2,TRUE
+1537,Let's start!,讓我們開始吧。,"日常, 學校",,387428,819465,1,2,2.7,TRUE
+1539,Have you read this book yet?,你看過這本書了嗎？,"日常, 學校",,16676,836403,1,6,6.7,TRUE
+1540,I'm reading.,我正在看書。,"日常, 學校",,1349059,5640765,1,3,3.7,TRUE
+1541,He's studying.,他正在讀書。,"日常, 學校",,593281,3713556,0,3,3,TRUE
+1542,This is my book.,這是我的書。,"日常, 學校",,463306,334383,1,4,4.7,TRUE
+1543,Are you students?,你們是學生嗎？,"日常, 學校",,71256,3713599,2,4,5.4,TRUE
+1544,Who wrote Hamlet?,哈姆雷特是誰寫的？,"日常, 學校",,35096,819432,7,4,8.9,TRUE
+1545,Whose turn is it?,輪到誰了？,"日常, 學校",,435279,819406,1,4,4.7,TRUE
+1547,Here is your book.,這是你的書。,"日常, 學校",,70392,826213,1,4,4.7,TRUE
+1548,How was your test?,你考得怎麼樣？,"日常, 學校",,39449,473012,3,4,6.1,TRUE
+1549,How was your trip?,你的旅行怎麼樣?,"日常, 學校",,1140188,390497,1,4,4.7,TRUE
+1550,Let's get started.,讓我們開始吧。,"日常, 學校",,442919,819465,1,4,4.7,TRUE
+1551,Let's get started.,讓我們開始吧。,"日常, 學校",,442919,1358651,1,4,4.7,TRUE
+1552,This book is small.,這本書很小。,"日常, 學校",,56916,5869913,1,4,4.7,TRUE
+1553,I've won first prize!,我得了第一名,"日常, 學校",,73092,826280,3,4,6.1,TRUE
+1554,He studied hard.,他用功唸書。,"日常, 學校",,1908967,6103217,1,4,4.7,TRUE
+1555,Where is the bank?,銀行在哪裡？,"日常, 學校",,48623,504872,1,4,4.7,TRUE
+1556,Really?,真的假的？,日常,,,,1,2,2.7,TRUE
+1557,Do you like black cats?,你喜歡黑色的貓嗎？,日常,,69436,832998,0,5,5,TRUE
+1558,We all wondered why she had dumped such a nice man.,我們都想知道她為什麼要甩了一個這麼好的男人,日常,,23071,917770,6,14,18.2,TRUE
+1559,Really?,你確定？,日常,,373216,4208543,1,2,2.7,TRUE
+1560,Are you busy on Sunday afternoon?,你週日下午忙嗎？,日常,,281819,844503,2,10,11.4,TRUE
+1561,Will he be able to come tomorrow?,他明天可以來嗎？,日常,,68116,334610,3,9,11.1,TRUE
+1562,What are you going to do tomorrow?,你明天要做什麼？,日常,,68902,895573,1,9,9.7,TRUE
+1564,Do you have any plans for Saturday?,你週六有什麼計劃？,日常,,279525,870106,2,10,11.4,TRUE
+1565,Have you eaten your dinner already?,你吃過晚飯了嗎？,日常,,31140,842427,1,10,10.7,TRUE
+1566,I am convinced that he is innocent.,我相信他是無辜的。,日常,,283570,881095,8,11,16.6,TRUE
+1567,Who is that woman holding the flowers?,那個拿著​​花的女人是誰？,日常,,289634,811040,2,10,11.4,TRUE
+1568,Have you finished writing the letter yet?,你寫完信了嗎？,日常,,69742,887698,2,11,12.4,TRUE
+1569,She's collecting material for a book.,她正在為一本書蒐集材料,日常,,575318,333927,9,10,16.3,TRUE
+1570,This is the worst movie I have ever seen.,這是我看過最爛的電影了。,日常,,55721,336952,1,10,10.7,TRUE
+1571,I just wish we could leave this horrible place.,我只是希望我們能離開這個可怕的地方。,日常,,40902,336673,5,10,13.5,FALSE
+1572,Is there anything you want that you don't have?,有什麼你想要，但是你沒有的東西嗎？,日常,,16867,476533,3,11,13.1,TRUE
+1573,He doesn't seem to be an American.,他似乎不是美國人。,日常,,67487,882172,3,11,13.1,TRUE
+1574,She doesn't seem to be an American.,她似乎不是美國人。,日常,,534188,893535,3,11,13.1,TRUE
+1575,Life without love is just totally pointless.,沒有愛情的生活毫無意義。,日常,,1609,334157,4,11,13.8,TRUE
+1576,I once wanted to be an astrophysicist.,我曾經想過要當個太空物理學家。,日常,,1316,36,9,11,17.3,TRUE
+1577,"After she had lunch, she got ready to go out.",吃過午飯後，她準備好要出門了。,日常,,277604,830469,2,12,13.4,TRUE
+1578,He graduated from Tokyo University.,他畢業於東京大學。,日常,,301931,832988,7,12,16.9,TRUE
+1579,I don't want there to be any misunderstanding.,我不想有任何誤會。,日常,,36652,336691,6,14,18.2,TRUE
+1580,I don't want to hear any more of your complaining.,我不想再聽你抱怨了。,日常,,2122,396369,4,14,16.8,TRUE
+1581,I've been wanting to see that movie for a long time.,我想看那部電影好久了。,日常,,3293513,5650459,2,12,13.4,TRUE
+1582,How many different kinds of pizzas are on the menu?,菜單上有多少種不同的披薩？,日常,,2912071,6149016,4,15,17.8,TRUE
+1583,"If he had taken his doctor's advice, he might still be alive.",如果他聽了醫生的建議，他可能還活著。,日常,,283360,794154,10,16,23,TRUE
+1584,Oh no!,不會吧。,日常,,1299275,5092475,0,2,2,TRUE
+1585,Got it?,你懂了嗎？,日常,,455353,7768205,0,2,2,TRUE
+1586,Why me?,為什麼是我？,日常,,24958,796834,0,2,2,TRUE
+1587,Who won?,誰贏了？,日常,,2005190,5102365,0,2,2,TRUE
+1589,I'll pay.,我來付錢。,日常,,411285,819298,2,2,3.4,TRUE
+1590,I'm cold.,我覺得好冷。,日常,,455947,471387,1,2,2.7,TRUE
+1591,Let's go!,走吧。,日常,,241077,334277,1,2,2.7,TRUE
+1592,Who died?,誰死了？,日常,,2005187,5102361,1,2,2.7,TRUE
+1593,It snowed.,下雪了。,日常,,1181168,780269,0,3,3,TRUE
+1594,Of course!,當然！,日常,,433730,771439,0,2,2,TRUE
+1595,Of course.,當然。,日常,,433492,825987,0,2,2,TRUE
+1596,Of course.,那當然。,日常,,433492,4970077,0,2,2,TRUE
+1597,Oh please!,噢，拜託了！,日常,,1349961,1394939,1,2,2.7,TRUE
+1598,Well done!,做得好！,日常,,464478,4261676,0,2,2,TRUE
+1599,Well done!,幹的好！,日常,,464478,7767580,0,2,2,TRUE
+1601,Let's walk.,我們去走走吧。,日常,,2007935,5897892,1,2,2.7,TRUE
+1602,Let's leave.,走吧。,日常,,2007931,334277,2,2,3.4,TRUE
+1603,That's life.,這就是人生,日常,,515472,771492,0,2,2,TRUE
+1604,They hugged.,他們互相擁抱。,日常,,2111370,5698029,3,3,5.1,TRUE
+1605,Tom's wrong.,是湯姆的錯。,日常,,2107659,6293100,2,2,3.4,TRUE
+1606,What's that?,那是什麼？,日常,,66989,465906,0,2,2,TRUE
+1607,What's this?,這是什麼？,日常,,413821,4,0,2,2,TRUE
+1608,I'm thrilled.,我太高興了。,日常,,2111678,6091682,6,3,7.2,TRUE
+1609,Sweet dreams!,祝你有個好夢！,日常,,30054,3781063,0,2,2,TRUE
+1610,They're fake.,它們是假的。,日常,,2111296,7769298,4,2,4.8,TRUE
+1611,Tom's thrilled.,湯姆非常高興。,日常,,2107625,5094100,6,3,7.2,TRUE
+1612,I'm starving!,我餓死了！,日常,,1754,388516,4,3,5.8,TRUE
+1614,I'll come back.,我會回來的。,日常,,261982,512881,2,3,4.4,TRUE
+1615,You'll get lost.,你會迷路的。,日常,,323487,794250,3,3,5.1,TRUE
+1616,It's OK.,沒關係。,日常,,413756,333730,1,2,2.7,TRUE
+1617,Excuse me.,不好意思。,日常,,433504,472304,2,3,4.4,TRUE
+1618,He's lazy.,他很懶。,日常,,2030108,343917,1,3,3.7,TRUE
+1619,Am I wrong?,我錯了嗎？,日常,,410779,825125,2,3,4.4,TRUE
+1620,Can I help?,我可以幫忙嗎?,日常,,266051,908384,1,3,3.7,TRUE
+1622,I can swim.,我會游泳。,日常,,256178,918075,1,3,3.7,TRUE
+1623,No problem!,沒問題！,日常,,413611,2043289,1,3,3.7,TRUE
+1624,No problem.,沒關係。,日常,,551443,333730,1,3,3.7,TRUE
+1625,No problem.,沒問題。,日常,,551443,343630,1,3,3.7,TRUE
+1627,What is it?,這是什麼？,日常,,42849,4,1,3,3.7,TRUE
+1628,Are you Tom?,你是湯姆嗎？,日常,,1495916,2163114,2,3,4.4,TRUE
+1629,Are you mad?,您生氣了嗎？,日常,,18965,476597,2,3,4.4,TRUE
+1630,Are you mad?,你生氣了嗎？,日常,,18965,476598,2,3,4.4,TRUE
+1631,Are you sad?,你很難過嗎？,日常,,1755584,6073888,1,3,3.7,TRUE
+1632,Can you see?,你能看到嗎？,日常,,1553530,1783787,1,3,3.7,TRUE
+1633,How are you?,你們好嗎？,日常,,373320,1761553,1,3,3.7,TRUE
+1634,How are you?,你好嗎？,日常,,373320,6559017,1,3,3.7,TRUE
+1635,I can't say.,我不能說。,日常,,24897,796833,1,4,4.7,TRUE
+1636,I said that.,我是那樣說的。,日常,,433643,824597,0,3,3,TRUE
+1637,It can't be!,這不可能！,日常,,1501,334699,2,4,5.4,TRUE
+1638,It can't be!,不可能！,日常,,1501,503298,2,4,5.4,TRUE
+1640,Who drew it?,誰畫的？,日常,,442064,819363,1,3,3.7,TRUE
+1641,Who is next?,下一個是誰？,日常,,801609,7768204,2,3,4.4,TRUE
+1642,Whose is it?,這是誰的？,日常,,873579,1314463,1,3,3.7,TRUE
+1643,Are you lost?,您迷路了嗎？,日常,,280393,465006,3,3,5.1,TRUE
+1644,Are you lost?,你迷路了嗎？,日常,,280393,465008,3,3,5.1,TRUE
+1645,Are you sure?,你確定嗎？,日常,,1326,343645,1,3,3.7,TRUE
+1646,Can you come?,你能來嗎？,日常,,38302,832793,1,3,3.7,TRUE
+1647,Can you swim?,你會游泳嗎?,日常,,16300,771557,1,3,3.7,TRUE
+1648,Did you call?,你打過電話了嗎？,日常,,433689,824517,1,3,3.7,TRUE
+1649,Do you smoke?,你吸煙嗎?,日常,,506948,406354,1,3,3.7,TRUE
+1650,Do you smoke?,您吸煙嗎？,日常,,506948,7767753,1,3,3.7,TRUE
+1651,I don't care.,我無所謂。,日常,,2323,431470,2,4,5.4,TRUE
+1652,I'm bleeding.,我在流血。,日常,,2111754,7768262,4,3,5.8,TRUE
+1654,What is that?,那是什麼？,日常,,464592,465906,1,3,3.7,TRUE
+1655,What is that?,那是什麼啊？,日常,,464592,1420649,1,3,3.7,TRUE
+1656,What is this?,這是什麼？,日常,,392210,4,1,3,3.7,TRUE
+1657,Who built it?,這是誰蓋的？,日常,,276317,334743,1,3,3.7,TRUE
+1658,Are you tired?,你累了嗎?,日常,,317830,727916,1,4,4.7,TRUE
+1659,Can you skate?,你會溜冰嗎？,日常,,70016,332557,4,3,5.8,TRUE
+1660,He can't swim.,他不會游泳。,日常,,293929,734834,1,4,4.7,TRUE
+1661,Shall we walk?,我們該走過去嗎？,日常,,320508,5574796,1,3,3.7,TRUE
+1662,We've arrived.,我們已經到了。,日常,,410594,825155,2,4,5.4,TRUE
+1663,Where are you?,你在哪？,日常,,2168,346124,1,3,3.7,TRUE
+1664,Who helps her?,誰能來幫幫她？,日常,,276385,2411931,0,3,3,TRUE
+1665,Whose is this?,這是誰的？,日常,,2302,1314463,1,3,3.7,TRUE
+1666,You could run.,你可以跑過去。,日常,,2254961,6333813,1,3,3.7,TRUE
+1667,You should go.,你應該去。,日常,,518556,832786,0,3,3,TRUE
+1668,You should go.,你該去。,日常,,518556,844117,0,3,3,TRUE
+1669,Aren't you Tom?,你不是湯姆嗎?,日常,,37392,727800,3,4,6.1,TRUE
+1670,I've seen that.,我曾見過。,日常,,433647,824531,0,3,3,TRUE
+1671,Let's just eat.,我們開動吧。,日常,,2007893,6105304,2,3,4.4,TRUE
+1672,Tom can't swim.,湯姆不會游泳。,日常,,1026731,5072434,2,4,5.4,TRUE
+1673,Tom's fearless.,湯姆無所畏懼。,日常,,2107511,2188407,2,3,4.4,TRUE
+1674,Tom's laughing.,湯姆在笑。,日常,,2107557,5072342,2,3,4.4,TRUE
+1675,Where were you?,之前你在哪裡？,日常,,16486,1778322,1,3,3.7,TRUE
+1676,Who's that man?,那男人是誰？,日常,,1886552,7773140,0,3,3,TRUE
+1677,Green suits you.,綠色很適合你。,日常,,17538,824561,2,3,4.4,TRUE
+1678,Let's turn back.,我們掉頭吧！,日常,,27144,472905,2,3,4.4,TRUE
+1679,Men should work.,男人應該工作。,日常,,1479231,334672,0,3,3,TRUE
+1680,Spring has come.,春天到了。,日常,,441964,1490515,0,3,3,TRUE
+1681,There's no rush.,不急。,日常,,1839564,2638704,2,3,4.4,TRUE
+1683,We've lost them.,我們失去他們了。,日常,,2254492,6568326,2,3,4.4,TRUE
+1685,Who is that man?,那男人是誰？,日常,,67951,7773140,1,4,4.7,TRUE
+1686,"Look, she said.",“看啊！” 她說道。,日常,,33123,4265204,0,3,3,TRUE
+1687,There's no doubt.,毫無疑問。,日常,,2361,404456,2,3,4.4,TRUE
+1688,What's your name?,你叫什麼名字？,日常,,408293,346883,0,3,3,TRUE
+1689,What's your name?,您叫什麼名字？,日常,,408293,444659,0,3,3,TRUE
+1690,Where's your dog?,你的狗在哪裡？,日常,,1886591,3627962,0,3,3,TRUE
+1692,Tom sat down.,湯姆坐下了。,日常,,2237642,4977379,2,3,4.4,TRUE
+1693,Tom came back.,湯姆回來了。,日常,,2236132,6936200,2,3,4.4,TRUE
+1694,Tom walked out.,湯姆走了出去。,日常,,2261170,6206740,2,4,5.4,TRUE
+1695,She worked hard.,她努力工作。,日常,,312575,817269,1,4,4.7,TRUE
+1696,I think so.,我想也是,日常,,254072,824631,1,3,3.7,TRUE
+1697,That is mine.,那是我的。,日常,,67126,6728904,1,3,3.7,TRUE
+1698,He tries hard.,他努力地嘗試。,日常,,293742,882979,1,3,3.7,TRUE
+1699,He's not home.,他不在家。,日常,,1310853,765282,1,3,3.7,TRUE
+1700,It's well done.,做得好。,日常,,2366,1776598,0,3,3,TRUE
+1701,That's a shame.,那是一個恥辱。,日常,,435170,824604,3,3,5.1,TRUE
+1702,Who's that guy?,那傢伙是誰？,日常,,2254911,5595183,2,3,4.4,TRUE
+1703,Black suits you.,黑色很適合你。,日常,,3140021,408242,2,3,4.4,TRUE
+1704,Here's the bill.,這是賬單。,日常,,2245561,7774826,2,3,4.4,TRUE
+1705,Where's my wife?,我的妻子在哪裡？,日常,,2254657,6132404,1,3,3.7,TRUE
+1706,That makes sense.,那有道理。,日常,,780859,781532,1,4,4.7,TRUE
+1707,We'll talk later.,我們等等再談。,日常,,1893660,3043963,2,4,5.4,TRUE
+1708,Can I help you?,我能幫你嗎？,日常,,25095,6559076,1,4,4.7,TRUE
+1709,He doesn't lie.,他不說謊。,日常,,1173825,5865517,2,4,5.4,TRUE
+1710,You idiot!,你白痴！,日常,,418475,462028,5,3,6.5,TRUE
+1711,I am coming.,我來了。,日常,,65918,826249,1,4,4.7,TRUE
+1712,Are you busy?,你在忙嗎？,日常,,68948,1241266,2,4,5.4,TRUE
+1713,Are you busy?,您在忙嗎？,日常,,68948,7772049,2,4,5.4,TRUE
+1714,I've decided.,我決定了。,日常,,2111662,6114438,1,4,4.7,TRUE
+1715,It's amazing.,太神奇了。,日常,,52021,1415890,3,4,6.1,TRUE
+1716,Anything else?,還有別的嗎？,日常,,434224,5102215,2,3,4.4,TRUE
+1717,Are you angry?,您生氣了嗎？,日常,,476326,476597,1,4,4.7,TRUE
+1719,Are you happy?,你快樂嗎？,日常,,16164,819454,1,4,4.7,TRUE
+1720,Are you ready?,您準備好了嗎？,日常,,376424,799300,2,4,5.4,TRUE
+1721,Are you ready?,你們準備好了嗎？,日常,,376424,799301,2,4,5.4,TRUE
+1722,Are you ready?,你準備好了嗎？,日常,,376424,799302,2,4,5.4,TRUE
+1723,How about you?,那你呢?,日常,,16491,825883,0,4,4,TRUE
+1724,I can see Tom.,我看得見湯姆。,日常,,2301319,4977389,2,4,5.4,TRUE
+1725,I must go now.,我現在必須走了。,日常,,486448,826159,2,4,5.4,TRUE
+1726,I think I can.,我想我可以。,日常,,433759,819370,1,4,4.7,TRUE
+1727,She's dieting.,她在節食中。,日常,,1396194,1878324,3,3,5.1,TRUE
+1728,She's dieting.,她在節食。,日常,,1396194,7767995,3,3,5.1,TRUE
+1729,Are you crying?,你在哭嗎？,日常,,1886352,3718942,2,3,4.4,TRUE
+1730,Can I eat this?,我可以吃這個嗎?,日常,,54937,411609,1,4,4.7,TRUE
+1732,He sang a song.,他唱了一首歌。,日常,,283456,427999,1,4,4.7,TRUE
+1733,I'm behind him.,我在他後面。,日常,,403370,825930,2,4,5.4,TRUE
+1734,Summer is over.,夏天結束了。,日常,,394438,7774794,0,5,5,TRUE
+1735,This is a book.,這是一本書。,日常,,55399,336921,1,4,4.7,TRUE
+1737,"Yes, I know it.",是的，我知道。,日常,,433589,834241,0,4,4,TRUE
+1738,Are you kidding?,你在開玩笑嗎？,日常,,270147,7768013,1,4,4.7,TRUE
+1739,Are you thirsty?,你會渴嗎？,日常,,434258,3365590,3,4,6.1,TRUE
+1740,Can you help me?,你能幫我嗎？,日常,,434410,6559040,1,4,4.7,TRUE
+1741,Can you help me?,您能幫我嗎？,日常,,434410,7772052,1,4,4.7,TRUE
+1743,How old are you?,你幾歲?,日常,,436243,779497,1,4,4.7,TRUE
+1744,I had no choice.,那時我沒有選擇的餘地。,日常,,1553472,1783803,2,4,5.4,TRUE
+1745,I want that bag.,我想要那個袋子。,日常,,68478,824622,0,4,4,TRUE
+1746,I've had enough.,我已經受夠了。,日常,,433859,826273,1,4,4.7,TRUE
+1747,I've had enough.,我已經吃飽了。,日常,,433859,826276,1,4,4.7,TRUE
+1748,Let's not argue.,我們別吵了。,日常,,2007873,2660863,4,3,5.8,TRUE
+1749,Maybe next time.,也許下一次吧。,日常,,1516119,710745,2,3,4.4,TRUE
+1750,This is too big.,這個太大了。,日常,,55535,775872,1,4,4.7,TRUE
+1751,Time for dinner.,晚餐時間到了。,日常,,324656,336431,1,4,4.7,TRUE
+1752,We have no time.,我們沒時間。,日常,,31348,335818,0,4,4,TRUE
+1753,What did he say?,他說了什麼？,日常,,28006,462064,0,4,4,TRUE
+1754,What is missing?,少了什麼？,日常,,25227,472901,2,4,5.4,TRUE
+1755,What time is it?,幾點了？,日常,,428402,501536,1,4,4.7,TRUE
+1756,What time is it?,現在幾點？,日常,,428402,6486894,1,4,4.7,TRUE
+1757,What time is it?,幾點了？,日常,,428402,6559031,1,4,4.7,TRUE
+1758,When can we eat?,我們什麼時候可以吃飯？,日常,,322004,824584,1,4,4.7,TRUE
+1759,Who is this boy?,這個男孩是誰？,日常,,1388966,2004693,1,4,4.7,TRUE
+1760,Why did you cry?,你為什麼哭了？,日常,,827946,343391,1,4,4.7,TRUE
+1761,Your time is up.,你的時間到了。,日常,,17347,771351,1,4,4.7,TRUE
+1762,Are you finished?,你結束了嗎？,日常,,1839436,4844819,2,5,6.4,TRUE
+1763,Aren't you happy?,你不快樂嗎?,日常,,16747,771414,2,5,6.4,TRUE
+1764,Do you trust her?,你相信她嗎?,日常,,776107,776999,2,4,5.4,TRUE
+1765,For what purpose?,為了什麼目的？,日常,,433515,819462,2,4,5.4,TRUE
+1766,I almost drowned.,我差點淹死。,日常,,31565,920109,4,5,7.8,TRUE
+1767,I couldn't sleep.,我睡不著。,日常,,322736,917855,2,4,5.4,TRUE
+1768,I'm free tonight.,我今晚有空。,日常,,243357,916648,2,4,5.4,TRUE
+1769,It can't be true.,那不可能是真的。,日常,,42088,346766,3,5,7.1,TRUE
+1770,Let's fly a kite.,我們來放風箏吧。,日常,,449022,825963,3,4,6.1,TRUE
+1771,Nothing happened.,什麼事都沒有發生。,日常,,24616,780347,2,5,6.4,TRUE
+1772,She kept working.,她不停地工作。,日常,,388559,825173,1,4,4.7,TRUE
+1774,There's no water.,沒有水。,日常,,1349700,1444292,0,4,4,TRUE
+1775,This book is new.,這本書是新的。,日常,,56910,791383,1,4,4.7,TRUE
+1776,Tom can run fast.,Tom可以跑得很快。,日常,,37069,832469,2,4,5.4,TRUE
+1777,Tom cannot drive.,湯姆不能開車。,日常,,1548370,6673100,3,4,6.1,TRUE
+1778,Tom likes it hot.,湯姆喜歡熱的。,日常,,1868072,5900172,2,5,6.4,TRUE
+1779,Tom lost his job.,湯姆丟了工作。,日常,,37096,819350,4,4,6.8,TRUE
+1780,We lost the game.,我們比賽輸了。,日常,,248786,1411666,2,4,5.4,TRUE
+1781,What did she say?,她說了什麼？,日常,,461204,461639,0,4,4,TRUE
+1782,What did she say?,她說了什麼?,日常,,461204,765245,0,4,4,TRUE
+1783,What did you buy?,你買了什麼？,日常,,24674,832944,0,4,4,TRUE
+1784,What do you have?,您有什麼？,日常,,69589,335327,0,4,4,TRUE
+1786,What do you make?,你做了什麼？,日常,,511884,826252,0,4,4,TRUE
+1787,What woke you up?,什麼吵醒你了?,日常,,16268,793225,0,4,4,TRUE
+1788,What's she doing?,她在做什麼？,日常,,388890,826129,0,3,3,TRUE
+1789,Will you join us?,你會加入我們嗎？,日常,,237669,833778,2,4,5.4,TRUE
+1790,You shouldn't go.,你不該去。,日常,,405481,832945,1,4,4.7,TRUE
+1791,Do you drink beer?,你喝啤酒嗎？,日常,,1761849,4264903,1,4,4.7,TRUE
+1792,How should I know?,我怎麼知道？,日常,,25498,710670,0,4,4,TRUE
+1794,I can't stand him.,我受不了他。,日常,,395036,782167,1,5,5.7,TRUE
+1796,They're in danger.,他們有危險。,日常,,1651935,6119318,2,4,5.4,TRUE
+1797,This desk is mine.,這張桌子是我的。,日常,,59851,826178,1,4,4.7,TRUE
+1798,This is your book.,這是你的書。,日常,,55976,826213,1,4,4.7,TRUE
+1799,Tom couldn't swim.,湯姆不會游泳。,日常,,1831474,5072434,3,4,6.1,TRUE
+1800,Tom likes to knit.,湯姆喜歡編織。,日常,,37015,825945,4,5,7.8,TRUE
+1801,What did you make?,你做了什麼？,日常,,24693,333012,0,4,4,TRUE
+1802,What do you think?,你覺得如何？,日常,,914029,735175,0,4,4,TRUE
+1803,What does it mean?,這是什麼意思？,日常,,43211,469553,1,4,4.7,TRUE
+1804,What is your name?,你叫什麼名字？,日常,,70623,346883,1,4,4.7,TRUE
+1805,What is your name?,您叫什麼名字？,日常,,70623,444659,1,4,4.7,TRUE
+1806,What's for supper?,我們晚飯吃什麼？,日常,,1539914,1323692,2,4,5.4,TRUE
+1807,What's the matter?,怎麼了？,日常,,394894,334413,1,4,4.7,TRUE
+1809,When was it built?,它是什麼時候蓋好的？,日常,,66024,1236365,2,4,5.4,TRUE
+1810,When was she born?,她是什麼時候出生的？,日常,,310506,332914,2,4,5.4,TRUE
+1811,Aren't you thirsty?,你不渴嗎？,日常,,240641,7822206,4,5,7.8,TRUE
+1812,I can't drink milk.,我不可以喝牛奶。,日常,,1084522,2147732,1,5,5.7,TRUE
+1813,I can't drink milk.,我不能喝牛奶。,日常,,1084522,2147887,1,5,5.7,TRUE
+1814,I think he'll come.,我想他會來的吧。,日常,,304557,405729,1,4,4.7,TRUE
+1815,Look what happened.,看看發生了什麼。,日常,,1898341,5344341,1,5,5.7,TRUE
+1816,This house is mine.,這間房子是我的。,日常,,60147,718459,1,4,4.7,TRUE
+1818,What happened then?,那時候發生了什麼事？,日常,,816062,816892,2,5,6.4,TRUE
+1819,What just happened?,剛剛發生了什麼事？,日常,,1628159,3044037,2,5,6.4,TRUE
+1820,Which hat is yours?,哪一頂帽子是你的？,日常,,453576,336689,2,4,5.4,TRUE
+1821,The train just left.,列車已經出發。,日常,,326232,482704,2,4,5.4,TRUE
+1822,This is their house.,這是他們家。,日常,,55437,487586,1,4,4.7,TRUE
+1823,We are good friends.,我們是好朋友。,日常,,249493,1441661,1,4,4.7,TRUE
+1825,When will you leave?,你什麼時候要離開？,日常,,66004,825876,2,4,5.4,TRUE
+1826,Perhaps you're right.,也許你是對的。,日常,,1898277,7768335,2,4,5.4,TRUE
+1827,Those are their books.,這是他們的書。,日常,,66998,5617148,1,4,4.7,TRUE
+1828,What's wrong with you?,你到底是怎麼回事啊？,日常,,664250,3897850,1,4,4.7,TRUE
+1829,Where are your things?,你的東西在哪裡?,日常,,17110,793235,1,4,4.7,TRUE
+1830,He got angry.,他生氣了。,日常,,507233,389804,0,4,4,TRUE
+1831,Mary came in.,瑪麗進來了。,日常,,388762,826109,1,4,4.7,TRUE
+1832,He lied to us.,他欺騙了我們。,日常,,388832,826013,1,4,4.7,TRUE
+1833,He shot at me.,他對我開槍。,日常,,71962,793302,2,4,5.4,TRUE
+1834,He just arrived.,他剛到。,日常,,451727,451439,3,5,7.1,TRUE
+1835,I called Tom up.,我打電話給湯姆了。,日常,,255286,826242,2,5,6.4,TRUE
+1836,She looked away.,她轉移了視線。,日常,,512653,825166,1,5,5.7,TRUE
+1837,She woke him up.,她叫醒了他。,日常,,887596,2680426,0,4,4,TRUE
+1838,He went bankrupt.,他破產了。,日常,,715082,7768010,4,4,6.8,TRUE
+1839,The well ran dry.,這口井乾涸了。,日常,,27887,866153,1,4,4.7,TRUE
+1840,We just moved in.,我們才剛搬進來。,日常,,1893787,2511500,2,5,6.4,TRUE
+1841,I walked to school.,我走路到學校。,日常,,320498,838611,0,5,5,TRUE
+1842,Is he breathing?,他在呼吸嗎?,日常,,239892,772142,4,4,6.8,TRUE
+1843,I'm staying home.,我在家裡待著。,日常,,1547728,6151299,1,5,5.7,TRUE
+1844,He's a DJ.,他是一個 DJ 。,日常,,1383444,1878329,7,3,7.9,TRUE
+1845,It's 3:30.,3點半了。,日常,,456175,795758,0,3,3,TRUE
+1846,He lives alone.,他一個人生活。,日常,,811376,346797,1,5,5.7,TRUE
+1847,He lives alone.,他獨自生活。,日常,,811376,812227,1,5,5.7,TRUE
+1849,Here is a book.,這裡有一本書。,日常,,61725,825137,1,4,4.7,TRUE
+1850,I'm free today.,我今天有空。,日常,,257587,333310,2,4,5.4,TRUE
+1851,Is that better?,那更好嗎？,日常,,1886907,5670784,2,4,5.4,TRUE
+1852,He acts quickly.,他行動迅速。,日常,,288254,1888657,2,4,5.4,TRUE
+1853,It's fine today.,今天天氣很好。,日常,,242938,333127,0,4,4,TRUE
+1854,It's time to go.,該走了。,日常,,266757,793328,0,4,4,TRUE
+1855,That's too easy.,那太簡單了。,日常,,2251293,6015157,1,4,4.7,TRUE
+1856,Here is the bill.,這是賬單。,日常,,1495898,7774826,3,4,6.1,TRUE
+1857,I'm on your side.,我站在你這邊。,日常,,68795,1394786,2,4,5.4,TRUE
+1858,It's no big deal.,這沒什麼大不了的。,日常,,532854,2456036,1,4,4.7,TRUE
+1859,Tom walks slowly.,湯姆走得很慢。,日常,,37199,335609,1,4,4.7,TRUE
+1860,Where is my book?,我的書在哪？,日常,,482303,1561711,1,4,4.7,TRUE
+1861,You're no singer.,你不是歌手。,日常,,2218226,5780566,1,4,4.7,TRUE
+1862,I don't feel well.,我覺得不太舒服。,日常,,1717,501698,2,5,6.4,TRUE
+1863,They are at lunch.,他們在吃午飯。,日常,,307157,1839200,1,4,4.7,TRUE
+1864,Tom wants to talk.,湯姆想說話。,日常,,2011384,5613702,1,4,4.7,TRUE
+1865,Where is my watch?,我的手錶在哪裡？,日常,,321500,826175,1,4,4.7,TRUE
+1866,Whose car is this?,這輛車是誰的？,日常,,55518,4795925,1,4,4.7,TRUE
+1867,Whose car is this?,這是誰的車？,日常,,55518,4795926,1,4,4.7,TRUE
+1868,Whose fault is it?,是誰的錯呢？,日常,,441942,824533,3,4,6.1,TRUE
+1869,You work too hard.,你太認真工作了。,日常,,15877,332949,1,4,4.7,TRUE
+1870,Don't you think so?,你不這麼認為嗎？,日常,,51058,332629,2,5,6.4,TRUE
+1872,He doesn't listen.,他沒在聽。,日常,,2269440,5574137,1,5,5.7,TRUE
+1873,I've no idea.,我不知道。,日常,,2248411,7772071,1,4,4.7,TRUE
+1874,I am very sad.,我很難過。,日常,,1136927,333736,1,5,5.7,TRUE
+1875,I was a doctor.,我以前是個醫生,日常,,2549661,6293088,5,5,8.5,TRUE
+1876,It is so early.,那太早了。,日常,,1252138,2007046,2,5,6.4,TRUE
+1877,Now I remember.,現在我想起來了。,日常,,72076,472898,2,5,6.4,TRUE
+1878,Are you serious?,你是認真的嗎？,日常,,373215,4887667,3,5,7.1,TRUE
+1879,Do you remember?,你還記得嗎？,日常,,21678,444736,1,5,5.7,TRUE
+1880,He is my father.,他是我的父親。,日常,,297979,796081,1,5,5.7,TRUE
+1882,He's not a hero.,他不是英雄。,日常,,1815763,5613619,3,5,7.1,TRUE
+1883,I took a shower.,我沖了個澡,日常,,3126551,5624915,0,5,5,TRUE
+1884,I'm about ready.,我快好了。,日常,,33483,793259,2,5,6.4,TRUE
+1886,He wrote one letter.,他寫了封信。,日常,,452751,442288,0,5,5,TRUE
+1887,Goodbye!,再見！,招呼,,516745,336477,0,1,1,TRUE
+1889,Good evening.,晚安,招呼,,333156,333158,0,4,4,TRUE
+1890,See you soon!,待會見！,招呼,,32672,337874,1,3,3.7,TRUE
+1891,See you then.,到時候見。,招呼,,47013,824671,1,3,3.7,TRUE
+1892,Welcome back.,歡迎回來。,招呼,,1627336,5092518,1,3,3.7,TRUE
+1894,Happy New Year!,新年快樂！,招呼,,361350,6581625,0,4,4,TRUE
+1895,Nice to meet you.,很高興認識你。,招呼,,499617,6559021,0,4,4,TRUE
