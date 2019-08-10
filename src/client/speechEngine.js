@@ -37,20 +37,46 @@ function getMS() {
     return new Date().getTime()
 }
 
-export let say = async (text, speed, voice) => {
-    var startMS = getMS()
+var lastText = ""
+var lastVoice = ""
+var lastAudio = ""
+
+export let getAudioDuration = async (text, voice) => {
+    lastText = ""
+    lastVoice = ""
+    lastAudio = undefined
     var response = await fetch(`/tts?text=${text}&voice=${voice}`)
         .then(res =>
             res.text()
         )
+    return new Promise((resolve, reject) => {
+        lastText = text
+        lastVoice = voice
+        lastAudio = new Audio('data:audio/wav;base64,' + response)
+        lastAudio.onloadedmetadata = () => {
+            resolve(lastAudio.duration)
+        }
+        // todo handling time out error
+    })
+}
 
-    const audio = new Audio('data:audio/wav;base64,' + response)
+export let say = async (text, speed, voice) => {
+    var startMS = getMS()
+    if (text != lastText || voice != lastVoice) {
+        var response = await fetch(`/tts?text=${text}&voice=${voice}`)
+            .then(res =>
+                res.text()
+            )
+        lastText = text
+        lastVoice = voice
+        lastAudio = new Audio('data:audio/wav;base64,' + response)
+    }
     let promise = new Promise(function (resolve, reject) {
-        audio.onended = () => {
+        lastAudio.onended = () => {
             resolve(getMS() - startMS)
         }
     })
-    audio.play()
-    audio.playbackRate = speed
+    lastAudio.play()
+    lastAudio.playbackRate = speed
     return promise
 }

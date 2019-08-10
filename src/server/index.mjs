@@ -6,6 +6,7 @@ import bodyParser from 'body-parser'
 import helmet from 'helmet'
 import { ttsAPI } from './tts.mjs'
 import { mecabAPI } from './mecab.mjs'
+import { getSelfRecognizedAPI, selfRecognizedAPI } from './selfRecognized.mjs'
 import mysql from "mysql"
 
 var db = mysql.createConnection({
@@ -46,6 +47,8 @@ app.use(function(req, res, next) {
 // use get only because => chrome don't cache any xhr post response
 app.get('/tts', ttsAPI)
 app.get('/mecab', mecabAPI)
+app.get('/updateSelfRecognized', selfRecognizedAPI)
+app.get('/selfRecognized', getSelfRecognizedAPI)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
