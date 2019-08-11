@@ -4,17 +4,8 @@
     import { currentSetId} from '../model/store.js'
 </script>
 
-
-
 {#if !$currentSetId}
     <SetList />
 {:else}
     <Messenger />
 {/if}
-
-
-<style>
-    :global(body) {
-        background: #fff;
-    }
-</style>

@@ -32,46 +32,46 @@
 </script>
 
 <div class="outFlexDiv">
-<div class="siteTitle">
-    <h1>
-        <ruby>
-            <rb>回音</rb>
-            <rt>echo</rt>
-            <rb>森林</rb>
-            <rt>mori</rt>
-        </ruby>
-    </h1>
-</div>
+    <div class="siteTitle">
+        <h1>
+            <ruby>
+                <rb>回音</rb>
+                <rt>echo</rt>
+                <rb>森林</rb>
+                <rt>mori</rt>
+            </ruby>
+        </h1>
+    </div>
 
-<div class="tagContainer">
-    {#if isAllTag}
-        <div class="tag selected">全部({sentenceSets.length})</div>
-    {:else}
-        <div class="tag" on:click={() => _isSelectedTag.set({})}>全部({sentenceSets.length})</div>
-    {/if}
-    {#each tags as tag}
-        <div class={`tag ${isSelectedTag[tag] ? "selected" : ""}`}
-             on:click={()=> {toggleTag(tag)}}>
-            {`${tag}(${tagCounts[tag]})`}
-        </div>
-    {/each}
-</div>
+    <div class="tagContainer">
+        {#if isAllTag}
+            <div class="tag selected">全部({sentenceSets.length})</div>
+        {:else}
+            <div class="tag" on:click={() => _isSelectedTag.set({})}>全部({sentenceSets.length})</div>
+        {/if}
+        {#each tags as tag}
+            <div class={`tag ${isSelectedTag[tag] ? "selected" : ""}`}
+                 on:click={()=> {toggleTag(tag)}}>
+                {`${tag}(${tagCounts[tag]})`}
+            </div>
+        {/each}
+    </div>
 
-<div class="cardContainer">
-     {#each filteredSets as set}
-        <div class="card" on:click={() => selectSet(set.id)}>
-            <div class="difficultyLabel">{set.difficultyLabel}</div>
-            <div class="title">
-                {`${set.tag} (${set.tagIndex}) `}
+    <div class="cardContainer">
+         {#each filteredSets as set}
+            <div class="card" on:click={() => selectSet(set.id)}>
+                <div class="difficultyLabel">{set.difficultyLabel}</div>
+                <div class="title">
+                    {`${set.tag} (${set.tagIndex}) `}
+                </div>
+                <div class="exampleSentence">
+                    {#each set.sentenceIds as sid}
+                        {idToRow[sid].ch}
+                    {/each}
+                </div>
             </div>
-            <div class="exampleSentence">
-                {#each set.sentenceIds as sid}
-                    <div>{idToRow[sid].ch}</div>
-                {/each}
-            </div>
-        </div>
-     {/each}
-</div>
+         {/each}
+    </div>
 </div>
 <style>
     .outFlexDiv {
@@ -81,6 +81,8 @@
         height: 100%;
         max-width: 600px;
         margin: 0px auto;
+        border-left: 1px solid #eee;
+        border-right: 1px solid #eee;
     }
     .siteTitle {
         width: 100%;
@@ -89,22 +91,29 @@
     }
     h1 {
         color: #60a030;
-        margin: 10px auto 5px auto;
+        margin: 5px auto 0px auto;
         text-align: center;
     }
+    rt {
+        color: black;
+        font-weight: 400;
+    }
     .tagContainer {
+        border-top: 1px solid #eee;
         width: 100%;
-        margin: 0 auto;
-        padding: 0px 10px 5px;
+        padding: 5px 0px;
+        background: #fafafa;
     }
     .tag {
         display: inline-block;
-        font-size: 12px;
-        padding: 1px 2px;
-        margin: 0px 2px;
+        color: #666;
+        font-size: 14px;
+        padding: 2px 2px;
+        margin: 1px 0px 1px 2px;
     }
     .tag:hover {
-        background: rgba(96, 144, 48, 0.2);
+        color: #333;
+        background: #eee;
         cursor: pointer;
     }
     .tag.selected, .tag.selected:hover {
@@ -113,7 +122,7 @@
     }
     .cardContainer {
         width: 100%;
-        border: 1px solid #eee;
+        border-top: 1px solid #eee;
         overflow: auto;
         margin: 0 auto;
     }
@@ -141,7 +150,8 @@
         font-weight: 500;
     }
     .exampleSentence {
-        margin-left: 82px
+        margin-left: 82px;
+        color: #444;
     }
 </style>
 
