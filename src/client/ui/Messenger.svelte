@@ -24,8 +24,8 @@
     beforeUpdate(() => {
         autoscroll = inDiv &&
                      lastComment.type == "teacher" &&
-                     (inDiv.offsetHeight - outDiv.scrollTop > outDiv.offsetHeight + 120)
-        if (autoscroll) outDiv.scrollTo(0, outDiv.scrollTop + 120)
+                     (inDiv.offsetHeight - outDiv.scrollTop > outDiv.offsetHeight + 135)
+        if (autoscroll) outDiv.scrollTo(0, outDiv.scrollTop + 300)
     })
     function backToMain() {
         currentSetId.set(undefined)
@@ -93,6 +93,7 @@
         </div>
     {:else}
         <button class="fightButton" on:click={() => { isPlaying.set(false)}} > 停 止 </button>
+        <div class="gameProgress">{`${Math.ceil($comments.length/2)} / ${currentSet.sentenceIds.length}`}</div>
     {/if}
 </div>
 
@@ -148,7 +149,7 @@
     }
     .scrollable {
         margin: 0 0.5em;
-        padding-bottom: 200px;
+        padding-bottom: 300px;
     }
 
     article {
@@ -215,6 +216,14 @@
         margin: 0px auto;
         padding-top: 10px;
         text-align: center;
+    }
+    .gameProgress {
+        position: absolute;
+        width: 90px;
+        display: inline-block;
+        font-size: 24px;
+        font-weight: 400;
+        margin-left: 40px;
     }
     .fightButton {
         font-size: 20px;
