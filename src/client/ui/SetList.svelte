@@ -1,6 +1,7 @@
 <script>
     import { sentenceSets, idToRow } from '../model/demoSets.js'
     import { currentSetId, isSelectedTag as _isSelectedTag } from '../model/store.js'
+    import { fly } from 'svelte/transition';
 
     //console.log(idToRow)
     var tagCounts = {}
@@ -31,7 +32,7 @@
     }
 </script>
 
-<div class="outFlexDiv">
+<div class="outFlexDiv" transition:fly="{{ x: -300, duration: 200 }}">
     <div class="siteTitle">
         <h1>
             <ruby>

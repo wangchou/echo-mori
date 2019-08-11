@@ -4,7 +4,7 @@
     import { currentSetId} from '../model/store.js'
 </script>
 
-{#if !$currentSetId}
+{#if $currentSetId == undefined}
     <SetList />
 {:else}
     <Messenger />
