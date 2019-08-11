@@ -34,6 +34,7 @@
 </script>
 
 {#if $currentSetId != undefined}
+<div transition:fly="{{ x: 300, duration: 200 }}">
 <div>
     <div class="topBar">
         <div class="backButton" on:click={backToMain}>←</div>
@@ -95,6 +96,7 @@
         <button class="fightButton" on:click={() => { isPlaying.set(false)}} > 停 止 </button>
         <div class="gameProgress">{`${Math.ceil($comments.length/2)} / ${currentSet.sentenceIds.length}`}</div>
     {/if}
+</div>
 </div>
 
 {/if}
