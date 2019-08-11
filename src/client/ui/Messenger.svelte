@@ -34,17 +34,14 @@
 </script>
 
 {#if $currentSetId != undefined}
-<div transition:fly="{{ x: 300, duration: 200 }}">
-<div>
+<div class="outFlexDiv" transition:fly="{{ x: 300, duration: 200 }}">
     <div class="topBar">
         <div class="backButton" on:click={backToMain}>←</div>
         <div class="setBarContainer">
             <div class="setTitle">{`${currentSet.tag} ${currentSet.tagIndex}`}</div>
-            <div class="setInfo">來自 Tatoeba</div>
-            <br>
             <div class="setInfo">{currentSet.difficultyLabel}</div>
-            <div class="setInfo">{`平均音節數：${parseFloat(currentSet.syllablesCount).toFixed(1)}`}</div>
-            <div class="setInfo">{`單字難度：${parseFloat(currentSet.wordDifficulty).toFixed(1)}`}</div>
+            <div class="setInfo">{`音節數：${parseFloat(currentSet.syllablesCount).toFixed(1)}`}</div>
+            <div class="setInfo">來自 Tatoeba</div>
         </div>
     </div>
 
@@ -75,39 +72,51 @@
             </div>
         {/if}
     </div>
-</div>
 
-<div class="actionButton">
-    {#if !$isPlaying}
-        <button class="fightButton" on:click={() => { playGame(false); isShowContent = false}} > 挑 戰 </button>
-        <button class="fightButton" on:click={() => { playGame(true); isShowContent = false}} > 展 示 </button>
-        {#if !isShowContent}
-          <button class="fightButton" on:click={() => { isShowContent = true}} > 清 除 </button>
+    <div class="bottomBarHoldingPosition"></div>
+    <div class="bottomBar">
+        {#if !$isPlaying}
+            <button class="fightButton" on:click={() => { playGame(false); isShowContent = false}} > 挑 戰 </button>
+            <button class="fightButton" on:click={() => { playGame(true); isShowContent = false}} > 展 示 </button>
+            {#if !isShowContent}
+              <button class="fightButton" on:click={() => { isShowContent = true}} > 清 除 </button>
+            {/if}
+            <div style="width:130px; position: relative;top:-100px;left:430px">
+                <span style="border-width:0px;margin: 0 auto">
+                    <span style="border-width: 0px; padding: 0px;float:left">速度</span>
+                    <span style="border-width: 0px; padding: 0px;float:right">{$speed + "X"}</span>
+                    <br>
+                    <input style="padding: 0px 0px;" type="range" min="0.3" max="1.3" step="0.1" bind:value={$speed}>
+                </span>
+            </div>
+        {:else}
+            <button class="fightButton" on:click={() => { isPlaying.set(false)}} > 停 止 </button>
+            <div class="gameProgress">{`${Math.ceil($comments.length/2)} / ${currentSet.sentenceIds.length}`}</div>
         {/if}
-        <div style="width:130px; position: relative;top:-100px;left:330px">
-            <span style="border-width:0px;margin: 0 auto">
-                <span style="border-width: 0px; padding: 0px;float:left">速度</span>
-                <span style="border-width: 0px; padding: 0px;float:right">{$speed + "X"}</span>
-                <br>
-                <input style="padding: 0px 0px;" type="range" min="0.3" max="1.3" step="0.1" bind:value={$speed}>
-            </span>
-        </div>
-    {:else}
-        <button class="fightButton" on:click={() => { isPlaying.set(false)}} > 停 止 </button>
-        <div class="gameProgress">{`${Math.ceil($comments.length/2)} / ${currentSet.sentenceIds.length}`}</div>
-    {/if}
-</div>
+    </div>
 </div>
 
 {/if}
 <style>
+    .outFlexDiv {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        max-width: 400px;
+        margin: 0px auto;
+        border-left: 1px solid #eee;
+        border-right: 1px solid #eee;
+        background: #f8f9fa;
+    }
     .topBar {
-        width: 320px;
-        margin: 5px auto;
+        width: 100%;
+        margin: 0px auto;
+        border-bottom: 1px solid #eee;
+        background: white;
     }
     .backButton {
         position: relative;
-        top: -10px;
         display: inline-block;
         font-size: 36px;
         font-weight: 600;
@@ -128,7 +137,7 @@
         display: inline-block;
         font-size: 12px;
         top: -3px;
-        margin: 0 3px;
+        margin: 0 2px;
         background: #eee;
         padding: 3px 5px;
     }
@@ -137,10 +146,8 @@
         cursor: pointer;
     }
     .messenger {
-        height: 480px;
-        max-width: 320px;
+        width: 100%;
         background: #f8f9fa;
-        border: 1px solid #bbb;
         margin: 0px auto 0px;
         overflow-y: auto;
         scroll-behavior: smooth;
@@ -159,7 +166,7 @@
     }
 
     article span {
-        max-width: 250px
+        max-width: 300px
     }
 
     span {
@@ -213,11 +220,21 @@
         transform: scale(.8);
     }
 
-    div.actionButton {
-        width: 320px;
+    div.bottomBarHoldingPosition {
+        width: 100%;
+        height: 50px;
+    }
+    div.bottomBar {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        max-width: 400px;
+        height: 50px;
         margin: 0px auto;
         padding-top: 10px;
+        border-top: 1px solid #eee;
         text-align: center;
+        background: white;
     }
     .gameProgress {
         position: absolute;
@@ -229,6 +246,7 @@
     }
     .fightButton {
         font-size: 20px;
+        margin: auto 0px;
         width: 90px;
         font-weight: 400;
         background: orange;
