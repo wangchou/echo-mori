@@ -4,12 +4,15 @@
     import { sentenceSets, idToRow } from '../model/demoSets.js'
     import { fly } from 'svelte/transition';
     import { get } from 'svelte/store';
+    import { playGame } from '../gameFlow.js'
+    import { speed } from '../model/config.js'
 
     let outDiv
     let inDiv
     let autoscroll
     var lastComment = {}
     var currentSet = {}
+    var isShowContent = true
     currentSetId.subscribe(id => {
         currentSet = sentenceSets.filter(set => set.id == id)[0]
     })
@@ -21,15 +24,16 @@
     beforeUpdate(() => {
         autoscroll = inDiv &&
                      lastComment.type == "teacher" &&
-                     (inDiv.offsetHeight - outDiv.scrollTop > outDiv.offsetHeight + 100)
-        if (autoscroll) outDiv.scrollTo(0, outDiv.scrollTop + 100)
+                     (inDiv.offsetHeight - outDiv.scrollTop > outDiv.offsetHeight + 120)
+        if (autoscroll) outDiv.scrollTo(0, outDiv.scrollTop + 120)
     })
     function backToMain() {
-        isPlaying.set(false)
         currentSetId.set(undefined)
+        isPlaying.set(false)
     }
 </script>
 
+{#if $currentSetId}
 <div>
     <div class="topBar">
         <div class="backButton" on:click={backToMain}>←</div>
@@ -44,34 +48,55 @@
     </div>
 
     <div class="messenger" bind:this={outDiv}>
-        {#if !$isPlaying}
-        <div class="currentSetDiv">
-            {#each currentSet.sentenceIds as id}
-               {idToRow[id].en}
-               <br>
-               {idToRow[id].ch}
-               <br>
-               <br>
-            {/each}
-        </div>
+        {#if isShowContent}
+            <div class="currentSetDiv">
+                {#each currentSet.sentenceIds as id}
+                    {idToRow[id].en}
+                    <br>
+                    {idToRow[id].ch}
+                    <br>
+                    <br>
+                {/each}
+            </div>
         {:else}
-        <div class="scrollable" bind:this={inDiv}>
-            {#each $comments as comment}
-                <article class={comment.type} transition:fly="{{ y: 20, duration: 300 }}">
-                    <span class:hasRubyAnnotation="{comment.text.indexOf('rt') > 0}"
-                          class:great="{comment.score >= 80}"
-                          class:good="{comment.score < 80 && comment.score >= 60}"
-                          class:wrong="{comment.score < 60}"
-                    >
-                        {@html comment.text + (comment.score != undefined ? ` ${comment.score}分` : '')}
-                    </span>
-                </article>
-            {/each}
-        </div>
+            <div class="scrollable" bind:this={inDiv}>
+                {#each $comments as comment}
+                    <article class={comment.type} transition:fly="{{ y: 20, duration: 300 }}">
+                        <span class:hasRubyAnnotation="{comment.text.indexOf('rt') > 0}"
+                              class:great="{comment.score >= 80}"
+                              class:good="{comment.score < 80 && comment.score >= 60}"
+                              class:wrong="{comment.score < 60}"
+                        >
+                            {@html comment.text + (comment.score != undefined ? ` ${comment.score}分` : '')}
+                        </span>
+                    </article>
+                {/each}
+            </div>
         {/if}
     </div>
 </div>
 
+<div class="actionButton">
+    {#if !$isPlaying}
+        <button class="fightButton" on:click={() => { playGame(false); isShowContent = false}} > 挑 戰 </button>
+        <button class="fightButton" on:click={() => { playGame(true); isShowContent = false}} > 展 示 </button>
+        {#if !isShowContent}
+          <button class="fightButton" on:click={() => { isShowContent = true}} > 清 除 </button>
+        {/if}
+        <div style="width:130px; position: relative;top:-100px;left:330px">
+            <span style="border-width:0px;margin: 0 auto">
+                <span style="border-width: 0px; padding: 0px;float:left">速度</span>
+                <span style="border-width: 0px; padding: 0px;float:right">{$speed + "X"}</span>
+                <br>
+                <input style="padding: 0px 0px;" type="range" min="0.3" max="1.3" step="0.1" bind:value={$speed}>
+            </span>
+        </div>
+    {:else}
+        <button class="fightButton" on:click={() => { isPlaying.set(false)}} > 停 止 </button>
+    {/if}
+</div>
+
+{/if}
 <style>
     .topBar {
         width: 320px;
@@ -185,4 +210,17 @@
         transform: scale(.8);
     }
 
+    div.actionButton {
+        width: 320px;
+        margin: 0px auto;
+        padding-top: 10px;
+        text-align: center;
+    }
+    .fightButton {
+        font-size: 20px;
+        width: 90px;
+        font-weight: 400;
+        background: orange;
+        border: 1px solid #ce8500;
+    }
 </style>

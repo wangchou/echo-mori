@@ -31,6 +31,7 @@
     }
 </script>
 
+<div class="outFlexDiv">
 <div class="siteTitle">
     <h1>
         <ruby>
@@ -71,11 +72,18 @@
         </div>
      {/each}
 </div>
-
+</div>
 <style>
+    .outFlexDiv {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        max-width: 600px;
+        margin: 0px auto;
+    }
     .siteTitle {
-        width: 95%;
-        max-width: 480px;
+        width: 100%;
         padding: 0px;
         margin: 0px auto;
     }
@@ -87,7 +95,6 @@
     .tagContainer {
         width: 100%;
         margin: 0 auto;
-        max-width: 600px;
         padding: 0px 10px 5px;
     }
     .tag {
@@ -106,8 +113,6 @@
     }
     .cardContainer {
         width: 100%;
-        height: 100%;
-        max-width: 600px;
         border: 1px solid #eee;
         overflow: auto;
         margin: 0 auto;
