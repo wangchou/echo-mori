@@ -1,7 +1,8 @@
 import fetch from 'node-fetch'
 import API_KEY from "./googleAPIKey.js"
+import { getTTS, saveTTS } from "./db.mjs"
 
-const Voices = {
+export const Voices = {
     jaF1: { name: 'ja-JP-Wavenet-A', languageCode: 'ja-JP' },
     jaF2: { name: 'ja-JP-Wavenet-B', languageCode: 'ja-JP' },
     jaM1: { name: 'ja-JP-Wavenet-C', languageCode: 'ja-JP' },
@@ -17,19 +18,28 @@ const Voices = {
 const GOOGLE_TEXT_TO_SPEECH_URL = 'https://texttospeech.googleapis.com/v1beta1/text:synthesize?key=' + API_KEY
 
 export let ttsAPI = async (req, res) => {
-    console.log(req.query.text, req.query.voice)
-    const body = JSON.stringify({
-        input: { text: req.query.text },
-        voice: Voices[req.query.voice],
-        audioConfig: {
-            audioEncoding: 'OGG_OPUS',
-            speakingRate: 1.0,
-        },
-    })
-    const response = await fetch(GOOGLE_TEXT_TO_SPEECH_URL, {
-        method: 'POST',
-        body
-    }).then(res => res.json())
+    let text = req.query.text
+    let voiceName = Voices[req.query.voice].name
+    console.log(text, voiceName)
+
+    var audioContent = await getTTS(req.db, text, voiceName)
+
+    if (!audioContent) {
+        const body = JSON.stringify({
+            input: { text: req.query.text },
+            voice: Voices[req.query.voice],
+            audioConfig: {
+                audioEncoding: 'OGG_OPUS',
+                speakingRate: 1.0,
+            },
+        })
+        let response = await fetch(GOOGLE_TEXT_TO_SPEECH_URL, {
+            method: 'POST',
+            body
+        }).then(res => res.json())
+        await saveTTS(req.db, text, voiceName, response.audioContent)
+        audioContent = response.audioContent
+    }
     // res.set('Cache-Control', 'public, max-age=30000000');
-    res.send(response.audioContent)
+    res.send(audioContent)
 }
