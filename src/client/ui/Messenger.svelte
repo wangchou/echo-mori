@@ -33,7 +33,7 @@
     }
 </script>
 
-{#if $currentSetId}
+{#if $currentSetId != undefined}
 <div>
     <div class="topBar">
         <div class="backButton" on:click={backToMain}>←</div>
