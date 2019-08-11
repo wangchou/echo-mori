@@ -156,6 +156,23 @@ async function main() {
             console.log(row.en, row.ch)
         })
     })
+
+    const jsonString = JSON.stringify(sentenceSets)
+    fs.writeFile('./sentenceSets.json', jsonString, err => {
+        if (err) {
+            console.log('Error writing file', err)
+        } else {
+            console.log('Successfully wrote file')
+        }
+    })
+    const jsonString2 = JSON.stringify(idToRow)
+    fs.writeFile('./idToRow.json', jsonString2, err => {
+        if (err) {
+            console.log('Error writing file', err)
+        } else {
+            console.log('Successfully wrote file')
+        }
+    })
 }
 
 main()

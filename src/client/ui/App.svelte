@@ -1,6 +1,7 @@
 <script>
     import Messenger from './Messenger.svelte'
     import SentenceEditor from './SentenceEditor.svelte'
+    import SetList from './SetList.svelte'
     import { playGame } from '../gameFlow.js'
     import { verifySentences } from '../verifySentencesFlow.js'
     import { speed } from '../model/config.js'
@@ -21,7 +22,7 @@
 </script>
 
 
-<div>
+<div class="siteTitle">
     <h1>
         <ruby>
             <rb>回音</rb>
@@ -32,7 +33,8 @@
     </h1>
 </div>
 
-{#if tab.isEditing}
+<SetList />
+<!-- {#if tab.isEditing}
     <SentenceEditor />
 {:else}
     <Messenger />
@@ -42,7 +44,6 @@
     {#if !$isPlaying}
         <button class="fightButton" on:click={() => { playGame(false)}} disabled={tab.isEditing}> 挑 戰 </button>
         <button class="fightButton" on:click={() => { playGame(true)}} disabled={tab.isEditing}> 展示模式 </button>
-        <button class="fightButton" on:click={() => { verifySentences()}}> 驗證句子 </button>
         <div style="width:130px; position: relative;top:-100px;left:330px">
             <span style="border-width:0px;margin: 0 auto">
                 <span style="border-width: 0px; padding: 0px;float:left">速度</span>
@@ -62,7 +63,7 @@
             {/each}
         </div>
     {/if}
-</div>
+</div> -->
 <br><br>
 
 
@@ -70,9 +71,15 @@
     :global(body) {
         background: #fff;
     }
+    .siteTitle {
+        width: 95%;
+        max-width: 480px;
+        padding: 0px;
+        margin: 0px auto;
+    }
     h1 {
         color: #60a030;
-        margin: 80px auto 0px auto;
+        margin: 10px auto 10px auto;
         text-align: center;
     }
     div.actionButton {

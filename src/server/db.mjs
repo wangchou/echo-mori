@@ -1,4 +1,5 @@
 export let getTTS = (db, text, voiceName) => {
+    if (!db) return
     return new Promise((resolve, reject) => {
         var sql = 'SELECT audio_content FROM tts WHERE voice_name = ' + db.escape(voiceName) + " and text = " + db.escape(text);
         var qur = db.query(sql, function (err, rows) {
@@ -16,6 +17,7 @@ export let getTTS = (db, text, voiceName) => {
 }
 
 export let saveTTS = (db, text, voiceName, audioContent) => {
+    if (!db) return
     return new Promise((resolve, reject) => {
         var sql = `INSERT INTO tts (voice_name, text, audio_content) VALUES (
             ${db.escape(voiceName)},
