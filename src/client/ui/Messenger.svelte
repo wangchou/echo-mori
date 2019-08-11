@@ -1,12 +1,18 @@
 <script>
-    import { comments } from '../model/store.js'
+    import { comments, currentSetId, isPlaying } from '../model/store.js'
     import { beforeUpdate, afterUpdate } from 'svelte'
+    import { sentenceSets, idToRow } from '../model/demoSets.js'
     import { fly } from 'svelte/transition';
+    import { get } from 'svelte/store';
 
     let outDiv
     let inDiv
     let autoscroll
     var lastComment = {}
+    var currentSet = {}
+    currentSetId.subscribe(id => {
+        currentSet = sentenceSets.filter(set => set.id == id)[0]
+    })
 
 	const unsubscribe = comments.subscribe(array => {
 		lastComment = array.length > 0 ? array[array.length - 1] : {}
@@ -18,35 +24,103 @@
                      (inDiv.offsetHeight - outDiv.scrollTop > outDiv.offsetHeight + 100)
         if (autoscroll) outDiv.scrollTo(0, outDiv.scrollTop + 100)
     })
+    function backToMain() {
+        isPlaying.set(false)
+        currentSetId.set(undefined)
+    }
 </script>
 
-<div class="messenger" bind:this={outDiv}>
-    <div class="scrollable" bind:this={inDiv}>
-        {#each $comments as comment}
-            <article class={comment.type} transition:fly="{{ y: 20, duration: 300 }}">
-                <span class:hasRubyAnnotation="{comment.text.indexOf('rt') > 0}"
-                      class:great="{comment.score >= 80}"
-                      class:good="{comment.score < 80 && comment.score >= 60}"
-                      class:wrong="{comment.score < 60}"
-                >
-                    {@html comment.text + (comment.score != undefined ? ` ${comment.score}分` : '')}
-                </span>
-            </article>
-        {/each}
+<div>
+    <div class="topBar">
+        <div class="backButton" on:click={backToMain}>←</div>
+        <div class="setBarContainer">
+            <div class="setTitle">{`${currentSet.tag} ${currentSet.tagIndex}`}</div>
+            <div class="setInfo">來自 Tatoeba</div>
+            <br>
+            <div class="setInfo">{currentSet.difficultyLabel}</div>
+            <div class="setInfo">{`平均音節數：${parseFloat(currentSet.syllablesCount).toFixed(1)}`}</div>
+            <div class="setInfo">{`單字難度：${parseFloat(currentSet.wordDifficulty).toFixed(1)}`}</div>
+        </div>
+    </div>
+
+    <div class="messenger" bind:this={outDiv}>
+        {#if !$isPlaying}
+        <div class="currentSetDiv">
+            {#each currentSet.sentenceIds as id}
+               {idToRow[id].en}
+               <br>
+               {idToRow[id].ch}
+               <br>
+               <br>
+            {/each}
+        </div>
+        {:else}
+        <div class="scrollable" bind:this={inDiv}>
+            {#each $comments as comment}
+                <article class={comment.type} transition:fly="{{ y: 20, duration: 300 }}">
+                    <span class:hasRubyAnnotation="{comment.text.indexOf('rt') > 0}"
+                          class:great="{comment.score >= 80}"
+                          class:good="{comment.score < 80 && comment.score >= 60}"
+                          class:wrong="{comment.score < 60}"
+                    >
+                        {@html comment.text + (comment.score != undefined ? ` ${comment.score}分` : '')}
+                    </span>
+                </article>
+            {/each}
+        </div>
+        {/if}
     </div>
 </div>
 
 <style>
+    .topBar {
+        width: 320px;
+        margin: 5px auto;
+    }
+    .backButton {
+        position: relative;
+        top: -10px;
+        display: inline-block;
+        font-size: 36px;
+        font-weight: 600;
+        width: 40px;
+        color: #60a030;
+        padding-left: 5px;
+    }
+    .setBarContainer {
+        display: inline-block;
+        width: 80%;
+    }
+    .setTitle {
+        display: inline-block;
+        font-size: 32px;
+    }
+    .setInfo {
+        position: relative;
+        display: inline-block;
+        font-size: 12px;
+        top: -3px;
+        margin: 0 3px;
+        background: #eee;
+        padding: 3px 5px;
+    }
+    .backButton:hover {
+        background: rgba(96, 144, 48, 0.1);
+        cursor: pointer;
+    }
     .messenger {
         height: 480px;
         max-width: 320px;
         background: #f8f9fa;
         border: 1px solid #bbb;
-        margin: 0px auto;
+        margin: 0px auto 0px;
         overflow-y: auto;
         scroll-behavior: smooth;
     }
 
+    .currentSetDiv {
+        padding: 10px;
+    }
     .scrollable {
         margin: 0 0.5em;
         padding-bottom: 200px;

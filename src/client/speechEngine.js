@@ -63,7 +63,6 @@ export let getAudioDuration = async (text, voice) => {
 }
 
 export let say = async (text, speed, voice) => {
-    var startMS = getMS()
     if (text != lastText || voice != lastVoice) {
         var response = await fetch(`/tts?text=${text}&voice=${voice}`)
             .then(res =>
@@ -73,6 +72,8 @@ export let say = async (text, speed, voice) => {
         lastVoice = voice
         lastAudio = new Audio('data:audio/wav;base64,' + response)
     }
+
+    var startMS = getMS()
     let promise = new Promise(function (resolve, reject) {
         lastAudio.onended = () => {
             resolve(getMS() - startMS)

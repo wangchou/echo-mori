@@ -7,7 +7,7 @@
     import { speed } from '../model/config.js'
     import { demoSets } from '../model/demoSets.js'
     import { textareaValue } from '../model/store.js'
-    import { comments, isPlaying } from '../model/store.js'
+    import { comments, isPlaying, currentSetId } from '../model/store.js'
     let tab = { isEditing: false };
     function toggle() {
 		tab.isEditing = !tab.isEditing;
@@ -22,23 +22,11 @@
 </script>
 
 
-<div class="siteTitle">
-    <h1>
-        <ruby>
-            <rb>回音</rb>
-            <rt>echo</rt>
-            <rb>森林</rb>
-            <rt>mori</rt>
-        </ruby>
-    </h1>
-</div>
 
-<SetList />
-<!-- {#if tab.isEditing}
-    <SentenceEditor />
+{#if !$currentSetId}
+    <SetList />
 {:else}
     <Messenger />
-{/if}
 
 <div class="actionButton">
     {#if !$isPlaying}
@@ -52,35 +40,14 @@
                 <input style="padding: 0px 0px;" type="range" min="0.3" max="1.3" step="0.1" bind:value={$speed}>
             </span>
         </div>
-
-        <div class="tags" >
-            {#each Object.keys(demoSets) as key}
-                <button
-                    class:currentSet="{currentKey === key}"
-                    on:click={() => { changeSentenceSet(key) }}>
-                    {key}
-                </button>
-            {/each}
-        </div>
     {/if}
-</div> -->
-<br><br>
+</div>
+{/if}
 
 
 <style>
     :global(body) {
         background: #fff;
-    }
-    .siteTitle {
-        width: 95%;
-        max-width: 480px;
-        padding: 0px;
-        margin: 0px auto;
-    }
-    h1 {
-        color: #60a030;
-        margin: 10px auto 10px auto;
-        text-align: center;
     }
     div.actionButton {
         width: 240px;
