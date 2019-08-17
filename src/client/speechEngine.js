@@ -1,19 +1,31 @@
-var recognition = new webkitSpeechRecognition()
-recognition.continuous = true
-recognition.interimResults = false
+var recognition = null
+if ('webkitSpeechRecognition' in window) {
+    recognition = new webkitSpeechRecognition()
+    recognition.continuous = true
+    recognition.interimResults = false
+}
+
 
 export let ListenResultType = {
     success: 'success',
     error: 'error',
-    cannotHear: 'cannotHear'
+    cannotHear: 'cannotHear',
+    notSupport: 'notSupportSTT',
 }
 
 export let listen = (duration) => {
-    recognition.lang = "en-US"
-    recognition.start();
-    setTimeout(() => { recognition.stop() }, duration)
+    console.log(recognition)
+    if (recognition != null) {
+        recognition.lang = "en-US"
+        recognition.start();
+        setTimeout(() => { recognition.stop() }, duration)
+    }
 
     let promise = new Promise((resolve, reject) => {
+        if (recognition == null) {
+            resolve({text: '', type: ListenResultType.notSupport})
+            return
+        }
         var text = ""
         var type
         recognition.onresult = (event) => {

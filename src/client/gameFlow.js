@@ -32,7 +32,6 @@ export const playGame = async (isDemo) => {
         // show listening text
         comments.update(x => [...x, { type: 'listening', text: '正在聽你說...' }])
 
-
         // plus 400 ms
         if (isDemo) {
             setTimeout(() => say(sentence, get(speed), Voices.enF3), 200)
@@ -55,6 +54,9 @@ export const playGame = async (isDemo) => {
             case ListenResultType.error:
                 displayText = "抱歉，目前出現了一些問題。" // need i18n later
                 break;
+            case ListenResultType.notSupport:
+                displayText = "你使用的瀏覽器不支援「語音辨識」。" // need i18n later
+                continue;
         }
 
         // remove listening text and show recognized text with score
