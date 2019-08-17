@@ -11,8 +11,8 @@ import mysql from "mysql"
 
 var db = mysql.createConnection({
     host: "localhost",
-    user: "root",
-    password: "local_forest",
+    user: "forest_user",
+    password: "forest_user",
     database: "bokenn",
     insecureAuth : true
 });

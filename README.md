@@ -16,6 +16,21 @@ Echoic Memory Forest (聽覺記憶之森、簡稱 echo mori)
 * 打開 chrome 在網址列輸入 `chrome://flags/#allow-insecure-localhost` 選擇開啟該選項
 * 最後打開 `https://localhost:4000`
 
+## Setting up mysql
+setting up an server with docker.
+`docker run -p 3306:3306 --name=mysql1 -d mysql/mysql-server`
+Check the password
+`docker logs mysql1 | greq "GENERATED ROOT PASSWORD:"`
+Log in mysql with password
+`docker exec mysql1 -it mysql1 -uroot -p` //f0tuzzeloGxOb4x.eqiMnoKOGIK
+Alter the root user's password
+`alter user 'root'@'localhost' identified by 'root';`
+Create an database for the project.
+`create database bokenn;`
+Create an user with native_password;
+`CREATE USER 'forest_user'@'%' IDENTIFIED WITH mysql_native_password BY 'forest_user';`
+Grant access to the user
+`GRANT ALL PRIVILEGES ON bokenn.* to 'forest_user'@'%';`
 ## 目標
  - 讓學校/老師/自學者，能夠使用最新的科技/AI，提升學生的口說能力 (英、日文 or ...)
  - 建立台灣外語學習的免費語料庫，希望能照台灣學制做難度分級。 (CC-??-?? 未定授權、希望每一句外文, 都有正確的台灣華語翻譯)
