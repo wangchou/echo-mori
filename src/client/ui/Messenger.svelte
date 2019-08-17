@@ -1,5 +1,5 @@
 <script>
-    import { comments, currentSetId, isPlaying } from '../model/store.js'
+    import { comments, currentSetId, isPlaying, isSupportRecognition } from '../model/store.js'
     import { beforeUpdate, afterUpdate } from 'svelte'
     import { sentenceSets, idToRow } from '../model/demoSets.js'
     import { fly } from 'svelte/transition';
@@ -76,8 +76,8 @@
     <div class="bottomBarHoldingPosition"></div>
     <div class="bottomBar">
         {#if !$isPlaying}
-            <button class="fightButton" on:click={() => { playGame(false); isShowContent = false}} > 挑 戰 </button>
-            <button class="fightButton" on:click={() => { playGame(true); isShowContent = false}} > 展 示 </button>
+            <button class="fightButton" on:click={() => { playGame(false); isShowContent = false}} disabled={!$isSupportRecognition}> 挑 戰 </button>
+            <button class="fightButton" on:click={() => { playGame(true); isShowContent = false}} disabled={!$isSupportRecognition}> 展 示 </button>
             {#if !isShowContent}
               <button class="fightButton" on:click={() => { isShowContent = true}} > 清 除 </button>
             {/if}
