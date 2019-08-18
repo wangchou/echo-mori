@@ -1,11 +1,14 @@
 <script>
-    import { comments, currentSetId, isPlaying, isSupportRecognition } from '../model/store.js'
+    import { comments, currentSetId, isPlaying, isSupportRecognition, gameMode, displayMode } from '../model/store.js'
     import { beforeUpdate, afterUpdate } from 'svelte'
     import { sentenceSets, idToRow } from '../model/demoSets.js'
     import { fly } from 'svelte/transition';
     import { get } from 'svelte/store';
     import { playGame } from '../gameFlow.js'
     import { speed } from '../model/config.js'
+    import { GameMode, DisplayMode } from '../model/constants.js'
+    import GameModeSegment from './GameModeSegment.svelte'
+    import DisplayModeSegment from './DisplayModeSegment.svelte'
 
     let outDiv
     let inDiv
@@ -19,12 +22,23 @@
 
 	const unsubscribe = comments.subscribe(array => {
 		lastComment = array.length > 0 ? array[array.length - 1] : {}
-	});
+    });
+
+    // 33 single line
+    // 51 double line
+    // 66 double line with translation
+    function getEachSectionHeight() {
+        // baseline is single line ch(33) + double line(51) + 10px margin (10 * 2)
+        return 104 +
+               (get(displayMode) == DisplayMode.original ? 17 : 0) +
+               (get(displayMode) == DisplayMode.both ? 32 : 0) +
+               (get(gameMode) == GameMode.echo) ? 53 : 0
+    }
 
     beforeUpdate(() => {
         autoscroll = inDiv &&
                      lastComment.type == "teacher" &&
-                     (inDiv.offsetHeight - outDiv.scrollTop > outDiv.offsetHeight + 135)
+                     (inDiv.offsetHeight - outDiv.scrollTop > outDiv.offsetHeight + getEachSectionHeight())
         if (autoscroll) outDiv.scrollTo(0, outDiv.scrollTop + 300)
     })
     function backToMain() {
@@ -81,7 +95,9 @@
             {#if !isShowContent}
               <button class="fightButton" on:click={() => { isShowContent = true}} > 清 除 </button>
             {/if}
-            <div style="width:130px; position: relative;top:-100px;left:430px">
+            <div style="width:130px; position: relative;top:-200px;left:430px">
+                <GameModeSegment />
+                <DisplayModeSegment />
                 <span style="border-width:0px;margin: 0 auto">
                     <span style="border-width: 0px; padding: 0px;float:left">速度</span>
                     <span style="border-width: 0px; padding: 0px;float:right">{$speed + "X"}</span>
@@ -176,14 +192,8 @@
         border: 1px solid #333;
     }
 
-    .user span.great {
-        background-color: #96cf2a;
-    }
-    .user span.good {
-        background-color: #ffc300;
-    }
-    .user span.wrong {
-        background-color: #fe4386;
+    .hasRubyAnnotation {
+        padding-top: 0.9em;
     }
 
     .teacher span {
@@ -191,12 +201,15 @@
         border-radius: 1em 1em 1em 0;
     }
 
-    .hasRubyAnnotation {
-        padding-top: 0.9em;
+    .echo {
+        text-align: center;
     }
 
-    .user, .listening {
-        text-align: right;
+    .echo span {
+        color: #666;
+        border-color: #666;
+        text-align: center;
+        border-radius: 1em;
     }
 
     .listening span {
@@ -209,6 +222,21 @@
         border-radius: 1em 1em 0 1em;
         text-align: left;
     }
+
+    .user, .listening {
+        text-align: right;
+    }
+
+    .user span.great {
+        background-color: #96cf2a;
+    }
+    .user span.good {
+        background-color: #ffc300;
+    }
+    .user span.wrong {
+        background-color: #fe4386;
+    }
+
 
     :global(span) > ruby > rb {
         font-size: 16px
@@ -251,5 +279,8 @@
         font-weight: 400;
         background: orange;
         border: 1px solid #ce8500;
+    }
+    .fightButton:hover {
+        cursor: pointer;
     }
 </style>
