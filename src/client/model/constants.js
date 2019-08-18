@@ -16,3 +16,14 @@ export let Voices = {
     enF2: 'enF2',
     enF3: 'enF3',
 }
+
+export let GameMode = {
+    shadowing: 'shadowing',
+    echo: 'echo'
+}
+
+export let DisplayMode = {
+    both: 'both',
+    original: 'original',
+    translation: 'translation'
+}

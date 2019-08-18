@@ -2,10 +2,10 @@ import { speed, voice, voiceM2 } from './model/config.js'
 import { LangType, calculateScore } from './calculateScore.js'
 import { say, listen, ListenResultType } from './speechEngine.js'
 import { getRubyText } from './rubyText.js'
-import { getTokenInfos, captialFirstChar } from './utils.js'
-import { comments, isPlaying, currentSetId } from './model/store.js'
+import { getTokenInfos, captialFirstChar, wait } from './utils.js'
+import { comments, isPlaying, currentSetId, gameMode, displayMode } from './model/store.js'
 import { get } from 'svelte/store';
-import { Voices } from './model/constants.js'
+import { Voices, GameMode, DisplayMode } from './model/constants.js'
 import { sentenceSets, idToRow } from './model/demoSets.js'
 
 export const playGame = async (isDemo) => {
@@ -22,10 +22,30 @@ export const playGame = async (isDemo) => {
         let sentence = sentences[i]
         let translation = translations[i]
         //var tokenInfos = await getTokenInfos(sentence)
-        comments.update(x => [...x, { type: 'teacher', text: `${sentence}<br><span style="font-size:0.8em">${translation}</span>` }])
+        var teacherText = ""
+        switch(get(displayMode)) {
+            case DisplayMode.both:
+                teacherText = `${sentence}<br><span style="font-size:0.8em">${translation}</span>`
+                break;
+            case DisplayMode.original:
+                teacherText = `${sentence}`
+                break;
+            case DisplayMode.translation:
+                teacherText = `${translation}`
+                break;
+        }
+
+        comments.update(x => [...x, { type: 'teacher', text: teacherText }])
 
         let localVoice = i % 2 ==0 ? voiceM2 : voice
         let duration = await say(sentence, get(speed), get(localVoice))
+
+        if (!get(isPlaying)) { return }
+
+        if (get(gameMode) == GameMode.echo) {
+            comments.update(x => [...x, { type: 'echo', text: `聽心中回音` }])
+            await wait(duration + 200)
+        }
 
         if (!get(isPlaying)) { return }
 
