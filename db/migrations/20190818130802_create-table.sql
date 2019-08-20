@@ -49,7 +49,7 @@ create TABLE game_record(
   total_score int
 );
 
-create TABLE GameRecordDetail(
+create TABLE game_record_detail(
   id int not null PRIMARY key AUTO_INCREMENT,
   created_at DATETIME  default CURRENT_TIMESTAMP,
 
@@ -59,13 +59,13 @@ create TABLE GameRecordDetail(
 );
 
 
-create TABLE Comment(
-  ID int not null PRIMARY key AUTO_INCREMENT,
-  CreationTime DATETIME  default CURRENT_TIMESTAMP,
+create TABLE comment(
+  id int not null PRIMARY key AUTO_INCREMENT,
+  created_at DATETIME  default CURRENT_TIMESTAMP,
 
-  FkAuthorID int DEFAULT 0 REFERENCES User on DELETE SET DEFAULT,
-  Message text,
-  IP text
+  fk_author_id int DEFAULT 0 REFERENCES User on DELETE SET DEFAULT,
+  message text,
+  ip text
 );
 
 

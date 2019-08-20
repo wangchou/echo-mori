@@ -89,20 +89,55 @@ export let getSelfRecognized = (db, text, voiceName) => {
 }
 
 
-export let createRecord = (db, text, userId, mode, totalScore) => {
+export let createGameRecord = (db, userId, mode, totalScore, sentenSetId) => {
     return new Promise((resolve, reject) => {
-        var sql = `Insert into record(fk_user_id) VALUES (
+        var sql = `Insert into game_record(fk_user_id, mode, total_score, fk_sentence_set_id) VALUES (
             ${db.escape(userId)},
             ${db.escape(mode)},
-            ${db.escape(totalScore)}
+            ${db.escape(totalScore)},
+            ${db.escape(sentenSetId)}
         );`
         var qur = db.query(sql, function (err, result) {
             if (err) {
                 console.log(err);
                 reject(err)
             } else {
-                resolve()
                 console.log(result.affectedRows + " record(s) updated");
+                resolve(result.insertId)
+            }
+        });
+    })
+}
+
+export let queryGameRecordByMode = (db, mode) => {
+    return new Promise((resolve, reject) => {
+        var sql = `select * from game_record where mode = ${db.escape(mode)};`
+        var qur = db.query(sql, function (err, result) {
+            if (err) {
+                console.log(err);
+                reject(err)
+            } else {
+                console.log(result.affectedRows + " record(s) updated");
+                resolve(result)
+            }
+        });
+    })
+}
+
+export let createGameRecordDetail = (db, recordId, sentenceId, score) => {
+    return new Promise((resolve, reject) => {
+        var sql = `Insert into game_record_detail(fk_record_id, fk_sentence_id, score) VALUES (
+            ${db.escape(recordId)},
+            ${db.escape(sentenceId)},
+            ${db.escape(score)}
+        );`
+        var qur = db.query(sql, function (err, result) {
+            if (err) {
+                console.log(err);
+                reject(err)
+            } else {
+                console.log(result.affectedRows + " record(s) updated");
+                resolve(result.insertId)
             }
         });
     })
