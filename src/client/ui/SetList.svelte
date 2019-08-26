@@ -1,23 +1,27 @@
 <script>
     import { sentenceSets, idToRow } from '../model/demoSets.js'
-    import { currentSetId, isSelectedTag as _isSelectedTag } from '../model/store.js'
-    import { fly } from 'svelte/transition';
+    import {
+        currentSetId,
+        isSelectedTag as _isSelectedTag,
+    } from '../model/store.js'
+    import { fly } from 'svelte/transition'
 
     //console.log(idToRow)
     var tagCounts = {}
     sentenceSets.forEach(set => {
-        tagCounts[set.tag] = tagCounts[set.tag] ? (tagCounts[set.tag] + 1) : 1
+        tagCounts[set.tag] = tagCounts[set.tag] ? tagCounts[set.tag] + 1 : 1
     })
     var tags = Object.keys(tagCounts)
     tags.sort((tag1, tag2) => {
         return tagCounts[tag2] - tagCounts[tag1]
     })
     var isSelectedTag = {}
-    _isSelectedTag.subscribe(v => isSelectedTag = v)
+    _isSelectedTag.subscribe(v => (isSelectedTag = v))
 
     $: isAllTag = !Object.values(isSelectedTag).includes(true)
-    $: filteredSets = isAllTag ? sentenceSets :
-                                 sentenceSets.filter(set => isSelectedTag[set.tag])
+    $: filteredSets = isAllTag
+        ? sentenceSets
+        : sentenceSets.filter(set => isSelectedTag[set.tag])
 
     function toggleTag(tag) {
         if (isSelectedTag[tag]) {
@@ -32,7 +36,7 @@
     }
 </script>
 
-<div class="outFlexDiv" transition:fly="{{ x: -300, duration: 200 }}">
+<div class="outFlexDiv" transition:fly={{ x: -300, duration: 200 }}>
     <div class="siteTitle">
         <h1>
             <ruby>
@@ -48,32 +52,34 @@
         {#if isAllTag}
             <div class="tag selected">全部({sentenceSets.length})</div>
         {:else}
-            <div class="tag" on:click={() => _isSelectedTag.set({})}>全部({sentenceSets.length})</div>
+            <div class="tag" on:click={() => _isSelectedTag.set({})}>
+                全部({sentenceSets.length})
+            </div>
         {/if}
         {#each tags as tag}
-            <div class={`tag ${isSelectedTag[tag] ? "selected" : ""}`}
-                 on:click={()=> {toggleTag(tag)}}>
+            <div
+                class={`tag ${isSelectedTag[tag] ? 'selected' : ''}`}
+                on:click={() => {
+                    toggleTag(tag)
+                }}>
                 {`${tag}(${tagCounts[tag]})`}
             </div>
         {/each}
     </div>
 
     <div class="cardContainer">
-         {#each filteredSets as set}
+        {#each filteredSets as set}
             <div class="card" on:click={() => selectSet(set.id)}>
                 <div class="difficultyLabel">{set.difficultyLabel}</div>
-                <div class="title">
-                    {`${set.tag} (${set.tagIndex}) `}
-                </div>
+                <div class="title">{`${set.tag} (${set.tagIndex}) `}</div>
                 <div class="exampleSentence">
-                    {#each set.sentenceIds as sid}
-                        {idToRow[sid].ch}
-                    {/each}
+                    {#each set.sentenceIds as sid}{idToRow[sid].ch}{/each}
                 </div>
             </div>
-         {/each}
+        {/each}
     </div>
 </div>
+
 <style>
     .outFlexDiv {
         display: flex;
@@ -117,7 +123,8 @@
         background: #eee;
         cursor: pointer;
     }
-    .tag.selected, .tag.selected:hover {
+    .tag.selected,
+    .tag.selected:hover {
         color: white;
         background: #60a030;
     }
@@ -155,20 +162,3 @@
         color: #444;
     }
 </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,14 +1,31 @@
 <script>
     import { DisplayMode as Mode } from '../model/constants.js'
-    import { displayMode as mode} from '../model/store.js'
-
+    import { displayMode as mode } from '../model/store.js'
 </script>
 
 <div class="outDiv">
-    <div class="title">顯示模式： </div>
-    <div class={$mode == Mode.both ? "selected" : "" } on:click={()=>{ $mode = Mode.both }}> 兩者 </div>
-    <div class={$mode == Mode.original ? "selected" : "" } on:click={()=>{ $mode = Mode.original }}> 英文 </div>
-    <div class={$mode == Mode.translation ? "selected" : "" } on:click={()=>{ $mode = Mode.translation }}> 中文 </div>
+    <div class="title">顯示模式：</div>
+    <div
+        class:selected={$mode == Mode.both}
+        on:click={() => {
+            $mode = Mode.both
+        }}>
+        兩者
+    </div>
+    <div
+        class:selected={$mode == Mode.original}
+        on:click={() => {
+            $mode = Mode.original
+        }}>
+        英文
+    </div>
+    <div
+        class:selected={$mode == Mode.translation}
+        on:click={() => {
+            $mode = Mode.translation
+        }}>
+        中文
+    </div>
 </div>
 
 <style>

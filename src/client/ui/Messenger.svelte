@@ -1,9 +1,16 @@
 <script>
-    import { comments, currentSetId, isPlaying, isSupportRecognition, gameMode, displayMode } from '../model/store.js'
+    import {
+        comments,
+        currentSetId,
+        isPlaying,
+        isSupportRecognition,
+        gameMode,
+        displayMode,
+    } from '../model/store.js'
     import { beforeUpdate, afterUpdate } from 'svelte'
     import { sentenceSets, idToRow } from '../model/demoSets.js'
-    import { fly } from 'svelte/transition';
-    import { get } from 'svelte/store';
+    import { fly } from 'svelte/transition'
+    import { get } from 'svelte/store'
     import { playGame } from '../gameFlow.js'
     import { speed } from '../model/config.js'
     import { GameMode, DisplayMode } from '../model/constants.js'
@@ -20,9 +27,9 @@
         currentSet = sentenceSets.filter(set => set.id == id)[0]
     })
 
-	const unsubscribe = comments.subscribe(array => {
-		lastComment = array.length > 0 ? array[array.length - 1] : {}
-    });
+    const unsubscribe = comments.subscribe(array => {
+        lastComment = array.length > 0 ? array[array.length - 1] : {}
+    })
 
     // 33 single line
     // 51 double line
@@ -30,15 +37,19 @@
     function getEachSectionHeight() {
         // baseline is single line ch(33) + double line(51) + 10px margin (10 * 2)
         return 104 +
-               (get(displayMode) == DisplayMode.original ? 17 : 0) +
-               (get(displayMode) == DisplayMode.both ? 32 : 0) +
-               (get(gameMode) == GameMode.echo) ? 53 : 0
+            (get(displayMode) == DisplayMode.original ? 17 : 0) +
+            (get(displayMode) == DisplayMode.both ? 32 : 0) +
+            (get(gameMode) == GameMode.echo)
+            ? 53
+            : 0
     }
 
     beforeUpdate(() => {
-        autoscroll = inDiv &&
-                     lastComment.type == "teacher" &&
-                     (inDiv.offsetHeight - outDiv.scrollTop > outDiv.offsetHeight + getEachSectionHeight())
+        autoscroll =
+            inDiv &&
+            lastComment.type == 'teacher' &&
+            inDiv.offsetHeight - outDiv.scrollTop >
+                outDiv.offsetHeight + getEachSectionHeight()
         if (autoscroll) outDiv.scrollTo(0, outDiv.scrollTop + 300)
     })
     function backToMain() {
@@ -48,71 +59,120 @@
 </script>
 
 {#if $currentSetId != undefined}
-<div class="outFlexDiv" transition:fly="{{ x: 300, duration: 200 }}">
-    <div class="topBar">
-        <div class="backButton" on:click={backToMain}>←</div>
-        <div class="setBarContainer">
-            <div class="setTitle">{`${currentSet.tag} ${currentSet.tagIndex}`}</div>
-            <div class="setInfo">{currentSet.difficultyLabel}</div>
-            <div class="setInfo">{`音節數：${parseFloat(currentSet.syllablesCount).toFixed(1)}`}</div>
-            <div class="setInfo">來自 Tatoeba</div>
+    <div class="outFlexDiv" transition:fly={{ x: 300, duration: 200 }}>
+        <div class="topBar">
+            <div class="backButton" on:click={backToMain}>←</div>
+            <div class="setBarContainer">
+                <div class="setTitle">
+                    {`${currentSet.tag} ${currentSet.tagIndex}`}
+                </div>
+                <div class="setInfo">{currentSet.difficultyLabel}</div>
+                <div class="setInfo">
+                    {`音節數：${parseFloat(currentSet.syllablesCount).toFixed(1)}`}
+                </div>
+                <div class="setInfo">來自 Tatoeba</div>
+            </div>
+        </div>
+
+        <div class="messenger" bind:this={outDiv}>
+            {#if isShowContent}
+                <div class="currentSetDiv">
+                    {#each currentSet.sentenceIds as id}
+                        {idToRow[id].en}
+                        <br />
+                        {idToRow[id].ch}
+                        <br />
+                        <br />
+                    {/each}
+                </div>
+            {:else}
+                <div class="scrollable" bind:this={inDiv}>
+                    {#each $comments as comment}
+                        <article
+                            class={comment.type}
+                            transition:fly={{ y: 20, duration: 300 }}>
+                            <span
+                                class:hasRubyAnnotation={comment.text.indexOf('rt') > 0}
+                                class:great={comment.score >= 80}
+                                class:good={comment.score < 80 && comment.score >= 60}
+                                class:wrong={comment.score < 60}>
+                                {@html comment.text + (comment.score != undefined ? ` ${comment.score}分` : '')}
+                            </span>
+                        </article>
+                    {/each}
+                </div>
+            {/if}
+        </div>
+
+        <div class="bottomBarHoldingPosition" />
+        <div class="bottomBar">
+            {#if !$isPlaying}
+                <button
+                    class="fightButton"
+                    on:click={() => {
+                        playGame(false)
+                        isShowContent = false
+                    }}
+                    disabled={!$isSupportRecognition}>
+                    挑 戰
+                </button>
+                <button
+                    class="fightButton"
+                    on:click={() => {
+                        playGame(true)
+                        isShowContent = false
+                    }}
+                    disabled={!$isSupportRecognition}>
+                    展 示
+                </button>
+                {#if !isShowContent}
+                    <button
+                        class="fightButton"
+                        on:click={() => {
+                            isShowContent = true
+                        }}>
+                        清 除
+                    </button>
+                {/if}
+                <div
+                    style="width:130px; position: relative;top:-200px;left:430px">
+                    <GameModeSegment />
+                    <DisplayModeSegment />
+                    <span style="border-width:0px;margin: 0 auto">
+                        <span
+                            style="border-width: 0px; padding: 0px;float:left">
+                            速度
+                        </span>
+                        <span
+                            style="border-width: 0px; padding: 0px;float:right">
+                            {$speed + 'X'}
+                        </span>
+                        <br />
+                        <input
+                            style="padding: 0px 0px;"
+                            type="range"
+                            min="0.3"
+                            max="1.3"
+                            step="0.1"
+                            bind:value={$speed} />
+                    </span>
+                </div>
+            {:else}
+                <button
+                    class="fightButton"
+                    on:click={() => {
+                        isPlaying.set(false)
+                    }}>
+                    停 止
+                </button>
+                <div class="gameProgress">
+                    {`${Math.ceil($comments.length / 2)} / ${currentSet.sentenceIds.length}`}
+                </div>
+            {/if}
         </div>
     </div>
-
-    <div class="messenger" bind:this={outDiv}>
-        {#if isShowContent}
-            <div class="currentSetDiv">
-                {#each currentSet.sentenceIds as id}
-                    {idToRow[id].en}
-                    <br>
-                    {idToRow[id].ch}
-                    <br>
-                    <br>
-                {/each}
-            </div>
-        {:else}
-            <div class="scrollable" bind:this={inDiv}>
-                {#each $comments as comment}
-                    <article class={comment.type} transition:fly="{{ y: 20, duration: 300 }}">
-                        <span class:hasRubyAnnotation="{comment.text.indexOf('rt') > 0}"
-                              class:great="{comment.score >= 80}"
-                              class:good="{comment.score < 80 && comment.score >= 60}"
-                              class:wrong="{comment.score < 60}"
-                        >
-                            {@html comment.text + (comment.score != undefined ? ` ${comment.score}分` : '')}
-                        </span>
-                    </article>
-                {/each}
-            </div>
-        {/if}
-    </div>
-
-    <div class="bottomBarHoldingPosition"></div>
-    <div class="bottomBar">
-        {#if !$isPlaying}
-            <button class="fightButton" on:click={() => { playGame(false); isShowContent = false}} disabled={!$isSupportRecognition}> 挑 戰 </button>
-            <button class="fightButton" on:click={() => { playGame(true); isShowContent = false}} disabled={!$isSupportRecognition}> 展 示 </button>
-            {#if !isShowContent}
-              <button class="fightButton" on:click={() => { isShowContent = true}} > 清 除 </button>
-            {/if}
-            <div style="width:130px; position: relative;top:-200px;left:430px">
-                <GameModeSegment />
-                <DisplayModeSegment />
-                <span style="border-width:0px;margin: 0 auto">
-                    <span style="border-width: 0px; padding: 0px;float:left">速度</span>
-                    <span style="border-width: 0px; padding: 0px;float:right">{$speed + "X"}</span>
-                    <br>
-                    <input style="padding: 0px 0px;" type="range" min="0.3" max="1.3" step="0.1" bind:value={$speed}>
-                </span>
-            </div>
-        {:else}
-            <button class="fightButton" on:click={() => { isPlaying.set(false)}} > 停 止 </button>
-            <div class="gameProgress">{`${Math.ceil($comments.length/2)} / ${currentSet.sentenceIds.length}`}</div>
-        {/if}
-    </div>
-</div>
-
 {/if}
+
 <style>
     .outFlexDiv {
         display: flex;
@@ -182,7 +242,7 @@
     }
 
     article span {
-        max-width: 300px
+        max-width: 300px;
     }
 
     span {
@@ -223,7 +283,8 @@
         text-align: left;
     }
 
-    .user, .listening {
+    .user,
+    .listening {
         text-align: right;
     }
 
@@ -237,15 +298,14 @@
         background-color: #fe4386;
     }
 
-
     :global(span) > ruby > rb {
-        font-size: 16px
+        font-size: 16px;
     }
 
     :global(span) > ruby > rt {
         font-size: 10px;
         /* fix chrome font size < 12px issue */
-        transform: scale(.8);
+        transform: scale(0.8);
     }
 
     div.bottomBarHoldingPosition {
