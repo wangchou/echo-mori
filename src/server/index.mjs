@@ -1,5 +1,4 @@
 import express from 'express';
-import bearerToken from 'express-bearer-token'
 import fs from 'fs';
 import https from 'https'
 import morgan from 'morgan'
@@ -8,13 +7,12 @@ import helmet from 'helmet'
 import { ttsAPI } from './tts.mjs'
 import { mecabAPI } from './mecab.mjs'
 import { getSelfRecognizedAPI, selfRecognizedAPI } from './selfRecognized.mjs'
-import { api } from './api'
 import mysql from "mysql"
 
 var db = mysql.createConnection({
     host: "localhost",
-    user: "forest_user",
-    password: "forest_user",
+    user: "root",
+    password: "local_forest",
     database: "bokenn",
     insecureAuth : true
 });
@@ -31,7 +29,6 @@ db.connect(function(err) {
 var app = express()
 app.use(helmet())
 app.use(morgan('dev'))
-app.use(bearerToken())
 
 //            rollup
 // client.js ========> bundle.js location
@@ -46,8 +43,6 @@ app.use(function(req, res, next) {
     req.db = db;
     next();
 });
-
-app.use('/api', api)
 
 // use get only because => chrome don't cache any xhr post response
 app.get('/tts', ttsAPI)
