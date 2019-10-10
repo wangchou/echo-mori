@@ -1,7 +1,6 @@
 import { get } from 'svelte/store';
 
-import { speed, voice1, voice2 } from '../data/states.js'
-import { messages, isPlaying, currentSetId, gameMode, displayMode } from '../data/states.js'
+import { messages, isPlaying, currentSetId, gameMode, displayMode, speed, voice1, voice2 } from '../data/states.js'
 import { Voice, GameMode, DisplayMode, MessageType } from '../data/constants.js'
 import { sentenceSets, idToRow } from '../data/demoSets.js'
 
@@ -12,6 +11,7 @@ import { getTokenInfos, captializeFirstChar, wait } from '../utils/misc.js'
 export const playGame = async (isDemo) => {
     isPlaying.set(true)
     messages.set([])
+
     let currentId = get(currentSetId)
     var sentenceSet = sentenceSets.filter(set => set.id == currentId)[0]
     var sentences = sentenceSet.sentenceIds.map(id => idToRow[id].en)
@@ -19,10 +19,10 @@ export const playGame = async (isDemo) => {
 
     for (let i in sentences) {
         if (!get(isPlaying)) { return }
-        // show left text
+
+        // 1. 在左側，顯示 Google 老師說的字
         let sentence = sentences[i]
         let translation = translations[i]
-        //var tokenInfos = await getTokenInfos(sentence)
         var teacherText = ""
         switch (get(displayMode)) {
             case DisplayMode.both:
@@ -43,6 +43,7 @@ export const playGame = async (isDemo) => {
 
         if (!get(isPlaying)) { return }
 
+        // 2. 在中間，顯示回音法提示泡泡 (optional)
         if (get(gameMode) == GameMode.echo) {
             messages.update(x => [...x, { type: MessageType.echo, text: `聽心中回音` }])
             await wait(duration + 200)
@@ -50,10 +51,9 @@ export const playGame = async (isDemo) => {
 
         if (!get(isPlaying)) { return }
 
-        // show listening text
+        // 3. 在右邊，顯示「正在聽你說」，然後聽使用者說 / 展示時電腦說
         messages.update(x => [...x, { type: MessageType.listening, text: '正在聽你說...' }])
 
-        // plus 400 ms
         if (isDemo) {
             setTimeout(() => say(sentence, get(speed), Voice.enF3), 200)
         }
@@ -61,6 +61,7 @@ export const playGame = async (isDemo) => {
 
         if (!get(isPlaying)) { return }
 
+        // 4. 在右邊，顯示辨識結果與分數
         var displayText = "default display text"
         var score = 0
         switch (result.type) {
@@ -80,11 +81,12 @@ export const playGame = async (isDemo) => {
                 continue;
         }
 
-        // remove listening text and show recognized text with score
         messages.update(x => [
             ...x.slice(0, x.length - 1),
             { type: MessageType.user, text: displayText, score: score }
         ])
+
+        // 5. 唸出句子的判定
         var judgement = ""
         if (score == 100) { judgement = "Excellent" }
         else if (score >= 80) { judgement = "Great" }

@@ -2,8 +2,8 @@
     import { fly } from 'svelte/transition'
     import { get } from 'svelte/store'
     import { beforeUpdate } from 'svelte'
-    import GameModeSegment from './GameModeSegment.svelte'
-    import DisplayModeSegment from './DisplayModeSegment.svelte'
+    import GameModeSegment from './components/GameModeSegment.svelte'
+    import DisplayModeSegment from './components/DisplayModeSegment.svelte'
 
     import {
         messages,

@@ -18,7 +18,9 @@ export const speed = writable(0.8)
 export const voice1 = writable(Voice.enF1)
 export const voice2 = writable(Voice.enM1)
 
-// debug log state changes
+
+// console log state changes
+console.log(`= 句子集頁面狀態 =`)
 currentSetId.subscribe(value => {
     console.log(`| currentSetId =>`, value)
 })
@@ -27,6 +29,7 @@ selectedTag.subscribe(value => {
     console.log(`| selectedTag =>`, value)
 })
 
+console.log(`= Messenger 遊戲頁面狀態 =`)
 messages.subscribe(value => {
     console.log(`| messages => `, value)
 })

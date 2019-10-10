@@ -5,7 +5,6 @@ if ('webkitSpeechRecognition' in window) {
     recognition.interimResults = false
 }
 
-
 export let ListenResultType = {
     success: 'success',
     error: 'error',
@@ -55,25 +54,6 @@ var lastText = ""
 var lastVoice = ""
 var lastAudio = ""
 
-export let getAudioDuration = async (text, voice) => {
-    lastText = ""
-    lastVoice = ""
-    lastAudio = undefined
-    var response = await fetch(`/tts?text=${text}&voice=${voice}`)
-        .then(res =>
-            res.text()
-        )
-    return new Promise((resolve, reject) => {
-        lastText = text
-        lastVoice = voice
-        lastAudio = new Audio('data:audio/wav;base64,' + response)
-        lastAudio.onloadedmetadata = () => {
-            resolve(lastAudio.duration)
-        }
-        // todo handling time out error
-    })
-}
-
 export let say = async (text, speed, voice) => {
     if (text != lastText || voice != lastVoice) {
         var response = await fetch(`/tts?text=${text}&voice=${voice}`)
@@ -94,4 +74,24 @@ export let say = async (text, speed, voice) => {
     lastAudio.play()
     lastAudio.playbackRate = speed
     return promise
+}
+
+// only used in preprocessing
+export let getAudioDuration = async (text, voice) => {
+    lastText = ""
+    lastVoice = ""
+    lastAudio = undefined
+    var response = await fetch(`/tts?text=${text}&voice=${voice}`)
+        .then(res =>
+            res.text()
+        )
+    return new Promise((resolve, reject) => {
+        lastText = text
+        lastVoice = voice
+        lastAudio = new Audio('data:audio/wav;base64,' + response)
+        lastAudio.onloadedmetadata = () => {
+            resolve(lastAudio.duration)
+        }
+        // todo handling time out error
+    })
 }

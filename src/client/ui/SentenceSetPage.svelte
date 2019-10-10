@@ -3,7 +3,6 @@
     import { sentenceSets, idToRow } from '../data/demoSets.js'
     import { currentSetId, selectedTag as _selectedTag } from '../data/states.js'
 
-    //console.log(idToRow)
     var tagCounts = {}
     sentenceSets.forEach(set => {
         tagCounts[set.tag] = tagCounts[set.tag] ? tagCounts[set.tag] + 1 : 1
@@ -12,6 +11,7 @@
     tags.sort((tag1, tag2) => {
         return tagCounts[tag2] - tagCounts[tag1]
     })
+
     var selectedTag = new Set()
     _selectedTag.subscribe(value => (selectedTag = value))
 
@@ -26,6 +26,7 @@
         }
         _selectedTag.set(selectedTag)
     }
+
     function selectSet(id) {
         currentSetId.set(id)
     }

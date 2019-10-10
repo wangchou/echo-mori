@@ -5,7 +5,7 @@ import {
     kanjiOrNumberRxGlobal,
     getHiraganaOnly,
     getTokenInfos
-} from '../utils/misc.js'
+} from './misc.js'
 
 let getRubyPair = (rb, rt = '') => ({ rb: rb, rt: rt })
 

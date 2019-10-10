@@ -5,11 +5,11 @@ export let PlaySpeed = {
 }
 
 export let Voice = {
-    jaF1: 'jaF1', // 日文女一
+    jaF1: 'jaF1', // 日文女聲一
     jaF2: 'jaF2',
     jaM1: 'jaM1',
     jaM2: 'jaM2',
-    enM1: 'enM1', // 英文男一
+    enM1: 'enM1', // 英文男聲一
     enM2: 'enM2',
     enM3: 'enM3',
     enF1: 'enF1',

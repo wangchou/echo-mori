@@ -1,6 +1,6 @@
 <script>
-    import { DisplayMode as Mode } from '../data/constants.js'
-    import { displayMode as mode } from '../data/states.js'
+    import { DisplayMode as Mode } from '../../data/constants.js'
+    import { displayMode as mode } from '../../data/states.js'
 </script>
 
 <style>

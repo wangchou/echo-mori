@@ -1,6 +1,6 @@
 <script>
-    import { GameMode } from '../data/constants.js'
-    import { gameMode } from '../data/states.js'
+    import { GameMode } from '../../data/constants.js'
+    import { gameMode } from '../../data/states.js'
 
     var isShadowing = true
     gameMode.subscribe(v => {

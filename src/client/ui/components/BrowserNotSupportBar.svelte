@@ -1,6 +1,6 @@
 <script>
     import { get } from 'svelte/store'
-    import { isSupportRecognition } from '../data/states.js'
+    import { isSupportRecognition } from '../../data/states.js'
 </script>
 
 <style>

@@ -4,7 +4,7 @@ import { calculateScore, getPhoneticCharacters, LangType } from '../client/core/
 
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';
 
-// test this need to launch mecab service
+// need to install mecab service and launch backend server
 test('getPhoneticCharacter', async t => {
     t.is(await getPhoneticCharacters("今は、何時ですか。", LangType.ja), "イマワナンジデスカ")
     t.is(await getPhoneticCharacters("逃げるは恥だが役に立つ", LangType.ja), "ニゲルハハジダガヤクニタツ")
