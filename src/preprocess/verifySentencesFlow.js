@@ -1,6 +1,6 @@
-import { say, listen, getAudioDuration, ListenResultType } from './speechEngine.js'
-import { sentences20190810 } from './sentences20190810.js'
-import { LangType, calculateScore, getPhoneticCharacters } from './calculateScore.js'
+import { say, listen, getAudioDuration, ListenResultType } from '../client/core/speechEngine.js'
+import { sentences20190810 } from './input/sentences20190810.js'
+import { LangType, calculateScore, getPhoneticCharacters } from '../client/core/calculateScore.js'
 
 // only for preprocessing, let googlte tts talk to chrome stt. verify sentences
 let selfRecognized = async (text, voice, recognized) => {

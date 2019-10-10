@@ -1,4 +1,4 @@
-import { getTokenInfos } from './utils.js'
+import { getTokenInfos } from '../utils/misc.js'
 import editDistance from 'js-levenshtein'
 
 export let LangType = {
@@ -25,7 +25,7 @@ export let getPhoneticCharacters = async (text, lang) => {
             return getYomiKana(text)
         default:
             return text.replace(/[ ,.?\-!’'"]/g, "")
-                       .toLowerCase()
+                .toLowerCase()
     }
 }
 

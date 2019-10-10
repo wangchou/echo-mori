@@ -1,13 +1,14 @@
 <script>
-    import Messenger from './Messenger.svelte'
-    import SetList from './SetList.svelte'
-    import NotSupportBar from './NotSupportBar.svelte'
-    import { currentSetId, isSupportRecognition } from '../model/store.js'
+    import GamePage from './GamePage.svelte'
+    import SentenceSetPage from './SentenceSetPage.svelte'
+    import BrowserNotSupportBar from './components/BrowserNotSupportBar.svelte'
+    import { currentSetId } from '../data/states.js'
 </script>
+
 {#if $currentSetId == undefined}
-    <SetList />
+    <SentenceSetPage />
 {:else}
-    <Messenger />
+    <GamePage />
 {/if}
 
-<NotSupportBar/>
+<BrowserNotSupportBar />

@@ -1,29 +1,30 @@
-import { speed, voice, voiceM2 } from './model/config.js'
+import { get } from 'svelte/store';
+
+import { messages, isPlaying, currentSetId, gameMode, displayMode, speed, voice1, voice2 } from '../data/states.js'
+import { Voice, GameMode, DisplayMode, MessageType } from '../data/constants.js'
+import { sentenceSets, idToRow } from '../data/demoSets.js'
+
 import { LangType, calculateScore } from './calculateScore.js'
 import { say, listen, ListenResultType } from './speechEngine.js'
-import { getRubyText } from './rubyText.js'
-import { getTokenInfos, captialFirstChar, wait } from './utils.js'
-import { comments, isPlaying, currentSetId, gameMode, displayMode } from './model/store.js'
-import { get } from 'svelte/store';
-import { Voices, GameMode, DisplayMode } from './model/constants.js'
-import { sentenceSets, idToRow } from './model/demoSets.js'
+import { getTokenInfos, captializeFirstChar, wait } from '../utils/misc.js'
 
 export const playGame = async (isDemo) => {
     isPlaying.set(true)
-    comments.set([])
+    messages.set([])
+
     let currentId = get(currentSetId)
-    var sentenceSet = sentenceSets.filter( set => set.id == currentId)[0]
+    var sentenceSet = sentenceSets.filter(set => set.id == currentId)[0]
     var sentences = sentenceSet.sentenceIds.map(id => idToRow[id].en)
     var translations = sentenceSet.sentenceIds.map(id => idToRow[id].ch)
 
     for (let i in sentences) {
         if (!get(isPlaying)) { return }
-        // show left text
+
+        // 1. 在左側，顯示 Google 老師說的字
         let sentence = sentences[i]
         let translation = translations[i]
-        //var tokenInfos = await getTokenInfos(sentence)
         var teacherText = ""
-        switch(get(displayMode)) {
+        switch (get(displayMode)) {
             case DisplayMode.both:
                 teacherText = `${sentence}<br><span style="font-size:0.8em">${translation}</span>`
                 break;
@@ -35,38 +36,39 @@ export const playGame = async (isDemo) => {
                 break;
         }
 
-        comments.update(x => [...x, { type: 'teacher', text: teacherText }])
+        messages.update(x => [...x, { type: MessageType.teather, text: teacherText }])
 
-        let localVoice = i % 2 ==0 ? voiceM2 : voice
+        let localVoice = i % 2 == 0 ? voice2 : voice1
         let duration = await say(sentence, get(speed), get(localVoice))
 
         if (!get(isPlaying)) { return }
 
+        // 2. 在中間，顯示回音法提示泡泡 (optional)
         if (get(gameMode) == GameMode.echo) {
-            comments.update(x => [...x, { type: 'echo', text: `聽心中回音` }])
+            messages.update(x => [...x, { type: MessageType.echo, text: `聽心中回音` }])
             await wait(duration + 200)
         }
 
         if (!get(isPlaying)) { return }
 
-        // show listening text
-        comments.update(x => [...x, { type: 'listening', text: '正在聽你說...' }])
+        // 3. 在右邊，顯示「正在聽你說」，然後聽使用者說 / 展示時電腦說
+        messages.update(x => [...x, { type: MessageType.listening, text: '正在聽你說...' }])
 
-        // plus 400 ms
         if (isDemo) {
-            setTimeout(() => say(sentence, get(speed), Voices.enF3), 200)
+            setTimeout(() => say(sentence, get(speed), Voice.enF3), 200)
         }
         let result = await listen(duration * 1.1 + 500)
 
         if (!get(isPlaying)) { return }
 
+        // 4. 在右邊，顯示辨識結果與分數
         var displayText = "default display text"
         var score = 0
         switch (result.type) {
             case ListenResultType.success:
                 //tokenInfos = await getTokenInfos(result.text)
                 score = await calculateScore(sentence, result.text)
-                displayText = captialFirstChar(result.text)
+                displayText = captializeFirstChar(result.text)
                 break;
             case ListenResultType.cannotHear:
                 displayText = "聽不清楚，請大聲一點。" // need i18n later
@@ -79,17 +81,18 @@ export const playGame = async (isDemo) => {
                 continue;
         }
 
-        // remove listening text and show recognized text with score
-        comments.update(x => [...x.slice(0, x.length - 1),
-                              { type: 'user', text: displayText, score: score}
-                             ]
-                       )
+        messages.update(x => [
+            ...x.slice(0, x.length - 1),
+            { type: MessageType.user, text: displayText, score: score }
+        ])
+
+        // 5. 唸出句子的判定
         var judgement = ""
         if (score == 100) { judgement = "Excellent" }
-        else if ( score >= 80 ) { judgement = "Great" }
-        else if ( score >= 60 ) { judgement = "Good"　}
-        else { judgement = "Not Right"}
-        await say(judgement, 1.0, Voices.enF1 )
+        else if (score >= 80) { judgement = "Great" }
+        else if (score >= 60) { judgement = "Good" }
+        else { judgement = "Not Right" }
+        await say(judgement, 1.0, Voice.enF1)
     }
     isPlaying.set(false)
 }
