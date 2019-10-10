@@ -1,6 +1,6 @@
 import test from 'ava';
 import process from 'process'
-import { calculateScore, getPhoneticCharacters, LangType } from '../client/calculateScore.js'
+import { calculateScore, getPhoneticCharacters, LangType } from '../client/core/calculateScore.js'
 
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';
 
@@ -8,7 +8,7 @@ process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';
 test('getPhoneticCharacter', async t => {
     t.is(await getPhoneticCharacters("今は、何時ですか。", LangType.ja), "イマワナンジデスカ")
     t.is(await getPhoneticCharacters("逃げるは恥だが役に立つ", LangType.ja), "ニゲルハハジダガヤクニタツ")
-    t.is(await getPhoneticCharacters("How are you?"), "How are you?")
+    t.is(await getPhoneticCharacters("How are you?"), "howareyou")
 });
 
 test('calculateScore', async t => {

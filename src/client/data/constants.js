@@ -4,7 +4,7 @@ export let PlaySpeed = {
     verySlow: 0.7
 }
 
-export let Voices = {
+export let Voice = {
     jaF1: 'jaF1',
     jaF2: 'jaF2',
     jaM1: 'jaM1',

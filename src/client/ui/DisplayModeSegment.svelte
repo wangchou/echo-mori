@@ -1,15 +1,7 @@
 <script>
-    import { DisplayMode as Mode } from '../model/constants.js'
-    import { displayMode as mode} from '../model/store.js'
-
+    import { DisplayMode as Mode } from '../data/constants.js'
+    import { displayMode as mode } from '../data/states.js'
 </script>
-
-<div class="outDiv">
-    <div class="title">顯示模式： </div>
-    <div class={$mode == Mode.both ? "selected" : "" } on:click={()=>{ $mode = Mode.both }}> 兩者 </div>
-    <div class={$mode == Mode.original ? "selected" : "" } on:click={()=>{ $mode = Mode.original }}> 英文 </div>
-    <div class={$mode == Mode.translation ? "selected" : "" } on:click={()=>{ $mode = Mode.translation }}> 中文 </div>
-</div>
 
 <style>
     .outDiv {
@@ -34,3 +26,28 @@
         background: orange;
     }
 </style>
+
+<div class="outDiv">
+    <div class="title">顯示模式：</div>
+    <div
+        class={$mode == Mode.both ? 'selected' : ''}
+        on:click={() => {
+            $mode = Mode.both
+        }}>
+        兩者
+    </div>
+    <div
+        class={$mode == Mode.original ? 'selected' : ''}
+        on:click={() => {
+            $mode = Mode.original
+        }}>
+        英文
+    </div>
+    <div
+        class={$mode == Mode.translation ? 'selected' : ''}
+        on:click={() => {
+            $mode = Mode.translation
+        }}>
+        中文
+    </div>
+</div>

@@ -1,18 +1,19 @@
-import { speed, voice, voiceM2 } from './model/config.js'
+import { get } from 'svelte/store';
+
+import { speed, voice, voiceM2 } from '../data/states.js'
+import { messages, isPlaying, currentSetId, gameMode, displayMode } from '../data/states.js'
+import { Voice, GameMode, DisplayMode } from '../data/constants.js'
+import { sentenceSets, idToRow } from '../data/demoSets.js'
+
 import { LangType, calculateScore } from './calculateScore.js'
 import { say, listen, ListenResultType } from './speechEngine.js'
-import { getRubyText } from './rubyText.js'
-import { getTokenInfos, captialFirstChar, wait } from './utils.js'
-import { comments, isPlaying, currentSetId, gameMode, displayMode } from './model/store.js'
-import { get } from 'svelte/store';
-import { Voices, GameMode, DisplayMode } from './model/constants.js'
-import { sentenceSets, idToRow } from './model/demoSets.js'
+import { getTokenInfos, captializeFirstChar, wait } from '../utils/misc.js'
 
 export const playGame = async (isDemo) => {
     isPlaying.set(true)
-    comments.set([])
+    messages.set([])
     let currentId = get(currentSetId)
-    var sentenceSet = sentenceSets.filter( set => set.id == currentId)[0]
+    var sentenceSet = sentenceSets.filter(set => set.id == currentId)[0]
     var sentences = sentenceSet.sentenceIds.map(id => idToRow[id].en)
     var translations = sentenceSet.sentenceIds.map(id => idToRow[id].ch)
 
@@ -23,7 +24,7 @@ export const playGame = async (isDemo) => {
         let translation = translations[i]
         //var tokenInfos = await getTokenInfos(sentence)
         var teacherText = ""
-        switch(get(displayMode)) {
+        switch (get(displayMode)) {
             case DisplayMode.both:
                 teacherText = `${sentence}<br><span style="font-size:0.8em">${translation}</span>`
                 break;
@@ -35,26 +36,26 @@ export const playGame = async (isDemo) => {
                 break;
         }
 
-        comments.update(x => [...x, { type: 'teacher', text: teacherText }])
+        messages.update(x => [...x, { type: 'teacher', text: teacherText }])
 
-        let localVoice = i % 2 ==0 ? voiceM2 : voice
+        let localVoice = i % 2 == 0 ? voiceM2 : voice
         let duration = await say(sentence, get(speed), get(localVoice))
 
         if (!get(isPlaying)) { return }
 
         if (get(gameMode) == GameMode.echo) {
-            comments.update(x => [...x, { type: 'echo', text: `聽心中回音` }])
+            messages.update(x => [...x, { type: 'echo', text: `聽心中回音` }])
             await wait(duration + 200)
         }
 
         if (!get(isPlaying)) { return }
 
         // show listening text
-        comments.update(x => [...x, { type: 'listening', text: '正在聽你說...' }])
+        messages.update(x => [...x, { type: 'listening', text: '正在聽你說...' }])
 
         // plus 400 ms
         if (isDemo) {
-            setTimeout(() => say(sentence, get(speed), Voices.enF3), 200)
+            setTimeout(() => say(sentence, get(speed), Voice.enF3), 200)
         }
         let result = await listen(duration * 1.1 + 500)
 
@@ -66,7 +67,7 @@ export const playGame = async (isDemo) => {
             case ListenResultType.success:
                 //tokenInfos = await getTokenInfos(result.text)
                 score = await calculateScore(sentence, result.text)
-                displayText = captialFirstChar(result.text)
+                displayText = captializeFirstChar(result.text)
                 break;
             case ListenResultType.cannotHear:
                 displayText = "聽不清楚，請大聲一點。" // need i18n later
@@ -80,16 +81,16 @@ export const playGame = async (isDemo) => {
         }
 
         // remove listening text and show recognized text with score
-        comments.update(x => [...x.slice(0, x.length - 1),
-                              { type: 'user', text: displayText, score: score}
-                             ]
-                       )
+        messages.update(x => [...x.slice(0, x.length - 1),
+        { type: 'user', text: displayText, score: score }
+        ]
+        )
         var judgement = ""
         if (score == 100) { judgement = "Excellent" }
-        else if ( score >= 80 ) { judgement = "Great" }
-        else if ( score >= 60 ) { judgement = "Good"　}
-        else { judgement = "Not Right"}
-        await say(judgement, 1.0, Voices.enF1 )
+        else if (score >= 80) { judgement = "Great" }
+        else if (score >= 60) { judgement = "Good" }
+        else { judgement = "Not Right" }
+        await say(judgement, 1.0, Voice.enF1)
     }
     isPlaying.set(false)
 }

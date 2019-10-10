@@ -2,7 +2,7 @@ import fetch from 'node-fetch'
 import API_KEY from "./googleAPIKey.js"
 import { getTTS, saveTTS } from "./db.mjs"
 
-export const Voices = {
+export const Voice = {
     jaF1: { name: 'ja-JP-Wavenet-A', languageCode: 'ja-JP' },
     jaF2: { name: 'ja-JP-Wavenet-B', languageCode: 'ja-JP' },
     jaM1: { name: 'ja-JP-Wavenet-C', languageCode: 'ja-JP' },
@@ -19,7 +19,7 @@ const GOOGLE_TEXT_TO_SPEECH_URL = 'https://texttospeech.googleapis.com/v1beta1/t
 
 export let ttsAPI = async (req, res) => {
     let text = req.query.text
-    let voiceName = Voices[req.query.voice].name
+    let voiceName = Voice[req.query.voice].name
     console.log(text, voiceName)
 
     var audioContent = await getTTS(req.db, text, voiceName)
@@ -27,7 +27,7 @@ export let ttsAPI = async (req, res) => {
     if (!audioContent) {
         const body = JSON.stringify({
             input: { text: req.query.text },
-            voice: Voices[req.query.voice],
+            voice: Voice[req.query.voice],
             audioConfig: {
                 audioEncoding: 'OGG_OPUS',
                 speakingRate: 1.0,

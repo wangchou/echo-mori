@@ -1,18 +1,12 @@
 <script>
-    import { GameMode } from '../model/constants.js'
-    import { gameMode } from '../model/store.js'
+    import { GameMode } from '../data/constants.js'
+    import { gameMode } from '../data/states.js'
 
-    var isShadowing = true;
+    var isShadowing = true
     gameMode.subscribe(v => {
         isShadowing = v == GameMode.shadowing
     })
 </script>
-
-<div class="outDiv">
-    <div class="title">遊戲模式： </div>
-    <div class={isShadowing ? "selected" : "" } on:click={()=>{ $gameMode = GameMode.shadowing }}> 跟讀 </div>
-    <div class={!isShadowing ? "selected" : ""} on:click={()=>{ $gameMode = GameMode.echo }}> 回音</div>
-</div>
 
 <style>
     .outDiv {
@@ -37,3 +31,21 @@
         background: orange;
     }
 </style>
+
+<div class="outDiv">
+    <div class="title">遊戲模式：</div>
+    <div
+        class={isShadowing ? 'selected' : ''}
+        on:click={() => {
+            $gameMode = GameMode.shadowing
+        }}>
+        跟讀
+    </div>
+    <div
+        class={!isShadowing ? 'selected' : ''}
+        on:click={() => {
+            $gameMode = GameMode.echo
+        }}>
+        回音
+    </div>
+</div>

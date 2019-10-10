@@ -1,5 +1,5 @@
 import test from 'ava';
-import { getJaType, JaType, katakanaToHiragana, getHiraganaOnly } from '../client/utils.js'
+import { getJaType, JaType, katakanaToHiragana, getHiraganaOnly } from '../client/utils/misc.js'
 
 test('getJaType', t => {
     t.deepEqual(getJaType("こんにちは"), JaType.noKanjiAndNumber)

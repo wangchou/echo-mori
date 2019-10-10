@@ -64,10 +64,10 @@ export let getTokenInfos = async (jpnStr) => {
         )
 }
 
-export let captialFirstChar = str => (str.charAt(0).toUpperCase() + str.slice(1))
+export let captializeFirstChar = str => (str.charAt(0).toUpperCase() + str.slice(1))
 
 export let wait = (ms) => {
     return new Promise((resolve, reject) => {
-        setTimeout(() => {resolve()}, ms)
+        setTimeout(() => { resolve() }, ms)
     })
 }

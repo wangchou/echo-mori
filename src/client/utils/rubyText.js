@@ -5,7 +5,7 @@ import {
     kanjiOrNumberRxGlobal,
     getHiraganaOnly,
     getTokenInfos
-} from './utils.js'
+} from '../utils/misc.js'
 
 let getRubyPair = (rb, rt = '') => ({ rb: rb, rt: rt })
 
@@ -85,7 +85,7 @@ export let getRubyText = (tokenInfos) => {
 
     var innerText = pairs.map(pair => {
         let rb = pair.rb
-        if ( pair.rt == '') {
+        if (pair.rt == '') {
             return rb
         }
         let rt = katakanaToHiragana(pair.rt)
