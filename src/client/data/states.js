@@ -3,7 +3,7 @@ import { GameMode, DisplayMode, PlaySpeed, Voice } from './constants.js'
 
 // dataSet related
 export const currentSetId = writable(undefined)
-export const isSelectedTag = writable({})
+export const selectedTag = writable(new Set())
 export const isSupportRecognition = writable('webkitSpeechRecognition' in window)
 
 // game status
@@ -23,8 +23,8 @@ currentSetId.subscribe(value => {
     console.log(`| currentSetId =>`, value)
 })
 
-isSelectedTag.subscribe(value => {
-    console.log(`| isSelectedTag =>`, value)
+selectedTag.subscribe(value => {
+    console.log(`| selectedTag =>`, value)
 })
 
 messages.subscribe(value => {

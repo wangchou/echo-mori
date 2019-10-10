@@ -1,7 +1,7 @@
 <script>
     import { fly } from 'svelte/transition'
     import { sentenceSets, idToRow } from '../data/demoSets.js'
-    import { currentSetId, isSelectedTag as _isSelectedTag } from '../data/states.js'
+    import { currentSetId, selectedTag as _selectedTag } from '../data/states.js'
 
     //console.log(idToRow)
     var tagCounts = {}
@@ -12,19 +12,19 @@
     tags.sort((tag1, tag2) => {
         return tagCounts[tag2] - tagCounts[tag1]
     })
-    var isSelectedTag = {}
-    _isSelectedTag.subscribe(v => (isSelectedTag = v))
+    var selectedTag = new Set()
+    _selectedTag.subscribe(value => (selectedTag = value))
 
-    $: isAllTag = !Object.values(isSelectedTag).includes(true)
-    $: filteredSets = isAllTag ? sentenceSets : sentenceSets.filter(set => isSelectedTag[set.tag])
+    $: isAllTag = selectedTag.size == 0
+    $: filteredSets = isAllTag ? sentenceSets : sentenceSets.filter(set => selectedTag.has(set.tag))
 
     function toggleTag(tag) {
-        if (isSelectedTag[tag]) {
-            isSelectedTag[tag] = false
+        if (selectedTag.has(tag)) {
+            selectedTag.delete(tag)
         } else {
-            isSelectedTag[tag] = true
+            selectedTag.add(tag)
         }
-        _isSelectedTag.set(isSelectedTag)
+        _selectedTag.set(selectedTag)
     }
     function selectSet(id) {
         currentSetId.set(id)
@@ -130,13 +130,13 @@
         {#if isAllTag}
             <div class="tag selected">全部({sentenceSets.length})</div>
         {:else}
-            <div class="tag" on:click={() => _isSelectedTag.set({})}>
+            <div class="tag" on:click={() => _selectedTag.set(new Set())}>
                 全部({sentenceSets.length})
             </div>
         {/if}
         {#each tags as tag}
             <div
-                class={`tag ${isSelectedTag[tag] ? 'selected' : ''}`}
+                class={`tag ${selectedTag.has(tag) ? 'selected' : ''}`}
                 on:click={() => {
                     toggleTag(tag)
                 }}>
