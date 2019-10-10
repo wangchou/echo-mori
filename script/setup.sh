@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# after launch ubuntu 18.04 LTS
+# for ubuntu 18.04 LTS
 
 # 安裝 make
 sudo apt-get install build-essential
@@ -15,7 +15,7 @@ sudo iptables -t nat -I PREROUTING -p tcp --dport 443 -j REDIRECT --to-port 4000
 git clone https://github.com/wangchou/echo-mori.git
 cd echo-mori
 
-# HTTPS
+# production HTTPS
 # 1) Set up https by Let's encrypt
 # https://certbot.eff.org/lets-encrypt/ubuntubionic-other
 # 2) 參考以下網址修改 src/server/index.mjs
