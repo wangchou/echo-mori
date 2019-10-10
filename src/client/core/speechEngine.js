@@ -14,7 +14,7 @@ export let ListenResultType = {
 }
 
 export let listen = (duration) => {
-    console.log(recognition)
+    // console.log(recognition)
     if (recognition != null) {
         recognition.lang = "en-US"
         recognition.start();
@@ -23,24 +23,24 @@ export let listen = (duration) => {
 
     let promise = new Promise((resolve, reject) => {
         if (recognition == null) {
-            resolve({text: '', type: ListenResultType.notSupport})
+            resolve({ text: '', type: ListenResultType.notSupport })
             return
         }
         var text = ""
         var type
         recognition.onresult = (event) => {
             if (event.results.length > 0) {
-               text = event.results[0][0].transcript
+                text = event.results[0][0].transcript
             }
         }
         recognition.onerror = () => {
-            resolve({text: '', type: ListenResultType.error})
+            resolve({ text: '', type: ListenResultType.error })
         }
         recognition.onend = () => {
             if (text != "") {
-                resolve({text: text, type: ListenResultType.success})
+                resolve({ text: text, type: ListenResultType.success })
             } else {
-                resolve({text: '', type: ListenResultType.cannotHear})
+                resolve({ text: '', type: ListenResultType.cannotHear })
             }
         }
     })
