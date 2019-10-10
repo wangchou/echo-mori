@@ -1,8 +1,8 @@
 import { get } from 'svelte/store';
 
-import { speed, voice, voiceM2 } from '../data/states.js'
+import { speed, voice1, voice2 } from '../data/states.js'
 import { messages, isPlaying, currentSetId, gameMode, displayMode } from '../data/states.js'
-import { Voice, GameMode, DisplayMode } from '../data/constants.js'
+import { Voice, GameMode, DisplayMode, MessageType } from '../data/constants.js'
 import { sentenceSets, idToRow } from '../data/demoSets.js'
 
 import { LangType, calculateScore } from './calculateScore.js'
@@ -36,22 +36,22 @@ export const playGame = async (isDemo) => {
                 break;
         }
 
-        messages.update(x => [...x, { type: 'teacher', text: teacherText }])
+        messages.update(x => [...x, { type: MessageType.teather, text: teacherText }])
 
-        let localVoice = i % 2 == 0 ? voiceM2 : voice
+        let localVoice = i % 2 == 0 ? voice2 : voice1
         let duration = await say(sentence, get(speed), get(localVoice))
 
         if (!get(isPlaying)) { return }
 
         if (get(gameMode) == GameMode.echo) {
-            messages.update(x => [...x, { type: 'echo', text: `聽心中回音` }])
+            messages.update(x => [...x, { type: MessageType.echo, text: `聽心中回音` }])
             await wait(duration + 200)
         }
 
         if (!get(isPlaying)) { return }
 
         // show listening text
-        messages.update(x => [...x, { type: 'listening', text: '正在聽你說...' }])
+        messages.update(x => [...x, { type: MessageType.listening, text: '正在聽你說...' }])
 
         // plus 400 ms
         if (isDemo) {
@@ -81,10 +81,10 @@ export const playGame = async (isDemo) => {
         }
 
         // remove listening text and show recognized text with score
-        messages.update(x => [...x.slice(0, x.length - 1),
-        { type: 'user', text: displayText, score: score }
-        ]
-        )
+        messages.update(x => [
+            ...x.slice(0, x.length - 1),
+            { type: MessageType.user, text: displayText, score: score }
+        ])
         var judgement = ""
         if (score == 100) { judgement = "Excellent" }
         else if (score >= 80) { judgement = "Great" }

@@ -1,7 +1,7 @@
 <script>
     import { fly } from 'svelte/transition'
     import { get } from 'svelte/store'
-    import { beforeUpdate, afterUpdate } from 'svelte'
+    import { beforeUpdate } from 'svelte'
     import GameModeSegment from './GameModeSegment.svelte'
     import DisplayModeSegment from './DisplayModeSegment.svelte'
 
@@ -14,7 +14,7 @@
         displayMode,
     } from '../data/states.js'
     import { sentenceSets, idToRow } from '../data/demoSets.js'
-    import { GameMode, DisplayMode } from '../data/constants.js'
+    import { GameMode, DisplayMode, MessageType } from '../data/constants.js'
     import { speed } from '../data/states.js'
 
     import { playGame } from '../core/gameFlow.js'
@@ -22,7 +22,7 @@
     let outDiv
     let inDiv
     let autoscroll
-    var lastComment = {}
+    var lastMessage = {}
     var currentSet = {}
     var isShowContent = true
     currentSetId.subscribe(id => {
@@ -30,12 +30,12 @@
     })
 
     const unsubscribe = messages.subscribe(array => {
-        lastComment = array.length > 0 ? array[array.length - 1] : {}
+        lastMessage = array.length > 0 ? array[array.length - 1] : {}
     })
 
-    // 33 single line
-    // 51 double line
-    // 66 double line with translation
+    // 33px single line
+    // 51px double line
+    // 66px double line with translation
     function getEachSectionHeight() {
         // baseline is single line ch(33) + double line(51) + 10px margin (10 * 2)
         return 104 +
@@ -49,7 +49,7 @@
     beforeUpdate(() => {
         autoscroll =
             inDiv &&
-            lastComment.type == 'teacher' &&
+            lastMessage.type == MessageType.teacher &&
             inDiv.offsetHeight - outDiv.scrollTop > outDiv.offsetHeight + getEachSectionHeight()
         if (autoscroll) outDiv.scrollTo(0, outDiv.scrollTop + 300)
     })
@@ -258,14 +258,14 @@
                 </div>
             {:else}
                 <div class="scrollable" bind:this={inDiv}>
-                    {#each $messages as comment}
-                        <article class={comment.type} transition:fly={{ y: 20, duration: 300 }}>
+                    {#each $messages as message}
+                        <article class={message.type} transition:fly={{ y: 20, duration: 300 }}>
                             <span
-                                class:hasRubyAnnotation={comment.text.indexOf('rt') > 0}
-                                class:great={comment.score >= 80}
-                                class:good={comment.score < 80 && comment.score >= 60}
-                                class:wrong={comment.score < 60}>
-                                {@html comment.text + (comment.score != undefined ? ` ${comment.score}分` : '')}
+                                class:hasRubyAnnotation={message.text.indexOf('rt') > 0}
+                                class:great={message.score >= 80}
+                                class:good={message.score < 80 && message.score >= 60}
+                                class:wrong={message.score < 60}>
+                                {@html message.text + (message.score != undefined ? ` ${message.score}分` : '')}
                             </span>
                         </article>
                     {/each}
