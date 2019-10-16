@@ -4,9 +4,9 @@ import https from 'https'
 import morgan from 'morgan'
 import bodyParser from 'body-parser'
 import helmet from 'helmet'
-import { ttsAPI } from './tts.mjs'
-import { mecabAPI } from './mecab.mjs'
-import { getSelfRecognizedAPI, selfRecognizedAPI } from './selfRecognized.mjs'
+import { ttsAPI } from './tts.js'
+import { mecabAPI } from './mecab.js'
+import { getSelfRecognizedAPI, selfRecognizedAPI } from './selfRecognized.js'
 import mysql from "mysql"
 
 var db = mysql.createConnection({

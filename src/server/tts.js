@@ -1,6 +1,6 @@
 import fetch from 'node-fetch'
 import API_KEY from "./googleAPIKey.js"
-import { getTTS, saveTTS } from "./db.mjs"
+import { getTTS, saveTTS } from "./db.js"
 
 export const Voice = {
     jaF1: { name: 'ja-JP-Wavenet-A', languageCode: 'ja-JP' },
