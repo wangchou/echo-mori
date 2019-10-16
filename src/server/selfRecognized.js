@@ -1,5 +1,5 @@
-import { updateSelfRecognized, getSelfRecognized } from "./db.mjs"
-import { Voice } from "./tts.mjs"
+import { updateSelfRecognized, getSelfRecognized } from "./db.js"
+import { Voice } from "./tts.js"
 
 export let selfRecognizedAPI = async (req, res) => {
     let text = req.query.text

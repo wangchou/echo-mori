@@ -21,7 +21,7 @@ Echoic Memory Forest (聽覺記憶之森、簡稱 echo mori)
 
 #### 如何在 local 跑起來
 
-* 安裝 nodejs (請參考 script/setup.sh)
+* 安裝 nodejs (node version > **v12.12.0**)
 * clone 這個 repo
 ```sh
   cp src/server/googleAPIKey.template.js src/server/googleAPIKey.js
