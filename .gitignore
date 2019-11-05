@@ -1,6 +1,7 @@
 .DS_Store
 node_modules
 public/bundle.*
-googleAPIKey.js
 acc.log
 err.log
+configs.js
+keys.js

@@ -5,15 +5,10 @@ import morgan from 'morgan'
 import bodyParser from 'body-parser'
 import helmet from 'helmet'
 import { ttsAPI } from './tts.js'
-import mysql from "mysql"
+import mysql from "mysql2"
+import configs from './configs/configs.js'
 
-var db = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "local_forest",
-    database: "bokenn",
-    insecureAuth: true
-});
+var db = mysql.createConnection(configs.mysql);
 
 db.connect(function (err) {
     if (err) {
@@ -22,7 +17,6 @@ db.connect(function (err) {
     }
     console.log('connecting success');
 });
-
 
 var app = express()
 app.use(helmet())
@@ -52,32 +46,19 @@ app.use(function (req, res, next) {
     next(err);
 });
 
-// development error handler
-// will print stacktrace
-if (app.get('env') === 'development') {
-    app.use(function (err, req, res, next) {
-        res.status(err.status || 500);
-        res.render('error', {
-            message: err.message,
-            error: err
-        });
-    });
-}
-
-// production error handler
-// no stacktraces leaked to user
+// error handler
 app.use(function (err, req, res, next) {
     res.status(err.status || 500);
     res.render('error', {
         message: err.message,
-        error: {}
+        error: app.get('env') === 'development' ? err : {}
     });
 });
 
 var port = 4000
 https.createServer({
-    key: fs.readFileSync('src/server/localhost.key'),
-    cert: fs.readFileSync('src/server/localhost.crt')
+    key: fs.readFileSync('src/server/configs/localhost.key'),
+    cert: fs.readFileSync('src/server/configs/localhost.crt')
 }, app).listen(port, function () {
     console.log(`Express Server listening on port ${port}!`)
 })
