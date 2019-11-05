@@ -3,5 +3,4 @@ node_modules
 public/bundle.*
 acc.log
 err.log
-configs.js
-keys.js
+config.js

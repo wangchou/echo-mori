@@ -5,18 +5,7 @@ import morgan from 'morgan'
 import bodyParser from 'body-parser'
 import helmet from 'helmet'
 import { ttsAPI } from './tts.js'
-import mysql from "mysql2"
-import configs from './configs/configs.js'
-
-var db = mysql.createConnection(configs.mysql);
-
-db.connect(function (err) {
-    if (err) {
-        console.log('connecting error', err);
-        return;
-    }
-    console.log('connecting success');
-});
+import db from "./models/index.js"
 
 var app = express()
 app.use(helmet())
@@ -57,8 +46,8 @@ app.use(function (err, req, res, next) {
 
 var port = 4000
 https.createServer({
-    key: fs.readFileSync('src/server/configs/localhost.key'),
-    cert: fs.readFileSync('src/server/configs/localhost.crt')
+    key: fs.readFileSync('src/server/config/localhost.key'),
+    cert: fs.readFileSync('src/server/config/localhost.crt')
 }, app).listen(port, function () {
     console.log(`Express Server listening on port ${port}!`)
 })
