@@ -4,6 +4,7 @@
     import BrowserNotSupportBar from './components/BrowserNotSupportBar.svelte'
     import { currentSetId } from '../data/states.js'
 </script>
+<a href="/auth/google">Login</a>
 
 {#if $currentSetId == undefined}
     <SentenceSetPage />

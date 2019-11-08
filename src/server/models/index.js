@@ -34,7 +34,8 @@ fs
     db[model.name] = model;
   });
 
-sequelize.sync()
+//sequelize.sync()
+sequelize.sync({force: true})
 
 
 Object.keys(db).forEach(modelName => {
