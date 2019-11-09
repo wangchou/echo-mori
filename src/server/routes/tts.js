@@ -1,5 +1,5 @@
 import fetch from 'node-fetch'
-import config from "./config/config.js"
+import config from "../config/config.js"
 
 export const Voice = {
     jaF1: { name: 'ja-JP-Wavenet-A', languageCode: 'ja-JP' },
@@ -16,7 +16,7 @@ export const Voice = {
 
 const GOOGLE_TEXT_TO_SPEECH_URL = 'https://texttospeech.googleapis.com/v1beta1/text:synthesize?key=' + config.googleAPIKey
 
-export let ttsAPI = async (req, res) => {
+export default async (req, res) => {
     let text = req.query.text
     let voiceName = Voice[req.query.voice].name
     console.log(text, voiceName)

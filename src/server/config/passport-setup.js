@@ -33,6 +33,7 @@ passport.use(
             }
         }).then((currentUser) => {
             if(currentUser){
+                console.log('current user: ', newUser);
                 done(null, currentUser);
             } else {
                 db.User.create({
