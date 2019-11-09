@@ -104,7 +104,10 @@
                 <div class="card">
                     <div class="cardTop" on:click={() => selectTag(tag)}>
                         <div class="cardCategory">{`${tag}`}</div>
-                        <div class="cardStars">Stars: ??/{`${tagCounts[tag] * 3}`}</div>
+                        <div class="cardStars">
+                            <i class="fas fa-star" />
+                            ??/{`${tagCounts[tag] * 3}`}
+                        </div>
                     </div>
                     <div class="cardBottom">
                         <div class="cardDetail">
