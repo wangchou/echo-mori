@@ -3,7 +3,7 @@ import { GameMode, DisplayMode, PlaySpeed, Voice } from './constants.js'
 
 // dataSet related
 export const currentSetId = writable(undefined)
-export const selectedTag = writable(new Set())
+export const selectedTag = writable(undefined)
 export const isSupportRecognition = writable('webkitSpeechRecognition' in window)
 
 // game status
