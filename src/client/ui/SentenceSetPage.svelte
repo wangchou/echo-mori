@@ -1,7 +1,7 @@
 <script>
     import { fly } from 'svelte/transition'
     import { sentenceSets, idToRow } from '../data/demoSets.js'
-    import { selectedTag } from '../data/states.js'
+    import { selectedTag, user as _user } from '../data/states.js'
 
     var tagCounts = {}
     var tagSentenceCounts = {}
@@ -20,6 +20,13 @@
     function selectTag(id) {
         selectedTag.set(id)
     }
+
+    var user = {}
+    var isLogin = false
+    _user.subscribe(newValue => {
+        user = newValue
+        isLogin = Object.keys(user).length != 0
+    })
 </script>
 
 <style>
@@ -34,6 +41,7 @@
         border-right: 1px solid #eee;
     }
     .siteTitle {
+        position: relative;
         width: 100%;
         margin: 0 auto;
     }
@@ -41,6 +49,18 @@
         padding: 10px 20px;
         font-size: 20px;
     }
+    .loginButton {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    .roundThumbnail {
+        border-radius: 50%;
+        max-width: 24px;
+        max-height: 24px;
+        margin-bottom: -5px;
+    }
+
     .cardContainer {
         width: 100%;
         overflow: auto;
@@ -92,10 +112,20 @@
 <div class="outFlexDiv" transition:fly={{ x: -300, duration: 200 }}>
     <div class="siteTitle">
         <div>
-            Welcome to EchoMori!
+            {#if isLogin}Hi, {`${user.username}`}{:else}Welcome to EchoMori!{/if}
             <br />
             Select a topic to start your challenge
         </div>
+        {#if isLogin}
+            <div class="loginButton">
+                <a href="/auth/logout">logout</a>
+                <img class="roundThumbnail" src={user.thumbnail} alt="thumbnail" />
+            </div>
+        {:else}
+            <div class="loginButton">
+                <a href="/auth/google">Login</a>
+            </div>
+        {/if}
     </div>
 
     <div class="cardContainer">

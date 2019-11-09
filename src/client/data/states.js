@@ -5,6 +5,7 @@ import { GameMode, DisplayMode, PlaySpeed, Voice } from './constants.js'
 export const currentSetId = writable(undefined)
 export const selectedTag = writable(undefined)
 export const isSupportRecognition = writable('webkitSpeechRecognition' in window)
+export const user = writable({})
 
 // game status
 export const messages = writable([])        // Messenger 遊戲中的訊息
@@ -27,6 +28,10 @@ currentSetId.subscribe(value => {
 
 selectedTag.subscribe(value => {
     console.log(`| selectedTag =>`, value)
+})
+
+user.subscribe(value => {
+    console.log(`| user =>`, value)
 })
 
 console.log(`= Messenger 遊戲頁面狀態 =`)
