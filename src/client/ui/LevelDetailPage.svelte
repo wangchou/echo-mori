@@ -1,10 +1,11 @@
 <script>
     import { get } from 'svelte/store'
     import { beforeUpdate } from 'svelte'
-
     import { currentSetId, isPlaying, route, selectedSentenceId } from '../data/states.js'
     import { sentenceSets, idToRow } from '../data/demoSets.js'
     import { speed } from '../data/states.js'
+    import TopBar from './components/TopBar.svelte'
+    import FlexDiv from './components/FlexDiv.svelte'
 
     var currentSet = {}
     var isShowContent = true
@@ -20,58 +21,16 @@
 
     function selectSentence(sid) {
         selectedSentenceId.set(sid)
-        //route.set('/sentence')
+        route.set('/sentence')
     }
 </script>
 
 <style>
-    .outFlexDiv {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        max-width: 600px;
-        margin: 0px auto;
-        border-left: 1px solid #eee;
-        border-right: 1px solid #eee;
-    }
-
-    /* Navigation Bar */
-    .topBar {
-        position: relative;
-        height: 30px;
-        padding: 5px 0px;
-        margin: 0px 20px;
-        padding-bottom: 20px;
-    }
-
-    .backButton {
-        position: absolute;
-        font-size: 20px;
-    }
-
-    .backButton:hover {
-        background: rgba(96, 144, 48, 0.1);
-        cursor: pointer;
-    }
-
-    .title {
-        position: absolute;
-        width: 100%;
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .threeStars {
-        position: absolute;
-        right: 0px;
-        top: 7px;
-    }
-
     /* Sentence List */
     .sentenceList {
-        width: 100%;
-        overflow-y: auto;
+        flex-grow: 1;
+        flex-basis: 0;
+        overflow-y: scroll;
     }
 
     .currentSetDiv {
@@ -108,18 +67,11 @@
     }
 </style>
 
-<div class="outFlexDiv">
-    <div class="topBar">
-        <div class="backButton" on:click={backToMain}>
-            <i class="fas fa-chevron-left backArrow" />
-        </div>
-        <div class="title">{`${currentSet.tag} - Level ${currentSet.tagIndex}`}</div>
-        <div class="threeStars">
-            <i class="fas fa-star" />
-            <i class="fas fa-star" />
-            <i class="fas fa-star" />
-        </div>
-    </div>
+<FlexDiv>
+    <TopBar
+        backRoute={'/levels'}
+        title={`${currentSet.tag} - Level ${currentSet.tagIndex}`}
+        starCount={3} />
 
     <div class="sentenceList">
         <div class="currentSetDiv">
@@ -139,4 +91,4 @@
     <div class="bottomBar">
         <div class="startButton clickable">START</div>
     </div>
-</div>
+</FlexDiv>
