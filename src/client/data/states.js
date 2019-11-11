@@ -2,10 +2,11 @@ import { writable, derived } from 'svelte/store';
 import { GameMode, DisplayMode, PlaySpeed, Voice } from './constants.js'
 
 // dataSet related
-export const currentSetId = writable(undefined)
-export const selectedTag = writable(undefined)
+export const currentSetId = writable(14)
+export const selectedTag = writable('日常')
 export const isSupportRecognition = writable('webkitSpeechRecognition' in window)
 export const user = writable({})
+export const route = writable('/levelDetail')
 
 // game status
 export const messages = writable([])        // Messenger 遊戲中的訊息
@@ -32,6 +33,9 @@ selectedTag.subscribe(value => {
 
 user.subscribe(value => {
     console.log(`| user =>`, value)
+})
+route.subscribe(value => {
+    console.log(`| route =>`, value)
 })
 
 console.log(`= Messenger 遊戲頁面狀態 =`)

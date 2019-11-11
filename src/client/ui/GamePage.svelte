@@ -12,6 +12,7 @@
         isSupportRecognition,
         gameMode,
         displayMode,
+        route,
     } from '../data/states.js'
     import { sentenceSets, idToRow } from '../data/demoSets.js'
     import { GameMode, DisplayMode, MessageType } from '../data/constants.js'
@@ -56,6 +57,7 @@
     function backToMain() {
         currentSetId.set(undefined)
         isPlaying.set(false)
+        route.set('/levels')
     }
 </script>
 
@@ -232,9 +234,11 @@
 </style>
 
 {#if $currentSetId != undefined}
-    <div class="outFlexDiv" transition:fly={{ x: 300, duration: 200 }}>
+    <div class="outFlexDiv">
         <div class="topBar">
-            <div class="backButton" on:click={backToMain}>←</div>
+            <div class="backButton" on:click={backToMain}>
+                <i class="fas fa-chevron-left backArrow" />
+            </div>
             <div class="setBarContainer">
                 <div class="setTitle">{`${currentSet.tag} ${currentSet.tagIndex}`}</div>
                 <div class="setInfo">{currentSet.difficultyLabel}</div>

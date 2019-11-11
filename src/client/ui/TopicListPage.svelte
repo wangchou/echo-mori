@@ -1,7 +1,7 @@
 <script>
     import { fly } from 'svelte/transition'
     import { sentenceSets, idToRow } from '../data/demoSets.js'
-    import { selectedTag, user as _user } from '../data/states.js'
+    import { selectedTag, user as _user, route } from '../data/states.js'
 
     var tagCounts = {}
     var tagSentenceCounts = {}
@@ -17,8 +17,9 @@
         return tagCounts[tag2] - tagCounts[tag1]
     })
 
-    function selectTag(id) {
+    function gotoTopic(id) {
         selectedTag.set(id)
+        route.set('/levels')
     }
 
     var user = {}
@@ -109,7 +110,7 @@
     }
 </style>
 
-<div class="outFlexDiv" transition:fly={{ x: -300, duration: 200 }}>
+<div class="outFlexDiv">
     <div class="siteTitle">
         <div>
             {#if isLogin}Hi, {`${user.username}`}{:else}Welcome to EchoMori!{/if}
@@ -130,9 +131,9 @@
 
     <div class="cardContainer">
         {#each tags as tag}
-            <div class="row">
+            <div class="row" on:click={() => gotoTopic(tag)}>
                 <div class="card">
-                    <div class="cardTop" on:click={() => selectTag(tag)}>
+                    <div class="cardTop">
                         <div class="cardCategory">{`${tag}`}</div>
                         <div class="cardStars">
                             <i class="fas fa-star" />
