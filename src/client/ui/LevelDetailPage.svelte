@@ -8,7 +8,6 @@
     import FlexDiv from './components/FlexDiv.svelte'
 
     var currentSet = {}
-    var isShowContent = true
     currentSetId.subscribe(id => {
         currentSet = sentenceSets.filter(set => set.id == id)[0]
     })

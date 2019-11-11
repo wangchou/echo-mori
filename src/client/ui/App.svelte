@@ -3,6 +3,7 @@
     import TopicListPage from './TopicListPage.svelte'
     import LevelListPage from './LevelListPage.svelte'
     import LevelDetailPage from './LevelDetailPage.svelte'
+    import GameResultPage from './GameResultPage.svelte'
     import SentencePage from './SentencePage.svelte'
     import BrowserNotSupportBar from './components/BrowserNotSupportBar.svelte'
     import { currentSetId, user, route as _route } from '../data/states.js'
@@ -29,6 +30,8 @@
     <SentencePage />
 {:else if route === '/game'}
     <GamePage />
+{:else if route === '/gameResult'}
+    <GameResultPage />
 {/if}
 
 <BrowserNotSupportBar />

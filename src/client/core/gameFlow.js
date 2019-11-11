@@ -1,6 +1,6 @@
 import { get } from 'svelte/store';
 
-import { messages, isPlaying, currentSetId, gameMode, displayMode, speed, voice1, voice2 } from '../data/states.js'
+import { messages, isPlaying, currentSetId, gameMode, displayMode, speed, voice1, voice2, route } from '../data/states.js'
 import { Voice, GameMode, DisplayMode, MessageType } from '../data/constants.js'
 import { sentenceSets, idToRow } from '../data/demoSets.js'
 
@@ -95,4 +95,5 @@ export const playGame = async (isDemo) => {
         await say(judgement, 1.0, Voice.enF1)
     }
     isPlaying.set(false)
+    route.set('/gameResult')
 }
