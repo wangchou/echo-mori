@@ -4,10 +4,10 @@ import { GameMode, DisplayMode, PlaySpeed, Voice } from './constants.js'
 // dataSet related
 export const currentSetId = writable(14)
 export const selectedTag = writable('日常')
-export const selectedSentenceId = writable(undefined)
+export const selectedSentenceId = writable(1854)
 export const isSupportRecognition = writable('webkitSpeechRecognition' in window)
 export const user = writable({})
-export const route = writable('/levels')
+export const route = writable('/sentence')
 
 // game status
 export const messages = writable([])        // Messenger 遊戲中的訊息
