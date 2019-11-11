@@ -103,11 +103,6 @@
         position: absolute;
         top: 15px;
     }
-
-    .card:hover {
-        background: #f6faf3;
-        cursor: pointer;
-    }
 </style>
 
 <div class="outFlexDiv">
@@ -123,7 +118,7 @@
                 <img class="roundThumbnail" src={user.thumbnail} alt="thumbnail" />
             </div>
         {:else}
-            <div class="loginButton">
+            <div class="loginButton clickable">
                 <a href="/auth/google">Login</a>
             </div>
         {/if}
@@ -132,7 +127,7 @@
     <div class="cardContainer">
         {#each tags as tag}
             <div class="row" on:click={() => gotoTopic(tag)}>
-                <div class="card">
+                <div class="card clickable">
                     <div class="cardTop">
                         <div class="cardCategory">{`${tag}`}</div>
                         <div class="cardStars">

@@ -4,9 +4,10 @@ import { GameMode, DisplayMode, PlaySpeed, Voice } from './constants.js'
 // dataSet related
 export const currentSetId = writable(14)
 export const selectedTag = writable('日常')
+export const selectedSentenceId = writable(undefined)
 export const isSupportRecognition = writable('webkitSpeechRecognition' in window)
 export const user = writable({})
-export const route = writable('/levelDetail')
+export const route = writable('/')
 
 // game status
 export const messages = writable([])        // Messenger 遊戲中的訊息
@@ -31,6 +32,9 @@ selectedTag.subscribe(value => {
     console.log(`| selectedTag =>`, value)
 })
 
+selectedSentenceId.subscribe(value => {
+    console.log(`| selectedSentenceId =>`, value)
+})
 user.subscribe(value => {
     console.log(`| user =>`, value)
 })
