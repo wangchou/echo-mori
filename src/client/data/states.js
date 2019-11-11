@@ -7,7 +7,7 @@ export const selectedTag = writable('日常')
 export const selectedSentenceId = writable(1854)
 export const isSupportRecognition = writable('webkitSpeechRecognition' in window)
 export const user = writable({})
-export const route = writable('/sentence')
+export const route = writable('/game')
 
 // game status
 export const messages = writable([])        // Messenger 遊戲中的訊息

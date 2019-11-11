@@ -47,7 +47,13 @@
         </div>
     </div>
     <div class="bottomBar">
-        <div class="startButton clickable">START</div>
+        <div
+            class="startButton clickable"
+            on:click={() => {
+                route.set('/game')
+            }}>
+            START
+        </div>
     </div>
 </FlexDiv>
 

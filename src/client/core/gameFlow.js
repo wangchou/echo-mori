@@ -36,7 +36,7 @@ export const playGame = async (isDemo) => {
                 break;
         }
 
-        messages.update(x => [...x, { type: MessageType.teather, text: teacherText }])
+        messages.update(x => [...x, { type: MessageType.teacher, text: teacherText }])
 
         let localVoice = i % 2 == 0 ? voice2 : voice1
         let duration = await say(sentence, get(speed), get(localVoice))

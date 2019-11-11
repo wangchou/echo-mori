@@ -29,7 +29,7 @@ export let DisplayMode = {
 }
 
 export let MessageType = {
-    teather: 'teather',
+    teacher: 'teacher',
     echo: 'echo',
     listening: 'listening',
     user: 'user'
