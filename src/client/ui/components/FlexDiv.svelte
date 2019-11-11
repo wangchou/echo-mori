@@ -1,3 +1,7 @@
+<div class="outFlexDiv">
+    <slot />
+</div>
+
 <style>
     .outFlexDiv {
         display: flex;
@@ -10,7 +14,3 @@
         border-right: 1px solid #eee;
     }
 </style>
-
-<div class="outFlexDiv">
-    <slot />
-</div>

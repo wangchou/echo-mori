@@ -25,6 +25,32 @@
     }
 </script>
 
+<FlexDiv>
+    <TopBar
+        backRoute={'/levels'}
+        title={`${currentSet.tag} - Level ${currentSet.tagIndex}`}
+        starCount={3} />
+
+    <div class="sentenceList">
+        <div class="currentSetDiv">
+            {#each currentSet.sentenceIds as id}
+                <div
+                    class="sentenceCard clickable"
+                    on:click={() => {
+                        selectSentence(id)
+                    }}>
+                    {idToRow[id].en}
+                    <br />
+                    {idToRow[id].ch}
+                </div>
+            {/each}
+        </div>
+    </div>
+    <div class="bottomBar">
+        <div class="startButton clickable">START</div>
+    </div>
+</FlexDiv>
+
 <style>
     /* Sentence List */
     .sentenceList {
@@ -66,29 +92,3 @@
         border-radius: 24px;
     }
 </style>
-
-<FlexDiv>
-    <TopBar
-        backRoute={'/levels'}
-        title={`${currentSet.tag} - Level ${currentSet.tagIndex}`}
-        starCount={3} />
-
-    <div class="sentenceList">
-        <div class="currentSetDiv">
-            {#each currentSet.sentenceIds as id}
-                <div
-                    class="sentenceCard clickable"
-                    on:click={() => {
-                        selectSentence(id)
-                    }}>
-                    {idToRow[id].en}
-                    <br />
-                    {idToRow[id].ch}
-                </div>
-            {/each}
-        </div>
-    </div>
-    <div class="bottomBar">
-        <div class="startButton clickable">START</div>
-    </div>
-</FlexDiv>

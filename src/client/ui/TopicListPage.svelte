@@ -30,6 +30,47 @@
     })
 </script>
 
+<div class="outFlexDiv">
+    <div class="siteTitle">
+        <div>
+            {#if isLogin}Hi, {`${user.username}`}{:else}Welcome to EchoMori!{/if}
+            <br />
+            Select a topic to start your challenge
+        </div>
+        {#if isLogin}
+            <div class="loginButton">
+                <a href="/auth/logout">logout</a>
+                <img class="roundThumbnail" src={user.thumbnail} alt="thumbnail" />
+            </div>
+        {:else}
+            <div class="loginButton clickable">
+                <a href="/auth/google">Login</a>
+            </div>
+        {/if}
+    </div>
+
+    <div class="cardContainer">
+        {#each tags as tag}
+            <div class="row" on:click={() => gotoTopic(tag)}>
+                <div class="card clickable">
+                    <div class="cardTop">
+                        <div class="cardCategory">{`${tag}`}</div>
+                        <div class="cardStars">
+                            <i class="fas fa-star" />
+                            ??/{`${tagCounts[tag] * 3}`}
+                        </div>
+                    </div>
+                    <div class="cardBottom">
+                        <div class="cardDetail">
+                            {`${tagCounts[tag]} levels, ${tagSentenceCounts[tag]} sentences`}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {/each}
+    </div>
+</div>
+
 <style>
     .outFlexDiv {
         display: flex;
@@ -55,6 +96,7 @@
         top: 0px;
         right: 0px;
     }
+
     .roundThumbnail {
         border-radius: 50%;
         max-width: 24px;
@@ -104,44 +146,3 @@
         top: 15px;
     }
 </style>
-
-<div class="outFlexDiv">
-    <div class="siteTitle">
-        <div>
-            {#if isLogin}Hi, {`${user.username}`}{:else}Welcome to EchoMori!{/if}
-            <br />
-            Select a topic to start your challenge
-        </div>
-        {#if isLogin}
-            <div class="loginButton">
-                <a href="/auth/logout">logout</a>
-                <img class="roundThumbnail" src={user.thumbnail} alt="thumbnail" />
-            </div>
-        {:else}
-            <div class="loginButton clickable">
-                <a href="/auth/google">Login</a>
-            </div>
-        {/if}
-    </div>
-
-    <div class="cardContainer">
-        {#each tags as tag}
-            <div class="row" on:click={() => gotoTopic(tag)}>
-                <div class="card clickable">
-                    <div class="cardTop">
-                        <div class="cardCategory">{`${tag}`}</div>
-                        <div class="cardStars">
-                            <i class="fas fa-star" />
-                            ??/{`${tagCounts[tag] * 3}`}
-                        </div>
-                    </div>
-                    <div class="cardBottom">
-                        <div class="cardDetail">
-                            {`${tagCounts[tag]} levels, ${tagSentenceCounts[tag]} sentences`}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        {/each}
-    </div>
-</div>

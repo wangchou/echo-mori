@@ -7,32 +7,6 @@
     export let closeOnly
 </script>
 
-<style>
-    .navigationBar {
-        position: relative;
-        width: 100%;
-        height: 40px;
-        background: #fafafa;
-    }
-    .backButton {
-        position: absolute;
-        left: 12px;
-        top: 12px;
-    }
-    .centerTitle {
-        position: absolute;
-        width: 100%;
-        margin: 0px auto;
-        top: 12px;
-        text-align: center;
-    }
-    .rightInfo {
-        position: absolute;
-        top: 12px;
-        right: 12px;
-    }
-</style>
-
 <div class="navigationBar">
     {#if closeOnly == true}
         <div
@@ -63,3 +37,29 @@
         </div>
     {/if}
 </div>
+
+<style>
+    .navigationBar {
+        position: relative;
+        width: 100%;
+        height: 40px;
+        background: #fafafa;
+    }
+    .backButton {
+        position: absolute;
+        left: 12px;
+        top: 12px;
+    }
+    .centerTitle {
+        position: absolute;
+        width: 100%;
+        margin: 0px auto;
+        top: 12px;
+        text-align: center;
+    }
+    .rightInfo {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+    }
+</style>

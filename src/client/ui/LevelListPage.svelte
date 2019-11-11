@@ -21,6 +21,20 @@
     })
 </script>
 
+<FlexDiv>
+    <TopBar backRoute={'/'} title={selectedTag} totalStarText={`??/${sets.length * 3}`} />
+    <div class="cardContainer" bind:this={cardDiv}>
+        {#each sets as set}
+            <div class="card clickable" on:click={() => selectSet(set.id)}>
+                <div class="levelIndex">{`(${set.tagIndex}) `}</div>
+                <i class="far fa-star" />
+                <i class="far fa-star" />
+                <i class="far fa-star" />
+            </div>
+        {/each}
+    </div>
+</FlexDiv>
+
 <style>
     .cardContainer {
         flex-grow: 1;
@@ -38,17 +52,3 @@
         font-weight: 500;
     }
 </style>
-
-<FlexDiv>
-    <TopBar backRoute={'/'} title={selectedTag} totalStarText={`??/${sets.length * 3}`} />
-    <div class="cardContainer" bind:this={cardDiv}>
-        {#each sets as set}
-            <div class="card clickable" on:click={() => selectSet(set.id)}>
-                <div class="levelIndex">{`(${set.tagIndex}) `}</div>
-                <i class="far fa-star" />
-                <i class="far fa-star" />
-                <i class="far fa-star" />
-            </div>
-        {/each}
-    </div>
-</FlexDiv>

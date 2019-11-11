@@ -11,6 +11,33 @@
     })
 </script>
 
+<FlexDiv style="position: relative">
+    <TopBar closeOnly={true} backRoute={'/levelDetail'} />
+    <div class="centerContent">
+        <div class="sentenceCard clickable">
+            {idToRow[sid].en}
+            <br />
+            {idToRow[sid].ch}
+            <div class="rightCenter">
+                <i class="fas fa-volume-up" />
+            </div>
+        </div>
+        <div class="sentenceCard clickable">
+            What you said
+            <br />
+            ...
+            <div class="rightCenter">
+                <i class="far fa-play-circle" />
+            </div>
+        </div>
+    </div>
+    <div class="bottomBar">
+        <div class="startButton clickable">START</div>
+        <div class="halfButton prevPosition clickable">PREV</div>
+        <div class="halfButton nextPosition clickable">NEXT</div>
+    </div>
+</FlexDiv>
+
 <style>
     .centerContent {
         flex-grow: 1;
@@ -64,30 +91,3 @@
         left: 55%;
     }
 </style>
-
-<FlexDiv style="position: relative">
-    <TopBar closeOnly={true} backRoute={'/levelDetail'} />
-    <div class="centerContent">
-        <div class="sentenceCard clickable">
-            {idToRow[sid].en}
-            <br />
-            {idToRow[sid].ch}
-            <div class="rightCenter">
-                <i class="fas fa-volume-up" />
-            </div>
-        </div>
-        <div class="sentenceCard clickable">
-            what you said
-            <br />
-            ...
-            <div class="rightCenter">
-                <i class="far fa-play-circle" />
-            </div>
-        </div>
-    </div>
-    <div class="bottomBar">
-        <div class="startButton clickable">START</div>
-        <div class="halfButton prevPosition clickable">PREV</div>
-        <div class="halfButton nextPosition clickable">NEXT</div>
-    </div>
-</FlexDiv>

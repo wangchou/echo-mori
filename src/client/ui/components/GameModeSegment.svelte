@@ -8,6 +8,24 @@
     })
 </script>
 
+<div class="outDiv">
+    <div class="title">遊戲模式：</div>
+    <div
+        class={isShadowing ? 'selected' : ''}
+        on:click={() => {
+            $gameMode = GameMode.shadowing
+        }}>
+        跟讀
+    </div>
+    <div
+        class={!isShadowing ? 'selected' : ''}
+        on:click={() => {
+            $gameMode = GameMode.echo
+        }}>
+        回音
+    </div>
+</div>
+
 <style>
     .outDiv {
         width: 300px;
@@ -31,21 +49,3 @@
         background: orange;
     }
 </style>
-
-<div class="outDiv">
-    <div class="title">遊戲模式：</div>
-    <div
-        class={isShadowing ? 'selected' : ''}
-        on:click={() => {
-            $gameMode = GameMode.shadowing
-        }}>
-        跟讀
-    </div>
-    <div
-        class={!isShadowing ? 'selected' : ''}
-        on:click={() => {
-            $gameMode = GameMode.echo
-        }}>
-        回音
-    </div>
-</div>

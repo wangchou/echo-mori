@@ -61,6 +61,114 @@
     }
 </script>
 
+{#if $currentSetId != undefined}
+    <div class="outFlexDiv">
+        <div class="topBar">
+            <div class="backButton" on:click={backToMain}>
+                <i class="fas fa-chevron-left backArrow" />
+            </div>
+            <div class="setBarContainer">
+                <div class="setTitle">{`${currentSet.tag} ${currentSet.tagIndex}`}</div>
+                <div class="setInfo">{currentSet.difficultyLabel}</div>
+                <div class="setInfo">
+                    {`音節數：${parseFloat(currentSet.syllablesCount).toFixed(1)}`}
+                </div>
+                <div class="setInfo">來自 Tatoeba</div>
+            </div>
+        </div>
+
+        <div class="messenger" bind:this={outDiv}>
+            {#if isShowContent}
+                <div class="currentSetDiv">
+                    {#each currentSet.sentenceIds as id}
+                        {idToRow[id].en}
+                        <br />
+                        {idToRow[id].ch}
+                        <br />
+                        <br />
+                    {/each}
+                </div>
+            {:else}
+                <div class="scrollable" bind:this={inDiv}>
+                    {#each $messages as message}
+                        <article class={message.type} transition:fly={{ y: 20, duration: 300 }}>
+                            <span
+                                class:hasRubyAnnotation={message.text.indexOf('rt') > 0}
+                                class:great={message.score >= 80}
+                                class:good={message.score < 80 && message.score >= 60}
+                                class:wrong={message.score < 60}>
+                                {@html message.text + (message.score != undefined ? ` ${message.score}分` : '')}
+                            </span>
+                        </article>
+                    {/each}
+                </div>
+            {/if}
+        </div>
+
+        <div class="bottomBarHoldingPosition" />
+        <div class="bottomBar">
+            {#if !$isPlaying}
+                <button
+                    class="fightButton"
+                    on:click={() => {
+                        playGame(false)
+                        isShowContent = false
+                    }}
+                    disabled={!$isSupportRecognition}>
+                    挑 戰
+                </button>
+                <button
+                    class="fightButton"
+                    on:click={() => {
+                        playGame(true)
+                        isShowContent = false
+                    }}
+                    disabled={!$isSupportRecognition}>
+                    展 示
+                </button>
+                {#if !isShowContent}
+                    <button
+                        class="fightButton"
+                        on:click={() => {
+                            isShowContent = true
+                        }}>
+                        清 除
+                    </button>
+                {/if}
+                <div style="width:130px; position: relative;top:-200px;left:430px">
+                    <GameModeSegment />
+                    <DisplayModeSegment />
+                    <span style="border-width:0px;margin: 0 auto">
+                        <span style="border-width: 0px; padding: 0px;float:left">速度</span>
+                        <span style="border-width: 0px; padding: 0px;float:right">
+                            {$speed + 'X'}
+                        </span>
+                        <br />
+                        <input
+                            style="padding: 0px 0px;"
+                            type="range"
+                            min="0.3"
+                            max="1.3"
+                            step="0.1"
+                            bind:value={$speed} />
+                    </span>
+                </div>
+            {:else}
+                <button
+                    class="fightButton"
+                    on:click={() => {
+                        isPlaying.set(false)
+                    }}>
+                    停 止
+                </button>
+                <div class="gameProgress">
+                    {`${Math.ceil($messages.length / 2)} / ${currentSet.sentenceIds.length}`}
+                </div>
+            {/if}
+        </div>
+    </div>
+{/if}
+
 <style>
     .outFlexDiv {
         display: flex;
@@ -232,111 +340,3 @@
         cursor: pointer;
     }
 </style>
-
-{#if $currentSetId != undefined}
-    <div class="outFlexDiv">
-        <div class="topBar">
-            <div class="backButton" on:click={backToMain}>
-                <i class="fas fa-chevron-left backArrow" />
-            </div>
-            <div class="setBarContainer">
-                <div class="setTitle">{`${currentSet.tag} ${currentSet.tagIndex}`}</div>
-                <div class="setInfo">{currentSet.difficultyLabel}</div>
-                <div class="setInfo">
-                    {`音節數：${parseFloat(currentSet.syllablesCount).toFixed(1)}`}
-                </div>
-                <div class="setInfo">來自 Tatoeba</div>
-            </div>
-        </div>
-
-        <div class="messenger" bind:this={outDiv}>
-            {#if isShowContent}
-                <div class="currentSetDiv">
-                    {#each currentSet.sentenceIds as id}
-                        {idToRow[id].en}
-                        <br />
-                        {idToRow[id].ch}
-                        <br />
-                        <br />
-                    {/each}
-                </div>
-            {:else}
-                <div class="scrollable" bind:this={inDiv}>
-                    {#each $messages as message}
-                        <article class={message.type} transition:fly={{ y: 20, duration: 300 }}>
-                            <span
-                                class:hasRubyAnnotation={message.text.indexOf('rt') > 0}
-                                class:great={message.score >= 80}
-                                class:good={message.score < 80 && message.score >= 60}
-                                class:wrong={message.score < 60}>
-                                {@html message.text + (message.score != undefined ? ` ${message.score}分` : '')}
-                            </span>
-                        </article>
-                    {/each}
-                </div>
-            {/if}
-        </div>
-
-        <div class="bottomBarHoldingPosition" />
-        <div class="bottomBar">
-            {#if !$isPlaying}
-                <button
-                    class="fightButton"
-                    on:click={() => {
-                        playGame(false)
-                        isShowContent = false
-                    }}
-                    disabled={!$isSupportRecognition}>
-                    挑 戰
-                </button>
-                <button
-                    class="fightButton"
-                    on:click={() => {
-                        playGame(true)
-                        isShowContent = false
-                    }}
-                    disabled={!$isSupportRecognition}>
-                    展 示
-                </button>
-                {#if !isShowContent}
-                    <button
-                        class="fightButton"
-                        on:click={() => {
-                            isShowContent = true
-                        }}>
-                        清 除
-                    </button>
-                {/if}
-                <div style="width:130px; position: relative;top:-200px;left:430px">
-                    <GameModeSegment />
-                    <DisplayModeSegment />
-                    <span style="border-width:0px;margin: 0 auto">
-                        <span style="border-width: 0px; padding: 0px;float:left">速度</span>
-                        <span style="border-width: 0px; padding: 0px;float:right">
-                            {$speed + 'X'}
-                        </span>
-                        <br />
-                        <input
-                            style="padding: 0px 0px;"
-                            type="range"
-                            min="0.3"
-                            max="1.3"
-                            step="0.1"
-                            bind:value={$speed} />
-                    </span>
-                </div>
-            {:else}
-                <button
-                    class="fightButton"
-                    on:click={() => {
-                        isPlaying.set(false)
-                    }}>
-                    停 止
-                </button>
-                <div class="gameProgress">
-                    {`${Math.ceil($messages.length / 2)} / ${currentSet.sentenceIds.length}`}
-                </div>
-            {/if}
-        </div>
-    </div>
-{/if}
