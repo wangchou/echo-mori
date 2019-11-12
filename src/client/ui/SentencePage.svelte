@@ -2,6 +2,7 @@
     import TopBar from './components/TopBar.svelte'
     import { route } from '../data/states.js'
     import FlexDiv from './components/FlexDiv.svelte'
+    import SentencePair from './components/SentencePair.svelte'
     import { sentenceSets, idToRow } from '../data/demoSets.js'
     import { selectedSentenceId } from '../data/states.js'
 
@@ -14,22 +15,7 @@
 <FlexDiv style="position: relative">
     <TopBar closeOnly={true} backRoute={'/levelDetail'} />
     <div class="centerContent">
-        <div class="sentenceCard clickable">
-            {idToRow[sid].en}
-            <br />
-            {idToRow[sid].ch}
-            <div class="rightCenter">
-                <i class="fas fa-volume-up" />
-            </div>
-        </div>
-        <div class="sentenceCard clickable">
-            What you said
-            <br />
-            ...
-            <div class="rightCenter">
-                <i class="far fa-play-circle" />
-            </div>
-        </div>
+        <SentencePair {sid} />
     </div>
     <div class="bottomBar">
         <div class="startButton clickable">START</div>
@@ -42,23 +28,6 @@
     .centerContent {
         flex-grow: 1;
         flex-basis: 0;
-    }
-    .sentenceCard {
-        position: relative;
-        padding: 10px;
-        margin: 0 20px 20px 20px;
-        border: 1px solid #cdcdcd;
-        padding-right: 20px;
-    }
-    .rightCenter {
-        position: absolute;
-        right: 0px;
-        top: 0px;
-        width: 40px;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
     .bottomBar {
         position: relative;

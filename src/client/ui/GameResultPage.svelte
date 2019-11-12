@@ -2,6 +2,7 @@
     import TopBar from './components/TopBar.svelte'
     import { route, userSaid } from '../data/states.js'
     import FlexDiv from './components/FlexDiv.svelte'
+    import SentencePair from './components/SentencePair.svelte'
     import { sentenceSets, idToRow } from '../data/demoSets.js'
     import {
         selectedSentenceId,
@@ -40,22 +41,7 @@
     <div class="centerContent">
         <div class="contentTitle">Diagnosis</div>
         {#each currentSet.sentenceIds as sid}
-            <div class="sentenceCard clickable">
-                {idToRow[sid].en}
-                <br />
-                {idToRow[sid].ch}
-                <div class="rightCenter">
-                    <i class="fas fa-volume-up" />
-                </div>
-            </div>
-            <div class="sentenceCard clickable">
-                What you said
-                <br />
-                {#if $userSaid[sid]}{$userSaid[sid]}{:else}...{/if}
-                <div class="rightCenter">
-                    <i class="far fa-play-circle" />
-                </div>
-            </div>
+            <SentencePair {sid} />
             {#if sid != currentSet.sentenceIds.slice(-1)[0]}
                 <div class="separator" />
             {/if}
@@ -118,25 +104,8 @@
         padding: 20px 0px 0px;
         text-align: center;
     }
-    .sentenceCard {
-        position: relative;
-        padding: 10px;
-        margin: 20px 20px 20px 20px;
-        border: 1px solid #c4c4c4;
-        padding-right: 20px;
-    }
     .separator {
         border-top: 1px solid #c4c4c4;
-    }
-    .rightCenter {
-        position: absolute;
-        right: 0px;
-        top: 0px;
-        width: 40px;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
     .bottomBar {
         position: relative;
