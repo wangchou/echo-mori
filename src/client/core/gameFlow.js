@@ -1,6 +1,6 @@
 import { get } from 'svelte/store';
 
-import { messages, isPlaying, currentSetId, gameMode, displayMode, speed, voice1, voice2, route } from '../data/states.js'
+import { messages, isPlaying, currentSetId, gameMode, displayMode, speed, voice1, voice2, route, userSaid } from '../data/states.js'
 import { Voice, GameMode, DisplayMode, MessageType } from '../data/constants.js'
 import { sentenceSets, idToRow } from '../data/demoSets.js'
 
@@ -21,6 +21,7 @@ export const playGame = async (isDemo) => {
         if (!get(isPlaying)) { return }
 
         // 1. 在左側，顯示 Google 老師說的字
+        let sentenceId = sentenceSet.sentenceIds[i]
         let sentence = sentences[i]
         let translation = translations[i]
         var teacherText = ""
@@ -69,6 +70,10 @@ export const playGame = async (isDemo) => {
                 //tokenInfos = await getTokenInfos(result.text)
                 score = await calculateScore(sentence, result.text)
                 displayText = captializeFirstChar(result.text)
+                let newUserSaid = get(userSaid)
+                newUserSaid[sentenceId] = result.text
+                userSaid.set(newUserSaid)
+
                 break;
             case ListenResultType.cannotHear:
                 displayText = "聽不清楚，請大聲一點。" // need i18n later

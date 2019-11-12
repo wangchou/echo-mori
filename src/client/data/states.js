@@ -8,6 +8,7 @@ export const selectedSentenceId = writable(1854)
 export const isSupportRecognition = writable('webkitSpeechRecognition' in window)
 export const user = writable({})
 export const route = writable('/gameResult')
+export const userSaid = writable({}) // { sentenceId : user said text }
 
 // game status
 export const messages = writable([])        // Messenger 遊戲中的訊息

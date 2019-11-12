@@ -1,6 +1,6 @@
 <script>
     import TopBar from './components/TopBar.svelte'
-    import { route } from '../data/states.js'
+    import { route, userSaid } from '../data/states.js'
     import FlexDiv from './components/FlexDiv.svelte'
     import { sentenceSets, idToRow } from '../data/demoSets.js'
     import {
@@ -51,7 +51,7 @@
             <div class="sentenceCard clickable">
                 What you said
                 <br />
-                ...
+                {#if $userSaid[sid]}{$userSaid[sid]}{:else}...{/if}
                 <div class="rightCenter">
                     <i class="far fa-play-circle" />
                 </div>
