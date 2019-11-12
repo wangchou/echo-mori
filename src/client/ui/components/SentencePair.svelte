@@ -1,6 +1,6 @@
 <script>
     import { idToRow } from '../../data/demoSets.js'
-    import { userSaid } from '../../data/states.js'
+    import { userSaids } from '../../data/states.js'
     export let sid // sentence id
 </script>
 
@@ -15,7 +15,7 @@
 <div class="sentenceCard clickable">
     What you said
     <br />
-    {#if $userSaid[sid]}{$userSaid[sid]}{:else}...{/if}
+    {#if $userSaids[sid]}{$userSaids[sid]}{:else}...{/if}
     <div class="rightCenter">
         <i class="far fa-play-circle" />
     </div>

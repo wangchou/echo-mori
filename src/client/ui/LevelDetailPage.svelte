@@ -1,8 +1,9 @@
 <script>
     import { get } from 'svelte/store'
     import { beforeUpdate } from 'svelte'
-    import { currentSetId, isPlaying, route, selectedSentenceId } from '../data/states.js'
+    import { currentSetId, isPlaying, route, selectedSentenceId, scores } from '../data/states.js'
     import { sentenceSets, idToRow } from '../data/demoSets.js'
+    import { getColorByScore } from '../data/constants.js'
     import { speed } from '../data/states.js'
     import TopBar from './components/TopBar.svelte'
     import FlexDiv from './components/FlexDiv.svelte'
@@ -21,6 +22,17 @@
     function selectSentence(sid) {
         selectedSentenceId.set(sid)
         route.set('/sentence')
+    }
+    function getScoreBarStyle(sid) {
+        let score = get(scores)[sid]
+        let color = getColorByScore(score)
+        let style =
+            `width:${score}%;` +
+            `background: ${color};` +
+            `border-left: 1px solid ${color};` +
+            `border-right: 1px solid ${color};`
+        console.log(style)
+        return style
     }
 </script>
 
@@ -41,6 +53,9 @@
                     {idToRow[id].en}
                     <br />
                     {idToRow[id].ch}
+                    {#if $scores[id] != undefined}
+                        <div class="scoreBar" style={getScoreBarStyle(id)} />
+                    {/if}
                 </div>
             {/each}
         </div>
@@ -69,11 +84,23 @@
     }
 
     .sentenceCard {
+        position: relative;
         padding: 10px;
         margin-bottom: 20px;
         margin-left: 10px;
         margin-right: 10px;
         border: 1px solid #cdcdcd;
+        box-sizing: border-box;
+    }
+    .scoreBar {
+        position: absolute;
+        width: 100%;
+        top: -1px;
+        left: -1px;
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        height: 5px;
+        background: red;
     }
 
     /* Bottom Start Button */

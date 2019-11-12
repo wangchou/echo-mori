@@ -1,6 +1,6 @@
 <script>
     import TopBar from './components/TopBar.svelte'
-    import { route, userSaid } from '../data/states.js'
+    import { route } from '../data/states.js'
     import FlexDiv from './components/FlexDiv.svelte'
     import SentencePair from './components/SentencePair.svelte'
     import { sentenceSets, idToRow } from '../data/demoSets.js'

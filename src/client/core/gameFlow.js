@@ -1,9 +1,8 @@
 import { get } from 'svelte/store';
 
-import { messages, isPlaying, currentSetId, gameMode, displayMode, speed, voice1, voice2, route, userSaid } from '../data/states.js'
+import { messages, isPlaying, currentSetId, gameMode, displayMode, speed, voice1, voice2, route, updateUserSaidAndScore } from '../data/states.js'
 import { Voice, GameMode, DisplayMode, MessageType } from '../data/constants.js'
 import { sentenceSets, idToRow } from '../data/demoSets.js'
-
 import { LangType, calculateScore } from './calculateScore.js'
 import { say, listen, ListenResultType } from './speechEngine.js'
 import { getTokenInfos, captializeFirstChar, wait } from '../utils/misc.js'
@@ -70,19 +69,19 @@ export const playGame = async (isDemo) => {
                 //tokenInfos = await getTokenInfos(result.text)
                 score = await calculateScore(sentence, result.text)
                 displayText = captializeFirstChar(result.text)
-                let newUserSaid = get(userSaid)
-                newUserSaid[sentenceId] = result.text
-                userSaid.set(newUserSaid)
-
+                updateUserSaidAndScore(sentenceId, result.text, score)
                 break;
             case ListenResultType.cannotHear:
                 displayText = "聽不清楚，請大聲一點。" // need i18n later
+                updateUserSaidAndScore(sentenceId, '', 0)
                 break;
             case ListenResultType.error:
                 displayText = "抱歉，目前出現了一些問題。" // need i18n later
+                updateUserSaidAndScore(sentenceId, '', 0)
                 break;
             case ListenResultType.notSupport:
                 displayText = "你使用的瀏覽器不支援「語音辨識」。" // need i18n later
+                updateUserSaidAndScore(sentenceId, '', 0)
                 continue;
         }
 

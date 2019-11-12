@@ -1,30 +1,56 @@
 <script>
+    import { get } from 'svelte/store'
+    import { route, scores } from '../data/states.js'
+    import { sentenceSets, idToRow } from '../data/demoSets.js'
+    import { selectedSentenceId, currentSetId } from '../data/states.js'
     import TopBar from './components/TopBar.svelte'
-    import { route } from '../data/states.js'
     import FlexDiv from './components/FlexDiv.svelte'
     import SentencePair from './components/SentencePair.svelte'
-    import { sentenceSets, idToRow } from '../data/demoSets.js'
-    import { selectedSentenceId } from '../data/states.js'
 
     var sid = undefined
     selectedSentenceId.subscribe(v => {
         sid = v
     })
+    let currentSet = sentenceSets.filter(set => set.id == get(currentSetId))[0]
+    let ids = currentSet.sentenceIds
+
+    function nextSentence() {
+        let index = ids.indexOf(sid)
+        let nextSid = ids[(index + 1) % ids.length]
+        selectedSentenceId.set(nextSid)
+    }
+    function prevSentence() {
+        let index = ids.indexOf(sid)
+        let prevSid = ids[(index + ids.length - 1) % ids.length]
+        selectedSentenceId.set(prevSid)
+    }
 </script>
 
 <FlexDiv style="position: relative">
     <TopBar closeOnly={true} backRoute={'/levelDetail'} />
+    <div class="scoreDiv">
+        Previous score:
+        <div class="score">{$scores[sid] ? $scores[sid] : 0}</div>
+    </div>
     <div class="centerContent">
         <SentencePair {sid} />
     </div>
     <div class="bottomBar">
-        <div class="startButton clickable">START</div>
-        <div class="halfButton prevPosition clickable">PREV</div>
-        <div class="halfButton nextPosition clickable">NEXT</div>
+        <div class="startButton clickable">TRY AGAIN</div>
+        <div class="halfButton prevPosition clickable" on:click={nextSentence}>PREV</div>
+        <div class="halfButton nextPosition clickable" on:click={prevSentence}>NEXT</div>
     </div>
 </FlexDiv>
 
 <style>
+    .scoreDiv {
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+    }
+    .score {
+        font-size: 48px;
+    }
     .centerContent {
         flex-grow: 1;
         flex-basis: 0;
