@@ -1,9 +1,12 @@
 import { get } from 'svelte/store';
 
-import { messages, isPlaying, currentSetId, gameMode, displayMode, speed, voice1, voice2 } from '../data/states.js'
+import {
+    messages, isPlaying, currentSetId, gameMode, displayMode,
+    userSaids, scores,
+    speed, voice1, voice2, route, updateUserSaidAndScore, updateGameRecord, sendPost
+} from '../data/states.js'
 import { Voice, GameMode, DisplayMode, MessageType } from '../data/constants.js'
 import { sentenceSets, idToRow } from '../data/demoSets.js'
-
 import { LangType, calculateScore } from './calculateScore.js'
 import { say, listen, ListenResultType } from './speechEngine.js'
 import { getTokenInfos, captializeFirstChar, wait } from '../utils/misc.js'
@@ -16,11 +19,13 @@ export const playGame = async (isDemo) => {
     var sentenceSet = sentenceSets.filter(set => set.id == currentId)[0]
     var sentences = sentenceSet.sentenceIds.map(id => idToRow[id].en)
     var translations = sentenceSet.sentenceIds.map(id => idToRow[id].ch)
+    let startTime = Date.now()
 
     for (let i in sentences) {
         if (!get(isPlaying)) { return }
 
         // 1. 在左側，顯示 Google 老師說的字
+        let sentenceId = sentenceSet.sentenceIds[i]
         let sentence = sentences[i]
         let translation = translations[i]
         var teacherText = ""
@@ -36,7 +41,7 @@ export const playGame = async (isDemo) => {
                 break;
         }
 
-        messages.update(x => [...x, { type: MessageType.teather, text: teacherText }])
+        messages.update(x => [...x, { type: MessageType.teacher, text: teacherText }])
 
         let localVoice = i % 2 == 0 ? voice2 : voice1
         let duration = await say(sentence, get(speed), get(localVoice))
@@ -69,15 +74,19 @@ export const playGame = async (isDemo) => {
                 //tokenInfos = await getTokenInfos(result.text)
                 score = await calculateScore(sentence, result.text)
                 displayText = captializeFirstChar(result.text)
+                updateUserSaidAndScore(sentenceId, result.text, score)
                 break;
             case ListenResultType.cannotHear:
                 displayText = "聽不清楚，請大聲一點。" // need i18n later
+                updateUserSaidAndScore(sentenceId, '', 0)
                 break;
             case ListenResultType.error:
                 displayText = "抱歉，目前出現了一些問題。" // need i18n later
+                updateUserSaidAndScore(sentenceId, '', 0)
                 break;
             case ListenResultType.notSupport:
                 displayText = "你使用的瀏覽器不支援「語音辨識」。" // need i18n later
+                updateUserSaidAndScore(sentenceId, '', 0)
                 continue;
         }
 
@@ -94,5 +103,17 @@ export const playGame = async (isDemo) => {
         else { judgement = "Not Right" }
         await say(judgement, 1.0, Voice.enF1)
     }
+    updateGameRecord(sentenceSet, startTime)
+    sendPost('/score', sentenceSet.sentenceIds.map(id => ({
+        sentenceId: id,
+        score: get(scores)[id]
+    })))
+    sendPost('/userSaid', sentenceSet.sentenceIds.map(id => ({
+        sentenceId: id,
+        said: get(userSaids)[id]
+    })))
+
+
     isPlaying.set(false)
+    route.set('/gameResult')
 }

@@ -71,3 +71,6 @@ export let wait = (ms) => {
         setTimeout(() => { resolve() }, ms)
     })
 }
+export let stillWorking = () => {
+    alert('還在開發中...')
+}

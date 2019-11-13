@@ -29,8 +29,24 @@ export let DisplayMode = {
 }
 
 export let MessageType = {
-    teather: 'teather',
+    teacher: 'teacher',
     echo: 'echo',
     listening: 'listening',
     user: 'user'
+}
+
+export let color = {
+    right: '#95BD4A',
+    ok: '#FFD600',
+    wrong: '#F90000',
+}
+
+export function getColorByScore(score) {
+    if (score >= 80) {
+        return color.right
+    }
+    if (score >= 60) {
+        return color.ok
+    }
+    return color.wrong
 }

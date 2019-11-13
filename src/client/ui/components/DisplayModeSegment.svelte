@@ -3,30 +3,6 @@
     import { displayMode as mode } from '../../data/states.js'
 </script>
 
-<style>
-    .outDiv {
-        width: 300px;
-        margin-bottom: 10px;
-        display: flex;
-        flex-direction: row;
-    }
-    .outDiv div {
-        padding: 3px 5px;
-        font-size: 16px;
-        border: 1px solid #444;
-        border-left: 0px;
-    }
-
-    .outDiv div.title {
-        border-top: 0px;
-        border-bottom: 0px;
-    }
-
-    .selected {
-        background: orange;
-    }
-</style>
-
 <div class="outDiv">
     <div class="title">顯示模式：</div>
     <div
@@ -51,3 +27,27 @@
         中文
     </div>
 </div>
+
+<style>
+    .outDiv {
+        width: 300px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+    .outDiv div {
+        padding: 3px 5px;
+        font-size: 16px;
+        border: 1px solid #444;
+        border-left: 0px;
+    }
+
+    .outDiv div.title {
+        border-top: 0px;
+        border-bottom: 0px;
+    }
+
+    .selected {
+        background: orange;
+    }
+</style>
