@@ -8,6 +8,7 @@
         selectedSentenceId,
         currentSetId,
         selectedTag as _selectedTag,
+        getStarCount,
     } from '../data/states.js'
 
     var sid = undefined
@@ -15,8 +16,10 @@
         sid = v
     })
     var currentSet = {}
+    var starCount = 0
     currentSetId.subscribe(id => {
         currentSet = sentenceSets.filter(set => set.id == id)[0]
+        starCount = getStarCount(id)
     })
     var selectedTag = undefined
     _selectedTag.subscribe(v => {
@@ -32,9 +35,9 @@
     <div class="gameStars">
         <br />
         <div class="center">
-            <i class="far fa-star leftStar" />
-            <i class="far fa-star topStar" />
-            <i class="far fa-star rightStar" />
+            <i class={`fa${starCount >= 1 ? 's' : 'r'} fa-star leftStar`} />
+            <i class={`fa${starCount >= 2 ? 's' : 'r'} fa-star topStar`} />
+            <i class={`fa${starCount >= 3 ? 's' : 'r'} fa-star rightStar`} />
         </div>
         <div class="center">{`${currentSet.tag} - Level ${currentSet.tagIndex}`}</div>
     </div>

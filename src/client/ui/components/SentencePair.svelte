@@ -1,10 +1,14 @@
 <script>
+    import { get } from 'svelte/store'
     import { idToRow } from '../../data/demoSets.js'
-    import { userSaids } from '../../data/states.js'
+    import { userSaids, speed } from '../../data/states.js'
+    import { Voice } from '../../data/constants.js'
+    import { say } from '../../core/speechEngine.js'
+    import { stillWorking } from '../../utils/misc.js'
     export let sid // sentence id
 </script>
 
-<div class="sentenceCard clickable">
+<div class="sentenceCard clickable" on:click={() => say(idToRow[sid].en, get(speed), Voice.enF3)}>
     {idToRow[sid].en}
     <br />
     {idToRow[sid].ch}
@@ -12,7 +16,7 @@
         <i class="fas fa-volume-up" />
     </div>
 </div>
-<div class="sentenceCard clickable">
+<div class="sentenceCard clickable" on:click={stillWorking}>
     What you said
     <br />
     {#if $userSaids[sid]}{$userSaids[sid]}{:else}...{/if}

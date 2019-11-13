@@ -1,16 +1,24 @@
 <script>
     import { fly } from 'svelte/transition'
+    import { get } from 'svelte/store'
     import { sentenceSets, idToRow } from '../data/demoSets.js'
-    import { selectedTag, user as _user, route } from '../data/states.js'
+    import { selectedTag, user as _user, route, starCounts } from '../data/states.js'
 
     var tagCounts = {}
     var tagSentenceCounts = {}
+    var topicStarCounts = {}
     sentenceSets.forEach(set => {
         tagCounts[set.tag] = tagCounts[set.tag] ? tagCounts[set.tag] + 1 : 1
         var sentenceCount = set.sentenceIds.length
         tagSentenceCounts[set.tag] = tagSentenceCounts[set.tag]
             ? tagSentenceCounts[set.tag] + sentenceCount
             : sentenceCount
+
+        let starCount = get(starCounts)[set.id]
+        starCount = starCount == undefined ? 0 : starCount
+        let topicStarCount = topicStarCounts[set.tag]
+        topicStarCount = topicStarCount == undefined ? 0 : topicStarCount
+        topicStarCounts[set.tag] = topicStarCount + starCount
     })
     var tags = Object.keys(tagCounts)
     tags.sort((tag1, tag2) => {
@@ -57,7 +65,7 @@
                         <div class="cardCategory">{`${tag}`}</div>
                         <div class="cardStars">
                             <i class="fas fa-star" />
-                            ??/{`${tagCounts[tag] * 3}`}
+                            {topicStarCounts[tag]}/{`${tagCounts[tag] * 3}`}
                         </div>
                     </div>
                     <div class="cardBottom">

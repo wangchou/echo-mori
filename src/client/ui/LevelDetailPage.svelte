@@ -4,13 +4,16 @@
     import { currentSetId, isPlaying, route, selectedSentenceId, scores } from '../data/states.js'
     import { sentenceSets, idToRow } from '../data/demoSets.js'
     import { getColorByScore } from '../data/constants.js'
-    import { speed } from '../data/states.js'
+    import { speed, getStarCount } from '../data/states.js'
     import TopBar from './components/TopBar.svelte'
     import FlexDiv from './components/FlexDiv.svelte'
 
     var currentSet = {}
+    var starCount = 0
+
     currentSetId.subscribe(id => {
         currentSet = sentenceSets.filter(set => set.id == id)[0]
+        starCount = getStarCount(id)
     })
 
     function backToMain() {
@@ -40,7 +43,7 @@
     <TopBar
         backRoute={'/levels'}
         title={`${currentSet.tag} - Level ${currentSet.tagIndex}`}
-        starCount={3} />
+        {starCount} />
 
     <div class="sentenceList">
         <div class="currentSetDiv">

@@ -1,6 +1,6 @@
 import { get } from 'svelte/store';
 
-import { messages, isPlaying, currentSetId, gameMode, displayMode, speed, voice1, voice2, route, updateUserSaidAndScore } from '../data/states.js'
+import { messages, isPlaying, currentSetId, gameMode, displayMode, speed, voice1, voice2, route, updateUserSaidAndScore, updateGameRecord } from '../data/states.js'
 import { Voice, GameMode, DisplayMode, MessageType } from '../data/constants.js'
 import { sentenceSets, idToRow } from '../data/demoSets.js'
 import { LangType, calculateScore } from './calculateScore.js'
@@ -15,6 +15,7 @@ export const playGame = async (isDemo) => {
     var sentenceSet = sentenceSets.filter(set => set.id == currentId)[0]
     var sentences = sentenceSet.sentenceIds.map(id => idToRow[id].en)
     var translations = sentenceSet.sentenceIds.map(id => idToRow[id].ch)
+    let startTime = Date.now()
 
     for (let i in sentences) {
         if (!get(isPlaying)) { return }
@@ -98,6 +99,7 @@ export const playGame = async (isDemo) => {
         else { judgement = "Not Right" }
         await say(judgement, 1.0, Voice.enF1)
     }
+    updateGameRecord(sentenceSet, startTime)
     isPlaying.set(false)
     route.set('/gameResult')
 }

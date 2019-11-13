@@ -1,5 +1,6 @@
 <script>
     import { route } from '../../data/states.js'
+    import ThreeStars from './ThreeStars.svelte'
     export let title
     export let backRoute
     export let starCount
@@ -27,9 +28,7 @@
         </div>
         <div class="rightInfo">
             {#if starCount >= 0}
-                <i class="far fa-star" />
-                <i class="far fa-star" />
-                <i class="far fa-star" />
+                <ThreeStars {starCount} />
             {:else}
                 <i class="fas fa-star" />
                 {totalStarText}

@@ -6,6 +6,7 @@
     import TopBar from './components/TopBar.svelte'
     import FlexDiv from './components/FlexDiv.svelte'
     import SentencePair from './components/SentencePair.svelte'
+    import { stillWorking } from '../utils/misc.js'
 
     var sid = undefined
     selectedSentenceId.subscribe(v => {
@@ -36,7 +37,7 @@
         <SentencePair {sid} />
     </div>
     <div class="bottomBar">
-        <div class="startButton clickable">TRY AGAIN</div>
+        <div class="startButton clickable" on:click={stillWorking}>TRY AGAIN</div>
         <div class="halfButton prevPosition clickable" on:click={nextSentence}>PREV</div>
         <div class="halfButton nextPosition clickable" on:click={prevSentence}>NEXT</div>
     </div>
