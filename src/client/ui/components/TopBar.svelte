@@ -1,11 +1,13 @@
 <script>
     import { route } from '../../data/states.js'
+    import { stillWorking } from '../../utils/misc.js'
     import ThreeStars from './ThreeStars.svelte'
     export let title
     export let backRoute
     export let starCount
     export let totalStarText
     export let closeOnly
+    export let isSettingIcon
 </script>
 
 <div class="navigationBar">
@@ -26,9 +28,11 @@
             }}>
             <i class="fas fa-chevron-left" />
         </div>
-        <div class="rightInfo">
+        <div class="rightInfo" on:click={stillWorking}>
             {#if starCount >= 0}
                 <ThreeStars {starCount} />
+            {:else if isSettingIcon}
+                <i class="fas fa-cog" />
             {:else}
                 <i class="fas fa-star" />
                 {totalStarText}

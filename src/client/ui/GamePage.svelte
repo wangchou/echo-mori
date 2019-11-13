@@ -4,7 +4,7 @@
     import { beforeUpdate } from 'svelte'
     import FlexDiv from './components/FlexDiv.svelte'
     import TopBar from './components/TopBar.svelte'
-    import { onMount } from 'svelte'
+    import { onMount, onDestroy } from 'svelte'
     import { stillWorking } from '../utils/misc.js'
 
     import {
@@ -59,13 +59,16 @@
     onMount(async () => {
         playGame()
     })
+    onDestroy(async () => {
+        isPlaying.set(false)
+    })
 </script>
 
 <FlexDiv>
     <TopBar
         backRoute={'/levelDetail'}
         title={`${currentSet.tag} - Level ${currentSet.tagIndex}`}
-        starCount={3} />
+        isSettingIcon={true} />
     <div class="messenger" bind:this={outDiv}>
         <div class="scrollable" bind:this={inDiv}>
             {#each $messages as message}

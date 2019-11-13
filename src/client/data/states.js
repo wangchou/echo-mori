@@ -60,14 +60,18 @@ export function updateGameRecord(set, startTime) {
     newGameRecords.push(gameRecord)
     gameRecords.set(newGameRecords)
 
-    // post to server
+    sendPost("/gameRecord", gameRecord)
+}
+
+// post request to server
+function sendPost(path, json) {
     const method = "POST"
     const headers = {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
     };
-    const body = JSON.stringify(gameRecord)
-    fetch("/gameRecord",
+    const body = JSON.stringify(json)
+    fetch(path,
         { method, headers, body })
         .then(console.log)
         .catch(console.error);
