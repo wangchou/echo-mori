@@ -2,7 +2,7 @@
     import { fly } from 'svelte/transition'
     import { get } from 'svelte/store'
     import { sentenceSets, idToRow } from '../data/demoSets.js'
-    import { selectedTag, user as _user, route, starCounts } from '../data/states.js'
+    import { selectedTag, user as _user, route, starCounts as _starCounts } from '../data/states.js'
 
     var tagCounts = {}
     var tagSentenceCounts = {}
@@ -13,13 +13,18 @@
         tagSentenceCounts[set.tag] = tagSentenceCounts[set.tag]
             ? tagSentenceCounts[set.tag] + sentenceCount
             : sentenceCount
-
-        let starCount = get(starCounts)[set.id]
-        starCount = starCount == undefined ? 0 : starCount
-        let topicStarCount = topicStarCounts[set.tag]
-        topicStarCount = topicStarCount == undefined ? 0 : topicStarCount
-        topicStarCounts[set.tag] = topicStarCount + starCount
     })
+    _starCounts.subscribe(starCounts => {
+        topicStarCounts = {}
+        sentenceSets.forEach(set => {
+            var starCount = starCounts[set.id]
+            starCount = starCount == undefined ? 0 : starCount
+            let topicStarCount = topicStarCounts[set.tag]
+            topicStarCount = topicStarCount == undefined ? 0 : topicStarCount
+            topicStarCounts[set.tag] = topicStarCount + starCount
+        })
+    })
+
     var tags = Object.keys(tagCounts)
     tags.sort((tag1, tag2) => {
         return tagCounts[tag2] - tagCounts[tag1]

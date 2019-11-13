@@ -11,6 +11,7 @@ import bodyParser from 'body-parser'
 import helmet from 'helmet'
 import ttsRoute from './routes/tts.js'
 import userRoute from './routes/user.js'
+import gameRecordRoute from './routes/gameRecord.js'
 import db from './models/index.js'
 
 var app = express()
@@ -42,6 +43,7 @@ app.use('/auth', authRoutes);
 // use get only because => chrome don't cache any xhr post response
 app.get('/tts', ttsRoute)
 app.get('/user', userRoute)
+app.use('/gameRecord', gameRecordRoute)
 
 app.use(function (req, res, next) {
     var err = new Error('Not Found');

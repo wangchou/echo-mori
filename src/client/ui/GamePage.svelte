@@ -5,6 +5,7 @@
     import FlexDiv from './components/FlexDiv.svelte'
     import TopBar from './components/TopBar.svelte'
     import { onMount } from 'svelte'
+    import { stillWorking } from '../utils/misc.js'
 
     import {
         messages,
@@ -88,7 +89,7 @@
                     #c4c4c4;border-radius:24px;z-index: -10`} />
                 {Math.ceil($messages.length / 2)}/{currentSet.sentenceIds.length}
             </div>
-            <div class="rightCenter clickable">
+            <div class="rightCenter clickable" on:click={stillWorking}>
                 <i class="fas fa-pause-circle largerIcon" />
             </div>
         </div>

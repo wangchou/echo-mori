@@ -7,19 +7,19 @@ export const selectedTag = writable('日常')
 export const selectedSentenceId = writable(1854)
 export const isSupportRecognition = writable('webkitSpeechRecognition' in window)
 export const user = writable({})
-export const route = writable('/levels')
+export const route = writable('/')
 export const userSaids = writable({ 3: "how to surprise", 1706: "not make sense", 1717: "are you angry", 1719: "are you happy", 1732: "he said no song", 1735: "this is epic", 1738: "are you keeping", 1741: "can you help me", 1869: "you work too hard", 1873: "I have no idea" }) // { sentenceId : user said text }
 export const scores = writable({ 3: 70, 1706: 72, 1717: 100, 1719: 100, 1732: 67, 1735: 55, 1738: 77, 1741: 100, 1869: 100, 1873: 82 }) // {sentenceId: score}
 export const gameRecords = writable([{
     endTime: 1573596848880,
     gameScore: 0.75,
-    id: 14,
+    setId: 14,
     starCount: 2,
     startTime: 1573596803810
 }, {
     endTime: 1573597738298,
     gameScore: 0.9,
-    id: 15,
+    setId: 15,
     starCount: 3,
     startTime: 1573597691069,
 }]) // sentence set id to game record object
@@ -28,6 +28,7 @@ export const starCounts = writable({}) // set id to starCount
 
 // scores: sentenceId to score
 export function updateGameRecord(set, startTime) {
+    console.log(set)
     let scoreSum = 0;
     set.sentenceIds
         .map(id => get(scores)[id])
@@ -48,7 +49,7 @@ export function updateGameRecord(set, startTime) {
         starCount = 1
     }
     let gameRecord = {
-        id: set.id,
+        setId: set.id,
         startTime: startTime,
         endTime: Date.now(),
         gameScore: gameScore,
@@ -58,12 +59,24 @@ export function updateGameRecord(set, startTime) {
     let newGameRecords = get(gameRecords)
     newGameRecords.push(gameRecord)
     gameRecords.set(newGameRecords)
+
+    // post to server
+    const method = "POST"
+    const headers = {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+    };
+    const body = JSON.stringify(gameRecord)
+    fetch("/gameRecord",
+        { method, headers, body })
+        .then(console.log)
+        .catch(console.error);
 }
 
 export function getStarCount(setId) {
     let starCount = 0
     let records = get(gameRecords)
-        .filter(record => record.id == setId)
+        .filter(record => record.setId == setId)
         .sort((r1, r2) => r2.startTime - r1.startTime)
     if (records.length > 0) {
         starCount = records[0].starCount
@@ -115,11 +128,9 @@ subscribeAndLog(scores, 'scores')
 subscribeAndLog(gameRecords, 'gameRecords', (records) => {
     var newStarCounts = get(starCounts)
     records.forEach(record => {
-        let oldCount = starCounts[record.id]
-        if (oldCount == undefined) {
-            newStarCounts[record.id] = record.starCount
-        } else if (oldCount < record.starCount) {
-            newStarCounts[record.id] = record.starCount
+        let oldCount = starCounts[record.setId]
+        if (oldCount == undefined || oldCount < record.starCount) {
+            newStarCounts[record.setId] = record.starCount
         }
     })
     starCounts.set(newStarCounts)

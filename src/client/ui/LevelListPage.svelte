@@ -15,7 +15,7 @@
     _selectedTag.subscribe(v => {
         selectedTag = v
         sets = sentenceSets
-            .filter(set => selectedTag == set.tag)
+            .filter(set => v == set.tag)
             .sort((set1, set2) => set2.tagIndex - set1.tagIndex)
         totalStarCount = 0
         sets.forEach(set => {
@@ -75,7 +75,7 @@
                     <div class="plate">
                         <Platform />
                     </div>
-                    <div class="levelIndex">{`${set.tagIndex} `}</div>
+                    <div class="levelIndex">{`${set.tagIndex}`}</div>
                     <div class="stars">
                         <ThreeStars starCount={$starCounts[set.id]} />
                     </div>

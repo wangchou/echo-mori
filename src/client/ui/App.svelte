@@ -6,13 +6,24 @@
     import GameResultPage from './GameResultPage.svelte'
     import SentencePage from './SentencePage.svelte'
     import BrowserNotSupportBar from './components/BrowserNotSupportBar.svelte'
-    import { currentSetId, user, route as _route } from '../data/states.js'
+    import {
+        currentSetId,
+        user,
+        route as _route,
+        updateGameRecord,
+        gameRecords,
+    } from '../data/states.js'
     import { onMount } from 'svelte'
+    import { sentenceSets } from '../data/demoSets.js'
     var buttonName = 'Login'
     onMount(async () => {
         const res = await fetch(`/user`)
         const userData = await res.json()
         user.set(userData)
+        if (userData.id) {
+            const loadedRecords = await fetch('/gameRecord').then(res => res.json())
+            gameRecords.set(loadedRecords)
+        }
     })
     var route = undefined
     _route.subscribe(value => {
