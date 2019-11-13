@@ -12,6 +12,8 @@
         route as _route,
         updateGameRecord,
         gameRecords,
+        scores,
+        userSaids,
     } from '../data/states.js'
     import { onMount } from 'svelte'
     import { sentenceSets } from '../data/demoSets.js'
@@ -23,6 +25,18 @@
         if (userData.id) {
             const loadedRecords = await fetch('/gameRecord').then(res => res.json())
             gameRecords.set(loadedRecords)
+            const loadedUserSaids = await fetch('/userSaid').then(res => res.json())
+            var newUserSaids = {}
+            loadedUserSaids.forEach(row => {
+                newUserSaids[row.sentenceId] = row.said
+            })
+            userSaids.set(newUserSaids)
+            const loadedScores = await fetch('/score').then(res => res.json())
+            var newScores = {}
+            loadedScores.forEach(row => {
+                newScores[row.sentenceId] = row.score
+            })
+            scores.set(newScores)
         }
     })
     var route = undefined

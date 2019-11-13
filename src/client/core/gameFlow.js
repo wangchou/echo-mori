@@ -1,6 +1,10 @@
 import { get } from 'svelte/store';
 
-import { messages, isPlaying, currentSetId, gameMode, displayMode, speed, voice1, voice2, route, updateUserSaidAndScore, updateGameRecord } from '../data/states.js'
+import {
+    messages, isPlaying, currentSetId, gameMode, displayMode,
+    userSaids, scores,
+    speed, voice1, voice2, route, updateUserSaidAndScore, updateGameRecord, sendPost
+} from '../data/states.js'
 import { Voice, GameMode, DisplayMode, MessageType } from '../data/constants.js'
 import { sentenceSets, idToRow } from '../data/demoSets.js'
 import { LangType, calculateScore } from './calculateScore.js'
@@ -100,6 +104,16 @@ export const playGame = async (isDemo) => {
         await say(judgement, 1.0, Voice.enF1)
     }
     updateGameRecord(sentenceSet, startTime)
+    sendPost('/score', sentenceSet.sentenceIds.map(id => ({
+        sentenceId: id,
+        score: get(scores)[id]
+    })))
+    sendPost('/userSaid', sentenceSet.sentenceIds.map(id => ({
+        sentenceId: id,
+        said: get(userSaids)[id]
+    })))
+
+
     isPlaying.set(false)
     route.set('/gameResult')
 }

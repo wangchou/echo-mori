@@ -34,7 +34,6 @@
             `background: ${color};` +
             `border-left: 1px solid ${color};` +
             `border-right: 1px solid ${color};`
-        console.log(style)
         return style
     }
 </script>

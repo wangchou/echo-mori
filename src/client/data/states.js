@@ -28,7 +28,6 @@ export const starCounts = writable({}) // set id to starCount
 
 // scores: sentenceId to score
 export function updateGameRecord(set, startTime) {
-    console.log(set)
     let scoreSum = 0;
     set.sentenceIds
         .map(id => get(scores)[id])
@@ -64,7 +63,7 @@ export function updateGameRecord(set, startTime) {
 }
 
 // post request to server
-function sendPost(path, json) {
+export function sendPost(path, json) {
     const method = "POST"
     const headers = {
         'Accept': 'application/json',

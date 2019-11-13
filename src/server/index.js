@@ -11,6 +11,8 @@ import bodyParser from 'body-parser'
 import helmet from 'helmet'
 import ttsRoute from './routes/tts.js'
 import userRoute from './routes/user.js'
+import userSaidRoute from './routes/userSaid.js'
+import scoreRoute from './routes/score.js'
 import gameRecordRoute from './routes/gameRecord.js'
 import db from './models/index.js'
 
@@ -44,6 +46,8 @@ app.use('/auth', authRoutes);
 app.get('/tts', ttsRoute)
 app.get('/user', userRoute)
 app.use('/gameRecord', gameRecordRoute)
+app.use('/userSaid', userSaidRoute)
+app.use('/score', scoreRoute)
 
 app.use(function (req, res, next) {
     var err = new Error('Not Found');
