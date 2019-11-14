@@ -4,7 +4,9 @@ module.exports = (sequelize, DataTypes) => {
     googleId: DataTypes.STRING,
     username: DataTypes.STRING,
     thumbnail: DataTypes.STRING
-  }, {});
+  }, {
+      charset: 'utf8mb4',
+  });
   User.associate = function(models) {
     // associations can be defined here
   };
